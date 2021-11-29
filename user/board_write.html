@@ -1,0 +1,24 @@
+<div class="container sub-container scroll">
+    <div class="contentsArea">
+        <div class="board-write-wrap">
+            <form name="frm_write" id="frm_write" method="post" action="/">
+                <fieldset>
+                    <legend class="hidden">게시물 작성</legend>
+                    <div class="board-write">
+                        <label for="BBRD_TIT" class="hidden">제목</label>
+                        <input type="text" class="post-title-input" name="BBRD_TIT" id="BBRD_TIT" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
+                        <div id="editorArea mb60">
+                            <!-- editor -->
+                            <textarea id="summernote" name="editordata"></textarea>
+                            <!-- //editor -->
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" id="" class="large-btn delet-btn" onClick="history.back();">취소</button>
+                            <button type="button" id="" class="large-btn">등록</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

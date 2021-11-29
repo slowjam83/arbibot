@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="arbibot - ADMIN">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/img/thumbnail.jpg">
+    <meta property="og:description" content="arbibot - ADMIN">
+
+    <title>arbibot - ADMIN</title>
+
+    <link href="../admin/asset/css/reset.css" rel="stylesheet">
+    <link href="../admin/asset/css/style.css" rel="stylesheet">
+    <link href="../admin/asset/css/fakeLoader.min.css" rel="stylesheet">
+    <link href="../admin/asset/css/datepicker.css" rel="stylesheet">
+
+    <script src="../admin/asset/js/jquery-3.3.1.min.js"></script>
+    <script src="../admin/asset/js/jquery-ui.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../admin/asset/js/common.js"></script>
+    <script src="../admin/asset/js/fakeLoader.min.js"></script>
+    <script src="../admin/asset/js/bootstrap.min.js"></script>
+
+    <!-- 에디터(Summernote) source -->
+    <link href="../admin/asset/css/summernote-lite.min.css" rel="stylesheet">
+    <script src="../admin/asset/js/summernote-lite.min.js"></script>
+    <script src="../admin/asset/js/summernote-ko-KR.min.js"></script>
+</head>
+
+<body class="scroll-none">
+    <!-- 상단헤더 -->
+    <header w3-include-html="../admin/_layout/header.html"></header>
+
+    <!-- 로그인 -->
+    <!--<div class="section login" w3-include-html="../admin/login.html"></div>-->
+
+    <div class="section-wrap">
+        <!-- 좌측 메뉴 -->
+        <nav w3-include-html="../admin/_layout/nav.html"></nav>
+        <!-- 본문 -->
+        <div class="section" w3-include-html="../admin/push.html"></div>
+    </div>
+
+
+    <!-- 푸터 -->
+    <footer w3-include-html="../admin/_layout/footer.html"></footer>
+
+    <!-- modal(팝업) -->
+    <div w3-include-html="../admin/modal.html"></div>
+
+    <!-- 화면로딩바 -->
+    <div class="fakeLoader"></div>
+
+    <script>
+        w3.includeHTML(function() {
+            //파일업로드 삭제
+            function reset_field (e) {
+                e.wrap('<form>').parent('form').trigger('reset');
+                e.unwrap();
+            };
+            
+            // 날짜선택 input
+            $("#shcDate").datepicker({
+                dateFormat: 'yy-mm', //달력 날짜 형태
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                showMonthAfterYear: true,
+                closeText: "선택",
+                prevText: "이전달", 
+                nextText: "다음달", 
+                currentText: "오늘", 
+                monthNames: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ], 
+                monthNamesShort: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ],
+                showOn: "both",
+                buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+                onClose: function(dateText, inst) {
+                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                    $(this).datepicker('setDate', new Date(year, month, 1));
+                    $(".ui-datepicker-calendar").css("display", "none");
+                }
+            });
+            
+            $("#shcDate2").datepicker({
+                dateFormat: 'yy-mm-dd', //달력 날짜 형태
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                showMonthAfterYear: true,
+                closeText: "선택",
+                prevText: "이전달", 
+                nextText: "다음달", 
+                currentText: "오늘", 
+                monthNames: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ], 
+                monthNamesShort: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ],
+                showOn: "both",
+                buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+            });
+            
+            $('#shcDate').datepicker('setDate', '+0');
+            $('#shcDate2').datepicker('setDate', '+0');
+            
+
+            //댓글 입력 textarea 글자수 체크
+            $('#comment-textarea').on('keyup', function() {
+                $('#text-counter').html($(this).val().length + " / 300");
+
+                if ($(this).val().length > 300) {
+                    $(this).val($(this).val().substring(0, 300));
+                    $('#text-counter').html("(300 / 300)");
+                }
+            });
+            
+            //input 빈칸일 때 alert
+            $('#push-form').on('submit', function(e){
+                if($('#category').val() == ''){
+                    e.preventDefault();
+                    alert('빈칸을 입력해주세요.');
+                };
+            });
+
+            // 에디터(Summernote)
+            $('#summernote').summernote({
+                height: 500, // 에디터 높이
+                minHeight: null, // 최소 높이
+                maxHeight: null, // 최대 높이
+                focus: true, // 에디터 로딩후 포커스를 맞출지 여부
+                lang: "ko-KR", // 한글 설정
+                placeholder: '내용을 입력해주세요.', //placeholder 설정
+
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['fontname', ['fontname']],
+                    ['fontsize', ['fontsize']],
+                    ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
+                    ['color', ['forecolor', 'color']],
+                    ['table', ['table']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['insert', ['picture', 'link', 'video']],
+                    ['view', ['fullscreen', 'help']]
+                ],
+
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', '맑은 고딕', '궁서', '굴림체', '굴림', '돋움체', '바탕체'],
+                fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '28', '30', '36', '50', '72']
+            });
+
+            function getNumber(obj) {
+                var num01;
+                var num02;
+                num01 = obj.value;
+                num02 = num01.replace(/\D/g, "");
+                num01 = setComma(num02);
+                obj.value = num01;
+
+                $('#test').text(num01);
+            }
+
+            function setComma(n) {
+                var reg = /(^[+-]?\d+)(\d{3})/;
+                n += '';
+                while (reg.test(n)) {
+                    n = n.replace(reg, '$1' + ',' + '$2');
+                }
+                return n;
+            }
+        });
+    </script>
+</body>
+
+</html>

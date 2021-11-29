@@ -1,0 +1,103 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">주간 거래 랭킹</h1>
+        <p class="subpage-text">
+            ※ 이전 7일간의 거래량 순위를 제공합니다.<br>
+            ※ 매일 자정에 업데이트 됩니다.
+        </p>
+    </div>
+    <div class="contentsArea">
+        <div class="ranking ranking02">
+            <ul class="tit-head" role="tablist">
+                <li>
+                    <a class="active" id="ranking01-tab" data-toggle="tab" href="#ranking01" role="tab" aria-controls="ranking01" aria-selected="true">거래량 순</a>
+                </li>
+                <li>
+                    <a id="ranking02-tab" data-toggle="tab" href="#ranking02" role="tab" aria-controls="ranking02" aria-selected="flase">거래횟수 순</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- 거래량 순 랭킹 -->
+                <div class="table-wrap scroll tab-pane active" role="tabpanel" id="ranking01" aria-labelledby="ranking01-tab">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>랭킹</th>
+                                <th>닉네임</th>
+                                <th>총 거래량</th>
+                                <th>총 거래횟수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>재정거래고수</td>
+                                <td>8,658,201 KRW</td>
+                                <td>2,003회</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>고길동</td>
+                                <td>7,258,416 KRW</td>
+                                <td>1,233회</td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>KTNG</td>
+                                <td>3,258,416 KRW</td>
+                                <td>1,233회</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //거래량 순 랭킹 -->
+
+                <!-- 거래횟수 순 랭킹 -->
+                <div class="table-wrap scroll tab-pane" role="tabpanel" id="ranking02" aria-labelledby="ranking02-tab">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>랭킹</th>
+                                <th>닉네임</th>
+                                <th>총 거래량</th>
+                                <th>총 거래횟수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>고길동</td>
+                                <td>8,658,201 KRW</td>
+                                <td>2,003회</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>오숙자</td>
+                                <td>7,258,416 KRW</td>
+                                <td>1,233회</td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>KTNG</td>
+                                <td>3,258,416 KRW</td>
+                                <td>1,233회</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //거래횟수 순 랭킹 -->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('.table-wrap.scroll').mousewheel(function(e, delta) {
+            this.scrollLeft -= (delta * 50);
+            e.preventDefault();
+        });
+    });
+</script>

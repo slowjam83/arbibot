@@ -1,0 +1,196 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">재정거래 봇(채굴)</h1>
+        <p class="subpage-text">
+            ※ 시뮬레이션 기간은 이전 7일 시세 데이터를 기준으로 제공됩니다.<br>
+            ※ 시뮬레이션은 거래소별 시세 차이를 확인하여 재정거래 가능 기회만 제공합니다.<br>
+            ※ 시뮬레이션에 적용되는 수수료는 거래소별 0.08%로 설정되어 있습니다.<br>
+            ※ 시뮬레이션은 설정한 차익 거래 금액에서 수수료를 차감 적용 후 수익이 발생한 건만 집계합니다.
+        </p>
+    </div>
+    <div class="contentsArea">
+        <div class="bot-setting">
+            <div class="tit-head">
+                <h2>봇 설정</h2>
+            </div>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="hidden">봇 설정</legend>
+                    <ul class="setting-box">
+                        <li>
+                            <label for="">기간</label>
+                            <p class="until">2021.11.01 ~ 2021.11.07</p>
+                        </li>
+                        <li>
+                            <label for="">가상자산</label>
+                            <select name="" id="">
+                                <option value="none" selected>선택</option>
+                                <option value="btc">BTC(비트코인)</option>
+                                <option value="eth">ETH(이더리움)</option>
+                                <option value="xrp">XRP(리플)</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="exchange">거래소 <a href="" class="xs-btn">API 등록</a></label>
+                            <ol class="input-wrap">
+                                <li>
+                                    <input type="checkbox" name="" id="exchange" checked> 빗썸
+                                    <span class="check-mark"></span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="exchange" checked> 업비트
+                                    <span class="check-mark"></span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="exchange" disabled> 코인
+                                    <span class="check-mark"></span>원(API 미등록)
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="exchange" checked> 코빗
+                                    <span class="check-mark"></span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="exchange" disabled> 후오비 코리아(코인 미상장)
+                                    <span class="check-mark"></span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="arbitrage">차익 거래 금액</label>
+                            <ol class="input-wrap">
+                                <li>
+                                    <input type="radio" name="arbitrage" id="" checked> KRW <input type="text" value="0" name="arbitrage" id=""><span class="unit">KRW</span>
+                                    <span class="radio"></span>
+                                </li>
+                                <li>
+                                    <input type="radio" name="arbitrage" id=""> % <input type="text" name="arbitrage" id="" disabled class="percent"><span class="unit">%</span>
+                                    <span class="radio"></span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="btn-wrap">
+                            <label for="" class="hidden">&nbsp;</label>
+                            <button type="reset" class="large-btn reset-btn">초기화</button>
+                            <button type="submit" class="large-btn">등록</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="simulation-result">
+            <div class="tit-head">
+                <h2>시뮬레이션 결과</h2>
+            </div>
+            <div class="result-wrap">
+                <ul class="result-card bithumb">
+                    <li>
+                        <div class="card-left">
+                            <p>빗썸</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>업비트</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>36</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>빗썸</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>코인원</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>8</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>빗썸</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>코빗</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>12</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>빗썸</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>후오비</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>875</span> 회</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="result-card upbit">
+                    <li>
+                        <div class="card-left">
+                            <p>업비트</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>코인원</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>36</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>업비트</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>코빗</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>0</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>업비트</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>후오비</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>12</span> 회</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="result-card coinone">
+                    <li>
+                        <div class="card-left">
+                            <p>코인원</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>코빗</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>0</span> 회</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-left">
+                            <p>코인원</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>후오비</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>8</span> 회</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="result-card korbit">
+                    <li>
+                        <div class="card-left">
+                            <p>코빗</p>
+                            <img src="/asset/img/trade-arrow.jpg" alt="trade-arrow">
+                            <p>후오비</p>
+                        </div>
+                        <div class="card-right">
+                            <p><span>36</span> 회</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,209 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">교차거래 봇</h1>
+        <p class="subpage-text">
+            ※ 교차거래 봇은 봇이 거래할 가격 구간과 구간 내 등록 할 주문수를 설정을 통해 자동으로 매수, 매도 시세차익을 수익화하는 봇 입니다.<br>
+            ※ 교차거래 봇은 가격 구간과 주문수에 따라 거래 수익의 차익이 발생합니다.<br>
+            ※ 교차거래 봇 설정 시 현재 시세를 기준으로 최고가와 최저가 범위를 계산하여 가상자산이 부족하거나 KRW 부족 할 경우 자동으로 봇 설정에 필요한 가상자산과 KRW를 매수/매도하여 봇을 설정 할 수 있도록 제공하고 있습니다. (ex: KRW만 있을 경우 설정을 위해 가상자산을 조건에 맞춰 매수)<br>
+            ※ 교차거래 봇의 이용이 보유한 가상자산의 시세 상승과 하락에 어떠한 영향도 미치지 않습니다.
+        </p>
+    </div>
+    <div class="contentsArea">
+        <div class="bot-setting">
+            <div class="tit-head">
+                <h2>봇 설정</h2>
+            </div>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="hidden">봇 설정</legend>
+                    <ul class="setting-box">
+                        <li>
+                            <label for="">가상자산</label>
+                            <div class="flex-column">
+                                <select name="" id="">
+                                    <option value="none" selected>선택</option>
+                                    <option value="btc">BTC(비트코인)</option>
+                                    <option value="eth">ETH(이더리움)</option>
+                                    <option value="xrp">XRP(리플)</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="exchange">거래소</label>
+                            <div class="flex-column">
+                                <select name="" id="">
+                                    <option value="none" selected>선택</option>
+                                    <option value="bithumb">빗썸</option>
+                                    <option value="upbit">업비트</option>
+                                    <option value="coinone">코인원</option>
+                                    <option value="korbit">코빗</option>
+                                    <option value="huobi">후오비 코리아</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">
+                                봇 운영 자금 <span class="info-btn">i</span>
+                                <p class="info-box">이미 운영하고 있는 봇이 있을 경우 각각의 봇의 운영 자금이 초과하지 않도록 유의해 주십시오.</p>
+                            </label>
+                            <div>
+                                <ol class="input-wrap">
+                                    <li class="pd0">
+                                        <input type="text" name="" id="" value="0" class="mg0"><span class="unit">원</span>
+                                    </li>
+                                </ol>
+                                <!-- 로그인시 노출 -->
+                                <p>
+                                    <span class="disabled-font ml0 mt10">운영 가능 자산 <b class="point-font">45,461,200</b>원</span>
+                                </p>
+                                <!-- //로그인시 노출 -->
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">최고가</label>
+                            <div>
+                                <ol class="input-wrap">
+                                    <li class="num-spinner num-spinner1 pd0">
+                                        <a href="javascript:void(0)" class="minus">-</a>
+                                        <input type="text" value="81200000">
+                                        <a href="javascript:void(0)" class="plus">+</a>
+                                    </li>
+                                </ol>
+                                <p>
+                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">81,200,000</b></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">최저가</label>
+                            <div>
+                                <ol class="input-wrap">
+                                    <li class="num-spinner num-spinner2 pd0">
+                                        <a href="javascript:void(0)" class="minus">-</a>
+                                        <input type="text" value="73200000">
+                                        <a href="javascript:void(0)" class="plus">+</a>
+                                    </li>
+                                </ol>
+                                <p>
+                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">73,200,000</b></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">주문수 <span class="info-btn info-01" data-toggle="modal" data-target="#modal-volume">i</span></label>
+                            <div>
+                                <ol class="input-wrap">
+                                    <li class="num-spinner num-spinner3 pd0">
+                                        <a href="javascript:void(0)" class="minus">-</a>
+                                        <input type="text" value="12">
+                                        <a href="javascript:void(0)" class="plus">+</a>
+                                    </li>
+                                </ol>
+                                <p>
+                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">12</b></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">손실 제한 가격 <span class="info-btn info-01" data-toggle="modal" data-target="#modal-limit">i</span></label>
+                            <div>
+                                <ol class="input-wrap">
+                                    <li class="pd0">
+                                        <input type="text" name="" id="" value="0" class="mg0">
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="btn-wrap">
+                           <label for="" class="hidden">&nbsp;</label>
+                           <button type="reset" class="large-btn reset-btn">초기화</button>
+                           <button type="button" class="large-btn" data-toggle="modal" data-target="#modal-botSet">등록</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="operation-status">
+            <div class="tit-head">
+                <h2>봇 운영 현황</h2>
+            </div>
+            <div class="table-wrap scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>상태</th>
+                            <th>가상자산</th>
+                            <th>거래소</th>
+                            <th>봇 운영 자금</th>
+                            <th>최고가</th>
+                            <th>최저가</th>
+                            <th>주문수</th>
+                            <th>
+                                수익 <span class="info-btn">i</span>
+                                <p class="info-box info-box-01">수익은 매수/매도 페어(fair) 거래에 대한 수익을 합산한 정보입니다. 거래소 수수료는 반영되어 있지 않습니다.</p>
+                            </th>
+                            <th>시작</th>
+                            <th>정지</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="point-font2">운영</span>
+                                <button type="button" class="xs-btn delet-btn ml5">종료하기</button>
+                            </td>
+                            <td>BTC(비트코인)</td>
+                            <td>업비트</td>
+                            <td>≈16,693 KRW</td>
+                            <td>81,200,000</td>
+                            <td>73,200,000</td>
+                            <td>12</td>
+                            <td>≈ 6,693 KRW</td>
+                            <td>2021.11.12 18:12</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="disabled-font">종료</span>
+                            </td>
+                            <td>BTC(비트코인)</td>
+                            <td>업비트</td>
+                            <td>≈16,693 KRW</td>
+                            <td>81,200,000</td>
+                            <td>73,200,000</td>
+                            <td>12</td>
+                            <td>≈ 6,693 KRW</td>
+                            <td>2021.11.12 18:12</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 페이징 버튼 -->
+            <ul class="pagination">
+                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
+                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
+                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
+            </ul>
+            <!-- //페이징 버튼 -->
+        </div>   
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {        
+        //봇 운영 현황 테이블 가로 스크롤
+        $('.table-wrap.scroll').mousewheel(function(e, delta) {
+            this.scrollLeft -= (delta * 50);
+            e.preventDefault();
+        });
+    });
+</script>

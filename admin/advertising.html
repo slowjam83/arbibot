@@ -1,0 +1,68 @@
+<div class="container scroll">
+    <div class="contentsArea">
+        <div class="payment">
+            <div class="tit-head flex-between">
+                <p>당월 누적 <span><b>54,123,100</b></span></p>
+                <form id="daySearch_form" method="post" action="/">
+                    <fieldset class="flex-end">
+                        <legend class="hidden">월별 조회</legend>
+                        <label for="shcDate"></label>
+                        <input type="text" name="shcDate" id="shcDate">
+                        <input type="text" name="" id="" value="회원 이메일">
+                        <button type="submit" id="daySearch_action" class="small-btn ml5">조회</button>
+                    </fieldset>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>일시</th>
+                        <th>회원</th>
+                        <th>금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 페이징 버튼 -->
+            <ul class="pagination">
+                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
+                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
+                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
+            </ul>
+            <!-- //페이징 버튼 -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+<div class="container scroll">
+    <div class="contentsArea">
+        <div class="payment">
+            <div class="tit-head flex-between">
+                <h2>API 감지 현황</h2>
+                <form id="search-form" method="post" action="/">
+                    <fieldset class="flex-end">
+                        <legend class="hidden">API 검색 폼</legend>
+                        <label class="checkbox-wrap w-inherit mr20 pl20">
+                            <input type="checkbox" id="">업비트
+                            <span class="check-mark"></span>
+                        </label>
+                        <label class="checkbox-wrap w-inherit mr20 pl20">
+                            <input type="checkbox" id="">빗썸
+                            <span class="check-mark"></span>
+                        </label>
+                        <label class="checkbox-wrap w-inherit mr20 pl20">
+                            <input type="checkbox" id="">코인원
+                            <span class="check-mark"></span>
+                        </label>
+                        <label class="checkbox-wrap w-inherit mr20 pl20">
+                            <input type="checkbox" id="">코빗
+                            <span class="check-mark"></span>
+                        </label>
+                        <button type="button" id="" class="small-btn ml5">조회</button>
+                    </fieldset>
+                </form>
+            </div>
+            <table>
+                <colgroup>
+                    <col width="135">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>가입일</th>
+                        <th>회원</th>
+                        <th>운영 봇</th>
+                        <th>보유 포인트</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>재정(2)/교차(0)</td>
+                        <td>110,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>재정(2)/교차(0)</td>
+                        <td>110,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>재정(2)/교차(0)</td>
+                        <td>110,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2021.12.25 14:32</td>
+                        <td>na790829@hanmail.net</td>
+                        <td>재정(2)/교차(0)</td>
+                        <td>110,000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 페이징 버튼 -->
+            <ul class="pagination mb60">
+                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
+                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
+                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
+            </ul>
+            <!-- //페이징 버튼 -->
+
+            <div class="tit-head">
+                <h2>API 감지 정책</h2>
+                <dl>
+                    <dt class="mb10">1. 감지 봇 동작 조건</dt>
+                    <dd>감지 봇 동작 내용 작성</dd>
+                    <!--<dd>일반 포인트는 유료로 결제한 포인트이고 광고 포인트는 광고 시청으로 획득한 포인트, 이벤트 포인트는 관리자에 의해 지급된 포인트를 말한다.</dd>
+                    <dd>회원이 획득한 포인트에는 사용 제한 기간을 두지 않는다.</dd>
+                    <dd>회원이 광고 시청으로 지급 받게 되는 금액에 50%를 포인트로 지급한다.</dd>
+                    <dd class="mb20">회원은 획득한 모든 포인트 내역을 ‘포인트 충전‘ 페이지에서 확인 가능하다.</dd>-->
+
+                    <!--<dt class="mb10">2. 포인트 차감</dt>
+                    <dd>포인트는 아비봇에서 거래가 최종 완료되는 시점에서 거래 금액의 0.015%를 수수료로 차감한다.</dd>
+                    <dd>최종 완료 체크는 배치를 통해 체크하며, 슬리피지 안전 거래 시 에는 거래가 채결되면 즉시 차감한다.</dd>
+                    <dd>차감은 0.01 포인트 단위로 차감하며 계산된 금액이 0.06 이상이면 올림처리하고, 0.05이하일 경우는 버림 처리 한다.</dd>
+                    <dd>회원에게 표시되는 포인트는 1원 단위로 표시한다.</dd>-->
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

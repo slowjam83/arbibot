@@ -1,0 +1,111 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">자산 현황</h1>
+        <p class="subpage-text">
+            ※ 자산현황은 등록된 거래소 API 기준으로 정보를 제공합니다.<br>
+            ※ 소액 자산 구분 없이 API에서 제공하는 모든 자산 정보를 제공합니다.
+        </p>
+    </div>
+    <div class="contentsArea">
+        <div class="wallet">
+            <div class="tit-head">
+                <select name="" id="">
+                    <option value="">거래소 및 API 선택</option>
+                    <option value="">업비트(투자 A)</option>
+                </select>
+            </div>
+            <div class="table-wrap scroll">
+                <!-- 로그인 전 -->
+                <table class="minWidth100">
+                    <thead>
+                        <tr>
+                            <th>자산 구분</th>
+                            <th>보유 잔고</th>
+                            <th>사용 가능</th>
+                            <th>사용 중</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="disabled-font">로그인 후 이용 가능합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //로그인 전 -->
+                
+                <!-- 로그인 후 API 선택 전 -->
+                <table class="minWidth100">
+                    <thead>
+                        <tr>
+                            <th>자산 구분</th>
+                            <th>보유 잔고</th>
+                            <th>사용 가능</th>
+                            <th>사용 중</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="disabled-font">거래소 및 API를 선택해 주십시오.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //로그인 후 API 선택 전 -->
+                
+                <!-- 로그인 후 API 선택 완료 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>자산 구분</th>
+                            <th>보유 잔고</th>
+                            <th>사용 가능</th>
+                            <th>사용 중</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>원화 (KRW)</td>
+                            <td>8,658,201</td>
+                            <td>8,658,201</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>BTC</td>
+                            <td>1.258416</td>
+                            <td>0.258416</td>
+                            <td>1.0000000</td>
+                        </tr>
+                        <tr>
+                            <td>ETH</td>
+                            <td>3.258416</td>
+                            <td>1,258,416</td>
+                            <td>2.0000000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //로그인 후 API 선택 완료 -->
+            </div>
+            
+            <!-- 페이징 버튼 -->
+            <ul class="pagination">
+                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
+                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
+                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
+            </ul>
+            <!-- //페이징 버튼 -->
+        </div>   
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('.table-wrap.scroll').mousewheel(function(e, delta) {
+            this.scrollLeft -= (delta * 50);
+            e.preventDefault();
+        });
+    });
+</script>

@@ -1,0 +1,90 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">자유게시판</h1>
+    </div>
+    <div class="contentsArea">
+        <div class="board-list-wrap">
+            <div class="search-wrap">
+                <label>
+                    <select name="" id="">
+                        <option value="title">제목</option>
+                        <option value="contents">내용</option>
+                        <option value="writer">작성자</option>
+                    </select>
+                    <input type="text" name="" id="">
+                    <button type="button"><img src="/asset/img/search-ico.png" alt="검색하기"></button>
+                </label>
+                <a href="" class="write-btn">글쓰기</a>
+            </div>
+            
+            <table class="board-list">
+                <caption class="hidden">게시글 리스트</caption>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>조회</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <a href="" target="_self">새로운 트레이딩 기법 공개~ㅎ [<span id="commentNum">10</span>]</a>
+                        </td>
+                        <td>884</td>
+                        <td>닉네임121212</td>
+                        <td>18:36</td><!-- 당일 작성은 시간만 표기 -->
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="" target="_self">조만간 좋은 소식이 들리길 기다려봅니다</a>
+                        </td>
+                        <td>72</td>
+                        <td>닉네임121212</td>
+                        <td>12-21</td><!-- 당일 작성이 아닌 경우 날짜로 표기 -->
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 검색 결과 없음 -->
+            <!--<table class="board-list">
+                <colgroup>
+                    <col width="120">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>조회</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">검색 결과가 없습니다.</td>
+                    </tr>
+                </tbody>
+            </table>-->
+            <!-- 검색 결과 없음 -->
+            
+            <!-- 페이징 버튼 -->
+            <ul class="pagination">
+                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
+                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
+                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
+            </ul>
+            <!-- //페이징 버튼 -->
+        </div>  
+    </div>
+</div>
