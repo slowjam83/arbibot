@@ -1632,7 +1632,9 @@ right section
     height: calc(100% - 56px);
     position: absolute;
     bottom: 56px;
-    overflow-y: auto
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse
 }
 .chat-list li {
     width: calc(100% - 40px);
