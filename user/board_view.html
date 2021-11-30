@@ -23,7 +23,7 @@
                 </div>
                 <!-- //게시물 작성자가 본인인 경우 노출 -->
 
-                <button type="button" class="write-btn line-btn">목록</button>
+                <button type="button" class="write-btn line-btn" id="postList">목록</button>
             </div>
         </div>
         <div class="comment-wrap">
@@ -95,3 +95,8 @@
         <!-- //이전글/다음글 리스트 -->
     </div>
 </div>
+<script>
+    $('#postList').click(function() {
+        $('.section').load('./board_list.html');
+    });
+</script>
