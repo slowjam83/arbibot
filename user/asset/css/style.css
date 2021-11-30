@@ -82,7 +82,7 @@ input[type='checkbox'], input[type='radio'] {
 }
 input[type='radio'] {
     top: 9px;
-    left: 0
+    left: -21px
 }
 .check-mark {
     cursor: pointer;
@@ -110,7 +110,7 @@ input[type='checkbox']:disabled ~ .check-mark {
     cursor: pointer;
     position: absolute;
     top:9px;
-    left: 0;
+    left: -21px;
     display: inline-block;
     width: 16px;
     height: 16px;
