@@ -33,7 +33,7 @@ $(document).ready(function () {
     function btnTop() {
         var scrollTop = $(window).scrollTop();
         
-        if (scrollTop > 980) {
+        if (scrollTop > 320) {
             $("#goTop").stop().show().animate({
                 "opacity": "1"
             }, 300);
