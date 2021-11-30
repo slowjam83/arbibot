@@ -10,21 +10,21 @@
     </div>
     <div class="contentsArea">
         <div class="ranking">
-            <ul class="tit-head" role="tablist">
-                <li>
-                    <a class="active" id="ranking01-tab" data-toggle="tab" href="#ranking01" role="tab" aria-controls="ranking01" aria-selected="true">교차거래 봇</a>
+            <ul class="tit-head" id="pills-tab" role="tablist">
+                <li role="presentation">
+                    <a class="active" id="ranking01-tab" data-toggle="pill" href="#ranking01" role="tab" aria-controls="ranking01" aria-selected="true">교차거래 봇</a>
                 </li>
-                <li>
-                    <a id="ranking02-tab" data-toggle="tab" href="#ranking02" role="tab" aria-controls="ranking02" aria-selected="flase">재정거래 봇(일반)</a>
+                <li role="presentation">
+                    <a id="ranking02-tab" data-toggle="pill" href="#ranking02" role="tab" aria-controls="ranking02" aria-selected="flase">재정거래 봇(일반)</a>
                 </li>
-                <li>
-                    <a id="ranking03-tab" data-toggle="tab" href="#ranking03" role="tab" aria-controls="ranking03" aria-selected="flase">재정거래 봇(채굴)</a>
+                <li role="presentation">
+                    <a id="ranking03-tab" data-toggle="pill" href="#ranking03" role="tab" aria-controls="ranking03" aria-selected="flase">재정거래 봇(채굴)</a>
                 </li>
             </ul>
 
-            <div class="tab-content">
+            <div class="tab-content" id="pills-tabContent">
                 <!-- 교차거래 봇 랭킹 -->
-                <div class="table-wrap scroll tab-pane active" role="tabpanel" id="ranking01" aria-labelledby="ranking01-tab">
+                <div class="table-wrap scroll tab-pane fade show active" role="tabpanel" id="ranking01" aria-labelledby="ranking01-tab">
                     <table>
                         <thead>
                             <tr>
@@ -64,7 +64,7 @@
                 <!-- //교차거래 봇 랭킹 -->
 
                 <!-- 재정거래 봇(일반) 랭킹 -->
-                <div class="table-wrap scroll tab-pane" role="tabpanel" id="ranking02" aria-labelledby="ranking02-tab">
+                <div class="table-wrap scroll tab-pane fade" role="tabpanel" id="ranking02" aria-labelledby="ranking02-tab">
                     <table>
                         <thead>
                             <tr>
@@ -104,7 +104,7 @@
                 <!-- //재정거래 봇(일반) 랭킹 -->
 
                 <!-- 재정거래 봇(채굴) 랭킹 -->
-                <div class="table-wrap scroll tab-pane" role="tabpanel" id="ranking03" aria-labelledby="ranking03-tab">
+                <div class="table-wrap scroll tab-pane fade" role="tabpanel" id="ranking03" aria-labelledby="ranking03-tab">
                     <table>
                         <thead>
                             <tr>
