@@ -33,13 +33,9 @@ $(document).ready(function () {
     function btnTop() {
         var scrollTop = $(window).scrollTop();
         
-        if (scrollTop > 0) {
+        if (scrollTop > 1080) {
             $("#goTop").stop().show().animate({
                 "opacity": "1"
-            }, 300);
-            
-            $(".write_btn").stop().animate({
-                "bottom": "144px"
             }, 300);
         } else {
             $("#goTop").stop().animate({
@@ -47,10 +43,6 @@ $(document).ready(function () {
             }, 300, function () {
                 $("#goTop").hide();
             });
-            
-            $(".write_btn").stop().animate({
-                "bottom": "74px"
-            }, 300);
         }
     };    
 });
