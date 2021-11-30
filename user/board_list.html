@@ -12,7 +12,7 @@
                         <option value="writer">작성자</option>
                     </select>
                     <input type="text" name="" id="">
-                    <button type="button"><img src="/asset/img/search-ico.png" alt="검색하기"></button>
+                    <button type="button"><img src="./asset/img/search-ico.png" alt="검색하기"></button>
                 </label>
                 <a href="" class="write-btn">글쓰기</a>
             </div>
@@ -32,7 +32,7 @@
                     <tr>
                         <td>2</td>
                         <td>
-                            <a href="" target="_self">새로운 트레이딩 기법 공개~ㅎ [<span id="commentNum">10</span>]</a>
+                            <a href="javascript:void(0);" target="_self" id="postTitle">새로운 트레이딩 기법 공개~ㅎ [<span id="commentNum">10</span>]</a>
                         </td>
                         <td>884</td>
                         <td>닉네임121212</td>
@@ -41,7 +41,7 @@
                     <tr>
                         <td>1</td>
                         <td>
-                            <a href="" target="_self">조만간 좋은 소식이 들리길 기다려봅니다</a>
+                            <a href="javascript:void(0);" target="_self" id="postTitle">조만간 좋은 소식이 들리길 기다려봅니다</a>
                         </td>
                         <td>72</td>
                         <td>닉네임121212</td>
@@ -88,3 +88,13 @@
         </div>  
     </div>
 </div>
+
+
+<script>
+    $('.nav-top li:nth-child(n)').click(function() {
+        var arrLink = ['./board_view.html', './board_list.html'];
+
+        var i = $(this).index();
+
+        for (var i2 = 0; i2 < arrLink.length; i2++) { $('.nav-top li').removeClass('on'); $(this).addClass('on'); $('.section').load(arrLink[i]); }; });
+</script>
