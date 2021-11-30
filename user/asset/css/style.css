@@ -2790,6 +2790,9 @@ Media Query
     .simulation-result {
         margin-bottom: 20px
     }
+    input[name='arbitrage'].percent {
+        margin-left: 29px !important
+    }
     .pagination li {
         margin-right: 10px
     }
