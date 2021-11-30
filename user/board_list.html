@@ -14,7 +14,7 @@
                     <input type="text" name="" id="">
                     <button type="button"><img src="./asset/img/search-ico.png" alt="검색하기"></button>
                 </label>
-                <a href="" class="write-btn">글쓰기</a>
+                <a href="" class="write-btn" id="postWrite">글쓰기</a>
             </div>
             
             <table class="board-list">
@@ -91,10 +91,10 @@
 
 
 <script>
-    $('.nav-top li:nth-child(n)').click(function() {
-        var arrLink = ['./board_view.html', './board_list.html'];
-
-        var i = $(this).index();
-
-        for (var i2 = 0; i2 < arrLink.length; i2++) { $('.nav-top li').removeClass('on'); $(this).addClass('on'); $('.section').load(arrLink[i]); }; });
+    $('#postTitle').click(function() {
+        $('.section').load('./board_view.html');
+    });
+    $('#postWrite').click(function() {
+        $('.section').load('./board_write.html');
+    });
 </script>
