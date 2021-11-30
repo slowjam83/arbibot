@@ -2362,7 +2362,7 @@ Media Query
         margin-left: 0
     }
     input[name='arbitrage'].percent {
-        margin-left: 26px !important
+        margin-left: 29px !important
     }
     p.api-label {
         width: 100px
@@ -2791,7 +2791,7 @@ Media Query
         margin-bottom: 20px
     }
     input[name='arbitrage'].percent {
-        margin-left: 29px !important
+        margin-left: 26px !important
     }
     .pagination li {
         margin-right: 10px
