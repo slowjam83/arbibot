@@ -13,50 +13,88 @@
 
     <title>arbibot - ADMIN</title>
 
-    <link href="../admin/asset/css/reset.css" rel="stylesheet">
-    <link href="../admin/asset/css/style.css" rel="stylesheet">
-    <link href="../admin/asset/css/fakeLoader.min.css" rel="stylesheet">
-    <link href="../admin/asset/css/datepicker.css" rel="stylesheet">
+    <link href="./asset/css/reset.css" rel="stylesheet">
+    <link href="./asset/css/style.css" rel="stylesheet">
+    <link href="./asset/css/fakeLoader.min.css" rel="stylesheet">
+    <link href="./asset/css/datepicker.css" rel="stylesheet">
 
-    <script src="../admin/asset/js/jquery-3.3.1.min.js"></script>
-    <script src="../admin/asset/js/jquery-ui.js"></script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="../admin/asset/js/common.js"></script>
-    <script src="../admin/asset/js/fakeLoader.min.js"></script>
-    <script src="../admin/asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+    <script src="./asset/js/jquery-ui.js"></script>
+    <script src="./asset/js/w3.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/fakeLoader.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
 
     <!-- 에디터(Summernote) source -->
-    <link href="../admin/asset/css/summernote-lite.min.css" rel="stylesheet">
-    <script src="../admin/asset/js/summernote-lite.min.js"></script>
-    <script src="../admin/asset/js/summernote-ko-KR.min.js"></script>
+    <link href="./asset/css/summernote-lite.min.css" rel="stylesheet">
+    <script src="./asset/js/summernote-lite.min.js"></script>
+    <script src="./asset/js/summernote-ko-KR.min.js"></script>
 </head>
 
 <body class="scroll-none">
     <!-- 상단헤더 -->
-    <header w3-include-html="../admin/_layout/header.html"></header>
-
-    <!-- 로그인 -->
-    <!--<div class="section login" w3-include-html="../admin/login.html"></div>-->
+    <header w3-include-html="./_layout/header.html"></header>
 
     <div class="section-wrap">
         <!-- 좌측 메뉴 -->
-        <nav w3-include-html="../admin/_layout/nav.html"></nav>
+        <nav w3-include-html="./_layout/nav.html"></nav>
         <!-- 본문 -->
-        <div class="section" w3-include-html="../admin/push.html"></div>
+        <div class="section" w3-include-html="./main.html"></div>
     </div>
 
 
     <!-- 푸터 -->
-    <footer w3-include-html="../admin/_layout/footer.html"></footer>
+    <footer w3-include-html="./_layout/footer.html"></footer>
 
     <!-- modal(팝업) -->
-    <div w3-include-html="../admin/modal.html"></div>
+    <div w3-include-html="./modal.html"></div>
 
     <!-- 화면로딩바 -->
     <div class="fakeLoader"></div>
 
     <script>
         w3.includeHTML(function() {
+            //nav, 더보기, 로그인 링크
+            var arrLink = [
+                './main.html',
+                './tradingVol.html',
+                './payment.html',
+                './advertising.html',
+                './point.html',
+                './api.html',
+                './board_list.html',
+                './board_list.html',
+                './push.html',
+                './member.html',
+                './login.html'
+            ];
+            
+            $('.nav-top li:nth-child(n)').click(function(e) {
+                var i = $(this).index();
+
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
+                    $('.nav-top li').removeClass('on');
+                    $(this).addClass('on');
+                    $('.section').load(arrLink[i]);
+                };
+            });
+            
+            $('#login').click(function(e) {
+                $('body').load(arrLink[10]);
+            });
+            
+            $('#payGo').click(function(e) {
+                $('.section').load(arrLink[2]);
+            });
+            
+            $('#adGo').click(function(e) {
+                $('.section').load(arrLink[3]);
+            });
+            
+            $('#memGo').click(function(e) {
+                $('.section').load(arrLink[9]);
+            });
+            
             //파일업로드 삭제
             function reset_field (e) {
                 e.wrap('<form>').parent('form').trigger('reset');
