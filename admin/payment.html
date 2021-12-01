@@ -71,3 +71,30 @@
         </div>
     </div>
 </div>
+
+<script>
+    // 날짜선택 input
+    $("#shcDate").datepicker({
+        dateFormat: 'yy-mm', //달력 날짜 형태
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        showMonthAfterYear: true,
+        closeText: "선택",
+        prevText: "이전달",
+        nextText: "다음달",
+        currentText: "오늘",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        showOn: "both",
+        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+        onClose: function(dateText, inst) {
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, month, 1));
+            $(".ui-datepicker-calendar").css("display", "none");
+        }
+    });
+    
+    $('#shcDate').datepicker('setDate', '+0');
+</script>

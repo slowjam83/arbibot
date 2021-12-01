@@ -8,7 +8,7 @@
                     <label for="shcDate2"></label>
                     <input type="text" name="shcDate2" id="shcDate2">
                     <label class="flex-start">
-                        <select name="" id="" class="ml5">
+                        <select name="" id="">
                             <option value="title">제목</option>
                             <option value="contents">내용</option>
                             <option value="writer">작성자</option>
@@ -92,3 +92,24 @@
         <!-- //페이징 버튼 -->
     </div>
 </div>
+
+<script>
+    // 날짜선택 input
+    $("#shcDate2").datepicker({
+        dateFormat: 'yy-mm-dd', //달력 날짜 형태
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        showMonthAfterYear: true,
+        closeText: "선택",
+        prevText: "이전달",
+        nextText: "다음달",
+        currentText: "오늘",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        showOn: "both",
+        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+    });
+
+    $('#shcDate2').datepicker('setDate', '+0');
+</script>

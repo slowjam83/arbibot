@@ -18,6 +18,13 @@
     <link href="./asset/css/fakeLoader.min.css" rel="stylesheet">
     <link href="./asset/css/datepicker.css" rel="stylesheet">
 
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+    <script src="./asset/js/jquery-ui.js"></script>
+    <script src="./asset/js/w3.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/fakeLoader.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+
     <!-- 에디터(Summernote) source -->
     <link href="./asset/css/summernote-lite.min.css" rel="stylesheet">
     <script src="./asset/js/summernote-lite.min.js"></script>
@@ -26,31 +33,24 @@
 
 <body class="scroll-none">
     <!-- 상단헤더 -->
-    <header w3-include-html="./header.html"></header>
+    <header w3-include-html="./_layout/header.html"></header>
 
     <div class="section-wrap">
         <!-- 좌측 메뉴 -->
-        <nav w3-include-html="./nav.html"></nav>
+        <nav w3-include-html="./_layout/nav.html"></nav>
         <!-- 본문 -->
         <div class="section" w3-include-html="./main.html"></div>
     </div>
 
 
     <!-- 푸터 -->
-    <footer w3-include-html="./footer.html"></footer>
+    <footer w3-include-html="./_layout/footer.html"></footer>
 
     <!-- modal(팝업) -->
     <div w3-include-html="./modal.html"></div>
 
     <!-- 화면로딩바 -->
     <div class="fakeLoader"></div>
-
-    <script src="./asset/js/jquery-3.6.0.min.js"></script>
-    <script src="./asset/js/jquery-ui.js"></script>
-    <script src="./asset/js/w3.js"></script>
-    <script src="./asset/js/common.js"></script>
-    <script src="./asset/js/fakeLoader.min.js"></script>
-    <script src="./asset/js/bootstrap.min.js"></script>
 
     <script>
         w3.includeHTML(function() {
@@ -68,7 +68,7 @@
                 './member.html',
                 './login.html'
             ];
-            
+
             $('.nav-top li:nth-child(n)').click(function(e) {
                 var i = $(this).index();
 
@@ -78,71 +78,28 @@
                     $('.section').load(arrLink[i]);
                 };
             });
-            
+
             $('#login').click(function(e) {
                 $('body').load(arrLink[10]);
             });
-            
+
             $('#payGo').click(function(e) {
                 $('.section').load(arrLink[2]);
             });
-            
+
             $('#adGo').click(function(e) {
                 $('.section').load(arrLink[3]);
             });
-            
+
             $('#memGo').click(function(e) {
                 $('.section').load(arrLink[9]);
             });
-            
+
             //파일업로드 삭제
-            function reset_field (e) {
+            function reset_field(e) {
                 e.wrap('<form>').parent('form').trigger('reset');
                 e.unwrap();
             };
-            
-            // 날짜선택 input
-            $("#shcDate").datepicker({
-                dateFormat: 'yy-mm', //달력 날짜 형태
-                changeMonth: true,
-                changeYear: true,
-                showButtonPanel: true,
-                showMonthAfterYear: true,
-                closeText: "선택",
-                prevText: "이전달", 
-                nextText: "다음달", 
-                currentText: "오늘", 
-                monthNames: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ], 
-                monthNamesShort: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ],
-                showOn: "both",
-                buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
-                onClose: function(dateText, inst) {
-                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-                    $(this).datepicker('setDate', new Date(year, month, 1));
-                    $(".ui-datepicker-calendar").css("display", "none");
-                }
-            });
-            
-            $("#shcDate2").datepicker({
-                dateFormat: 'yy-mm-dd', //달력 날짜 형태
-                changeMonth: true,
-                changeYear: true,
-                showButtonPanel: true,
-                showMonthAfterYear: true,
-                closeText: "선택",
-                prevText: "이전달", 
-                nextText: "다음달", 
-                currentText: "오늘", 
-                monthNames: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ], 
-                monthNamesShort: [ "1월","2월","3월","4월","5월","6월", "7월","8월","9월","10월","11월","12월" ],
-                showOn: "both",
-                buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
-            });
-            
-            $('#shcDate').datepicker('setDate', '+0');
-            $('#shcDate2').datepicker('setDate', '+0');
-            
 
             //댓글 입력 textarea 글자수 체크
             $('#comment-textarea').on('keyup', function() {
@@ -153,10 +110,10 @@
                     $('#text-counter').html("(300 / 300)");
                 }
             });
-            
+
             //input 빈칸일 때 alert
-            $('#push-form').on('submit', function(e){
-                if($('#category').val() == ''){
+            $('#push-form').on('submit', function(e) {
+                if ($('#category').val() == '') {
                     e.preventDefault();
                     alert('빈칸을 입력해주세요.');
                 };
