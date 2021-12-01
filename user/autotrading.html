@@ -42,82 +42,77 @@
                             </div>
                         </li>
                         <li>
-                            <label for="">
-                                봇 운영 자금 <span class="info-btn">i</span>
-                                <p class="info-box">이미 운영하고 있는 봇이 있을 경우 각각의 봇의 운영 자금이 초과하지 않도록 유의해 주십시오.</p>
-                            </label>
-                            <div>
-                                <ol class="input-wrap">
-                                    <li class="pd0">
-                                        <input type="text" name="" id="" value="0" class="mg0"><span class="unit">원</span>
-                                    </li>
-                                </ol>
-                                <!-- 로그인시 노출 -->
-                                <p>
-                                    <span class="disabled-font ml0 mt10">운영 가능 자산 <b class="point-font">45,461,200</b>원</span>
-                                </p>
-                                <!-- //로그인시 노출 -->
-                            </div>
-                        </li>
-                        <li>
-                            <label for="">최고가</label>
-                            <div>
-                                <ol class="input-wrap">
-                                    <li class="num-spinner num-spinner1 pd0">
-                                        <a href="javascript:void(0)" class="minus">-</a>
-                                        <input type="text" value="81200000">
-                                        <a href="javascript:void(0)" class="plus">+</a>
-                                    </li>
-                                </ol>
-                                <p>
-                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">81,200,000</b></span>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="">최저가</label>
-                            <div>
-                                <ol class="input-wrap">
-                                    <li class="num-spinner num-spinner2 pd0">
-                                        <a href="javascript:void(0)" class="minus">-</a>
-                                        <input type="text" value="73200000">
-                                        <a href="javascript:void(0)" class="plus">+</a>
-                                    </li>
-                                </ol>
-                                <p>
-                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">73,200,000</b></span>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="">주문수 <span class="info-btn info-01" data-toggle="modal" data-target="#modal-volume">i</span></label>
-                            <div>
-                                <ol class="input-wrap">
-                                    <li class="num-spinner num-spinner3 pd0">
-                                        <a href="javascript:void(0)" class="minus">-</a>
-                                        <input type="text" value="12">
-                                        <a href="javascript:void(0)" class="plus">+</a>
-                                    </li>
-                                </ol>
-                                <p>
-                                    <span class="disabled-font ml0 mt10">과거 7일 시뮬레이션 추천 <b class="point-font">12</b></span>
-                                </p>
-                            </div>
-                        </li>
+                                <label for="">
+                                    봇 운영 자금 <span class="info-btn" data-toggle="modal" data-target="#modalInfo01">i</span>
+                                </label>
+                                <div>
+                                    <ol class="input-wrap">
+                                        <li class="pd0">
+                                            <input type="text" name="" id="" value="0" class="mg0" inputmode="numeric"><span class="unit">원</span>
+                                        </li>
+                                    </ol>
+                                    <!-- 로그인시 노출 -->
+                                    <p class="mt10">
+                                        <span class="disabled-font ml0">운영 가능 자산 <b class="point-font">45,461,200</b>원</span>
+                                    </p>
+                                    <!-- //로그인시 노출 -->
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">최고가</label>
+                                <div>
+                                    <ol class="input-wrap">
+                                        <li class="num-spinner pd0">
+                                            <input type="number" value="81200000" min="0" max="100000000" step="1000" />
+                                        </li>
+                                    </ol>
+                                    <p class="mt10">
+                                        <span class="disabled-font ml0">과거 7일 시뮬레이션 추천 <b class="point-font">81,200,000</b></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">최저가</label>
+                                <div>
+                                    <ol class="input-wrap">
+                                        <li class="num-spinner pd0">
+                                            <input type="number" value="73200000" min="0" max="100000000" step="1000" />
+                                        </li>
+                                    </ol>
+                                    <p class="mt10">
+                                        <span class="disabled-font ml0">과거 7일 시뮬레이션 추천 <b class="point-font">73,200,000</b></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">주문수
+                                    <!--<span class="info-btn info-01" data-toggle="modal" data-target="#modal-volume">i</span>-->
+                                </label>
+                                <div>
+                                    <ol class="input-wrap">
+                                        <li class="num-spinner pd0">
+                                            <input type="number" value="12" min="0" max="1000" step="1" />
+                                        </li>
+                                    </ol>
+                                    <p class="mt10">
+                                        <span class="disabled-font ml0">과거 7일 시뮬레이션 추천 <b class="point-font">12</b></span>
+                                    </p>
+                                </div>
+                            </li>
                         <li>
                             <label for="">손실 제한 가격 <span class="info-btn info-01" data-toggle="modal" data-target="#modal-limit">i</span></label>
                             <div>
                                 <ol class="input-wrap">
                                     <li class="pd0">
-                                        <input type="text" name="" id="" value="0" class="mg0">
+                                        <input type="text" name="" id="" value="0" class="mg0" inputmode="numeric">
                                     </li>
                                 </ol>
                             </div>
                         </li>
                         <li class="btn-wrap">
-                           <label for="" class="hidden">&nbsp;</label>
-                           <button type="reset" class="large-btn reset-btn">초기화</button>
-                           <button type="button" class="large-btn" data-toggle="modal" data-target="#modal-botSet">등록</button>
+                            <label for="" class="hidden">&nbsp;</label>
+                            <button type="reset" class="large-btn reset-btn">초기화</button>
+                            <button type="button" class="large-btn" data-toggle="modal" data-target="#modal-botSet">등록</button>
                         </li>
                     </ul>
                 </fieldset>
@@ -139,7 +134,7 @@
                             <th>최저가</th>
                             <th>주문수</th>
                             <th>
-                                수익 <span class="info-btn">i</span>
+                                수익 <span class="info-btn" data-toggle="modal" data-target="#modalInfo02">i</span>
                                 <p class="info-box info-box-01">수익은 매수/매도 페어(fair) 거래에 대한 수익을 합산한 정보입니다. 거래소 수수료는 반영되어 있지 않습니다.</p>
                             </th>
                             <th>시작</th>
@@ -179,7 +174,7 @@
                     </tbody>
                 </table>
             </div>
-            
+
             <!-- 페이징 버튼 -->
             <ul class="pagination">
                 <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
@@ -193,17 +188,26 @@
                 <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
             </ul>
             <!-- //페이징 버튼 -->
-        </div>   
+        </div>
     </div>
 </div>
 
 
 <script>
-    $(document).ready(function() {        
+    $(document).on('focus keyup blur', 'input[inputmode=numeric]', function(event) {
+        this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
+        this.value = this.value.replace(/,/g, ''); // ,값 공백처리
+        this.value = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ","); // 정규식을 이용해서 3자리 마다 , 추가 	
+    });
+
+    $(document).ready(function() {
         //봇 운영 현황 테이블 가로 스크롤
         $('.table-wrap.scroll').mousewheel(function(e, delta) {
             this.scrollLeft -= (delta * 50);
             e.preventDefault();
         });
     });
+
+    //input number spinner
+    $(".num-spinner > input[type='number']").inputSpinner();
 </script>

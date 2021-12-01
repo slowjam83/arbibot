@@ -208,31 +208,34 @@ input[type='radio']:checked ~ .radio {
 }
 
 /*********** spinner *************/
-
-.num-spinner {  
-  display: inline-block
+.num-spinner .input-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
 }
 
-.num-spinner .minus, .num-spinner .plus {
+.num-spinner .btn-minus, .num-spinner .btn-plus {
     width: 32px;
+    min-width: 32px !important;
     height: 32px;
     color: #333;
     line-height: 30px;
     text-align: center
 }
-.num-spinner .minus {
+.num-spinner .btn-minus {
     border-top: 1px solid #d4d4d4;
     border-left: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
     border-radius: 3px 0 0 3px
 }
-.num-spinner .plus {
+.num-spinner .btn-plus {
     border-top: 1px solid #d4d4d4;
     border-right: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
     border-radius: 0 3px 3px 0
 }
 .num-spinner input[type="text"] {
+    width: 116px !important;
     margin-left: 0 !important;
     border-radius: 0;
     text-align: center
