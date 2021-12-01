@@ -68,7 +68,7 @@
                             <ol class="input-wrap">
                                 <li class="flex-column">
                                     <div>
-                                        <input type="radio" name="arbitrage" class="minusLeft" id="" checked> KRW <input type="text" value="0" name="arbitrage" id="test" onchange="getNumber(this);" onkeyup="getNumber(this);"><span class="unit">KRW</span>
+                                        <input type="radio" name="arbitrage" class="minusLeft" id="" checked> KRW <input type="text" name="arbitrage" id="" inputmode="numeric" value="0.000"><span class="unit">KRW</span>
                                         <span class="radio minusLeft"></span>
                                     </div>
                                     <p>
@@ -77,7 +77,7 @@
                                 </li>
                                 <li class="flex-column">
                                     <div>
-                                        <input type="radio" name="arbitrage" class="minusLeft" id=""> % <input type="text" name="arbitrage" id="" disabled class="percent"><span class="unit">%</span>
+                                        <input type="radio" name="arbitrage" class="minusLeft" id=""> % <input type="text" name="arbitrage" id="" disabled inputmode="decimal" value="0.00" class="percent"><span class="unit">%</span>
                                         <span class="radio minusLeft"></span>
                                     </div>
                                     <p>
@@ -91,7 +91,7 @@
                             <div>
                                 <ol class="input-wrap">
                                     <li class="pd0">
-                                        <input type="text" name="" id="" value="0" class="mg0"><span class="unit">BTC</span>
+                                        <input type="text" name="" id="" inputmode="decimal" value="0.0001" class="mg0"><span class="unit">BTC</span>
                                     </li>
                                 </ol>
                                 <p>
@@ -234,5 +234,11 @@
             this.scrollLeft -= (delta * 50);
             e.preventDefault();
         });
+    });
+    
+    $(document).on('focus keyup blur', 'input[inputmode=numeric]', function(event) {
+        this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
+        this.value = this.value.replace(/,/g, ''); // ,값 공백처리
+        this.value = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ","); // 정규식을 이용해서 3자리 마다 , 추가 	
     });
 </script>
