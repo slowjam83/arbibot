@@ -591,6 +591,25 @@ point(포인트)
 }
 
 
+/*============================================================
+API 감지 현황
+=============================================================*/
+.apiStatus table {
+    border-bottom: 1px solid #efefef;
+    margin-top: 10px
+}
+.apiStatus th, .apiStatus td {
+    text-align: center
+}
+.apiStatus th {
+    border-right: 0;
+    border-left: 0
+}
+.apiStatus td {
+    border: 0
+}
+
+
 
 /*============================================================
 push(푸시)
