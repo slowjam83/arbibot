@@ -144,6 +144,9 @@ input[type='radio']:checked ~ .radio {
 .pd0 {
     padding: 0 !important
 }
+.pl20 {
+    padding-left: 20px
+}
 .mg0 {
     margin: 0 !important
 }
@@ -2245,11 +2248,14 @@ modal
     width: 100% !important
 }
 
+.modal-body .setting-box {
+    grid-gap: 0 40px
+}
 .modal-body .setting-box .input-wrap li {
     padding-left: 0
 }
 
-.modal-body .setting-box .input-wrap li input[type='radio'].minusLeft, .modal-body .setting-box .input-wrap li .radio.minusLeft {
+.modal-body .setting-box .input-wrap li input[type='radio'].minusLeft, .modal-body .setting-box .input-wrap li .radio.minusLeft, .modal-body .setting-box li.slippage .check-mark, .modal-body .setting-box li.slippage input[type='checkbox'] {
     left: 0
 }
 
