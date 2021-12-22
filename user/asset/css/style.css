@@ -603,7 +603,7 @@ nav {
      background: url('../img/nav-ico-06.png') no-repeat 0 50%
 }
 .nav-top li:nth-child(10) a {
-     background: url('../img/nav-ico-07.png') no-repeat 0 50%
+     background: url('../img/nav-ico-11.png') no-repeat 0 50%
 }
 .nav-top li:nth-child(11) a {
      background: url('../img/nav-ico-08.png') no-repeat 0 50%
@@ -646,7 +646,7 @@ nav {
      background: url('../img/nav-ico-on-06.png') no-repeat 0 50%
 }
 .nav-top li.on:nth-child(10) a, .nav-top li:hover:nth-child(10) a {
-     background: url('../img/nav-ico-on-07.png') no-repeat 0 50%
+     background: url('../img/nav-ico-on-11.png') no-repeat 0 50%
 }
 .nav-top li.on:nth-child(11) a, .nav-top li:hover:nth-child(11) a {
      background: url('../img/nav-ico-on-08.png') no-repeat 0 50%
