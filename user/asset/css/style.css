@@ -79,8 +79,8 @@ input[type='text']:disabled {
     color: #888
 }
 input[type='checkbox'], input[type='radio'] {
-    width: 16px;
-    height: 16px;
+    width: 16px !important;
+    height: 16px !important;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -2236,6 +2236,21 @@ modal
     padding: 0;
     border: none;
     margin-bottom: 0
+}
+.modal-body .setting-box p span {
+    margin-left: 0;
+}
+
+.modal-body .setting-box li label {
+    width: 100% !important
+}
+
+.modal-body .setting-box .input-wrap li {
+    padding-left: 0
+}
+
+.modal-body .setting-box .input-wrap li input[type='radio'].minusLeft, .modal-body .setting-box .input-wrap li .radio.minusLeft {
+    left: 0
 }
 
 .modal-footer {
