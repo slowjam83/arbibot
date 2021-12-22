@@ -2232,6 +2232,12 @@ modal
     font-size: 14px
 }
 
+.modal-body .setting-box {
+    padding: 0;
+    border: none;
+    margin-bottom: 0
+}
+
 .modal-footer {
     text-align: right
 }
