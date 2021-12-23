@@ -1414,16 +1414,23 @@ p.time-info {
 .talent li p {
   line-height: 24px;
 }
+.welfare {
+  padding: 0 60px;
+}
+.welfare .tit-head h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
 .welfare ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px 100px;
-  gap: 40px 100px;
+  grid-gap: 100px 160px;
+  gap: 100px 160px;
 }
 .welfare ul li {
-  width: calc(50% - 40px);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .welfare-img {
   margin-right: 30px;
