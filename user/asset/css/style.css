@@ -1421,7 +1421,7 @@ board
   margin-bottom: -1px;
   padding: 14px 40px 14px 20px;
   margin-bottom: 0;
-  background: url(../img/board-list-arrow.svg) no-repeat calc(100% -20px) 50%;
+  background: url(../img/board-list-arrow.svg) no-repeat calc(100% - 20px) 50%;
   background-size: 20px 12px;
 }
 .card-header .btn-link {
@@ -3035,6 +3035,7 @@ Media Query
   }
   .accordion .card .card-header {
     background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
+    background-size: 20px 12px;
   }
   .card-header p {
     display: block;
