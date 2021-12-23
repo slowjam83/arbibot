@@ -1,272 +1,413 @@
 <!-- 교차거래 봇 운영 자금 안내 -->
-<div class="modal fade" id="modalInfo01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog scroll">
-        <div data-dismiss="modal" class="modal-close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>봇 운영 자금</h3>
-            </div>
-            <div class="modal-body">
-                <p>이미 운영하고 있는 봇이 있을 경우 각각의 봇의 운영 자금이 초과하지 않도록 유의해 주십시오.</p>
-            </div>
-            <div class="modal-footer">
-                <div class="btn-group">
-                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
-                </div>
-            </div>
+<div
+  class="modal fade"
+  id="modalInfo01"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  style="display: none"
+>
+  <div class="modal-dialog scroll">
+    <div data-dismiss="modal" class="modal-close"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>봇 운영 자금</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+          이미 운영하고 있는 봇이 있을 경우 각각의 봇의 운영 자금이 초과하지
+          않도록 유의해 주십시오.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-dismiss="modal" class="btn btn_submit">
+            확인
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- //교차거래 봇 운영 자금 안내 -->
 
 <!-- 교차거래 봇 운영 수익 안내 -->
-<div class="modal fade" id="modalInfo02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog scroll">
-        <div data-dismiss="modal" class="modal-close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>봇 운영 수익</h3>
-            </div>
-            <div class="modal-body">
-                <p>수익은 매수/매도 페어(fair) 거래에 대한 수익을 합산한 정보입니다. 거래소 수수료는 반영되어 있지 않습니다.</p>
-            </div>
-            <div class="modal-footer">
-                <div class="btn-group">
-                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
-                </div>
-            </div>
+<div
+  class="modal fade"
+  id="modalInfo02"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  style="display: none"
+>
+  <div class="modal-dialog scroll">
+    <div data-dismiss="modal" class="modal-close"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>봇 운영 수익</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+          수익은 매수/매도 페어(fair) 거래에 대한 수익을 합산한 정보입니다.
+          거래소 수수료는 반영되어 있지 않습니다.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-dismiss="modal" class="btn btn_submit">
+            확인
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- //교차거래 봇 운영 수익 안내 -->
 
 <!-- 교차거래 봇 설정 확인 -->
-<div class="modal fade" id="modal-botSet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog scroll">
-        <div data-dismiss="modal" class="modal-close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>교차거래 봇 설정 확인</h3>
-            </div>
-            <div class="modal-body">
-                <ul class="no-margin">
-                    <li>
-                        <h4>가상자산</h4>
-                        <p>BTC(비트코인)</p>
-                    </li>
-                    <li>
-                        <h4>거래소</h4>
-                        <p>업비트</p>
-                    </li>
-                    <li>
-                        <h4>봇 운영 자금</h4>
-                        <p>1,000,000 KRW</p>
-                    </li>
-                    <li>
-                        <h4>최고가</h4>
-                        <p>81,200,000</p>
-                    </li>
-                    <li>
-                        <h4>최저가</h4>
-                        <p>73,200,000</p>
-                    </li>
-                    <li>
-                        <h4>주문수</h4>
-                        <p>12</p>
-                    </li>
-                    <li>
-                        <h4>손실 제한 가격</h4>
-                        <p>0</p>
-                    </li>
-                </ul>
-                <ul class="no-margin">
-                    <li>
-                        <h4>설정을 위한 매수 금액</h4>
-                        <p>없음</p>
-                    </li>
-                    <li>
-                        <h4>설정을 위한 매도 수량</h4>
-                        <p>0.003124 BTC</p>
-                    </li>
-                </ul>
-                <ul class="no-margin mb40">
-                    <li>
-                        <h4>매수/매도 페어(fair) 거래당 수익률</h4>
-                        <p>0.0083 % ~ 0.0092 %</p>
-                    </li>
-                </ul>
-                <div class="agreement">
-                    <h3>아비봇 이용안내 확인</h3>
-                    <p>아비봇은 가상자산의 시세를 올리거나 내리는 기능을 하지 않습니다.</p>
-                    <p>아비봇은 가상자산 트레이딩을 편리하게 이용할 수 있는 도구만 제공하며, 투자권유 또는 유치를 목적으로 하지 않습니다.</p>
-                    <p>가상자산 급격한 시세 변동 상황 또는 가상자산 거래소의 API 서비스 불안정으로 인한 투자손실에 책임지지 않으므로 서비스 이용에 유의하시기 바랍니다.</p>
-                    <p>아비봇을 이용하는 회원님은 모든 이용 약관을 읽고 이해하였고, 동의하셔야만 이용이 가능합니다.</p>
-                    <form action="/" method="post">
-                        <fieldset>
-                            <label class="relative">
-                                <input type="checkbox" name="" id="">
-                                위에 안내된 내용을 이해하고 동의합니다.
-                                <span class="check-mark"></span>
-                            </label>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="btn-group">
-                    <button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>
-                    <button type="button" data-dismiss="modal" class="btn btn_submit">봇 생성</button>
-                </div>
-            </div>
+<div
+  class="modal fade"
+  id="modal-botSet"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  style="display: none"
+>
+  <div class="modal-dialog scroll">
+    <div data-dismiss="modal" class="modal-close"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>교차거래 봇 설정 확인</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="no-margin">
+          <li>
+            <h4>가상자산</h4>
+            <p>BTC(비트코인)</p>
+          </li>
+          <li>
+            <h4>거래소</h4>
+            <p>업비트</p>
+          </li>
+          <li>
+            <h4>봇 운영 자금</h4>
+            <p>1,000,000 KRW</p>
+          </li>
+          <li>
+            <h4>최고가</h4>
+            <p>81,200,000</p>
+          </li>
+          <li>
+            <h4>최저가</h4>
+            <p>73,200,000</p>
+          </li>
+          <li>
+            <h4>주문수</h4>
+            <p>12</p>
+          </li>
+          <li>
+            <h4>손실 제한 가격</h4>
+            <p>0</p>
+          </li>
+        </ul>
+        <ul class="no-margin">
+          <li>
+            <h4>설정을 위한 매수 금액</h4>
+            <p>없음</p>
+          </li>
+          <li>
+            <h4>설정을 위한 매도 수량</h4>
+            <p>0.003124 BTC</p>
+          </li>
+        </ul>
+        <ul class="no-margin mb40">
+          <li>
+            <h4>매수/매도 페어(fair) 거래당 수익률</h4>
+            <p>0.0083 % ~ 0.0092 %</p>
+          </li>
+        </ul>
+        <div class="agreement">
+          <h3>아비봇 이용안내 확인</h3>
+          <p>
+            아비봇은 가상자산의 시세를 올리거나 내리는 기능을 하지 않습니다.
+          </p>
+          <p>
+            아비봇은 가상자산 트레이딩을 편리하게 이용할 수 있는 도구만
+            제공하며, 투자권유 또는 유치를 목적으로 하지 않습니다.
+          </p>
+          <p>
+            가상자산 급격한 시세 변동 상황 또는 가상자산 거래소의 API 서비스
+            불안정으로 인한 투자손실에 책임지지 않으므로 서비스 이용에
+            유의하시기 바랍니다.
+          </p>
+          <p>
+            아비봇을 이용하는 회원님은 모든 이용 약관을 읽고 이해하였고,
+            동의하셔야만 이용이 가능합니다.
+          </p>
+          <form action="/" method="post">
+            <fieldset>
+              <label class="relative">
+                <input type="checkbox" name="" id="" />
+                위에 안내된 내용을 이해하고 동의합니다.
+                <span class="check-mark"></span>
+              </label>
+            </fieldset>
+          </form>
         </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-dismiss="modal" class="btn btn_cancel">
+            취소
+          </button>
+          <button type="button" data-dismiss="modal" class="btn btn_submit">
+            봇 생성
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- //교차거래 봇 설정 확인 -->
 
 <!-- 슬리피지 안전거래 안내 -->
-<div class="modal fade" id="modal-slippage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-        <div data-dismiss="modal" class="modal-close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>슬리피지 안전거래 안내</h3>
-            </div>
-            <div class="modal-body">
-                <h4 class="point-font">슬리피지 안전거래 기능은,</h4>
-                <p>슬리피지(미체결 주문)가 발생하면 셋팅된 대기 시간까지 대기 후 앞선 발생된 슬리피지(미체결 주문)를 취소하고, 즉시 체결될 수 있는 호가에 슬리피지 발생 수량의 주문을 넣는 기능입니다.</p>
-                <h4 class="point-font">슬리피지 안전거래 활용</h4>
-                <p>코인의 시세 변동성과 거래량에 따라 슬리피지가 발생하여도 짧은 시간 내에 주문이 체결되는 경우도 있습니다. 다만 슬리피지가 발생한 시세로 수 일 또는 셋팅한 봇을 삭제할 때 까지 돌아오지 않을 경우 손실이 발생 할 수 있어 운영 전략에 맞춰 기능을 활용하시는 것이 좋습니다.</p>
-            </div>
-            <div class="modal-footer">
-                <div class="btn-group">
-                    <!--<button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>-->
-                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
-                </div>
-            </div>
+<div
+  class="modal fade"
+  id="modal-slippage"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  style="display: none"
+>
+  <div class="modal-dialog">
+    <div data-dismiss="modal" class="modal-close"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>슬리피지 안전거래 안내</h3>
+      </div>
+      <div class="modal-body">
+        <h4 class="point-font">슬리피지 안전거래 기능은,</h4>
+        <p>
+          슬리피지(미체결 주문)가 발생하면 셋팅된 대기 시간까지 대기 후 앞선
+          발생된 슬리피지(미체결 주문)를 취소하고, 즉시 체결될 수 있는 호가에
+          슬리피지 발생 수량의 주문을 넣는 기능입니다.
+        </p>
+        <h4 class="point-font">슬리피지 안전거래 활용</h4>
+        <p>
+          코인의 시세 변동성과 거래량에 따라 슬리피지가 발생하여도 짧은 시간
+          내에 주문이 체결되는 경우도 있습니다. 다만 슬리피지가 발생한 시세로 수
+          일 또는 셋팅한 봇을 삭제할 때 까지 돌아오지 않을 경우 손실이 발생 할
+          수 있어 운영 전략에 맞춰 기능을 활용하시는 것이 좋습니다.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <!--<button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>-->
+          <button type="button" data-dismiss="modal" class="btn btn_submit">
+            확인
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- //슬리피지 안전거래 안내 -->
 
 <!-- 재정거래봇(일반) 설정 변경 -->
-<div class="modal fade" id="modalBotset01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog scroll">
-        <div data-dismiss="modal" class="modal-close"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>봇 설정 변경</h3>
-            </div>
-            <div class="modal-body">
-                <form action="/" method="post">
-                    <fieldset>
-                        <legend class="hidden">봇 설정</legend>
-                        <ul class="setting-box">
-                            <li>
-                                <label for="">BTC</label>
-                                <div class="flex-column">
-                                    <p>
-                                        <span class="disabled-font">이미 설정된 코인은 선택할 수 없습니다.</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="exchange">거래소 <a href="" class="xs-btn">API 등록</a></label>
-                                <div>
-                                    <ol class="input-wrap">
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked> 빗썸
-                                            <span class="check-mark"></span>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked> 업비트
-                                            <span class="check-mark"></span>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" disabled> 코인
-                                            <span class="check-mark"></span>원(API 미등록)
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked> 코빗
-                                            <span class="check-mark"></span>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" disabled> 후오비 코리아(코인 미상장)
-                                            <span class="check-mark"></span>
-                                        </li>
-                                    </ol>
-                                    <p>
-                                        <span class="disabled-font ml0 mt10">선택한 코인이 상장된 거래소만 선택 가능합니다.</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="arbitrage">차익 거래 금액</label>
-                                <ol class="input-wrap">
-                                    <li class="flex-column">
-                                        <div class="pl20">
-                                            <input type="radio" name="arbitrage" class="minusLeft" id="" checked> KRW <input type="text" name="arbitrage" id="" inputmode="numeric" value="0.000"><span class="unit">KRW</span>
-                                            <span class="radio minusLeft"></span>
-                                        </div>
-                                        <p class="mb0">
-                                            <span class="disabled-font ml0 mt10">소수점은 최대 3자리까지 입력이 가능합니다.</span>
-                                        </p>
-                                    </li>
-                                    <li class="flex-column">
-                                        <div class="pl20">
-                                            <input type="radio" name="arbitrage" class="minusLeft" id=""> % <input type="text" name="arbitrage" id="" disabled inputmode="decimal" value="0.00" class="percent"><span class="unit">%</span>
-                                            <span class="radio minusLeft"></span>
-                                        </div>
-                                        <p>
-                                            <span class="disabled-font ml0 mt10">소수점은 최대 2자리까지 입력이 가능합니다.</span>
-                                        </p>
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>
-                                <label for="">1회 거래 수량</label>
-                                <div>
-                                    <ol class="input-wrap">
-                                        <li class="pd0">
-                                            <input type="text" name="" id="" inputmode="decimal" value="0.0001" class="mg0"><span class="unit">BTC</span>
-                                        </li>
-                                    </ol>
-                                    <p>
-                                        <span class="disabled-font ml0 mt10">최소 수량 0.0001 이상 입니다.</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="">슬리피지 안전거래 <span class="info-btn info-01" data-toggle="modal" data-target="#modal-slippage">i</span></label>
-                                <ol class="input-wrap">
-                                    <li class="slippage">
-                                        <div class="checkbox-wrap">
-                                            <input type="checkbox" name="" id=""> 사용 
-                                            <span class="check-mark"></span>
-                                        </div>
-                                        <div class="select-wrap">
-                                            <select name="" id="slippage-time">
-                                                <option value="sec03" selected>3초</option>
-                                                <option value="sec05">5초</option>
-                                                <option value="sec10">10초</option>
-                                                <option value="sec30">30초</option>
-                                                <option value="sec60">60초</option>
-                                            </select>
-                                            후 미체결 취소 후 거래
-                                        </div>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="btn-group">
-                    <button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>
-                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+<div
+  class="modal fade"
+  id="modalBotset01"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  style="display: none"
+>
+  <div class="modal-dialog scroll">
+    <div data-dismiss="modal" class="modal-close"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>봇 설정 변경</h3>
+      </div>
+      <div class="modal-body">
+        <form action="/" method="post">
+          <fieldset>
+            <legend class="hidden">봇 설정</legend>
+            <ul class="setting-box">
+              <li>
+                <label for="">BTC</label>
+                <div class="flex-column">
+                  <p>
+                    <span class="disabled-font"
+                      >이미 설정된 코인은 선택할 수 없습니다.</span
+                    >
+                  </p>
                 </div>
-            </div>
+              </li>
+              <li>
+                <label for="exchange"
+                  >거래소 <a href="" class="xs-btn">API 등록</a></label
+                >
+                <div>
+                  <ol class="input-wrap">
+                    <li>
+                      <input type="checkbox" name="" id="exchange" checked />
+                      빗썸
+                      <span class="check-mark"></span>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="" id="exchange" checked />
+                      업비트
+                      <span class="check-mark"></span>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="" id="exchange" disabled />
+                      코인 <span class="check-mark"></span>원(API 미등록)
+                    </li>
+                    <li>
+                      <input type="checkbox" name="" id="exchange" checked />
+                      코빗
+                      <span class="check-mark"></span>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="" id="exchange" disabled />
+                      후오비 코리아(코인 미상장)
+                      <span class="check-mark"></span>
+                    </li>
+                  </ol>
+                  <p>
+                    <span class="disabled-font ml0 mt10"
+                      >선택한 코인이 상장된 거래소만 선택 가능합니다.</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="arbitrage">차익 거래 금액</label>
+                <ol class="input-wrap">
+                  <li class="flex-column">
+                    <div class="pl20">
+                      <input
+                        type="radio"
+                        name="arbitrage"
+                        class="minusLeft"
+                        id=""
+                        checked
+                      />
+                      KRW
+                      <input
+                        type="text"
+                        name="arbitrage"
+                        id=""
+                        inputmode="numeric"
+                        value="0.000"
+                      /><span class="unit">KRW</span>
+                      <span class="radio minusLeft"></span>
+                    </div>
+                    <p class="mb10">
+                      <span class="disabled-font ml0 mt10"
+                        >소수점은 최대 3자리까지 입력이 가능합니다.</span
+                      >
+                    </p>
+                  </li>
+                  <li class="flex-column">
+                    <div class="pl20">
+                      <input
+                        type="radio"
+                        name="arbitrage"
+                        class="minusLeft"
+                        id=""
+                      />
+                      %
+                      <input
+                        type="text"
+                        name="arbitrage"
+                        id=""
+                        disabled
+                        inputmode="decimal"
+                        value="0.00"
+                        class="percent"
+                      /><span class="unit">%</span>
+                      <span class="radio minusLeft"></span>
+                    </div>
+                    <p>
+                      <span class="disabled-font ml0 mt10"
+                        >소수점은 최대 2자리까지 입력이 가능합니다.</span
+                      >
+                    </p>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <label for="">1회 거래 수량</label>
+                <div>
+                  <ol class="input-wrap">
+                    <li class="pd0">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        inputmode="decimal"
+                        value="0.0001"
+                        class="mg0"
+                      /><span class="unit">BTC</span>
+                    </li>
+                  </ol>
+                  <p>
+                    <span class="disabled-font ml0 mt10"
+                      >최소 수량 0.0001 이상 입니다.</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for=""
+                  >슬리피지 안전거래
+                  <span
+                    class="info-btn info-01"
+                    data-toggle="modal"
+                    data-target="#modal-slippage"
+                    >i</span
+                  ></label
+                >
+                <ol class="input-wrap">
+                  <li class="slippage">
+                    <div class="checkbox-wrap">
+                      <input type="checkbox" name="" id="" /> 사용
+                      <span class="check-mark"></span>
+                    </div>
+                    <div class="select-wrap">
+                      <select name="" id="slippage-time">
+                        <option value="sec03" selected>3초</option>
+                        <option value="sec05">5초</option>
+                        <option value="sec10">10초</option>
+                        <option value="sec30">30초</option>
+                        <option value="sec60">60초</option>
+                      </select>
+                      후 미체결 취소 후 거래
+                    </div>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-dismiss="modal" class="btn btn_cancel">
+            취소
+          </button>
+          <button type="button" data-dismiss="modal" class="btn btn_submit">
+            확인
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <!-- //재정거래봇(일반) 자산 현황 -->
