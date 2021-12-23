@@ -75,7 +75,7 @@
 
     <script>
       w3.includeHTML(function () {
-        //nav 링크
+        //nav-top 링크
         $(".nav-top li:nth-child(n)").click(function (e) {
           var arrLink = [
             "./autotrading.html",
@@ -96,6 +96,17 @@
           for (var i2 = 0; i2 < arrLink.length; i2++) {
             $(".nav-top li").removeClass("on");
             $(this).addClass("on");
+            $(".section").load(arrLink[i]);
+          }
+        });
+
+        //nav-bottom 링크
+        $(".nav-bottom li:nth-child(n)").click(function (e) {
+          var arrLink = ["./associate.html", "./recruit.html"];
+
+          var i = $(this).index();
+
+          for (var i2 = 0; i2 < arrLink.length; i2++) {
             $(".section").load(arrLink[i]);
           }
         });
