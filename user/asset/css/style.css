@@ -1410,9 +1410,8 @@ board
   margin-bottom: -1px;
 }
 .card-header {
-  padding: 15px;
+  padding: 14px 20px;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header .btn-link {
@@ -1421,17 +1420,16 @@ board
   cursor: pointer;
 }
 .card-header p {
-  padding: 0 30px;
   display: flex;
   justify-content: space-between;
 }
 .card-header .question-text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 .card-header .date {
   color: #888;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-body {
@@ -1442,6 +1440,11 @@ board
   text-align: left;
   line-height: 26px;
   word-break: keep-all;
+  background-color: #f6f6f8;
+}
+
+.card-body .textBody {
+  font-size: 14px;
 }
 
 .collapse:not(.show) {
