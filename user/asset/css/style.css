@@ -1337,6 +1337,17 @@ p.time-info {
   left: calc(50% - 8px);
 }
 
+.point-iframe .tit-head {
+  display: block;
+}
+.point-iframe .tit-head p {
+  color: #888;
+  font-size: 14px;
+}
+.point-iframe iframe {
+  margin: 20px 0 60px;
+}
+
 /* 모바일 아이봇챗 */
 .chat-open {
   display: none;
