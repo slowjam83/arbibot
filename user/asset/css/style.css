@@ -1348,26 +1348,20 @@ p.time-info {
   margin: 20px 0 60px;
 }
 
-.jobs .section {
-  text-align: left;
-}
-.jobs .sec-01 .banner {
+.recruit-banner {
   width: 100%;
   height: 300px;
   padding: 90px 50px 50px 60px;
-  background: url("/img/jobs/jobs_banner.png") no-repeat 100% 100%;
+  background: url("../img/jobs/jobs_banner.png") no-repeat 100% 100%;
 }
-.jobs .sec-01 h2 {
+.recruit-banner h2 {
   margin-bottom: 15px;
   line-height: 42px;
 }
-.jobs .sec-01 h2 span {
+.recruit-banner h2 span {
   font-weight: 600;
 }
-.jobs .sec-02 {
-  padding: 0;
-}
-.jobs .sec-02 ul li {
+.talent li {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1376,45 +1370,45 @@ p.time-info {
   padding-bottom: 80px;
   border-bottom: 1px solid #d4d4d4;
 }
-.jobs .sec-02 ul li:last-child {
+.talent li:last-child {
   margin-bottom: 0;
 }
-.jobs .sec-02 ul li .app-ico {
+.talent li .talent-ico {
   width: 200px;
 }
-.jobs .sec-02 ul li .app-ico img {
+.talent li .talent-ico img {
   width: 100%;
 }
-.jobs .sec-02 ul li .app-text {
+.talent li .talent-text {
   width: 78%;
 }
-.jobs .sec-02 ul li h3 {
+.talent li h3 {
   font-size: 24px;
   margin-bottom: 24px;
 }
-.jobs .sec-02 ul li h3 span {
+.talent li h3 span {
   font-size: 36px;
   font-weight: 600;
   margin-right: 10px;
 }
-.jobs .sec-02 ul li p {
+.talent li p {
   line-height: 24px;
 }
-.jobs .sec-03 .container {
+.welfare {
   display: flex;
   justify-content: space-between;
 }
-.jobs .sec-03 ul {
+.welfare ul {
   padding-left: 160px;
 }
-.jobs .sec-03 ul li {
+.welfare ul li {
   width: calc(50% - 40px);
   float: left;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
 }
-.jobs .sec-03 ul li:nth-child(odd) {
+.welfare ul li:nth-child(odd) {
   margin-right: 80px;
 }
 .welfare-img {
@@ -2744,7 +2738,7 @@ Media Query
     width: calc(100% - 36px);
   }
 
-  .jobs .sec-02 ul li .app-text {
+  .talent li .talent-text {
     width: 72%;
   }
 }
@@ -2790,23 +2784,23 @@ Media Query
     width: 100%;
     margin-bottom: 20px;
   }
-  .jobs .sec-01 .banner {
+  .jobs .sec-01 .recruit-banner {
     height: 300px;
     background: url("/img/jobs/jobs_banner.png") no-repeat 100% 100%, #f4f4f4;
     background-size: contain;
     padding: 30px;
   }
-  .jobs .sec-02 ul li .app-text {
+  .talent li .talent-text {
     width: 68%;
   }
 
-  .jobs .sec-03 {
+  .welfare {
     padding: 100px 0 0;
   }
-  .jobs .sec-03 ul {
+  .welfare ul {
     padding-left: 100px;
   }
-  .jobs .sec-03 ul li {
+  .welfare ul li {
     display: block;
     text-align: center;
   }
@@ -2819,45 +2813,45 @@ Media Query
   .partners ul {
     grid-template-columns: repeat(2, 1fr);
   }
-  .jobs .sec-02 ul li {
+  .talent li {
     display: block;
     justify-content: center;
     align-items: center;
   }
-  .jobs .sec-02 ul li .app-ico {
+  .talent li .talent-ico {
     margin: 0 auto 20px;
   }
-  .jobs .sec-02 ul li .app-text {
+  .talent li .talent-text {
     width: 100%;
     text-align: center;
   }
-  .jobs .sec-02 ul li p {
+  .talent li p {
     width: 80%;
     margin: 0 auto;
   }
 
-  .jobs .sec-03 .container {
+  .welfare {
     display: block;
     justify-content: center;
   }
-  .jobs .sec-03 .container h2 {
+  .welfare h2 {
     margin-bottom: 80px;
     text-align: center;
   }
-  .jobs .sec-03 ul {
+  .welfare ul {
     padding-left: 0;
   }
-  .jobs .sec-03 ul li {
+  .welfare ul li {
     width: 100%;
     float: none;
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid #d4d4d4;
   }
-  .jobs .sec-03 ul li:nth-child(odd) {
+  .welfare ul li:nth-child(odd) {
     margin-right: 0;
   }
-  .jobs .sec-03 ul li:last-child {
+  .welfare ul li:last-child {
     border: 0;
     margin-bottom: 0; /*padding-bottom:0;*/
   }
@@ -3275,7 +3269,7 @@ Media Query
     padding: 5px 15px 0;
   }
 
-  .jobs .sec-01 .banner {
+  .jobs .sec-01 .recruit-banner {
     height: 360px;
   }
   .jobs .sec-01 h2 {
