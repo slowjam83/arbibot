@@ -2933,7 +2933,7 @@ Media Query
     padding: 0 20px;
   }
 
-  .accordion > .card {
+  .accordion .card {
     overflow: hidden;
     position: relative;
     display: -ms-flexbox;
@@ -2947,22 +2947,22 @@ Media Query
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
   }
-  .accordion > .card:first-child {
+  .accordion .card:first-child {
     margin-top: 100px;
   }
-  .accordion > .card:last-child {
+  .accordion .card:last-child {
     margin-bottom: 100px;
   }
-  .accordion > .card:not(:first-of-type) {
+  .accordion .card:not(:first-of-type) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .accordion > .card:not(:last-of-type) {
+  .accordion .card:not(:last-of-type) {
     border-bottom: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .accordion > .card > .card-header {
+  .accordion .card .card-header {
     border-radius: 0;
     margin-bottom: -1px;
   }
