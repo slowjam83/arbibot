@@ -1419,11 +1419,11 @@ board
 .accordion .card .card-header {
   border-radius: 0;
   margin-bottom: -1px;
-}
-.card-header {
-  padding: 14px 20px;
+  padding: 14px 40px 14px 20px;
   margin-bottom: 0;
   border-bottom: 1px solid #ebebeb;
+  background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
+  background-size: 13px 8px;
 }
 .card-header .btn-link {
   background: none;
@@ -3025,6 +3025,14 @@ Media Query
   .revenue-wrap,
   .how-to {
     padding: 0 20px;
+  }
+
+  .accordion {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .card-header {
+    padding: 14px 40px 14px 0;
   }
 
   .board-list-wrap {
