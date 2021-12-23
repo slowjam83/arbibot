@@ -1415,9 +1415,9 @@ p.time-info {
   line-height: 24px;
 }
 .welfare ul {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 100px;
   gap: 40px 100px;
 }
 .welfare ul li {
