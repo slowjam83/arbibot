@@ -1382,6 +1382,84 @@ p.time-info {
 /*============================================================
 board
 =============================================================*/
+.accordion .card {
+  overflow: hidden;
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion .card:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordion .card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion .card .card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+.card-header {
+  padding: 15px;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-header .btn-link {
+  background: none;
+  width: 100%;
+  cursor: pointer;
+}
+.card-header p {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-header .question-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-header .date {
+  color: #888;
+  font-size: 16px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 30px 46px;
+  text-align: left;
+  line-height: 26px;
+  word-break: keep-all;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 .search-wrap {
   display: flex;
   justify-content: flex-end;
@@ -2932,84 +3010,6 @@ Media Query
   .revenue-wrap,
   .how-to {
     padding: 0 20px;
-  }
-
-  .accordion .card {
-    overflow: hidden;
-    position: relative;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-  }
-  .accordion .card:not(:first-of-type) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .accordion .card:not(:last-of-type) {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .accordion .card .card-header {
-    border-radius: 0;
-    margin-bottom: -1px;
-  }
-  .card-header {
-    padding: 15px;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  }
-  .card-header .btn-link {
-    background: none;
-    width: 100%;
-    cursor: pointer;
-  }
-  .card-header p {
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .card-header .question-text {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .card-header .date {
-    color: #888;
-    font-size: 16px;
-  }
-
-  .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 30px 46px;
-    text-align: left;
-    line-height: 26px;
-    word-break: keep-all;
-  }
-
-  .collapse:not(.show) {
-    display: none;
-  }
-  .collapsing {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.35s ease;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .collapsing {
-      transition: none;
-    }
   }
 
   .board-list-wrap {
