@@ -1398,10 +1398,14 @@ board
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion .card:not(:first-of-type) {
+  border-right: 0;
+  border-left: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 .accordion .card:not(:last-of-type) {
+  border-right: 0;
+  border-left: 0;
   border-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
