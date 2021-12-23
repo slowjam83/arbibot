@@ -1421,9 +1421,8 @@ board
   margin-bottom: -1px;
   padding: 14px 40px 14px 20px;
   margin-bottom: 0;
-  border-bottom: 1px solid #ebebeb;
-  background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
-  background-size: 13px 8px;
+  background: url(../img/board-list-arrow.svg) no-repeat calc(100% -20px) 50%;
+  background-size: 20px 12px;
 }
 .card-header .btn-link {
   background: none;
@@ -3031,10 +3030,21 @@ Media Query
     padding: 0 20px;
     margin-top: 20px;
   }
-  .card-header {
+  .accordion .card .card-header {
     padding: 14px 40px 14px 0;
   }
-
+  .accordion .card .card-header {
+    background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
+  }
+  .card-header p {
+    display: block;
+    text-align: left;
+  }
+  .card-header .question-text {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
   .board-list-wrap {
     padding: 0 20px;
   }
