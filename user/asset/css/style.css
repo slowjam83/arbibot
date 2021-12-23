@@ -2947,12 +2947,6 @@ Media Query
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
   }
-  .accordion .card:first-child {
-    margin-top: 100px;
-  }
-  .accordion .card:last-child {
-    margin-bottom: 100px;
-  }
   .accordion .card:not(:first-of-type) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
