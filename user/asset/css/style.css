@@ -2622,7 +2622,7 @@ Media Query
     margin-bottom: 0;
   }
   .recruit-banner {
-    padding-top: 65px 40px 0 40px;
+    padding: 65px 40px 0 40px;
     background-size: contain;
   }
   .recruit-banner h2 {
