@@ -1417,6 +1417,7 @@ p.time-info {
 }
 .welfare {
   padding: 0 60px;
+  margin-bottom: 60px;
 }
 .welfare .tit-head h2 {
   font-size: 36px;
@@ -2624,7 +2625,7 @@ Media Query
   }
   .recruit-banner {
     height: 200px;
-    padding: 65px 40px 0 40px;
+    padding: 45px 40px 0 40px;
     background-size: cover;
   }
   .recruit-banner h2 {
