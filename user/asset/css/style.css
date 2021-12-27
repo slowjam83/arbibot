@@ -226,6 +226,22 @@ a.point-font {
 a.point-font2 {
   color: #0099cc;
 }
+.point-font3,
+a.point-font3 {
+  color: #ee7700;
+}
+.point-font4,
+a.point-font4 {
+  color: #3eb134;
+}
+.point-font5,
+a.point-font5 {
+  color: #f8b500;
+}
+.point-font6,
+a.point-font6 {
+  color: #108ccf;
+}
 .disabled-font,
 a.disabled-font {
   color: #888;
@@ -2747,6 +2763,9 @@ Media Query
   .welfare-img {
     width: 80px;
   }
+  .welfare-text {
+    width: calc(100% - 140px);
+  }
 }
 
 @media (max-width: 1280px) {
@@ -2801,6 +2820,7 @@ Media Query
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0 80px;
+    text-align: center;
   }
   .talent li .talent-text {
     width: 72%;
@@ -2810,6 +2830,9 @@ Media Query
   }
   .welfare-img {
     margin-right: 40px;
+  }
+  .welfare-text {
+    width: calc(100% - 120px);
   }
 }
 
@@ -2832,7 +2855,7 @@ Media Query
   .talent li {
     display: block;
     margin-bottom: 60px;
-    padding: 0 60px 60px;
+    padding: 0 40px 60px;
     text-align: center;
   }
   .talent li .talent-ico {
@@ -2841,6 +2864,9 @@ Media Query
   .talent li .talent-text {
     width: 100%;
     margin-top: 20px;
+  }
+  .talent li h3 {
+    line-height: 1.4;
   }
 }
 
