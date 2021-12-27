@@ -101,14 +101,8 @@
         });
 
         //nav-bottom 링크
-        $(".nav-bottom li:nth-child(n)").click(function (e) {
-          var arrLink = ["./associate.html", "./recruit.html"];
-
-          var i = $(this).index();
-
-          for (var i2 = 0; i2 < arrLink.length; i2++) {
-            $(".section").load(arrLink[i]);
-          }
+        $(".nav-bottom li:nth-child(2)").click(function (e) {
+          $(".section").load("./recruit.html");
         });
 
         //모바일 아비봇챗 버튼
