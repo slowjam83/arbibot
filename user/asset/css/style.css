@@ -2805,6 +2805,26 @@ Media Query
   .comment-write textarea {
     padding: 15px 20px 113px 20px;
   }
+  .recruit-banner {
+    height: 300px;
+    background: url("../img/jobs/jobs_banner.png") no-repeat 100% 0, #f4f4f4;
+    background-size: contain;
+    padding: 30px 40px;
+    margin: 20px 0;
+  }
+  .talent li {
+    display: block;
+    margin-bottom: 60px;
+    padding: 0 60px 60px;
+    text-align: center;
+  }
+  .talent li .talent-ico {
+    display: inline-block;
+  }
+  .talent li .talent-text {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 996px) {
