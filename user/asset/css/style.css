@@ -2741,6 +2741,12 @@ Media Query
   .welfare ul {
     grid-template-columns: repeat(1, 1fr);
   }
+  .welfare ul li {
+    align-items: center;
+  }
+  .welfare-img {
+    width: 80px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -2791,9 +2797,19 @@ Media Query
   .board-list-abb li a div p {
     width: calc(100% - 36px);
   }
-
+  .talent li {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 80px;
+  }
   .talent li .talent-text {
     width: 72%;
+  }
+  .welfare {
+    padding: 0 40px;
+  }
+  .welfare-img {
+    margin-right: 40px;
   }
 }
 
