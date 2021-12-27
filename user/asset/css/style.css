@@ -2860,6 +2860,7 @@ Media Query
   }
   .talent li .talent-ico {
     display: inline-block;
+    width: 120px;
   }
   .talent li .talent-text {
     width: 100%;
@@ -2895,78 +2896,9 @@ Media Query
   }
   .recruit-banner {
     height: 300px;
-    background: url("/img/jobs/jobs_banner.png") no-repeat 100% 0, #f4f4f4;
+    background: url("../img/jobs/jobs_banner.png") no-repeat 100% 100%, #f4f4f4;
     background-size: contain;
     padding: 30px;
-  }
-  .talent li .talent-text {
-    width: 68%;
-  }
-
-  .welfare {
-    padding: 100px 0 0;
-  }
-  .welfare ul {
-    padding-left: 100px;
-  }
-  .welfare ul li {
-    display: block;
-    text-align: center;
-  }
-  .welfare-img {
-    margin: 0 0 20px;
-  }
-}
-
-@media (max-width: 850px) {
-  .partners ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .talent li {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .talent li .talent-ico {
-    margin: 0 auto 20px;
-  }
-  .talent li .talent-text {
-    width: 100%;
-    text-align: center;
-  }
-  .talent li p {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .welfare {
-    display: block;
-    justify-content: center;
-  }
-  .welfare h2 {
-    margin-bottom: 80px;
-    text-align: center;
-  }
-  .welfare ul {
-    padding-left: 0;
-  }
-  .welfare ul li {
-    width: 100%;
-    float: none;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #d4d4d4;
-  }
-  .welfare ul li:nth-child(odd) {
-    margin-right: 0;
-  }
-  .welfare ul li:last-child {
-    border: 0;
-    margin-bottom: 0; /*padding-bottom:0;*/
-  }
-  .welfare-text p {
-    width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -3378,11 +3310,11 @@ Media Query
     padding: 5px 15px 0;
   }
 
-  .jobs .sec-01 .recruit-banner {
-    height: 360px;
-  }
-  .jobs .sec-01 h2 {
-    font-size: 30px;
+  .recruit-banner {
+    width: calc(100% - 40px);
+    height: 320px;
+    margin: 20px;
+    padding: 20px;
   }
 
   .rightSection {
