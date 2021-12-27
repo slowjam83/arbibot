@@ -1435,7 +1435,11 @@ p.time-info {
   justify-content: flex-start;
 }
 .welfare-img {
+  width: 120px;
   margin-right: 30px;
+}
+.welfare-text {
+  width: calc(100% - 150px);
 }
 .welfare-text h4 {
   font-size: 24px;
