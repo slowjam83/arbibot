@@ -1394,6 +1394,9 @@ p.time-info {
 .recruit-banner p a {
   color: #333;
 }
+.recruit-full-img {
+  width: 100%;
+}
 .talent {
   margin: 60px 0;
 }
@@ -2866,9 +2869,6 @@ Media Query
     width: 100%;
     margin-top: 20px;
   }
-  .talent li h3 {
-    line-height: 1.4;
-  }
 }
 
 @media (max-width: 996px) {
@@ -3315,6 +3315,19 @@ Media Query
     height: 320px;
     margin: 20px;
     padding: 20px;
+  }
+  .recruit-full-img {
+    display: block;
+    padding: 0 20px;
+  }
+  .talent li h3 {
+    line-height: 1.4;
+  }
+  .talent li h3 span {
+    display: block;
+  }
+  .welfare ul li {
+    align-items: flex-start;
   }
 
   .rightSection {
