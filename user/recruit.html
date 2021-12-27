@@ -173,7 +173,11 @@
       );
   }
 
-  $(".recruit-full-img").on("click", function () {
-    simpleLightbox($(this).attr("src"));
+  $(window).resize(function () {
+    if ($(window).width() > 768) {
+      $(".recruit-full-img").on("click", function () {
+        simpleLightbox($(this).attr("src"));
+      });
+    }
   });
 </script>
