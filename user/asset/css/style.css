@@ -2724,7 +2724,11 @@ Media Query
     grid-template-columns: repeat(2, 1fr);
   }
   .recruit-banner {
-    padding: 50px 40px 0 40px;
+    height: 300px;
+    background: url("../img/jobs/jobs_banner.png") no-repeat 100% 100%, #f4f4f4;
+    background-size: contain;
+    padding: 30px 40px;
+    margin: 20px 0;
   }
   .recruit-banner h2 {
     line-height: 32px;
@@ -2804,13 +2808,6 @@ Media Query
   }
   .comment-write textarea {
     padding: 15px 20px 113px 20px;
-  }
-  .recruit-banner {
-    height: 300px;
-    background: url("../img/jobs/jobs_banner.png") no-repeat 100% 0, #f4f4f4;
-    background-size: contain;
-    padding: 30px 40px;
-    margin: 20px 0;
   }
   .talent li {
     display: block;
