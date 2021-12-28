@@ -62,13 +62,9 @@
                 './advertising.html',
                 './point.html',
                 './api.html',
-                './board_list.html',
-                './board_list.html',
                 './push.html',
                 './member.html',
-                './login.html',
-                './board_view.html',
-                './board_write.html'
+                './login.html'
             ];
 
             $('.nav-top li:nth-child(n)').click(function(e) {
@@ -82,7 +78,7 @@
             });
 
             $('#login').click(function(e) {
-                $('body').load(arrLink[10]);
+                $('body').load(arrLink[8]);
             });
 
             $('#payGo').click(function(e) {
@@ -94,15 +90,7 @@
             });
 
             $('#memGo').click(function(e) {
-                $('.section').load(arrLink[9]);
-            });
-
-            $('#boardView').click(function(e) {
-                $('.section').load(arrLink[11]);
-            });
-
-            $('#boardwrite').click(function(e) {
-                $('.section').load(arrLink[12]);
+                $('.section').load(arrLink[7]);
             });
 
             //파일업로드 삭제
