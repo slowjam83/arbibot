@@ -535,10 +535,10 @@ main(대시보드)
     content: '+';
     margin-right: 5px
 }
-.trading-vol th, .trading-vol td:first-child, .other-statistics th {
+.trading-vol th:first-child, .trading-vol td:first-child, .other-statistics th, .other-statistics td {
     text-align: center
 }
-.trading-vol td, .other-statistics td {
+.trading-vol th:not(:first-child), .trading-vol td {
     text-align: right
 }
 .other-statistics {
