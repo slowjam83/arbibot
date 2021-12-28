@@ -1,65 +1,113 @@
 <div class="container scroll">
   <div class="contentsArea">
     <div class="payment">
+      <!-- 회원 가입 현황 -->
+      <table class="mb60">
+        <caption class="hidden">가입 현황</caption>
+        <thead>
+          <tr>
+            <th>가입일</th>
+            <th>카카오톡</th>
+            <th>네이버</th>
+            <th>총 가입자 수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>당일</td>
+            <td>230</td>
+            <td>120</td>
+            <td>350</td>
+          </tr>
+          <tr>
+            <td>전일</td>
+            <td>180</td>
+            <td>75</td>
+            <td>255</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- //회원 가입 현황 -->
       <div class="tit-head flex-between">
         <form method="post" action="/">
           <fieldset class="flex-end">
             <legend class="hidden">회원 조회</legend>
             <label for="mdNick"></label>
-            <input
-              type="text"
-              name="mdNick"
-              id=""
-              value="회원 닉네임"
-              class="ml5"
-            />
-            <button type="submit" id="daySearch_action" class="small-btn ml5">
-              조회
-            </button>
+            <input type="text" name="mdNick" id="mdNick" value="회원 닉네임" class="ml5" />
+            <button type="submit" id="daySearch_action" class="small-btn ml5">조회</button>
           </fieldset>
         </form>
       </div>
-      <table>
+      <!-- 회원 리스트 -->
+      <table class="mbrList">
+        <caption class="hidden">회원 리스트</caption>
+        <colgroup>
+          <col width="120" />
+        </colgroup>
         <thead>
           <tr>
             <th>번호</th>
-            <th>일시</th>
-            <th>결제 방법</th>
-            <th>회원</th>
-            <th>금액</th>
+            <th>UID</th>
+            <th>닉네임</th>
+            <th>가입경로</th>
+            <th>구분</th>
+            <th>가입일</th>
+            <th>최근 로그인</th>
+            <th>상태</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>4</td>
-            <td>2021.12.25 14:32</td>
-            <td>신용카드</td>
-            <td>na790829@hanmail.net</td>
-            <td>110,000</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>2021.12.25 14:32</td>
-            <td>무통장입금</td>
-            <td>na790829@hanmail.net</td>
-            <td>55,000</td>
-          </tr>
-          <tr>
             <td>2</td>
-            <td>2021.12.25 14:32</td>
-            <td>휴대폰</td>
-            <td>na790829@hanmail.net</td>
-            <td>11,000</td>
+            <td>UID</td>
+            <td>
+              <a href="./memberDetail.html" target="_self" class="mbrNick">닉네임</a>
+            </td>
+            <td>카카오톡</td>
+            <td>일반</td>
+            <td>2021-10-21 18:36:12</td>
+            <td>2021-10-21 18:36:12</td>
+            <td>정상</td>
           </tr>
-          <tr>
+          <tr class="block">
             <td>1</td>
-            <td>2021.12.25 14:32</td>
-            <td>신용카드</td>
-            <td>na790829@hanmail.net</td>
-            <td>110,000</td>
+            <td>UID</td>
+            <td>
+                <a href="./memberDetail.html" target="_self" class="mbrNick">닉네임</a>
+            </td>
+            <td>시스템</td>
+            <td>제휴운영</td>
+            <td>2021-10-21 18:36:12</td>
+            <td>2021-10-21 18:36:12</td>
+            <td>제한</td>
           </tr>
         </tbody>
       </table>
+
+      <!-- 검색 결과 없음 -->
+      <!-- <table class="mbrList mbrResultNone">
+        <colgroup>
+        <col width="120">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>UID</th>
+            <th>닉네임</th>
+            <th>가입경로</th>
+            <th>구분</th>
+            <th>가입일</th>
+            <th>최근 로그인</th>
+            <th>상태</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="8">입력한 닉네임의 회원이 없습니다.</td>
+        </tr>
+        </tbody>
+        </table> -->
+      <!-- 검색 결과 없음 -->
 
       <!-- 페이징 버튼 -->
       <ul class="pagination">
@@ -85,32 +133,3 @@
     </div>
   </div>
 </div>
-<!-- 회원 가입 현황 -->
-<table class="mb60">
-  <caption class="hidden">
-    가입 현황
-  </caption>
-  <thead>
-    <tr>
-      <th>가입일</th>
-      <th>카카오톡</th>
-      <th>네이버</th>
-      <th>총 가입자 수</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>당일</td>
-      <td>230</td>
-      <td>120</td>
-      <td>350</td>
-    </tr>
-    <tr>
-      <td>전일</td>
-      <td>180</td>
-      <td>75</td>
-      <td>255</td>
-    </tr>
-  </tbody>
-</table>
-<!-- //회원 가입 현황 -->
