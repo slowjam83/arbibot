@@ -650,7 +650,10 @@ member(회원)
     color: #4341ce !important;
     text-decoration: underline !important
 }
-
+table.basic th, table.basic td {
+    text-align: left;
+    border-top: 1px solid #efefef;
+}
 
 /*============================================================
 board
