@@ -501,6 +501,20 @@ main(대시보드)
     padding: 33px 40px 40px;
     background: #fff
 }
+.contentsArea table {
+    border-bottom: 1px solid #efefef;
+    margin-top: 10px
+}
+.contentsArea th, .contentsArea td {
+    text-align: center
+}
+.contentsArea th {
+    border-right: 0;
+    border-left: 0
+}
+.contentsArea td {
+    border: 0
+}
 .tit-head h2 {
     font-size: 20px;
     margin-bottom: 20px
@@ -540,20 +554,6 @@ main(대시보드)
 /*============================================================
 payment(결제)
 =============================================================*/
-.payment table {
-    border-bottom: 1px solid #efefef;
-    margin-top: 10px
-}
-.payment th, .payment td {
-    text-align: center
-}
-.payment th {
-    border-right: 0;
-    border-left: 0
-}
-.payment td {
-    border: 0
-}
 .payment td:last-child {
     text-align: right
 }
