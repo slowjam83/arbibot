@@ -1,0 +1,62 @@
+<div class="container scroll">
+    <div class="contentsArea">
+      <div>
+        <!-- 회원 일반 정보 -->
+        <div class="tit-head">
+            <h2>회원 일반 정보</h2>
+        </div>
+        <table class="basic mb60">
+            <caption class="hidden">기본 정보</caption>
+            <tbody>
+                <tr>
+                    <th>UID</th>
+                    <td>8f7as6d0976f</td>
+                    <th>상태</th>
+                    <td>정상 <a href="javascript:void(0);" data-toggle="modal" data-target="#modalMbrstate" class="btn btn_s">관리</a></td>
+                </tr>
+                <tr>
+                    <th>가입일</th>
+                    <td>2021-10-21 18:36:12</td>
+                    <th>최근 로그인</th>
+                    <td>2021-10-21 18:36:12</td>
+                </tr>
+                <tr>
+                    <th>닉네임</th>
+                    <td>슈니꿍</td>
+                    <th>보유 포인트</th>
+                    <td><span>0</span> point</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- //회원 일반 정보 -->
+        
+        <!-- 회원 상태 변경 팝업 -->
+        <div class="modal fade" id="modalMbrstate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>회원 상태 변경</h3>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>                        
+                                UID : <span id="mbrUid" class="ml10">U478503</span>
+                            </li>
+                            <li>
+                                회원의 상태를 <span id="" class="warring">제한</span>으로 변경하시겠습니까?
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group">
+                            <button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>
+                            <button type="submit" id="mbrState_action" class="btn btn_submit">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //회원 상태 변경 팝업 -->
+      </div>
+    </div>
+  </div>
