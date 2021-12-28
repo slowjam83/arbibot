@@ -64,6 +64,7 @@
                 './api.html',
                 './push.html',
                 './member.html',
+                './memberDetail.html',
                 './login.html'
             ];
 
@@ -78,7 +79,7 @@
             });
 
             $('#login').click(function(e) {
-                $('body').load(arrLink[8]);
+                $('body').load(arrLink[9]);
             });
 
             $('#payGo').click(function(e) {
@@ -93,10 +94,16 @@
                 $('.section').load(arrLink[3]);
             });
 
-            $('#memGo, .mbrNick').click(function(e) {
+            $('#memGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[7]);
+            });
+
+            $('.mbrNick').click(function(e) {
+                $('.nav-top li').removeClass('on');
+                $('.nav-top li:nth-child(8)').addClass('on');
+                $('.section').load(arrLink[8]);
             });
 
             //파일업로드 삭제
