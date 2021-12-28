@@ -65,10 +65,10 @@ th {
 tr {
     transition: all .3s ease
 }
-tr:hover, tr:focus {
+/* tr:hover, tr:focus {
     background: #f6f6fd;
     transition: all .3s ease
-}
+} */
 td {
     font-weight: 400
 }
