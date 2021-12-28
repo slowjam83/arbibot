@@ -1,0 +1,116 @@
+<div class="container scroll">
+  <div class="contentsArea">
+    <div class="payment">
+      <div class="tit-head flex-between">
+        <form method="post" action="/">
+          <fieldset class="flex-end">
+            <legend class="hidden">회원 조회</legend>
+            <label for="mdNick"></label>
+            <input
+              type="text"
+              name="mdNick"
+              id=""
+              value="회원 닉네임"
+              class="ml5"
+            />
+            <button type="submit" id="daySearch_action" class="small-btn ml5">
+              조회
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>일시</th>
+            <th>결제 방법</th>
+            <th>회원</th>
+            <th>금액</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4</td>
+            <td>2021.12.25 14:32</td>
+            <td>신용카드</td>
+            <td>na790829@hanmail.net</td>
+            <td>110,000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2021.12.25 14:32</td>
+            <td>무통장입금</td>
+            <td>na790829@hanmail.net</td>
+            <td>55,000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2021.12.25 14:32</td>
+            <td>휴대폰</td>
+            <td>na790829@hanmail.net</td>
+            <td>11,000</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2021.12.25 14:32</td>
+            <td>신용카드</td>
+            <td>na790829@hanmail.net</td>
+            <td>110,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 페이징 버튼 -->
+      <ul class="pagination">
+        <li class="first">
+          <a href="javascript:void(0);" class="hidden">first</a>
+        </li>
+        <li class="prev">
+          <a href="javascript:void(0);" class="hidden">prev</a>
+        </li>
+        <li class="active"><a href="javascript:void(0);">1</a></li>
+        <li><a href="javascript:void(0);">2</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+        <li><a href="javascript:void(0);">4</a></li>
+        <li><a href="javascript:void(0);">5</a></li>
+        <li class="page-item next">
+          <a href="javascript:void(0);" class="hidden">next</a>
+        </li>
+        <li class="page-item last">
+          <a href="javascript:void(0);" class="hidden">last</a>
+        </li>
+      </ul>
+      <!-- //페이징 버튼 -->
+    </div>
+  </div>
+</div>
+<!-- 회원 가입 현황 -->
+<table class="mb60">
+  <caption class="hidden">
+    가입 현황
+  </caption>
+  <thead>
+    <tr>
+      <th>가입일</th>
+      <th>카카오톡</th>
+      <th>네이버</th>
+      <th>총 가입자 수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>당일</td>
+      <td>230</td>
+      <td>120</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>전일</td>
+      <td>180</td>
+      <td>75</td>
+      <td>255</td>
+    </tr>
+  </tbody>
+</table>
+<!-- //회원 가입 현황 -->
