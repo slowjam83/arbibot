@@ -75,7 +75,6 @@
                     $('.nav-top li').removeClass('on');
                     $(this).addClass('on');
                     $('.section').load(arrLink[i]);
-                    return false;
                 };
             });
 
@@ -83,7 +82,7 @@
                 $('body').load(arrLink[9]);
             });
             
-            $('#payGo').click(function(e) {
+            $('#payGo').on('click', function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').load(arrLink[2]);
