@@ -81,12 +81,13 @@
             $('#login').click(function(e) {
                 $('body').load(arrLink[9]);
             });
-
-            function payGo(){
+            
+            $('#payGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
-                $('.section').load('./payment.html');
-            };
+                $('.section').load(arrLink[2]);
+                return;
+            });
 
             $('#adGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
@@ -105,8 +106,6 @@
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[8]);
             });
-
-            return;
 
             //파일업로드 삭제
             function reset_field(e) {
