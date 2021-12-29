@@ -83,10 +83,9 @@
             });
             
             $('#payGo').click(function(e) {
-                $('.nav-top li').removeClass('on');
-                $('.nav-top li:nth-child(3)').addClass('on');
-                $('.section').load(arrLink[2]);
-                return;
+                //$('.nav-top li').removeClass('on');
+                //$('.nav-top li:nth-child(3)').addClass('on');
+                $('body').load(arrLink[2]);
             });
 
             $('#adGo').click(function(e) {
