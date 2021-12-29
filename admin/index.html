@@ -78,29 +78,29 @@
                 };
             });
 
-            $('#login').click(function() {
+            $('#login').click(function(e) {
                 $('body').load(arrLink[9]);
             });
 
-            $('#payGo').click(function() {
+            $('#payGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').load(arrLink[2]);
             });
 
-            $('#adGo').click(function() {
+            $('#adGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(4)').addClass('on');
                 $('.section').load(arrLink[3]);
             });
 
-            $('#memGo').click(function() {
+            $('#memGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[7]);
             });
 
-            $('.mbrNick').click(function() {
+            $('.mbrNick').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[8]);
