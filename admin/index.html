@@ -54,7 +54,6 @@
 
     <script>
         w3.includeHTML(function() {
-            $(document).ready(function(){
             //nav, 더보기, 로그인 링크
             var arrLink = [
                 './main.html',
@@ -82,14 +81,14 @@
             $('#login').click(function(e) {
                 $('body').load(arrLink[9]);
             });
-            
-            $('#payGo').on('click', 'a', function(e) {
+
+            $('#payGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').load(arrLink[2]);
             });
 
-            /* $('#adGo').click(function(e) {
+            $('#adGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(4)').addClass('on');
                 $('.section').load(arrLink[3]);
@@ -105,7 +104,7 @@
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[8]);
-            }); */
+            });
 
             //파일업로드 삭제
             function reset_field(e) {
@@ -113,7 +112,6 @@
                 e.unwrap();
             };
         });
-    });
     </script>
 </body>
 
