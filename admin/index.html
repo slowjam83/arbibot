@@ -75,41 +75,35 @@
                     $('.nav-top li').removeClass('on');
                     $(this).addClass('on');
                     $('.section').load(arrLink[i]);
-                    return false;
                 };
             });
 
-            $('#login').click(function(e) {
+            $('#login').click(function() {
                 $('body').load(arrLink[9]);
-                return false;
             });
 
-            $('#payGo').click(function() {
+            $('#payGo').live('click', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').load(arrLink[2]);
-                return false;
             });
 
-            $('#adGo').click(function() {
+            $('#adGo').live('click', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(4)').addClass('on');
                 $('.section').load(arrLink[3]);
-                return false;
             });
 
-            $('#memGo').click(function() {
+            $('#memGo').live('click', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[7]);
-                return false;
             });
 
-            $('.mbrNick').click(function() {
+            $('.mbrNick').live('click', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
                 $('.section').load(arrLink[8]);
-                return false;
             });
 
             //파일업로드 삭제
