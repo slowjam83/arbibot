@@ -53,12 +53,6 @@
     <div class="fakeLoader"></div>
 
     <script>
-        $('#payGo').click(function() {
-            $('.nav-top li').removeClass('on');
-            $('.nav-top li:nth-child(3)').addClass('on');
-            $('.section').load('./payment.html');
-        });
-
         w3.includeHTML(function() {
             //nav, 더보기, 로그인 링크
             var arrLink = [
@@ -88,11 +82,11 @@
                 $('body').load(arrLink[9]);
             });
 
-            /* $('#payGo').click(function(e) {
+            $('#payGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').load(arrLink[2]);
-            }); */
+            });
 
             $('#adGo').click(function(e) {
                 $('.nav-top li').removeClass('on');
