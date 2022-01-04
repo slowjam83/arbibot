@@ -82,7 +82,7 @@
                 $('body').load(arrLink[9]);
             });
 
-            w3.on('click', '#payGo', function() {
+            $('#payGo').on('click', function(e) {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
                 $('.section').includeHTML(arrLink[2]);
