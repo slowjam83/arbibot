@@ -53,67 +53,71 @@
     <div class="fakeLoader"></div>
 
     <script>
-        window.onload = function() {
-            w3.includeHTML(function() {
-                //nav, 더보기, 로그인 링크
-                var arrLink = [
-                    './main.html',
-                    './tradingVol.html',
-                    './payment.html',
-                    './advertising.html',
-                    './point.html',
-                    './api.html',
-                    './push.html',
-                    './member.html',
-                    './memberDetail.html',
-                    './login.html'
-                ];
+        w3.includeHTML(function() {
+            //nav, 더보기, 로그인 링크
+            var arrLink = [
+                './main.html',
+                './tradingVol.html',
+                './payment.html',
+                './advertising.html',
+                './point.html',
+                './api.html',
+                './push.html',
+                './member.html',
+                './memberDetail.html',
+                './login.html'
+            ];
 
-                $('.nav-top li:nth-child(n)').click(function(e) {
-                    var i = $(this).index();
+            $('.nav-top li:nth-child(n)').click(function(e) {
+                var i = $(this).index();
 
-                    for (var i2 = 0; i2 < arrLink.length; i2++) {
-                        $('.nav-top li').removeClass('on');
-                        $(this).addClass('on');
-                        $('.section').load(arrLink[i]);
-                    };
-                });
-
-                $('#login').click(function(e) {
-                    $('body').load(arrLink[9]);
-                });
-
-                $('#payGo').click(function() {
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
                     $('.nav-top li').removeClass('on');
-                    $('.nav-top li:nth-child(3)').addClass('on');
-                    $('.section').load(arrLink[2]);
-                });
-
-                $('#adGo').click(function() {
-                    $('.nav-top li').removeClass('on');
-                    $('.nav-top li:nth-child(4)').addClass('on');
-                    //$('.section').load(arrLink[3]);
-                });
-
-                $('#memGo').click(function() {
-                    $('.nav-top li').removeClass('on');
-                    $('.nav-top li:nth-child(8)').addClass('on');
-                    //$('.section').load(arrLink[7]);
-                });
-
-                $('.mbrNick').click(function() {
-                    $('.nav-top li').removeClass('on');
-                    $('.nav-top li:nth-child(8)').addClass('on');
-                    //$('.section').load(arrLink[8]);
-                });
-
-                //파일업로드 삭제
-                function reset_field(e) {
-                    e.wrap('<form>').parent('form').trigger('reset');
-                    e.unwrap();
+                    $(this).addClass('on');
+                    $('.section').load(arrLink[i]);
+                    return false;
                 };
             });
-        };
+
+            $('#login').click(function(e) {
+                $('body').load(arrLink[9]);
+                return false;
+            });
+
+            $('#payGo').click(function() {
+                $('.nav-top li').removeClass('on');
+                $('.nav-top li:nth-child(3)').addClass('on');
+                $('.section').load(arrLink[2]);
+                return false;
+            });
+
+            $('#adGo').click(function() {
+                $('.nav-top li').removeClass('on');
+                $('.nav-top li:nth-child(4)').addClass('on');
+                $('.section').load(arrLink[3]);
+                return false;
+            });
+
+            $('#memGo').click(function() {
+                $('.nav-top li').removeClass('on');
+                $('.nav-top li:nth-child(8)').addClass('on');
+                $('.section').load(arrLink[7]);
+                return false;
+            });
+
+            $('.mbrNick').click(function() {
+                $('.nav-top li').removeClass('on');
+                $('.nav-top li:nth-child(8)').addClass('on');
+                $('.section').load(arrLink[8]);
+                return false;
+            });
+
+            //파일업로드 삭제
+            function reset_field(e) {
+                e.wrap('<form>').parent('form').trigger('reset');
+                e.unwrap();
+            };
+        });
     </script>
 </body>
 
