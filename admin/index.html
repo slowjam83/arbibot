@@ -82,48 +82,28 @@
                 $('body').load(arrLink[9]);
             });
 
-            $('#payGo').on('click', function(e) {
+            $(document).on('click', '#payGo', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
-                $('.section').load(arrLink[2], function(response, status, xhr) {
-                    if (status == "error") {
-                        var msg = "Sorry but there was an error: ";
-                        $("#error").html(msg + xhr.status + " " + xhr.statusText);
-                    }
-                });
+                $('.section').load(arrLink[2]);
             });
 
-            $('#adGo').on('click', function() {
+            $(document).on('click', '#adGo', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(4)').addClass('on');
-                $('.section').load(arrLink[3], function(response, status, xhr) {
-                    if (status == "error") {
-                        var msg = "Sorry but there was an error: ";
-                        $("#error").html(msg + xhr.status + " " + xhr.statusText);
-                    }
-                });
+                $('.section').load(arrLink[3]);
             });
 
-            $('#memGo').on('click', function() {
+            $(document).on('click', '#memGo', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
-                $('.section').load(arrLink[7], function(response, status, xhr) {
-                    if (status == "error") {
-                        var msg = "Sorry but there was an error: ";
-                        $("#error").html(msg + xhr.status + " " + xhr.statusText);
-                    }
-                });
+                $('.section').load(arrLink[7]);
             });
 
-            $('.mbrNick').on('click', function() {
+            $(document).on('click', '.mbrNick', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(8)').addClass('on');
-                $('.section').load(arrLink[8], function(response, status, xhr) {
-                    if (status == "error") {
-                        var msg = "Sorry but there was an error: ";
-                        $("#error").html(msg + xhr.status + " " + xhr.statusText);
-                    }
-                });
+                $('.section').load(arrLink[8]);
             });
 
             //파일업로드 삭제
