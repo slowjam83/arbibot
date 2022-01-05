@@ -15,8 +15,8 @@ body {
     background: #f5f5f5;
 }
 
-.list_disc li {
-    list-style: disc;
+.list_disc li::before {
+    content: 'ㆍ';
 }
 
 .scroll::-webkit-scrollbar {
