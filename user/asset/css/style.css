@@ -17,6 +17,7 @@ body {
 
 .list_disc li::before {
     content: 'ㆍ';
+    padding-left: 15px;
 }
 
 .scroll::-webkit-scrollbar {
@@ -2889,6 +2890,10 @@ modal
 .modal-body ul li label {
     display: inline-block;
     width: 160px;
+}
+
+.modal-body ol li {
+    line-height: 1.4;
 }
 
 .modal-body .input_wrap {
