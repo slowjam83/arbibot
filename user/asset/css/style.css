@@ -314,6 +314,11 @@ a.point-font6 {
     color: #108ccf;
 }
 
+.point-font7,
+a.point-font7 {
+    color: #ee417e
+}
+
 .disabled-font,
 a.disabled-font {
     color: #888;

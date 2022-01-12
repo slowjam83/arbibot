@@ -5,9 +5,7 @@
     <div class="sub-container-head">
         <h1 class="subpage-title">재정거래 봇(일반)</h1>
         <p class="subpage-text">
-            ※ 재정거래 봇(일반)은 거래소간 시세 차이를 이용하여 보유한 가장자산 수량은 유지하고 KRW를 늘리는 봇 입니다.<br>
-            ※ 재정거래 봇(일반)은 거래소간 가장자산 전송 없이 거래소간 시세 차이를 수익화하는 봇 입니다.<br>
-            ※ 재정거래 봇(일반)의 이용이 보유한 가상자산의 시세 상승과 하락에 어떠한 영향도 미치지 않습니다.
+            ※ 재정거래 봇(일반)은 거래소간 시세 차이를 이용하여 보유한 가장자산 수량은 유지하고 KRW를 늘리는 봇 입니다.<br> ※ 재정거래 봇(일반)은 거래소간 가장자산 전송 없이 거래소간 시세 차이를 수익화하는 봇 입니다.<br> ※ 재정거래 봇(일반)의 이용이 보유한 가상자산의 시세 상승과 하락에 어떠한 영향도 미치지 않습니다.
         </p>
     </div>
     <div class="contentsArea">
@@ -104,7 +102,7 @@
                             <ol class="input-wrap">
                                 <li class="slippage">
                                     <div class="checkbox-wrap">
-                                        <input type="checkbox" name="" id=""> 사용 
+                                        <input type="checkbox" name="" id=""> 사용
                                         <span class="check-mark"></span>
                                     </div>
                                     <div class="select-wrap">
@@ -114,16 +112,15 @@
                                             <option value="sec10">10초</option>
                                             <option value="sec30">30초</option>
                                             <option value="sec60">60초</option>
-                                        </select>
-                                        후 미체결 취소 후 거래
+                                        </select> 후 미체결 취소 후 거래
                                     </div>
                                 </li>
                             </ol>
                         </li>
                         <li class="btn-wrap">
-                           <label for="" class="hidden">&nbsp;</label>
-                           <button type="reset" class="large-btn reset-btn">초기화</button>
-                           <button type="submit" class="large-btn">등록</button>
+                            <label for="" class="hidden">&nbsp;</label>
+                            <button type="reset" class="large-btn reset-btn">초기화</button>
+                            <button type="submit" class="large-btn">등록</button>
                         </li>
                     </ul>
                 </fieldset>
@@ -153,7 +150,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="operation">운영</span></td>
+                            <td><span class="point-font2">운영</span></td>
                             <td>BTC(비트코인)</td>
                             <td>업비트<br>빗썸</td>
                             <td>1,000,000 차이</td>
@@ -166,7 +163,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td><span class="check">자산 체크</span></td>
+                            <td><span class="point-font7">자산 체크</span></td>
                             <td>BTC(비트코인)</td>
                             <td>업비트<br>빗썸<br>코인원<br>코빗</td>
                             <td>1,000,000 차이</td>
@@ -194,7 +191,7 @@
                     </tbody>
                 </table>
             </div>
-            
+
             <!-- 페이징 버튼 -->
             <ul class="pagination">
                 <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
@@ -208,26 +205,26 @@
                 <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
             </ul>
             <!-- //페이징 버튼 -->
-        </div>   
+        </div>
     </div>
 </div>
 <script>
     $(document).ready(function() {
         //가상자산 선택 옵션(coin type)
-        var coinType = ['선택','BTC(비트코인)','ETH(이더리움)','XRP(리플)']
-        
-        coinType.forEach(function(i){ //forEach 신문법이기에 babel로 구버전 변환 필요
-           var optionTemp = `<option>${i}</option>` 
-           $('#coinType').append(optionTemp);
-        });        
-        
+        var coinType = ['선택', 'BTC(비트코인)', 'ETH(이더리움)', 'XRP(리플)']
+
+        coinType.forEach(function(i) { //forEach 신문법이기에 babel로 구버전 변환 필요
+            var optionTemp = `<option>${i}</option>`
+            $('#coinType').append(optionTemp);
+        });
+
         //테이블 가로 마우스 스크롤링
         $('.table-wrap.scroll').mousewheel(function(e, delta) {
             this.scrollLeft -= (delta * 50);
             e.preventDefault();
         });
     });
-    
+
     $(document).on('focus keyup blur', 'input[inputmode=numeric]', function(event) {
         this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
         this.value = this.value.replace(/,/g, ''); // ,값 공백처리
