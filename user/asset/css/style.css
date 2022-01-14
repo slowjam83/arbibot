@@ -288,6 +288,12 @@ input[type="radio"]:checked~.radio {
     font-size: 14px;
 }
 
+a.pointUnderLine,
+.pointUnderLine {
+    color: #4341ce;
+    text-decoration: underline;
+}
+
 .point-font,
 a.point-font {
     color: #4341ce;
@@ -3460,9 +3466,7 @@ Media Query
         color: #888;
         display: none;
     }
-    a.before-login span,
-    a.pointUnderLine,
-    .pointUnderLine {
+    a.before-login span {
         color: #4341ce;
         text-decoration: underline;
     }
