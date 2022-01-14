@@ -3461,8 +3461,8 @@ Media Query
         display: none;
     }
     a.before-login span,
-    a.point_underLine,
-    .point_underLine {
+    a.pointUnderLine,
+    .pointUnderLine {
         color: #4341ce;
         text-decoration: underline;
     }
