@@ -284,6 +284,10 @@ input[type="radio"]:checked~.radio {
     width: auto !important;
 }
 
+.font14 {
+    font-size: 14px;
+}
+
 .point-font,
 a.point-font {
     color: #4341ce;
@@ -2870,6 +2874,11 @@ modal
 .modal-body p {
     line-height: 1.4;
     margin-bottom: 24px;
+}
+
+.modal-body th,
+.modal-body td {
+    text-align: center;
 }
 
 .modal-body ul li {
