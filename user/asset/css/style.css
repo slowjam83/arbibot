@@ -3451,7 +3451,9 @@ Media Query
         color: #888;
         display: none;
     }
-    a.before-login span {
+    a.before-login span,
+    a.point_underLine,
+    .point_underLine {
         color: #4341ce;
         text-decoration: underline;
     }
