@@ -3463,8 +3463,8 @@ Media Query
     a.before-login span,
     a.pointUnderLine,
     .pointUnderLine {
-        color: #4341ce;
-        text-decoration: underline;
+        color: #4341ce !important;
+        text-decoration: underline !important;
     }
     .after-login {
         display: block;
