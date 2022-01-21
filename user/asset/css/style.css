@@ -575,6 +575,10 @@ a.write-btn,
     font-size: 30px;
 }
 
+.simulationWrap .btn-top {
+    bottom: 20px;
+}
+
 
 /*============================================================
 header
