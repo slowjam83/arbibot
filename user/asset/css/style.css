@@ -1056,10 +1056,14 @@ main
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: stretch;
     align-content: stretch;
 }
 
-.simulationWrap .bot-setting,
+.simulationWrap .bot-setting {
+    flex: 1 1 60%;
+}
+
 .simulationWrap .simulation-result {
     flex: 1 1 auto;
 }
