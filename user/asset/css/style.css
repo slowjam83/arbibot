@@ -1061,11 +1061,11 @@ main
 }
 
 .simulationWrap .bot-setting {
-    flex: 1 1 60%;
+    flex: 1 1 70%;
 }
 
 .simulationWrap .simulation-result {
-    flex: 1 1 auto;
+    flex: 1 1 calc(30% - 20px);
 }
 
 .operation,
