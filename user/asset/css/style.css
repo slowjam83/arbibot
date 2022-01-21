@@ -1091,6 +1091,11 @@ main
     flex: 1 1 calc(30% - 20px);
 }
 
+.simulationWrap .input-wrap li input[type="text"] {
+    text-align: right;
+    padding-right: 40px;
+}
+
 .operation,
 .simulation {
     width: calc(50% - 20px);

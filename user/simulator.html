@@ -228,4 +228,27 @@
     <script src="./asset/js/bootstrap.min.js"></script>
     <script src="./asset/js/mousewheel.min.js"></script>
     <script src="./asset/js/num-spinner.js"></script>
+
+    <script>
+        var $output = $("#output");
+        var $input = $("#input");
+
+        $("input[type="
+            text "]").click(function() {
+            // 입력 값 알아내기
+            var value = $input.val();
+            // 천단위 콤마 추가한 결과값 리턴
+            var result = addComma(value);
+            $output.html(result);
+        });
+        // 천단위 마다 콤마(,) 추가하는 함수
+        function addComma(value) {
+            var num = isNumber(value);
+            if (!num) return;
+
+            // 문자열 길이가 3과 같거나 작은 경우 입력 값을 그대로 리턴
+            if (num.length <= 3) {
+                return num;
+            }
+    </script>
 </body>
