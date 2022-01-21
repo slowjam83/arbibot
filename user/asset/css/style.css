@@ -792,24 +792,25 @@ nav {
 }
 
 .nav-top li:nth-child(7) a {
-    background: url("../img/nav-ico-03.png") no-repeat 0 50%;
-}
-
-.nav-top li:nth-child(8) a {
     background: url("../img/nav-ico-04.png") no-repeat 0 50%;
 }
 
-.nav-top li:nth-child(9) a {
+.nav-top li:nth-child(8) a {
     background: url("../img/nav-ico-06.png") no-repeat 0 50%;
 }
 
-.nav-top li:nth-child(10) a {
+.nav-top li:nth-child(9) a {
     background: url("../img/nav-ico-11.png") no-repeat 0 50%;
 }
 
-.nav-top li:nth-child(11) a {
-    background: url("../img/nav-ico-08.png") no-repeat 0 50%;
+.nav-top li:nth-child(10) a {
+    background: url("../img/nav-ico-10.png") no-repeat 0 50%;
 }
+
+
+/* .nav-top li:nth-child(11) a {
+    background: url("../img/nav-ico-08.png") no-repeat 0 50%;
+} */
 
 .nav-top li.on,
 .nav-top li:hover {
