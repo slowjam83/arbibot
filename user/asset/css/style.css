@@ -3587,28 +3587,36 @@ Media Query
         margin-bottom: 10px;
     }
     .direct-menu li:nth-child(1) a::before {
-        background: url("../img/mo-nav-ico-03.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-00.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(2) a::before {
-        background: url("../img/mo-nav-ico-02.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-01.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(3) a::before {
-        background: url("../img/mo-nav-ico-01.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-02.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(4) a::before {
-        background: url("../img/mo-nav-ico-04.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-07.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(5) a::before {
-        background: url("../img/mo-nav-ico-05.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-03.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(6) a::before {
-        background: url("../img/mo-nav-ico-06.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-04.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(7) a::before {
-        background: url("../img/mo-nav-ico-07.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-05.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .direct-menu li:nth-child(8) a::before {
-        background: url("../img/mo-nav-ico-08.png") no-repeat 50% 50%;
+        background: url("../img/svg/nav-icon/nav-ico-on-10.svg") no-repeat 50% 50%;
+        background-size: 24px 24px;
     }
     .transaction {
         height: auto;
