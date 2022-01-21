@@ -2,14 +2,11 @@
     <div class="sub-container-head">
         <h1 class="subpage-title">시뮬레이터</h1>
         <p class="subpage-text">
-            ※ 시뮬레이션 기간은 이전 7일 시세 데이터를 기준으로 제공됩니다.<br>
-            ※ 시뮬레이션은 거래소별 시세 차이를 확인하여 재정거래 가능 기회만 제공합니다.<br>
-            ※ 시뮬레이션에 적용되는 수수료는 거래소별 0.08%로 설정되어 있습니다.<br>
-            ※ 시뮬레이션은 설정한 차익 거래 금액에서 수수료를 차감 적용 후 수익이 발생한 건만 집계합니다.
+            ※ 시뮬레이션 기간은 이전 7일 시세 데이터를 기준으로 제공됩니다.<br> ※ 시뮬레이션은 거래소별 시세 차이를 확인하여 재정거래 가능 기회만 제공합니다.<br> ※ 시뮬레이션에 적용되는 수수료는 거래소별 0.08%로 설정되어 있습니다.<br> ※ 시뮬레이션은 설정한 차익 거래 금액에서 수수료를 차감 적용 후 수익이 발생한 건만 집계합니다.
         </p>
     </div>
-    <div class="contentsArea">
-        <div class="bot-setting">
+    <div class="contentsArea simulationWrap">
+        <div class="bot-setting mr20">
             <div class="tit-head">
                 <h2>시뮬레이터 설정</h2>
             </div>
@@ -31,7 +28,7 @@
                             </select>
                         </li>
                         <li>
-                            <label for="exchange">거래소 <a href="" class="xs-btn">API 등록</a></label>
+                            <label for="exchange">거래소</label>
                             <ol class="input-wrap">
                                 <li>
                                     <input type="checkbox" name="" id="exchange" checked> 빗썸
@@ -42,8 +39,8 @@
                                     <span class="check-mark"></span>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="" id="exchange" disabled> 코인
-                                    <span class="check-mark"></span>원(API 미등록)
+                                    <input type="checkbox" name="" id="exchange" disabled> 코인원
+                                    <span class="check-mark"></span>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="" id="exchange" checked> 코빗
@@ -58,20 +55,20 @@
                         <li>
                             <label for="arbitrage">차익 거래 금액</label>
                             <ol class="input-wrap">
-                                <li>
-                                    <input type="radio" name="arbitrage" id="" checked> KRW <input type="text" value="0" name="arbitrage" id=""><span class="unit">KRW</span>
-                                    <span class="radio"></span>
+                                <li class="pl0">
+                                    <!-- <input type="radio" name="arbitrage" id="" checked> KRW --><input type="text" value="0" name="arbitrage" id="" class="ml0"><span class="unit">KRW</span>
+                                    <!-- <span class="radio"></span> -->
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <input type="radio" name="arbitrage" id=""> % <input type="text" name="arbitrage" id="" disabled class="percent"><span class="unit">%</span>
                                     <span class="radio"></span>
-                                </li>
+                                </li> -->
                             </ol>
                         </li>
                         <li class="btn-wrap">
                             <label for="" class="hidden">&nbsp;</label>
                             <button type="reset" class="large-btn reset-btn">초기화</button>
-                            <button type="submit" class="large-btn">등록</button>
+                            <button type="submit" class="large-btn">조회</button>
                         </li>
                     </ul>
                 </fieldset>

@@ -207,6 +207,10 @@ input[type="radio"]:checked~.radio {
     padding-bottom: 0 !important;
 }
 
+.pl0 {
+    padding-left: 0 !important;
+}
+
 .pl20 {
     padding-left: 20px;
 }
@@ -233,6 +237,10 @@ input[type="radio"]:checked~.radio {
 
 .mr10 {
     margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
 }
 
 .mr60 {
@@ -1044,6 +1052,18 @@ main
     align-items: flex-start;
 }
 
+.simulationWrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.simulationWrap .bot-setting,
+.simulationWrap .simulation-result {
+    flex: 1 1 auto;
+}
+
 .operation,
 .simulation {
     width: calc(50% - 20px);
@@ -1428,11 +1448,10 @@ sub page
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    margin-top: 20px;
 }
 
 .result-card {
-    width: calc(100% / 4 - 15px);
+    width: 100%;
 }
 
 .result-card li {
