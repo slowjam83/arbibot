@@ -1103,6 +1103,17 @@ main
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 12px;
+    padding: 0 10px 0 26px;
+}
+
+.tit-head a.simulatorBtn::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/svg/nav-icon/nav-ico-on-06.svg');
+    background-size: 16px;
+    margin-right: 10px;
 }
 
 .tit-head a.simulatorBtn::after {
