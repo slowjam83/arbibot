@@ -1103,9 +1103,11 @@ main
 
 .tit-head a.simulatorBtn {
     font-size: 14px;
-    line-height: 21px;
+    height: 30px;
+    line-height: 27px;
     margin-bottom: 12px;
-    padding: 0 10px 0 26px;
+    padding: 0 10px;
+    position: relative;
 }
 
 .tit-head a.simulatorBtn::before {
@@ -1113,9 +1115,11 @@ main
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('../img/svg/nav-icon/nav-ico-on-06.svg');
+    background: url('../img/svg/nav-icon/nav-ico-on-06.svg') no-repeat 0 50%;
     background-size: 16px;
-    margin-right: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
 }
 
 .tit-head a.simulatorBtn::after {
