@@ -1102,6 +1102,7 @@ main
 .tit-head a.simulatorBtn {
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 12px;
 }
 
 .tit-head a.simulatorBtn::after {
