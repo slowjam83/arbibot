@@ -20,6 +20,7 @@
 </head>
 
 <body class="simulationWrap">
+    <div class="modal-close pc-hidden"></div>
     <div class="sub-container-head">
         <h1 class="subpage-title">시뮬레이터</h1>
         <p class="subpage-text">
@@ -266,6 +267,10 @@
                 }
                 return sReturn;
             }
+
+            $('.modal-close').click(function() {
+                window.close();
+            });
         });
     </script>
 </body>
