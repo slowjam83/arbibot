@@ -78,7 +78,7 @@
                             <label for="arbitrage">차익 거래 금액</label>
                             <ol class="input-wrap">
                                 <li class="pl0">
-                                    <!-- <input type="radio" name="arbitrage" id="" checked> KRW --><input type="text" value="0" name="arbitrage" id="" class="ml0"><span class="unit">KRW</span>
+                                    <!-- <input type="radio" name="arbitrage" id="" checked> KRW --><input type="text" value="0" name="arbitrage" id="arbitrage" class="ml0"><span class="unit">KRW</span>
                                     <!-- <span class="radio"></span> -->
                                 </li>
                                 <!-- <li>
@@ -230,25 +230,14 @@
     <script src="./asset/js/num-spinner.js"></script>
 
     <script>
-        var $output = $("#output");
-        var $input = $("#input");
-
-        $("input[type="
-            text "]").click(function() {
-            // 입력 값 알아내기
-            var value = $input.val();
-            // 천단위 콤마 추가한 결과값 리턴
-            var result = addComma(value);
-            $output.html(result);
-        });
-        // 천단위 마다 콤마(,) 추가하는 함수
-        function addComma(value) {
-            var num = isNumber(value);
-            if (!num) return;
-
-            // 문자열 길이가 3과 같거나 작은 경우 입력 값을 그대로 리턴
-            if (num.length <= 3) {
-                return num;
-            }
+        $(function() {
+            var num = $("#arbitrage").text()
+                //아이디 tag인 태그의 text를 읽어온다 
+            num2 = $.numberWithCommas(parseInt(num));
+            // 받아온 text값을 정수로 변환하여 numberwithCommas 함수의 인자값으로 넣는다
+        })
+        $.numberWithCommas = function(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
     </script>
 </body>
