@@ -2336,7 +2336,7 @@ right section
 .status-list li .time {
     font-size: 12px;
     color: #888;
-    margin: 0;
+    float: right;
 }
 
 .bullet {
