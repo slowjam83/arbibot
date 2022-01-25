@@ -1454,6 +1454,7 @@ sub page
     padding: 10px 20px;
     background: #f6f6f6;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
@@ -1581,7 +1582,7 @@ sub page
     letter-spacing: -1px;
 }
 
-.api-box li div:not(.api-head) {
+.api-box li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -3413,6 +3414,15 @@ Media Query
     }
     .welfare-text {
         width: calc(100% - 120px);
+    }
+    .ipInput {
+        padding: 10px 20px 20px;
+    }
+    .ipInput label {
+        margin-right: 0;
+    }
+    .ipInput input {
+        width: calc(100% - 80px);
     }
 }
 
