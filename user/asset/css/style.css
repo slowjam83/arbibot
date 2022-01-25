@@ -345,8 +345,7 @@ a.disabled-font {
 
 .flex-column {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: flex-start !important;
 }
 
@@ -3492,6 +3491,10 @@ Media Query
         background: url("../img/jobs/jobs_banner.png") no-repeat 100% 100%, #f4f4f4;
         background-size: contain;
         padding: 30px;
+    }
+    .flex-column select,
+    .input-wrap select {
+        width: 100%;
     }
 }
 
