@@ -3262,9 +3262,6 @@ Media Query
         grid-gap: 10px;
         gap: 10px;
     }
-    .setting-box li {
-        flex-wrap: wrap;
-    }
     .setting-box li label,
     .mypage .setting-box h3 {
         width: 100%;
@@ -4061,6 +4058,10 @@ Media Query
     }
     .ipInput {
         margin-bottom: 40px;
+    }
+    .api-input-wrap .btn-wrap,
+    .api-info-wrap .btn-wrap {
+        margin-top: 30px;
     }
 }
 
