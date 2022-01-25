@@ -1375,8 +1375,7 @@ sub page
     font-weight: 500;
 }
 
-.flex-column select,
-.input-wrap select {
+.setting-box select {
     width: 180px;
 }
 
@@ -3452,10 +3451,7 @@ Media Query
         width: 100%;
         margin-top: 20px;
     }
-    .flex-column select,
-    .input-wrap select {
-        width: 100%;
-    }
+    .setting-box select,
     .ipInput input {
         width: 100%;
     }
