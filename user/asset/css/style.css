@@ -112,7 +112,8 @@ input[type="text"]:valid {
     color: #888;
 }
 
-input[type="text"]:disabled {
+input[type="text"]:disabled,
+select:disabled {
     background: #ebebeb;
     color: #888;
 }
