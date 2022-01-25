@@ -1398,14 +1398,14 @@ sub page
 }
 
 .input-wrap li input[type="text"] {
-    margin-left: 10px;
+    margin-left: 6px;
     width: 180px;
 }
 
 .input-wrap li .unit {
     position: absolute;
     z-index: 100;
-    right: 10px;
+    right: 0;
     top: 10px;
     font-size: 12px;
 }
@@ -3278,9 +3278,6 @@ Media Query
     .sec-pw-box p span {
         margin-left: 0;
     }
-    input[name="arbitrage"].percent {
-        margin-left: 29px !important;
-    }
     p.api-label {
         width: 100px;
     }
@@ -3452,7 +3449,11 @@ Media Query
         margin-top: 20px;
     }
     .setting-box .input-wrap li,
+    .input-wrap,
+    .input-wrap li div,
+    .input-wrap li input[type="text"],
     .setting-box select,
+    .mobile-w100,
     .ipInput input {
         width: 100%;
     }
@@ -3815,9 +3816,6 @@ Media Query
     }
     .simulation-result {
         margin-bottom: 20px;
-    }
-    input[name="arbitrage"].percent {
-        margin-left: 26px !important;
     }
     .pagination li {
         margin-right: 10px;
