@@ -1376,7 +1376,8 @@ sub page
     font-weight: 500;
 }
 
-.flex-column select {
+.flex-column select,
+.input-wrap select {
     width: 180px;
 }
 
