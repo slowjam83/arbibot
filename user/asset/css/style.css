@@ -1582,8 +1582,9 @@ sub page
     letter-spacing: -1px;
 }
 
-.api-box li {
-    display: flex;
+.api-box li,
+.tab-content .api-box li.active {
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
