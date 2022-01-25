@@ -1454,12 +1454,17 @@ sub page
     padding: 10px 20px;
     background: #f6f6f6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
 }
 
 .ipInput label {
     margin-right: 20px;
+    line-height: 32px;
+}
+
+.ipInput input {
+    width: calc(100% - 324px);
 }
 
 .ipInput button {
@@ -1576,16 +1581,6 @@ sub page
     letter-spacing: -1px;
 }
 
-.api-box li {
-    width: 100%;
-    padding: 20px 0;
-    border-top: 1px solid #ebebeb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-}
-
 .api-box li:last-child {
     padding: 20px 0 0;
 }
@@ -1605,6 +1600,7 @@ sub page
     padding: 20px;
     background: #f6f6f6;
     margin-bottom: 20px;
+    float: left;
 }
 
 .api-input label,
