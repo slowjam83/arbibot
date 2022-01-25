@@ -1455,7 +1455,7 @@ sub page
     padding: 10px 20px;
     background: #f6f6f6;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-content: center;
 }
@@ -1480,8 +1480,8 @@ sub page
     margin-bottom: 20px;
     border: 1px solid #dfdfdf;
     border-radius: 5px;
-    grid-gap: 5px;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .ranking .tit-head li a,
@@ -3455,6 +3455,24 @@ Media Query
         width: 100%;
         margin-top: 20px;
     }
+    .flex-column select,
+    .input-wrap select {
+        width: 100%;
+    }
+    .ipInput input {
+        width: 100%;
+    }
+    .ipInput button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .ranking .tit-head li a,
+    .api-setting .tit-head li a {
+        padding: 5px 20px 6px;
+    }
 }
 
 @media (max-width: 996px) {
@@ -3491,10 +3509,6 @@ Media Query
         background: url("../img/jobs/jobs_banner.png") no-repeat 100% 100%, #f4f4f4;
         background-size: contain;
         padding: 30px;
-    }
-    .flex-column select,
-    .input-wrap select {
-        width: 100%;
     }
 }
 
@@ -4044,6 +4058,17 @@ Media Query
     }
     .modal-body ul.no-margin li p {
         margin-top: 10px;
+    }
+    .ipInput {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ranking .tit-head,
+    .api-setting .tit-head {
+        justify-content: space-between;
+        flex: 1 1 50%;
     }
 }
 
