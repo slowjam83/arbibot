@@ -1448,18 +1448,15 @@ sub page
     text-align: right;
 }
 
-.ranking .tit-head {
+.ranking .tit-head,
+.api-setting .tit-head {
     width: 100%;
-    max-width: 358px;
     padding: 5px;
     margin-bottom: 20px;
     border: 1px solid #dfdfdf;
     border-radius: 5px;
     grid-gap: 5px;
-}
-
-.ranking02 .tit-head {
-    max-width: 181px;
+    justify-content: flex-start;
 }
 
 .ranking .tit-head li a {
@@ -1573,14 +1570,9 @@ sub page
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     column-gap: 40px;
-}
-
-.api-head .guide-btn {
-    position: absolute;
-    left: 180px;
 }
 
 .api-input-wrap,
@@ -3301,10 +3293,6 @@ Media Query
     .api-input-wrap,
     .api-info-wrap {
         width: 100%;
-    }
-    .api-head .guide-btn {
-        left: inherit;
-        right: 0;
     }
     .sub-container .card-wrap {
         grid-template-columns: repeat(2, 1fr);
