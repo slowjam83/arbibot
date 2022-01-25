@@ -1491,7 +1491,7 @@ sub page
     text-align: center;
     line-height: 1.4;
     word-break: keep-all;
-    padding: 5px 10px 6px;
+    padding: 5px 30px 6px;
     transition: all 0.3s ease;
 }
 
