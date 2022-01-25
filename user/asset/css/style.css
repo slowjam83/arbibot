@@ -1520,7 +1520,7 @@ sub page
 }
 
 .tab-content .tab-pane {
-    display: none !important;
+    display: none;
 }
 
 .tab-content .active {
