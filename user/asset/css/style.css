@@ -1448,6 +1448,24 @@ sub page
     text-align: right;
 }
 
+.ipInput {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.ipInput label {
+    margin-right: 20px;
+}
+
+.ipInput button {
+    height: 32px;
+}
+
 .ranking .tit-head,
 .api-setting .tit-head {
     width: 100%;
@@ -1459,7 +1477,8 @@ sub page
     justify-content: flex-start;
 }
 
-.ranking .tit-head li a {
+.ranking .tit-head li a,
+.api-setting .tit-head li a {
     display: block;
     font-size: 14px;
     color: #888;
@@ -1471,11 +1490,13 @@ sub page
     transition: all 0.3s ease;
 }
 
-.ranking .tit-head li a::after {
+.ranking .tit-head li a::after,
+.api-setting .tit-head li a::after {
     display: none;
 }
 
-.ranking .tit-head li:hover a {
+.ranking .tit-head li:hover a,
+.api-setting .tit-head li:hover a {
     background: #f4f4f4;
     color: #333;
     transition: all 0.3s ease;
@@ -1483,7 +1504,10 @@ sub page
 
 .ranking .tit-head li a.active,
 .ranking .tit-head li a.active:hover,
-.ranking .tit-head li a.active:focus {
+.ranking .tit-head li a.active:focus,
+.api-setting .tit-head li a.active,
+.api-setting .tit-head li a.active:hover,
+.api-setting .tit-head li a.active:focus {
     color: #fff;
     background: #4341ce;
     transition: all 0.3s ease;
