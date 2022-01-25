@@ -1581,8 +1581,7 @@ sub page
     letter-spacing: -1px;
 }
 
-.api-box li {
-    width: 100%;
+.api-box li div:not(.api-head) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
