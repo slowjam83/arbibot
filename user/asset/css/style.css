@@ -1581,6 +1581,14 @@ sub page
     letter-spacing: -1px;
 }
 
+.api-box li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
 .api-box li:last-child {
     padding: 20px 0 0;
 }
@@ -1600,13 +1608,6 @@ sub page
     padding: 20px;
     background: #f6f6f6;
     margin-bottom: 20px;
-    float: left;
-    margin-right: 20px;
-}
-
-.api-input-wrap:nth-child(2n),
-.api-info-wrap:nth-child(2n) {
-    margin-right: 0;
 }
 
 .api-input label,
