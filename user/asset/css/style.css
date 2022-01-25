@@ -349,6 +349,13 @@ a.disabled-font {
     align-items: flex-start !important;
 }
 
+.flex-between {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start !important;
+}
+
 .left-minus {
     left: -21px;
 }
