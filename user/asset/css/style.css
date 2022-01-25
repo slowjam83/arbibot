@@ -788,7 +788,7 @@ nav {
 }
 
 .nav-top li:nth-child(4) a {
-    background: url("../img/svg/nav-icon/nav-ico-09.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-03.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
@@ -860,7 +860,7 @@ nav {
 
 .nav-top li.on:nth-child(4) a,
 .nav-top li:hover:nth-child(4) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-09.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-on-03.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
