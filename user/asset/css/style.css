@@ -1601,6 +1601,12 @@ sub page
     background: #f6f6f6;
     margin-bottom: 20px;
     float: left;
+    margin-right: 20px;
+}
+
+.api-input-wrap:nth-child(2n),
+.api-info-wrap:nth-child(2n) {
+    margin-right: 0;
 }
 
 .api-input label,
