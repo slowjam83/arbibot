@@ -120,6 +120,14 @@
                 }
             });
 
+            //운영봇 링크 연결
+            $(".autobot").click(function(e) {
+                $(".section").load("./autotrading.html");
+            });
+            $(".gridbot").click(function(e) {
+                $(".section").load("./tradingbot01.html");
+            });
+
             //모바일 아비봇챗 버튼
             $("#arbibot-chat").click(function() {
                 $(".chat-open").addClass("on");
