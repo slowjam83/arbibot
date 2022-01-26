@@ -1168,6 +1168,10 @@ main
     margin-left: 0;
 }
 
+.rank-table {
+    overflow-x: hidden;
+}
+
 .bot-ranking th,
 .bot-ranking td {
     text-align: right;
