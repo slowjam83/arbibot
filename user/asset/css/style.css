@@ -3446,9 +3446,6 @@ Media Query
     .ham {
         display: block;
     }
-    nav {
-        display: none;
-    }
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -3498,6 +3495,9 @@ Media Query
 }
 
 @media (max-width: 996px) {
+    nav {
+        display: none;
+    }
     .section {
         width: calc(100% - 350px);
     }
