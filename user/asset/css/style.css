@@ -3633,6 +3633,9 @@ Media Query
         margin-bottom: 0;
         border-bottom: 0;
     }
+    .user-info .nickname::after {
+        content: none;
+    }
     .arbibot-status-title {
         margin-bottom: 12px;
     }
