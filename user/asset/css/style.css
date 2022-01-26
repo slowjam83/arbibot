@@ -1419,7 +1419,7 @@ sub page
 
 .checkbox-wrap,
 .select-wrap {
-    width: auto;
+    width: auto !important;
 }
 
 #slippage-time {
