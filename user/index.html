@@ -120,6 +120,11 @@
                 }
             });
 
+            //마이페이지 버튼
+            $(".mypage").click(function(e) {
+                $(".section").load("./mypage.html");
+            });
+
             //운영봇 링크 연결
             $(".autobot").click(function(e) {
                 $(".section").load("./autotrading.html");
