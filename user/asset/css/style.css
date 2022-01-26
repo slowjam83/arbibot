@@ -353,7 +353,7 @@ a.disabled-font {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-start !important;
+    align-items: flex-start;
 }
 
 .left-minus {
