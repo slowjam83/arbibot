@@ -3440,11 +3440,8 @@ Media Query
 }
 
 @media (max-width: 1120px) {
-    .header .util {
+    .header .util .user-info {
         display: none;
-    }
-    .ham {
-        display: block;
     }
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
@@ -3495,6 +3492,12 @@ Media Query
 }
 
 @media (max-width: 996px) {
+    .header .util {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
     nav {
         display: none;
     }
