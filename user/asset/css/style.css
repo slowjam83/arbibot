@@ -667,6 +667,12 @@ header
     color: #4341ce;
 }
 
+.user-bot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .util-btn {
     display: flex;
     justify-content: flex-end;
