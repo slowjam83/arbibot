@@ -614,7 +614,12 @@ header
     width: 100%;
 }
 
-.header .util,
+.header .util {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .user-info {
     display: flex;
     justify-content: flex-end;
@@ -3435,6 +3440,15 @@ Media Query
 }
 
 @media (max-width: 1120px) {
+    .header .util {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -3484,15 +3498,6 @@ Media Query
 }
 
 @media (max-width: 996px) {
-    .header .util {
-        display: none;
-    }
-    .ham {
-        display: block;
-    }
-    nav {
-        display: none;
-    }
     .section {
         width: calc(100% - 350px);
     }
