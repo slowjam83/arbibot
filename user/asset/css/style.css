@@ -3624,26 +3624,14 @@ Media Query
         padding-bottom: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .after-login li:last-child {
         padding-bottom: 0;
         margin-bottom: 0;
         border-bottom: 0;
-    }
-    .after-login li .info-title {
-        margin-bottom: 10px;
-        font-weight: 500;
-    }
-    .info-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .info-text p {
-        color: #888;
-    }
-    .info-text p span {
-        color: #4341ce;
     }
     .arbibot-status-title {
         margin-bottom: 12px;
