@@ -1642,7 +1642,7 @@ p.api-label {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 p.time-info {
@@ -4060,10 +4060,6 @@ Media Query
     }
     .ipInput {
         margin-bottom: 40px;
-    }
-    .api-input-wrap .btn-wrap,
-    .api-info-wrap .btn-wrap {
-        margin-top: 30px;
     }
 }
 
