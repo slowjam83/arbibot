@@ -1178,10 +1178,14 @@ main
 }
 
 .bot-ranking td:nth-child(1) {
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.bot-ranking td img {
+    display: none;
 }
 
 .bot-ranking td:nth-child(1) img {
