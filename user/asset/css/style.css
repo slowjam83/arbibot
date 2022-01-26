@@ -1417,7 +1417,13 @@ sub page
     font-size: 12px;
 }
 
+.checkbox-wrap,
+.select-wrap {
+    width: auto;
+}
+
 #slippage-time {
+    width: auto;
     margin-left: 10px;
 }
 
