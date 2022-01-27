@@ -4050,10 +4050,6 @@ Media Query
     .mypage .setting-box {
         margin-bottom: 20px;
     }
-    .setting-box p span,
-    .pw-setting-box p span {
-        margin: 10px 0 0 0;
-    }
     .sec-pw-box p span {
         width: calc(100% - 50px);
     }
