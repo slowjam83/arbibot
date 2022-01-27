@@ -620,7 +620,8 @@ header
     align-items: center;
 }
 
-.user-info {
+.user-info,
+.user-bot {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
@@ -667,10 +668,9 @@ header
     color: #4341ce;
 }
 
-.user-bot {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.user-bot .xs-btn {
+    position: relative;
+    top: -2px;
 }
 
 .util-btn {
