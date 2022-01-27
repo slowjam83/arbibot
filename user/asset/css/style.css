@@ -3489,6 +3489,9 @@ Media Query
     .ipInput input {
         width: 100%;
     }
+    .num-spinner input[type="text"] {
+        width: calc(100% - 64px) !important;
+    }
     .ipInput button {
         width: 100%;
         margin-top: 5px;
