@@ -1404,7 +1404,7 @@ sub page
 
 .input-wrap {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
