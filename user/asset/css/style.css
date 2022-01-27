@@ -1408,7 +1408,7 @@ sub page
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    grid-gap: 12px 40px;
+    grid-gap: 10px 40px;
 }
 
 .input-wrap li {
