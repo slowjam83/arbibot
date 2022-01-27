@@ -1407,7 +1407,7 @@ sub page
     flex-flow: column wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     grid-gap: 12px 40px;
 }
 
