@@ -3009,7 +3009,7 @@ modal
 }
 
 .modal-body .table-wrap {
-    border-right: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
     max-height: calc(100vh - 272px);
 }
 
