@@ -95,6 +95,11 @@ td {
     background: #fff;
 }
 
+.table-line {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="email"],
