@@ -95,11 +95,6 @@ td {
     background: #fff;
 }
 
-.table-line {
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-}
-
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -3011,6 +3006,11 @@ modal
 .modal-body p {
     line-height: 1.4;
     margin-bottom: 24px;
+}
+
+.modal-body .table-wrap {
+    border-right: 1px solid #ebebeb;
+    max-height: calc(100vh - 272px);
 }
 
 .modal-body th,
