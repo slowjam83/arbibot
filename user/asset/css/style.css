@@ -4106,6 +4106,9 @@ Media Query
     .modal-body .api-input label {
         margin-bottom: 20px;
     }
+    .modal-body .api-input-wrap input {
+        margin: 5px 0 0;
+    }
     .modal-body ul.no-margin li {
         display: block;
     }
