@@ -3010,7 +3010,7 @@ modal
 
 .modal-body .table-wrap {
     border-top: 1px solid #ebebeb;
-    max-height: calc(100vh - 272px);
+    max-height: calc(100vh - 332px);
 }
 
 .modal-body th,
