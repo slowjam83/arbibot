@@ -2911,7 +2911,7 @@ modal
     z-index: 1040;
     display: none;
     overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
     outline: 0;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -3011,6 +3011,11 @@ modal
 .modal-body.table-wrap {
     border-top: 1px solid #ebebeb;
     max-height: calc(100vh - 332px);
+    table-layout: fixed;
+}
+
+.modal-body.table-wrap td {
+    text-align: left;
 }
 
 .modal-body th,
@@ -3153,6 +3158,7 @@ modal
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 24px;
+    text-align: left;
 }
 
 .modal-footer .btn-group {
