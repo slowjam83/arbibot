@@ -3160,6 +3160,10 @@ modal
     margin-bottom: 0;
 }
 
+.modal-body .api-input-wrap input {
+    margin: 0;
+}
+
 .modal-footer {
     text-align: right;
 }
@@ -4089,6 +4093,12 @@ Media Query
     }
     .modal-dialog {
         padding: 50px 18px 20px;
+    }
+    .modal-body .api-input-wrap {
+        padding: 20px;
+    }
+    .modal-body .api-input label {
+        margin-bottom: 20px;
     }
     .modal-body ul.no-margin li {
         display: block;

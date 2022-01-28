@@ -297,35 +297,37 @@
                         <legend class="hidden">봇 설정</legend>
                         <ul class="setting-box">
                             <li>
-                                <label for="">BTC</label>
-                                <div class="flex-column">
-                                    <p>
-                                        <span class="disabled-font">이미 설정된 코인은 선택할 수 없습니다.</span>
-                                    </p>
-                                </div>
+                                <label for="">가상자산</label>
+                                <select name="" id="coinType">
+                                    <option value="btc" selected>BTC</option>
+                                </select>
+                                <p>
+                                    <span class="disabled-font">이미 설정된 코인은 선택할 수 없습니다.</span>
+                                </p>
                             </li>
                             <li>
                                 <label for="exchange">거래소 <a href="" class="xs-btn">API 등록</a></label>
                                 <div>
                                     <ol class="input-wrap">
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked /> 빗썸
-                                            <span class="check-mark"></span>
+                                        <li class="pl0">
+                                            <select name="" id="select_API_bithumb">
+                                                <option value="none" selected>빗썸 선택</option>
+                                            </select>
                                         </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked /> 업비트
-                                            <span class="check-mark"></span>
+                                        <li class="pl0">
+                                            <select name="" id="select_API_upbit" disabled>
+                                                <option value="none" selected>업비트(API 미등록)</option>
+                                            </select>
                                         </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" disabled /> 코인 <span class="check-mark"></span>원(API 미등록)
+                                        <li class="pl0">
+                                            <select name="" id="select_API_coinone">
+                                                <option value="none" selected>코인원 선택</option>
+                                            </select>
                                         </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" checked /> 코빗
-                                            <span class="check-mark"></span>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="" id="exchange" disabled /> 후오비 코리아(코인 미상장)
-                                            <span class="check-mark"></span>
+                                        <li class="pl0">
+                                            <select name="" id="select_API_korbit" disabled>
+                                                <option value="none" selected>코빗(코인 미상장)</option>
+                                            </select>
                                         </li>
                                     </ol>
                                     <p>
@@ -338,7 +340,7 @@
                                 <ol class="input-wrap">
                                     <li class="flex-column">
                                         <div class="pl20">
-                                            <input type="radio" name="arbitrage" class="minusLeft" id="" checked /> KRW
+                                            <input type="radio" name="arbitrage" class="minusLeft" id="" checked />
                                             <input type="text" name="arbitrage" id="" inputmode="numeric" value="0.000" /><span class="unit">KRW</span>
                                             <span class="radio minusLeft"></span>
                                         </div>
@@ -348,8 +350,7 @@
                                     </li>
                                     <li class="flex-column">
                                         <div class="pl20">
-                                            <input type="radio" name="arbitrage" class="minusLeft" id="" /> %
-                                            <input type="text" name="arbitrage" id="" disabled inputmode="decimal" value="0.00" class="percent" /><span class="unit">%</span>
+                                            <input type="radio" name="arbitrage" class="minusLeft" id="" /><input type="text" name="arbitrage" id="" disabled inputmode="decimal" value="0.00" class="percent" /><span class="unit">%</span>
                                             <span class="radio minusLeft"></span>
                                         </div>
                                         <p>
@@ -419,14 +420,14 @@
                 <div class="api-input-wrap">
                     <div class="api-input">
                         <label>
-                            <p class="api-label mobile-hidden">검증 시간</p>
+                            <p class="api-label">검증 시간</p>
                             <p class="time-info">2021-12-09 14:20</p>
                         </label>
                         <label>
                             <p class="api-label">API 별칭</p>
                             <input type="text" value="빗썸 3번" disabled="">
                         </label>
-                        <label>
+                        <label class="mb0">
                             <p class="api-label">Connect Key</p>
                             <input type="text" value="sdpf87as0df897as0f897sa0df8" disabled="">
                         </label>
