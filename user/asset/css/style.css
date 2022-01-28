@@ -3008,7 +3008,7 @@ modal
     margin-bottom: 24px;
 }
 
-.modal-body .table-wrap {
+.modal-body.table-wrap {
     border-top: 1px solid #ebebeb;
     max-height: calc(100vh - 332px);
 }
@@ -3147,6 +3147,12 @@ modal
 
 .modal-footer {
     text-align: right;
+}
+
+.modal-footer p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 24px;
 }
 
 .modal-footer .btn-group {
