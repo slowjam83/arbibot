@@ -3150,6 +3150,16 @@ modal
     left: 0;
 }
 
+.modal-body .api-input-wrap {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.modal-body .api-input-wrap p {
+    margin-bottom: 0;
+}
+
 .modal-footer {
     text-align: right;
 }
