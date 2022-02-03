@@ -1036,6 +1036,10 @@ a.user-sync-text span {
 main
 =============================================================*/
 
+.simulationWrap {
+    background: #fff
+}
+
 .section-wrap {
     width: 100%;
     overflow-x: hidden;
@@ -1370,6 +1374,12 @@ sub page
     font-size: 14px;
     color: #888;
     line-height: 1.6;
+}
+
+.simulationWrap .setting-box {
+    padding: 0;
+    border: none;
+    margin: 20px 0 60px;
 }
 
 .setting-box {
@@ -3824,9 +3834,6 @@ Media Query
         font-size: 12px;
         padding-bottom: 20px;
         border-bottom: 1px solid #ebebeb;
-    }
-    .simulationWrap {
-        background: #fff
     }
     .bot-setting,
     .wallet,
