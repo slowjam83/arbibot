@@ -1614,6 +1614,7 @@ sub page
 
 .card-left img {
     margin: 0 10px;
+    width: 28px;
 }
 
 .card-right p {
