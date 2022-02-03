@@ -1109,12 +1109,12 @@ main
 }
 
 .simulationWrap .bot-setting {
-    flex: 1 1 70%;
-    margin-right: 20px;
+    flex: 1 1 60%;
+    margin-right: 80px;
 }
 
 .simulationWrap .simulation-result {
-    flex: 1 1 calc(30% - 20px);
+    flex: 1 1 calc(40% - 80px);
 }
 
 .simulationWrap .input-wrap li input[type="text"] {
@@ -1370,6 +1370,11 @@ sub page
     margin-bottom: 20px;
 }
 
+.simulationWrap .subpage-text {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+}
+
 .subpage-text {
     font-size: 14px;
     color: #888;
@@ -1584,12 +1589,9 @@ sub page
 
 .result-card li {
     width: 100%;
-    height: 60px;
-    line-height: 60px;
-    border: 1px solid #ebebeb;
+    height: 45px;
     border-radius: 10px;
     margin-bottom: 10px;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1599,6 +1601,11 @@ sub page
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 50%;
+}
+
+.card-left * {
+    width: calc(100% / 3);
 }
 
 .card-left p {
