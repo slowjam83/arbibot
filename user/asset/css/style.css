@@ -1036,10 +1036,6 @@ a.user-sync-text span {
 main
 =============================================================*/
 
-.simulationWrap {
-    background: #fff
-}
-
 .section-wrap {
     width: 100%;
     overflow-x: hidden;
@@ -1106,15 +1102,22 @@ main
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+    background-color: inherit
+}
+
+.simulationWrap .bot-setting,
+.simulationWrap .simulation-result {
+    background: #fff;
+    padding: 20px;
 }
 
 .simulationWrap .bot-setting {
     flex: 1 1 60%;
-    margin-right: 80px;
+    margin-right: 20px;
 }
 
 .simulationWrap .simulation-result {
-    flex: 1 1 calc(40% - 80px);
+    flex: 1 1 calc(40% - 20px);
 }
 
 .simulationWrap .input-wrap li input[type="text"] {
@@ -1370,11 +1373,6 @@ sub page
     margin-bottom: 20px;
 }
 
-.simulationWrap .subpage-text {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 20px;
-}
-
 .subpage-text {
     font-size: 14px;
     color: #888;
@@ -1419,7 +1417,7 @@ sub page
 
 .input-wrap {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
