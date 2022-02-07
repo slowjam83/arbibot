@@ -3138,6 +3138,14 @@ modal
     margin-bottom: 0;
 }
 
+.modal-body .setting-box select {
+    margin: 0;
+}
+
+.modal-body .setting-box p {
+    width: 100%;
+}
+
 .modal-body .setting-box p span {
     margin-left: 0;
 }
@@ -3157,6 +3165,10 @@ modal
 
 .modal-body .setting-box .input-wrap li {
     padding-left: 0;
+}
+
+.modal-body .setting-box .input-wrap li .unit0 {
+    right: 12px !important;
 }
 
 .modal-body .setting-box .input-wrap li input[type="radio"].minusLeft,
@@ -3542,6 +3554,9 @@ Media Query
     .ipInput button {
         width: 100%;
         margin-top: 5px;
+    }
+    .modal-body .setting-box .input-wrap li .unit0 {
+        right: 0px !important;
     }
 }
 
