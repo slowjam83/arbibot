@@ -2870,6 +2870,8 @@ mypage
 
 .mypage .setting-box .point-font {
     font-weight: 500;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .mypage .setting-box p span::before {
