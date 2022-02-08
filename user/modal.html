@@ -237,7 +237,7 @@
 <!-- //교차거래 봇 운영 현황 -->
 
 <!-- 재정거래(일반) 가상자산 안내 -->
-<div class="modal fade" id="modalCoinSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+<div class="modal fade" id="modalCoin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
     <div class="modal-dialog scroll">
         <div data-dismiss="modal" class="modal-close"></div>
         <div class="modal-content">
@@ -285,6 +285,82 @@
     </div>
 </div>
 <!-- //재정거래(일반) 거래소 안내 -->
+
+<!-- 재정거래(일반) 차익 거래 금액 안내 -->
+<div class="modal fade" id="modalArbitrage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>차익 거래 금액</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">차익 거래 금액 입력은,</h4>
+                <p>위에서 선택한 ‘거래소’의 ‘가상자산’의 시세가 입력한 금액 또는 %만큼 차이가 벌어지면 거래가 되도록 설정하는 부분입니다.
+                    <br><br>재정거래 봇(일반)은 원화가 증가하는 방식의 봇으로, 입력한 차익 거래 금액에서 가상자산 거래소의 수수료를 제외하고 남은 금액이 증가하게 됩니다.
+                    <br><br>예를 들어 가상자산의 시세가 빗썸이 90원이고, 업비트가 100일 경우
+                </p>
+                <table>
+                    <caption>거래 전</caption>
+                    <th>
+                        <td>거래소</td>
+                        <td>KRW</td>
+                        <td>가상자산</td>
+                    </th>
+                    <tr>
+                        <td>빗썸</td>
+                        <td>100</td>
+                        <td>1개</td>
+                    </tr>
+                    <tr>
+                        <td>업비트</td>
+                        <td>100</td>
+                        <td>1개</td>
+                    </tr>
+                    <tr>
+                        <td><b>총 자산</b></td>
+                        <td><b>200</b></td>
+                        <td><b>2개</b></td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>거래 후</caption>
+                    <th>
+                        <td>거래소</td>
+                        <td>KRW</td>
+                        <td>가상자산</td>
+                    </th>
+                    <tr>
+                        <td>빗썸</td>
+                        <td>10</td>
+                        <td>2개</td>
+                    </tr>
+                    <tr>
+                        <td>업비트</td>
+                        <td>200</td>
+                        <td>0개</td>
+                    </tr>
+                    <tr>
+                        <td><b>총 자산</b></td>
+                        <td><b>210</b></td>
+                        <td><b>2개</b></td>
+                    </tr>
+                </table>
+                <ol>
+                    <li>① 시세가 낮은 빗썸의 가상자산은 매수하고,</li>
+                    <li>② 시세가 높은 업비트의 가상자산은 매도하여</li>
+                    <li>③ 총 자산에서 가상자산의 수량은 동일하고 원하는 10원 증가함.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //재정거래(일반) 차익 거래 금액 안내 -->
 
 <!-- 슬리피지 안전거래 안내 -->
 <div class="modal fade" id="modal-slippage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">

@@ -78,7 +78,7 @@
                             </div>
                         </li>
                         <li>
-                            <label for="arbitrage">차익 거래 금액</label>
+                            <label for="arbitrage">차익 거래 금액 <span class="info-btn info-01" data-toggle="modal" data-target="#modalArbitrage">i</span></label>
                             <ol class="input-wrap">
                                 <li class="flex-column">
                                     <div>
@@ -165,6 +165,8 @@
                             <td>
                                 <select name="botStatuse" id="botStatuse">
                                     <option value="working" selected>운영</option>
+                                    <option value="stop">정지</option>
+                                    <option value="quit">종료</option>
                                 </select>
                             </td>
                             <td>BTC</td>
