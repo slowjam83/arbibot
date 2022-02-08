@@ -96,17 +96,66 @@
 </div>
 <!-- //교차거래 봇 운영 가능 자산 안내 -->
 
-<!-- 교차거래 봇 운영 수익 안내 -->
-<div class="modal fade" id="modalInfo02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+<!-- 교차거래 봇 최저가/최고가 안내 -->
+<div class="modal fade" id="modalPriceLv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
     <div class="modal-dialog scroll">
         <div data-dismiss="modal" class="modal-close"></div>
         <div class="modal-content">
             <div class="modal-header">
-                <h3>봇 운영 수익</h3>
+                <h3>최저가/최고가</h3>
             </div>
             <div class="modal-body">
-                <p>
-                    수익은 매수/매도 페어(fair) 거래에 대한 수익을 합산한 정보입니다. 거래소 수수료는 반영되어 있지 않습니다.
+                <h4 class="point-font">최저가/최고가 입력은,</h4>
+                <p>교차거래 봇의 운영 범위를 결정합니다. 최저가/최고가는 교차거래 봇의 설정에서 매우 중요한 설정 항목이며, ‘봇 운영 자금’과 ‘주문수’에도 최저가/최고가의 설정에 따라 교차거래 운영 결과가 달라질 수 있습니다.<br><br> 예를 들어 코인 시세가 1,000원에 주문을 10개로 설정했을 때,
+                </p>
+                <img src="./asset/img/tip/tip_03.jpg" />
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //교차거래 봇 최저가/최고가 안내 -->
+
+<!-- 교차거래 봇 주문수 안내 -->
+<div class="modal fade" id="modalOperMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>주문수</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">주문수 입력은,</h4>
+                <p>위에 입력한 최고가와 최저가 범위에서 몇 개의 주문을 넣을 것인지를 선택하는 부분입니다. 주문수에 따라 거래 기회 포착과 거래 수익에 영양을 받습니다.(최고가, 최저가 용어가이드 참고)
+                    <br><br>또한 주문수는 주문 금액에도 영향을 줍니다. 위에서 입력한 ‘봇 운영 자금’에 주문수로 나누면 주문금액이 됩니다.
+                    <br><br>교차거래 봇의 최저 입력 주문수는 4 입니다.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //교차거래 봇 주문수 안내 -->
+
+<!-- 교차거래 봇 손실 제한 가격 안내 -->
+<div class="modal fade" id="modalOperMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>손실 제한 가격</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">손실 제한 가격 입력은,</h4>
+                <p>교차거래 봇 운영 시 시세가 지속적으로 하락할 경우를 대비하여, ‘손실 제한 가격’으로 지정한 가격까지 시세가 하락하면, 교차거래 봇 으로 매수한 가상자산을 시장 가격으로 매도하여 시세 하락으로 인한 손실을 최소화하는 기능입니다.
+                    <br><br>그러나, 시세가 급변하는 시장 상황일 경우 짧은 시간 저점을 찍고 더 이상 하락하지 않는 상황일 경우에는, 봇이 정지되지 않고 계속 운영되기 때문에 손실 제한 가격을 설정하지 않는 것이 교차거래 봇 운영에 더 유리할 수 있습니다.
                 </p>
             </div>
             <div class="modal-footer">
@@ -117,7 +166,7 @@
         </div>
     </div>
 </div>
-<!-- //교차거래 봇 운영 수익 안내 -->
+<!-- //교차거래 봇 손실 제한 가격 안내 -->
 
 <!-- 교차거래 봇 운영 현황 -->
 <div class="modal fade" id="modalGridBotStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
@@ -277,6 +326,56 @@
     </div>
 </div>
 <!-- //교차거래 봇 설정 확인 -->
+
+<!-- 재정거래(일반) 가상자산 안내 -->
+<div class="modal fade" id="modalCoinSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>가상자산 안내</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">가상자산 선택은,</h4>
+                <p>다른 재정거래 봇(일반)에서 사용하고 않는 가상자산만 선택이 가능합니다. 또한 빗썸, 업비트, 코인원, 코빗 거래소 중 두 곳 이상 상장된 가상자산만 선택 할 수 있도록 제공되고 있습니다.
+                    <br><br>재정거래 봇(일반)은 최소 2개 이상의 거래소의 시세를 비교하여, 시세 차이를 원화로 수익화하는 봇으로 최소 2개 이상의 거래소 상장된 가상자만 서비스됩니다.
+                    <br><br>거래소에 가상자산이 신규로 상장되어 최소 2개 거래소 상장 조건이 만족될 경우, 최대 7일 이내에 아비봇에서 이용하실 수 있도록 서비스를 제공하고 있습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //재정거래(일반) 가상자산 안내 -->
+
+<!-- 재정거래(일반) 거래소 안내 -->
+<div class="modal fade" id="modalApiSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>거래소</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">거래소 선택은,</h4>
+                <p>API 관리에서 등록한 ‘API 별칭’이 표시됩니다. 재정거래 봇(일반) 에서는 다른 재정거래 봇(일반)에서 사용하지 않고 있는 ‘API 별칭’만 표시됩니다.<br><br>재정거래 봇(일반)은 최대 4개 거래소의 시세를 비교하여 가장 높은 시세의 거래소와 가장 낮은 시세가 ‘차익 거래 금액’ 이상 차이날 경우 거래가 이루어 집니다.<br><br>선택한 거래소에 모두 운영할 자산이 있어야만 봇 운영이 가능합니다.
+                </p>
+                <img src="./asset/img/tip/tip_01.jpg" />
+                <p class="tip">등록한 API 별칭이 표시됨.</p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //재정거래(일반) 거래소 안내 -->
 
 <!-- 슬리피지 안전거래 안내 -->
 <div class="modal fade" id="modal-slippage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
