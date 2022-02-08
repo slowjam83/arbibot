@@ -4146,6 +4146,9 @@ Media Query
     .modal-body ul.no-margin li p {
         margin-top: 10px;
     }
+    .modal-body img {
+        width: 100%;
+    }
     .ipInput {
         margin-bottom: 40px;
     }
