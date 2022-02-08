@@ -1433,7 +1433,6 @@ sub page
     font-size: 14px;
     padding-left: 10px;
     margin-left: 10px;
-    line-height: 1.3;
 }
 
 .setting-box p span::before {
