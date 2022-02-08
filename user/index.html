@@ -161,6 +161,12 @@
                 $("#login").addClass("on");
             });
 
+            //재정거래(일반) 봇 운영 현황 슬리피지 리스트
+            $('.slippage-list-open').click(function() {
+                $(this).toggleClass("on");
+                $(".slippage-list").toggleClass("on");
+            });
+
             //댓글 입력 textarea 글자수 체크
             $("#comment-textarea").on("keyup", function() {
                 $("#text-counter").html($(this).val().length + " / 300");
