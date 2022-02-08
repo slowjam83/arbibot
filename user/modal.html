@@ -20,10 +20,36 @@
         </div>
     </div>
 </div>
-<!-- //교차거래 API 선택자금 안내 -->
+<!-- //교차거래 봇 API 선택 안내 -->
+
+<!-- 교차거래 봇 가상자산 안내 -->
+<div class="modal fade" id="modalCoinSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>가상자산 안내</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">가상자산 선택은,</h4>
+                <p>위의 ‘API 선택’에서 선택한 거래소에 상장된 가상자산만 선택 할 수 있습니다. 거래소에 신규로 상장된 가상자산은 최대 7일 이내에 아비봇에서 이용하실 수 있도록 서비스를 제공하고 있습니다.<br><br> 교차거래 봇 에서는 이미 운영중인 가상자도 중복으로 운영이 가능 합니다. 가상자산의 중복 운영을 통해 자신만의 다양한 트레이딩 전략을 만들어 보십시오.<br><br> 교차거래 봇에서 많은 수익을 낼 수 있는 가상자산은
+                    시세가 ‘횡보’ 하는 가상자산 입니다.
+                </p>
+                <img src="./asset/img/tip/tip_02.jpg" />
+                <p class="tip">교차거래 최고/최저가 설정</p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //교차거래 봇 가상자산 안내 -->
 
 <!-- 교차거래 봇 운영 자금 안내 -->
-<div class="modal fade" id="modalInfo01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+<div class="modal fade" id="modalOperMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
     <div class="modal-dialog scroll">
         <div data-dismiss="modal" class="modal-close"></div>
         <div class="modal-content">
@@ -31,9 +57,12 @@
                 <h3>봇 운영 자금</h3>
             </div>
             <div class="modal-body">
-                <p>
-                    이미 운영하고 있는 봇이 있을 경우 각각의 봇의 운영 자금이 초과하지 않도록 유의해 주십시오.
-                </p>
+                <h4 class="point-font">봇 운영 자금 입력은,</h4>
+                <p>원화 기준으로만 입력 할 수 있습니다. 현재 보유하고 있는 자산이 100% 가상자산이라 하여도, 원화를 기준으로 입력해 주십시오.<br><br>입력하신 봇 운영 자금은 매수/매도 포지션 주문 등록을 위해 일부 자산(가상자산, KRW)을 자동으로 매수 또는 매도하여 교차거래 봇 운영에 도움을 드리고 있습니다.<br> (ex: 보유 자사산이 원화로만 1,000,000원을 보유 하고 있을 경우, 약 500,000여만원에 해당하는
+                    금액을 가상자산을 매수하여 매도 포지션으로 등록)
+                    <br><br>만약 보유하고 있는 원화 자산이나 가상자산을 시스템이 자동으로 매도/매수하는 것을 원하지 않을 경우, 봇 설정 시 안내되는 내용에 맞춰 수동으로 원화와 가상자산을 맞춰 놓고 이용해 주십시오.</p>
+                <img src="./asset/img/tip/tip_02.jpg" />
+                <p class="tip">교차거래 최고/최저가 설정</p>
             </div>
             <div class="modal-footer">
                 <div class="btn-group">
@@ -44,6 +73,28 @@
     </div>
 </div>
 <!-- //교차거래 봇 운영 자금 안내 -->
+
+<!-- 교차거래 봇 운영 가능 자산 안내 -->
+<div class="modal fade" id="modalInfo01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>운영 가능 자산</h3>
+            </div>
+            <div class="modal-body">
+                <p>API 선택과 가상자산을 선택해야만, 운영 가능 자산을 확인할 수 있습니다.<br><br> 운영가능 자산은 선택한 거래소(API 선택)에 사용가능 KRW와 선택한 가상자산의 사용 가능한 수량과 현재 시세를 반영한 KRW를 합산하여 안내 드리고 있습니다.<br><br> 운영 가능 자산 KRW의 경우 동일한 거래소에 이미 운영중인 교차거래 봇의 매수 주문 상황에 따라 가변적으로 표시 될 수 있습니다.<br><br> *예시
+                    : 10,000,000 KRW = 200,000RKW + 0.01666666 BTC (= 800,000KRW)</p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //교차거래 봇 운영 가능 자산 안내 -->
 
 <!-- 교차거래 봇 운영 수익 안내 -->
 <div class="modal fade" id="modalInfo02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
