@@ -224,6 +224,10 @@ input[type="radio"]:checked~.radio {
     margin-left: 0 !important;
 }
 
+.ml10 {
+    margin-left: 10px;
+}
+
 .ml5 {
     margin-left: 5px;
 }
