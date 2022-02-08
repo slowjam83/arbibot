@@ -343,6 +343,18 @@ a.disabled-font {
     color: #888;
 }
 
+.tip {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ee417e
+}
+
+.tip::before {
+    content: '* ';
+    position: relative;
+    top: 2px;
+}
+
 .flex-column {
     display: flex;
     flex-flow: column wrap;
@@ -1475,10 +1487,6 @@ sub page
 .operation-status .tit-head p {
     font-size: 11px;
     color: #4341ce;
-}
-
-.operation-status .table-wrap table {
-    width: 1720px;
 }
 
 .operation-status .table-wrap table th,
