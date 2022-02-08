@@ -455,7 +455,7 @@
                     </li>
                     <li>
                         <h4>슬리피지</h4>
-                        <a href="javascript:void(0)" id="slippage-list-open" class="pointUnderLine">2</a>
+                        <a href="javascript:void(0)" class="slippage-list-open" class="pointUnderLine">2</a>
                         <div class="slippage-list table-wrap scroll mb20">
                             <table>
                                 <colgroup>
@@ -520,6 +520,12 @@
         </div>
     </div>
 </div>
+<script>
+    $('.slippage-list-open').click(function() {
+        $(this).toggleClass(".on");
+        $(".slippage-list").toggleClass(".on");
+    });
+</script>
 <!-- //재정거래(일반) 봇 운영 현황 -->
 
 <!-- 재정거래봇(일반) 설정 변경 -->

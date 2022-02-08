@@ -3084,6 +3084,15 @@ modal
     width: 160px;
 }
 
+.modal-body ul li .slippage-list-open {
+    padding-right: 30px;
+    background: url('../img/toggle-arrow-down.png') no-repeat 100% 50%;
+}
+
+.modal-body ul li .slippage-list-open.on {
+    background: url('../img/toggle-arrow-up.png') no-repeat 100% 50%;
+}
+
 .modal-body ul li .slippage-list {
     display: none;
     opacity: 0;
