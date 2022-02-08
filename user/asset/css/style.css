@@ -2049,7 +2049,7 @@ board
 }
 
 .card-header .btn-link:not(.collapsed) {
-    background: url(../img/board-list-arrow.svg) no-repeat 100% -50%;
+    background: url(../img/board-list-arrow-up.svg) no-repeat 100% -50%;
     background-size: 20px 12px;
 }
 
