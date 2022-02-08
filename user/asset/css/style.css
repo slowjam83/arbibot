@@ -3063,7 +3063,6 @@ modal
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .modal-body ul.no-margin li h4,
@@ -3097,14 +3096,16 @@ modal
 
 .modal-body ul li .slippage-list {
     width: 100%;
-    position: absolute;
-    top: 0;
+    display: none;
     opacity: 0;
+    transform: translate(0, -50%);
     transition: all .3s ease;
 }
 
 .modal-body ul li .slippage-list.on {
+    display: block;
     opacity: 1;
+    transform: translate(0, 0);
     transition: all .3s ease;
 }
 
