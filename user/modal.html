@@ -362,6 +362,31 @@
 </div>
 <!-- //재정거래(일반) 차익 거래 금액 안내 -->
 
+<!-- 재정거래(일반) 1회 거래 수량 안내 -->
+<div class="modal fade" id="modalOnceTQ" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>1회 거래 수량</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class="point-font">1회 거래 수량 입력은,</h4>
+                <p>위에서 선택한 가상자산에 맞춰 입력해 주시면 됩니다. 각 거래소 별로 1회 최소 거래 금액 제한이 있어, 재정거래 봇(일반)에서는 최소 거래 수량을 0.0001 이상으로 제한하고 있습니다. .
+                    <br><br>1회 거래 수향은 위에 ‘차익 거래 금액’의 조건이 만족할 때 거래 되는 수량으로, 선택한 거래소의 시세 차이가 지속적으로 유지되고, 거래소의 호가 내 거래 가능 수량이 1회 거래 수량 이상으로 있을 경우 연속적으로 거래가 발생하게 됩니다.
+                    <br><br>단, 운영 가능 자산이 1회 이상 거래 할 수 있는 자산 까지만 연속 으로 거래가 이루어 집니다.<br><br>1회 거래 수향은 선택한 가상자산과 거래소의 호가 내 수량을 고려하여 설정하는 것이 좋습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //재정거래(일반) 1회 거래 수량 안내 -->
+
 <!-- 슬리피지 안전거래 안내 -->
 <div class="modal fade" id="modal-slippage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
     <div class="modal-dialog">
