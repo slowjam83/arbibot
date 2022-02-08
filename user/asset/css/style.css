@@ -3085,6 +3085,7 @@ modal
 }
 
 .modal-body ul li .slippage-list-open {
+    height: 18px;
     padding-right: 30px;
     background: url('../img/toggle-arrow-down.png') no-repeat 100% 50%;
 }
