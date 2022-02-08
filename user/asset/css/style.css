@@ -3038,13 +3038,6 @@ modal
     text-align: center;
 }
 
-.modal-body ul.gridBotStatus li {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: center;
-}
-
 .modal-body ul li {
     margin-bottom: 16px;
     display: flex;
@@ -3068,6 +3061,18 @@ modal
 .modal-body ul li label {
     display: inline-block;
     width: 160px;
+}
+
+.modal-body ul.gridBotStatus li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body ul.gridBotStatus li h4,
+.modal-body ul.gridBotStatus li p {
+    margin-bottom: 0;
 }
 
 .modal-body ol li {
