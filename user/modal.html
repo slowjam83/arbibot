@@ -174,7 +174,7 @@
         <div data-dismiss="modal" class="modal-close"></div>
         <div class="modal-content">
             <div class="modal-header">
-                <h3>교차거래 봇 운영 현황</h3>
+                <h3>봇 운영 현황</h3>
             </div>
             <div class="modal-body">
                 <ul class="gridBotStatus">
@@ -417,124 +417,110 @@
 </div>
 <!-- //슬리피지 안전거래 안내 -->
 
-<!-- 슬리피지 현황 -->
-<div class="modal fade" id="modalSlipStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
-    <div class="modal-dialog">
+<!-- 재정거래(일반) 봇 운영 현황 -->
+<div class="modal fade" id="modalGridBotStatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog scroll">
         <div data-dismiss="modal" class="modal-close"></div>
         <div class="modal-content">
             <div class="modal-header">
-                <h3>슬리피지 현황</h3>
+                <h3>봇 운영 현황</h3>
             </div>
-            <div class="modal-body table-wrap scroll mb20">
-                <table>
-                    <colgroup>
-                        <col>
-                        <col width="50%">
-                        <col>
-                    </colgroup>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>빗썸</td>
-                        <td><span class="bullet buy">매수</span> 45,123,000</td>
-                        <td>1개 중 0.01개 남음</td>
-                    </tr>
-                    <tr>
-                        <td>코인원</td>
-                        <td><span class="bullet sell">매도</span> 65,123,000</td>
-                        <td>10개 중 2개 남음</td>
-                    </tr>
-                </table>
+            <div class="modal-body">
+                <ul class="gridBotStatus">
+                    <li>
+                        <h4>상태</h4>
+                        <select name="botStatuse" id="botStatuse" disabled class="ml0 mr0">
+                            <option value="working" selected>운영</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h4>가상자산</h4>
+                        <p>BTC</p>
+                    </li>
+                    <li>
+                        <h4>거래소</h4>
+                        <p>업비트, 빗썸</p>
+                    </li>
+                    <li>
+                        <h4>조건</h4>
+                        <p>1,000,000 차이</p>
+                    </li>
+                    <li>
+                        <h4>수량</h4>
+                        <p>1,000</p>
+                    </li>
+                    <li>
+                        <h4>거래 횟수</h4>
+                        <p>49</p>
+                    </li>
+                    <li>
+                        <h4>슬리피지</h4>
+                        <a href="javascript:void(0)" id="slippage-list-open" class="pointUnderLine">2</a>
+                        <div class="slippage-list table-wrap scroll mb20">
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col width="50%">
+                                    <col>
+                                </colgroup>
+                                <tr>
+                                    <td>빗썸</td>
+                                    <td><span class="bullet buy">매수</span> 45,123,000</td>
+                                    <td>1개 중 0.01개 남음</td>
+                                </tr>
+                                <tr>
+                                    <td>코인원</td>
+                                    <td><span class="bullet sell">매도</span> 65,123,000</td>
+                                    <td>10개 중 2개 남음</td>
+                                </tr>
+                                <tr>
+                                    <td>빗썸</td>
+                                    <td><span class="bullet buy">매수</span> 45,123,000</td>
+                                    <td>1개 중 0.01개 남음</td>
+                                </tr>
+                                <tr>
+                                    <td>코인원</td>
+                                    <td><span class="bullet sell">매도</span> 65,123,000</td>
+                                    <td>10개 중 2개 남음</td>
+                                </tr>
+                                <tr>
+                                    <td>빗썸</td>
+                                    <td><span class="bullet buy">매수</span> 45,123,000</td>
+                                    <td>1개 중 0.01개 남음</td>
+                                </tr>
+                                <tr>
+                                    <td>코인원</td>
+                                    <td><span class="bullet sell">매도</span> 65,123,000</td>
+                                    <td>10개 중 2개 남음</td>
+                                </tr>
+                            </table>
+                            <p>※ 시세가 급격하게 변동 할 경우 슬리피지 발생률이 높아집니다.<br> ※ 슬리피지 안전거래를 사용하며 슬리피지로 인한 손실을 줄일 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>슬리피지 안전거래</h4>
+                        <p>사용</p>
+                    </li>
+                    <li>
+                        <h4>시작</h4>
+                        <p>2022.03.03 18:23:44</p>
+                    </li>
+                    <li>
+                        <h4>정지</h4>
+                        <p>-</p>
+                    </li>
+                </ul>
             </div>
             <div class="modal-footer">
-                <p>※ 시세가 급격하게 변동 할 경우 슬리피지 발생률이 높아집니다.<br> ※ 슬리피지 안전거래를 사용하며 슬리피지로 인한 손실을 줄일 수 있습니다.</p>
                 <div class="btn-group">
-                    <!--<button type="button" data-dismiss="modal" class="btn btn_cancel">취소</button>-->
+                    <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#modalBotset01" class="btn line-btn">설정 변경</button>
                     <button type="button" data-dismiss="modal" class="btn btn_submit">확인</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- //슬리피지 현황 -->
+<!-- //재정거래(일반) 봇 운영 현황 -->
 
 <!-- 재정거래봇(일반) 설정 변경 -->
 <div class="modal fade" id="modalBotset01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
@@ -658,7 +644,7 @@
         </div>
     </div>
 </div>
-<!-- //재정거래봇(일반) 자산 현황 -->
+<!-- //재정거래봇(일반) 설정 변경 -->
 
 <!-- API 등록 -->
 <div class="modal fade" id="apiCheck" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">

@@ -3080,6 +3080,20 @@ modal
     width: 160px;
 }
 
+.modal-body ul li .slippage-list {
+    display: none;
+    opacity: 0;
+    transform: translate(0, -50%);
+    transition: all .3s ease;
+}
+
+.modal-body ul li .slippage-list.on {
+    display: block;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all .3s ease;
+}
+
 .modal-body ul.gridBotStatus li {
     display: flex;
     flex-flow: row wrap;
