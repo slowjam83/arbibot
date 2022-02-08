@@ -3107,6 +3107,14 @@ modal
     transition: all .3s ease;
 }
 
+.modal-body ul li .slippage-list .table-wrap {
+    margin-bottom: 0;
+}
+
+.modal-body ul li .slippage-list .table-wrap td {
+    background-color: #f4f4f4;
+}
+
 .modal-body ul.gridBotStatus li {
     display: flex;
     flex-flow: row wrap;
