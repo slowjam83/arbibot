@@ -1483,6 +1483,14 @@ sub page
     width: 290px;
 }
 
+.input-wrap li input.price-input {
+    width: 263px;
+}
+
+.input-wrap li input.price-input:first {
+    margin-right: 80px;
+}
+
 .input-wrap li .unit {
     position: absolute;
     z-index: 100;
@@ -3506,6 +3514,12 @@ Media Query
     }
 }
 
+@media (max-width: 1354px) {
+    .input-wrap li input.price-input:first {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1280px) {
     .bot-ranking {
         display: block;
@@ -3619,7 +3633,9 @@ Media Query
     .input-wrap li input[type="text"],
     .setting-box select,
     .mobile-w100,
-    .ipInput input {
+    .ipInput input,
+    .setting-box select.select-api,
+    .input-wrap li input.price-input {
         width: 100%;
     }
     .num-spinner input[type="text"] {
@@ -3943,8 +3959,8 @@ Media Query
         padding: 0;
         margin-top: 20px;
     }
-    .setting-box li .tip-modal {
-        left: -10px;
+    .setting-box li.btn-wrap button {
+        width: calc(50% - 5px);
     }
     li.slippage {
         padding: 0;
@@ -3975,6 +3991,10 @@ Media Query
     .operation-status,
     .simulation-result {
         padding: 0 20px;
+    }
+    .operation-status table td:nth-child(3),
+    .operation-status table td:nth-child(4) {
+        display: none;
     }
     .simulation-result {
         margin-bottom: 20px;
@@ -4249,8 +4269,5 @@ Media Query
 @media (max-width: 360px) {
     .login-head h1 {
         font-size: 32px;
-    }
-    .setting-box li.btn-wrap button {
-        width: calc(50% - 5px);
     }
 }
