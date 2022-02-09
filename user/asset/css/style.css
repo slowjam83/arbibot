@@ -3641,6 +3641,9 @@ Media Query
     .num-spinner input[type="text"] {
         width: calc(100% - 64px) !important;
     }
+    .setting-box li.btn-wrap button {
+        width: calc(50% - 5px);
+    }
     .ipInput button {
         width: 100%;
         margin-top: 5px;
@@ -3958,9 +3961,6 @@ Media Query
         border: 0;
         padding: 0;
         margin-top: 20px;
-    }
-    .setting-box li.btn-wrap button {
-        width: calc(50% - 5px);
     }
     li.slippage {
         padding: 0;
