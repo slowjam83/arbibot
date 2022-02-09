@@ -3838,13 +3838,18 @@ Media Query
         background: #fff;
         margin-bottom: 10px;
     }
-    .arbibot-status li,
-    .arbibot-status li:nth-child(3),
-    .arbibot-status li:nth-child(4) {
+    .arbibot-status li {
         display: inline-block;
         width: 100%;
         padding: 0;
         margin: 0 0 15px;
+    }
+    .arbibot-status li:last-child {
+        margin: 0;
+    }
+    .bot-ranking .table-wrap {
+        border-left: 0;
+        border-right: 0;
     }
     .arbibot-status li img {
         display: none;
