@@ -3538,6 +3538,10 @@ Media Query
     .bot-ranking {
         display: block;
     }
+    .bot-ranking .table-wrap {
+        border-left: 0;
+        border-right: 0;
+    }
     .operation,
     .simulation {
         width: 100%;
@@ -3846,10 +3850,6 @@ Media Query
     }
     .arbibot-status li:last-child {
         margin: 0;
-    }
-    .bot-ranking .table-wrap {
-        border-left: 0;
-        border-right: 0;
     }
     .arbibot-status li img {
         display: none;
