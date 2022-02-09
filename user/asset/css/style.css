@@ -1132,6 +1132,11 @@ main
     align-items: flex-start;
 }
 
+.bot-ranking .table-wrap {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
 .simulationWrap .contentsArea {
     display: flex;
     flex-flow: row wrap;
