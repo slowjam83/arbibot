@@ -3095,17 +3095,17 @@ modal
 }
 
 .modal-body ul li .slippage-list {
+    position: relative;
     width: 100%;
-    display: none;
+    height: 0;
     opacity: 0;
-    transform: translate(0, -50%);
     transition: all .3s ease;
 }
 
 .modal-body ul li .slippage-list.on {
     display: block;
+    height: auto;
     opacity: 1;
-    transform: translate(0, 0);
     transition: all .3s ease;
 }
 
