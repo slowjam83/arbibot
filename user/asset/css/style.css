@@ -129,6 +129,10 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+input[type="checkbox"].hidden-checkbox {
+    left: -16px;
+}
+
 input[type="radio"] {
     top: 9px;
     left: 0;
