@@ -1163,7 +1163,7 @@ main
 
 .operation,
 .simulation {
-    width: calc(50% - 20px);
+    width: calc(33.33% - 40px);
 }
 
 .table-wrap {
