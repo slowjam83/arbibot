@@ -130,7 +130,7 @@ input[type="radio"] {
 }
 
 input[type="checkbox"].hidden-checkbox {
-    left: -16px;
+    left: -21px;
 }
 
 input[type="radio"] {
