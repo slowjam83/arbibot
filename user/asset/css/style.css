@@ -3423,12 +3423,15 @@ Media Query
 }
 
 @media (max-width: 1560px) {
-    .card-wrap {
-        grid-gap: 10px;
-        gap: 10px;
+    .arbibot-status li {
+        padding: 15px 10px;
+        justify-content: flex-start
     }
-    .revenue-card {
-        min-width: 228px;
+    .arbibot-status li h3 {
+        text-align: left;
+    }
+    .arbibot-status li p {
+        font-size: 16px;
     }
     .partners ul {
         grid-template-columns: repeat(3, 1fr);
@@ -3845,7 +3848,6 @@ Media Query
         align-items: center;
     }
     .arbibot-status li p {
-        font-size: 16px;
         margin-top: 0;
     }
     .direct-menu {
