@@ -3644,6 +3644,12 @@ Media Query
     .setting-box li.btn-wrap button {
         width: calc(50% - 5px);
     }
+    .operation-status table th:nth-child(3),
+    .operation-status table th:nth-child(4),
+    .operation-status table td:nth-child(3),
+    .operation-status table td:nth-child(4) {
+        display: none;
+    }
     .ipInput button {
         width: 100%;
         margin-top: 5px;
@@ -3991,12 +3997,6 @@ Media Query
     .operation-status,
     .simulation-result {
         padding: 0 20px;
-    }
-    .operation-status table th:nth-child(3),
-    .operation-status table th:nth-child(4),
-    .operation-status table td:nth-child(3),
-    .operation-status table td:nth-child(4) {
-        display: none;
     }
     .simulation-result {
         margin-bottom: 20px;
