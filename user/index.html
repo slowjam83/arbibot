@@ -49,7 +49,7 @@
     <footer w3-include-html="./footer.html"></footer>
 
     <!-- 로그인 -->
-    <div w3-include-html="./login.html" class="login-page"></div>
+    <div w3-include-html="./login.html" id="login" class="modal fade"></div>
 
     <!-- mobile chat -->
     <div w3-include-html="./chat.html" class="chat-open"></div>
@@ -149,16 +149,13 @@
 
             //로그인 모달
             $(".login-btn").on("click", function() {
-                $(".login-page").addClass("on");
                 $("#login").removeClass("fade").addClass("on show");
             });
             $(".join-btn").on("click", function() {
-                $(".login-page").addClass("on");
                 $("#login").removeClass("fade").addClass("on show");
             });
             $(".close-btn").on("click", function() {
                 $(".chat-open").removeClass("on");
-                $(".login-page").removeClass("on");
                 $("#made-nick").removeClass("on");
                 $("#login").removeClass("on show").addClass("fade");
             });
