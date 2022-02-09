@@ -1441,6 +1441,10 @@ sub page
     width: 290px;
 }
 
+.setting-box select.select-api {
+    width: 180px;
+}
+
 .setting-box p span {
     display: inline-block;
     position: relative;
