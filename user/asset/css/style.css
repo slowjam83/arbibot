@@ -2794,25 +2794,6 @@ footer
 login
 =============================================================*/
 
-#login .close-btn {
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    left: 20px;
-}
-
-#login,
-#made-nick {
-    display: none;
-}
-
-#login.on,
-#made-nick.on {
-    display: block;
-}
-
 .login-head h1 {
     font-size: 38px;
     letter-spacing: -1px;
@@ -3718,13 +3699,6 @@ Media Query
     .ham {
         top: 20px;
         right: 18px;
-    }
-    .login-page .close-btn {
-        padding: 20px 18px;
-    }
-    .login-page .close-btn img {
-        width: 20px;
-        height: 20px;
     }
     .login-wrap#join {
         top: 60px;

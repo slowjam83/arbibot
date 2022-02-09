@@ -147,19 +147,6 @@
                 $(".chat-open").addClass("on");
             });
 
-            //로그인 모달
-            $(".login-btn").on("click", function() {
-                $("#login").removeClass("fade").addClass("on show");
-            });
-            $(".join-btn").on("click", function() {
-                $("#login").removeClass("fade").addClass("on show");
-            });
-            $(".close-btn").on("click", function() {
-                $(".chat-open").removeClass("on");
-                $("#made-nick").removeClass("on");
-                $("#login").removeClass("on show").addClass("fade");
-            });
-
             //재정거래(일반) 봇 운영 현황 슬리피지 리스트
             $('.slippage-list-open').click(function() {
                 $(this).toggleClass("on");
