@@ -150,17 +150,17 @@
             //로그인 모달
             $(".login-btn").on("click", function() {
                 $(".login-page").addClass("on");
-                $("#login").addClass("on show");
+                $("#login").removeClass("fade").addClass("on show");
             });
             $(".join-btn").on("click", function() {
                 $(".login-page").addClass("on");
-                $("#login").addClass("on show");
+                $("#login").removeClass("fade").addClass("on show");
             });
             $(".close-btn").on("click", function() {
                 $(".chat-open").removeClass("on");
                 $(".login-page").removeClass("on");
                 $("#made-nick").removeClass("on");
-                $("#login").addClass("on show");
+                $("#login").removeClass("on show").addClass("fade");
             });
 
             //재정거래(일반) 봇 운영 현황 슬리피지 리스트
