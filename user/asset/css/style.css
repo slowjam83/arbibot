@@ -3386,12 +3386,6 @@ Media Query
     .container {
         width: 100%;
     }
-    /* .arbibot-status li {
-        width: calc(25% - 10px);
-    }
-    .arbibot-status li:nth-child(3) {
-        display: none;
-    } */
     .arbibot-status li img {
         width: 50px;
         height: 50px;
