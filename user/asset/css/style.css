@@ -3692,13 +3692,12 @@ Media Query
         top: 20px;
         right: 18px;
     }
-    .login-wrap#join {
-        top: 60px;
-        transform: translate(-50%, 0);
-        padding-bottom: 20px;
+    .login-btn {
+        font-size: 16px;
     }
-    #join .login-head {
-        margin-bottom: 40px !important;
+    .kakao-login-btn,
+    .naver-login-btn {
+        background-size: 17px 16px;
     }
     .section-wrap {
         display: block;
