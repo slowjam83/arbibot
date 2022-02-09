@@ -2794,19 +2794,7 @@ footer
 login
 =============================================================*/
 
-.login-page {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    padding: 0 18px;
-    z-index: 500;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-}
-
-.login-page .close-btn {
+#login .close-btn {
     position: absolute;
     display: block;
     width: 20px;
@@ -2820,19 +2808,9 @@ login
     display: none;
 }
 
-.login-page.on,
 #login.on,
 #made-nick.on {
     display: block;
-}
-
-.login-wrap {
-    position: relative;
-    width: 100%;
-    max-width: 360px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .login-head h1 {
