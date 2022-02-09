@@ -3100,6 +3100,7 @@ modal
     height: 0;
     opacity: 0;
     transition: all .3s ease;
+    z-index: -10;
 }
 
 .modal-body ul li .slippage-list.on {
@@ -3108,6 +3109,7 @@ modal
     height: auto;
     opacity: 1;
     transition: all .3s ease;
+    z-index: 1040;
 }
 
 .modal-body ul li .slippage-list .table-wrap {
