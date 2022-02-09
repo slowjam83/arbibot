@@ -434,6 +434,8 @@ button
 =============================================================*/
 
 .info-btn {
+    position: relative;
+    top: -1px;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -442,7 +444,6 @@ button
     font-weight: 400;
     color: #fff;
     background-color: #333;
-    /* border: 1px solid #4341ce; */
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
