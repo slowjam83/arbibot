@@ -1228,7 +1228,9 @@ main
 
 .bot-ranking th,
 .bot-ranking td {
+    font-size: 13px;
     text-align: right;
+    padding: 10px;
 }
 
 .bot-ranking th:nth-child(1) {
