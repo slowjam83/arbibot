@@ -1168,7 +1168,7 @@ main
 
 .operation,
 .simulation,
-.ranking {
+.rankingMain {
     width: calc(33.33% - 40px);
 }
 
@@ -3515,7 +3515,7 @@ Media Query
     }
     .operation,
     .simulation,
-    .ranking {
+    .rankingMain {
         width: 100%;
     }
     .simulation {
