@@ -1132,11 +1132,6 @@ main
     align-items: flex-start;
 }
 
-.bot-ranking .table-wrap {
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-}
-
 .simulationWrap .contentsArea {
     display: flex;
     flex-flow: row wrap;
@@ -3489,10 +3484,6 @@ Media Query
 @media (max-width: 1280px) {
     .bot-ranking {
         display: block;
-    }
-    .bot-ranking .table-wrap {
-        border-left: 0;
-        border-right: 0;
     }
     .operation,
     .simulation,
