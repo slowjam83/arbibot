@@ -422,7 +422,7 @@ a.disabled-font {
 }
 
 .num-spinner input[type="text"] {
-    width: 116px !important;
+    width: 226px !important;
     margin-left: 0 !important;
     border-radius: 0;
     text-align: center;
@@ -1438,7 +1438,7 @@ sub page
 }
 
 .setting-box select {
-    width: 180px;
+    width: 290px;
 }
 
 .setting-box p span {
@@ -1476,7 +1476,7 @@ sub page
 
 .input-wrap li input[type="text"] {
     margin-left: 6px;
-    width: 180px;
+    width: 290px;
 }
 
 .input-wrap li .unit {
