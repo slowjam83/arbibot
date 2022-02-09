@@ -3499,7 +3499,8 @@ Media Query
     .rankingMain {
         width: 100%;
     }
-    .simulation {
+    .simulation,
+    .rankingMain {
         margin-top: 40px;
     }
     .wallet .table-wrap table th:first-child,
