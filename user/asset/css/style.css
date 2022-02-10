@@ -4270,6 +4270,9 @@ Media Query
 }
 
 @media (max-width: 390px) {
+    .subpage-text {
+        line-height: 1.4;
+    }
     .ranking .tit-head,
     .api-setting .tit-head {
         justify-content: space-between;
