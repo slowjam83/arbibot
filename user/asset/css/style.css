@@ -1387,7 +1387,7 @@ main
 
 .partners ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     gap: 20px;
 }
@@ -3400,7 +3400,6 @@ Media Query
         font-size: 16px;
     }
     .partners ul {
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
         gap: 10px;
     }
