@@ -4273,4 +4273,8 @@ Media Query
         justify-content: space-between;
         flex: 1 1 50%;
     }
+    .ranking .tit-head li a,
+    .api-setting .tit-head li a {
+        padding: 5px 10px 6px;
+    }
 }
