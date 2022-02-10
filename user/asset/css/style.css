@@ -1245,10 +1245,6 @@ main
     margin-right: 5px;
 }
 
-.rank-table td {
-    padding-left: 40px;
-}
-
 .rank-table tr td:nth-child(1) {
     text-align: left;
 }
