@@ -1249,6 +1249,10 @@ main
     padding-left: 40px;
 }
 
+.rank-table tr:nth-child(1) td {
+    text-align: left;
+}
+
 .rank-table tr:nth-child(1) td:nth-child(1) {
     background: url("../img/rank1.svg") no-repeat 20px 50%, #fff;
     background-size: 15px;
