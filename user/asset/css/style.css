@@ -843,32 +843,33 @@ nav {
     background-size: 20px 20px;
 }
 
-.nav-top li:nth-child(5) a {
+
+/* .nav-top li:nth-child(5) a {
     background: url("../img/svg/nav-icon/nav-ico-04.svg") no-repeat 0 50%;
     background-size: 20px 20px;
-}
+} */
 
-.nav-top li:nth-child(6) a {
+.nav-top li:nth-child(5) a {
     background: url("../img/svg/nav-icon/nav-ico-05.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
-.nav-top li:nth-child(7) a {
+.nav-top li:nth-child(6) a {
     background: url("../img/svg/nav-icon/nav-ico-07.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
-.nav-top li:nth-child(8) a {
+.nav-top li:nth-child(7) a {
     background: url("../img/svg/nav-icon/nav-ico-08.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
-.nav-top li:nth-child(9) a {
+.nav-top li:nth-child(8) a {
     background: url("../img/svg/nav-icon/nav-ico-11.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
-.nav-top li:nth-child(10) a {
+.nav-top li:nth-child(9) a {
     background: url("../img/svg/nav-icon/nav-ico-10.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
@@ -915,38 +916,39 @@ nav {
     background-size: 20px 20px;
 }
 
-.nav-top li.on:nth-child(5) a,
+
+/* nav-top li.on:nth-child(5) a,
 .nav-top li:hover:nth-child(5) a {
     background: url("../img/svg/nav-icon/nav-ico-on-04.svg") no-repeat 0 50%;
+    background-size: 20px 20px;
+} */
+
+.nav-top li.on:nth-child(5) a,
+.nav-top li:hover:nth-child(5) a {
+    background: url("../img/svg/nav-icon/nav-ico-on-05.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
 .nav-top li.on:nth-child(6) a,
 .nav-top li:hover:nth-child(6) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-05.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-on-07.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
 .nav-top li.on:nth-child(7) a,
 .nav-top li:hover:nth-child(7) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-07.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-on-08.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
 .nav-top li.on:nth-child(8) a,
 .nav-top li:hover:nth-child(8) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-08.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-on-11.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
 .nav-top li.on:nth-child(9) a,
 .nav-top li:hover:nth-child(9) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-11.svg") no-repeat 0 50%;
-    background-size: 20px 20px;
-}
-
-.nav-top li.on:nth-child(10) a,
-.nav-top li:hover:nth-child(10) a {
     background: url("../img/svg/nav-icon/nav-ico-on-10.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
@@ -1582,7 +1584,6 @@ sub page
     border: 1px solid #dfdfdf;
     border-radius: 5px;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .ranking .tit-head li a,
