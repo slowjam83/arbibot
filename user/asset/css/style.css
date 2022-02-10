@@ -1634,6 +1634,12 @@ sub page
     text-align: center;
 }
 
+.ranking .sort-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .result-wrap {
     display: flex;
     flex-wrap: wrap;
