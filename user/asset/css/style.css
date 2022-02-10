@@ -3644,7 +3644,9 @@ Media Query
         margin-top: 5px;
     }
     .ranking table th:nth-child(1),
-    .ranking table td:nth-child(1) {
+    .ranking table td:nth-child(1),
+    .ranking table th:nth-child(4),
+    .ranking table td:nth-child(4) {
         display: none;
     }
     .modal-body .setting-box .input-wrap li .unit0 {
