@@ -1645,6 +1645,11 @@ sub page
     position: relative;
 }
 
+.ranking .sort-btn li .radio,
+.ranking .sort-btn li input[type="radio"] {
+    top: 1px;
+}
+
 .result-wrap {
     display: flex;
     flex-wrap: wrap;
