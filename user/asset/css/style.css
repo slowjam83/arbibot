@@ -3512,13 +3512,13 @@ Media Query
     .rankingMain {
         width: 100%;
     }
-}
-
-@media (max-width: 1280px) {
     .simulation,
     .rankingMain {
         margin-top: 40px;
     }
+}
+
+@media (max-width: 1280px) {
     .wallet .table-wrap table th:first-child,
     .wallet .table-wrap table td:first-child {
         width: 120px;
