@@ -1594,7 +1594,7 @@ sub page
     text-align: center;
     line-height: 1.4;
     word-break: keep-all;
-    padding: 5px 30px 6px;
+    padding: 5px 20px 6px;
     transition: all 0.3s ease;
 }
 
@@ -3617,6 +3617,10 @@ Media Query
     .ipInput button {
         width: 100%;
         margin-top: 5px;
+    }
+    .ranking table th:nth-child(1),
+    .ranking table td:nth-child(1) {
+        display: none;
     }
     .modal-body .setting-box .input-wrap li .unit0 {
         right: 0px !important;
