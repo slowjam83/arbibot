@@ -4040,7 +4040,7 @@ Media Query
         margin: 20px 0;
     }
     .accordion .card .card-header {
-        padding: 14px 40px 14px 0;
+        padding: 14px 0;
     }
     .accordion .card .card-header {
         background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
@@ -4053,7 +4053,7 @@ Media Query
     .card-header .question-text {
         display: inline-block;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .board-list-wrap {
         padding: 0 20px;
