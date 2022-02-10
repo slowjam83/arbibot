@@ -1237,16 +1237,13 @@ main
     text-align: center;
 }
 
-.bot-ranking td img {
-    display: none;
-}
-
-.bot-ranking td:nth-child(1) img {
-    margin-right: 5px;
-}
-
 .rank-table tr td:nth-child(1) {
     text-align: left;
+}
+
+.rank-table tr td:nth-child(1) img {
+    width: 14px;
+    height: 14px;
 }
 
 
