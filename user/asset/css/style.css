@@ -120,8 +120,8 @@ select:disabled {
 
 input[type="checkbox"],
 input[type="radio"] {
-    width: 16px !important;
-    height: 16px !important;
+    width: 16px;
+    height: 16px;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -1643,10 +1643,13 @@ sub page
 
 .ranking .sort-btn li {
     position: relative;
+    font-size: 14px;
 }
 
 .ranking .sort-btn li .radio,
 .ranking .sort-btn li input[type="radio"] {
+    width: 14px;
+    height: 14px;
     top: 1px;
 }
 
