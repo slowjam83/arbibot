@@ -3444,6 +3444,11 @@ Media Query
     .arbibot-status li:nth-child(4) {
         margin-bottom: 0;
     }
+    .operation,
+    .simulation,
+    .rankingMain {
+        width: calc(33.33% - 20px);
+    }
     .api-input-wrap,
     .api-info-wrap {
         width: 100%;
@@ -3480,16 +3485,16 @@ Media Query
     .input-wrap li input.price-input:first {
         margin-right: 0;
     }
+    .operation,
+    .simulation,
+    .rankingMain {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1280px) {
     .bot-ranking {
         display: block;
-    }
-    .operation,
-    .simulation,
-    .rankingMain {
-        width: 100%;
     }
     .simulation,
     .rankingMain {
