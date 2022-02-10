@@ -620,6 +620,18 @@ a.write-btn,
     bottom: 20px;
 }
 
+.refresh-btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.refresh-btn img {
+    width: 100%;
+}
+
 
 /*============================================================
 header
