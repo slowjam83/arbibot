@@ -4280,6 +4280,10 @@ Media Query
         display: inline-block;
         margin-top: 5px;
     }
+    .login-input-wrap input,
+    .login-input-wrap .large-btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 390px) {
