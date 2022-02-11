@@ -1303,8 +1303,10 @@ the specific language governing permissions and limitations under the Apache Lic
             // safari, chrome, firefox, IE11
             observer = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
             if (observer !== undefined) {
-                if (this.propertyObserver) { delete this.propertyObserver;
-                    this.propertyObserver = null; }
+                if (this.propertyObserver) {
+                    delete this.propertyObserver;
+                    this.propertyObserver = null;
+                }
                 this.propertyObserver = new observer(function(mutations) {
                     $.each(mutations, self._sync);
                 });
@@ -2161,7 +2163,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 "   <div class='select2-search'>",
                 "       <label for='' class='select2-offscreen'></label>",
                 "       <input type='text' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' class='select2-input' role='combobox' aria-expanded='true'",
-                "       aria-autocomplete='list' placeholeder='가상자산 검색' />",
+                "       aria-autocomplete='list' />",
                 "   </div>",
                 "   <ul class='select2-results' role='listbox'>",
                 "   </ul>",
@@ -3710,7 +3712,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
     $.fn.select2.locales['en'] = {
         formatMatches: function(matches) { if (matches === 1) { return "One result is available, press enter to select it."; } return matches + " results are available, use up and down arrow keys to navigate."; },
-        formatNoMatches: function() { return "No matches found"; },
+        formatNoMatches: function() { return "검색된 가상자산이 없습니다."; },
         formatAjaxError: function(jqXHR, textStatus, errorThrown) { return "Loading failed"; },
         formatInputTooShort: function(input, min) { var n = min - input.length; return "Please enter " + n + " or more character" + (n == 1 ? "" : "s"); },
         formatInputTooLong: function(input, max) { var n = input.length - max; return "Please delete " + n + " character" + (n == 1 ? "" : "s"); },
