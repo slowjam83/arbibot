@@ -2165,7 +2165,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 "       <input type='text' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' class='select2-input' role='combobox' aria-expanded='true'",
                 "       aria-autocomplete='list' />",
                 "   </div>",
-                "   <ul class='select2-results' role='listbox'>",
+                "   <ul class='select2-results scroll' role='listbox'>",
                 "   </ul>",
                 "</div>"
             ].join(""));
