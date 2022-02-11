@@ -2836,9 +2836,13 @@ login
 }
 
 .login-input-wrap input {
-    width: 100%;
+    width: calc(100% - 120px);
     height: 40px;
     line-height: 40px;
+}
+
+.login-input-wrap .large-btn {
+    width: 110px;
 }
 
 .login-input-wrap .xl-btn {
