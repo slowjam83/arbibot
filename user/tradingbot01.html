@@ -21,10 +21,10 @@
                         <li>
                             <label for="">가상자산 <span class="info-btn info-01" data-toggle="modal" data-target="#modalCoinBasic">i</span></label>
                             <select name="" id="coinTypeSelect">
-                                <!-- <option value="none" selected>선택</option>
+                                <option value="none" selected>선택</option>
                                 <option value="btc">BTC(비트코인)</option>
                                 <option value="eth">ETH(이더리움)</option>
-                                <option value="xrp">XRP(리플)</option> -->
+                                <option value="xrp">XRP(리플)</option>
                             </select>
                         </li>
                         <li>
@@ -222,14 +222,8 @@
 </div>
 <script>
     $(document).ready(function() {
-        //가상자산 선택 옵션(coin type)
-        var coinType = ['선택', 'BTC(비트코인)', 'ETH(이더리움)', 'XRP(리플)']
-
-        coinType.forEach(function(i) { //forEach 신문법이기에 babel로 구버전 변환 필요
-            var optionTemp = `<option>${i}</option>`
-            $('#oinTypeSelect').append(optionTemp);
-            $("#coinTypeSelect").select2(); //가상자산 검색
-        });
+        //가상자산 검색
+        $("#coinTypeSelect").select2();
 
         //테이블 가로 마우스 스크롤링
         $('.table-wrap.scroll').mousewheel(function(e, delta) {
