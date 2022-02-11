@@ -1588,8 +1588,7 @@ sub page
     height: 32px;
 }
 
-.ranking .tit-head,
-.api-setting .tit-head {
+.tabNav {
     width: 100%;
     padding: 5px;
     margin-bottom: 20px;
@@ -1598,9 +1597,9 @@ sub page
     justify-content: flex-start;
 }
 
-.ranking .tit-head li a,
-.api-setting .tit-head li a {
+.tabNav li a {
     display: block;
+    width: 100%;
     font-size: 14px;
     color: #888;
     border-radius: 3px;
@@ -1611,24 +1610,19 @@ sub page
     transition: all 0.3s ease;
 }
 
-.ranking .tit-head li a::after,
-.api-setting .tit-head li a::after {
+.tabNav li a::after {
     display: none;
 }
 
-.ranking .tit-head li:hover a,
-.api-setting .tit-head li:hover a {
+.tabNav li:hover a {
     background: #f4f4f4;
     color: #333;
     transition: all 0.3s ease;
 }
 
-.ranking .tit-head li a.active,
-.ranking .tit-head li a.active:hover,
-.ranking .tit-head li a.active:focus,
-.api-setting .tit-head li a.active,
-.api-setting .tit-head li a.active:hover,
-.api-setting .tit-head li a.active:focus {
+.tabNav li a.active,
+.tabNav li a.active:hover,
+.tabNav li a.active:focus {
     color: #fff;
     background: #4341ce;
     transition: all 0.3s ease;
