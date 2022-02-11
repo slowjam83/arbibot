@@ -169,18 +169,13 @@
 
 
 <script>
+    //가상자산 검색
+    $("#coinTypeSelect").select2();
+
     $(document).on('focus keyup blur', 'input[inputmode=numeric]', function(event) {
         this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
         this.value = this.value.replace(/,/g, ''); // ,값 공백처리
         this.value = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ","); // 정규식을 이용해서 3자리 마다 , 추가 	
-    });
-
-    $(document).ready(function() {
-        //봇 운영 현황 테이블 가로 스크롤
-        $('.table-wrap.scroll').mousewheel(function(e, delta) {
-            this.scrollLeft -= (delta * 50);
-            e.preventDefault();
-        });
     });
 
     //input number spinner

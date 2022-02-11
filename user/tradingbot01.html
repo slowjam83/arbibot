@@ -21,10 +21,10 @@
                         <li>
                             <label for="">가상자산 <span class="info-btn info-01" data-toggle="modal" data-target="#modalCoinBasic">i</span></label>
                             <select name="" id="coinTypeSelect">
-                                <option value="none" selected>선택</option>
+                                <!-- <option value="none" selected>선택</option>
                                 <option value="btc">BTC(비트코인)</option>
                                 <option value="eth">ETH(이더리움)</option>
-                                <option value="xrp">XRP(리플)</option>
+                                <option value="xrp">XRP(리플)</option> -->
                             </select>
                         </li>
                         <li>
@@ -227,7 +227,8 @@
 
         coinType.forEach(function(i) { //forEach 신문법이기에 babel로 구버전 변환 필요
             var optionTemp = `<option>${i}</option>`
-            $('#coinType').append(optionTemp);
+            $('#oinTypeSelect').append(optionTemp);
+            $("#coinTypeSelect").select2(); //가상자산 검색
         });
 
         //테이블 가로 마우스 스크롤링
