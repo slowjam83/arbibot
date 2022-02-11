@@ -2839,6 +2839,7 @@ login
     width: calc(100% - 120px);
     height: 40px;
     line-height: 40px;
+    margin-right: 10px;
 }
 
 .login-input-wrap .large-btn {
@@ -4283,6 +4284,7 @@ Media Query
     .login-input-wrap input,
     .login-input-wrap .large-btn {
         width: 100%;
+        margin-right: 0;
     }
 }
 
