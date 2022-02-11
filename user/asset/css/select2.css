@@ -253,6 +253,11 @@ html[dir="rtl"] .select2-search input {
     background: url('select2-spinner.gif') no-repeat 100%, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
 }
 
+.select2-search input:valid {
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
 
 /* .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
