@@ -3164,12 +3164,6 @@ modal
     margin: 0 5px 0 10px;
 }
 
-.modal-body select {
-    border-radius: 5px;
-    margin: 0 5px 0 10px;
-    background: url(/img/admin/select_arrow.png) no-repeat 98% 50%;
-}
-
 .modal-body input[type="checkbox"] {
     width: 16px;
     height: 16px;
