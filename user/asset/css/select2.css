@@ -224,6 +224,7 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
     outline: 0;
     font-family: sans-serif;
     font-size: 1em;
+    color: #333;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
     -webkit-box-shadow: none;
@@ -253,7 +254,8 @@ html[dir="rtl"] .select2-search input {
     background: url('select2-spinner.gif') no-repeat 100%, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
 }
 
-.select2-search input:valid {
+.select2-search input::placeholder {
+    color: #888;
     font-size: 14px;
     letter-spacing: -1px;
 }
