@@ -174,9 +174,8 @@
 </div>
 <script>
     $(document).ready(function() {
-        $('.table-wrap.scroll').mousewheel(function(e, delta) {
-            this.scrollLeft -= (delta * 50);
-            e.preventDefault();
-        });
+        //tab 메뉴
+        var li_max = 100 / $(".tabNav li").length;
+        $(".tabNav li").css("width", li_max + "%");
     });
 </script>
