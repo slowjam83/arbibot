@@ -170,7 +170,10 @@
 
 <script>
     //가상자산 검색
-    $("#coinTypeSelect").select2();
+    //$("#coinTypeSelect").select2();
+    $('#coinTypeSelect').on('select2:open', function(event) {
+        $('.select2-search input').prop('focus', false);
+    });
 
     $(document).on('focus keyup blur', 'input[inputmode=numeric]', function(event) {
         this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
