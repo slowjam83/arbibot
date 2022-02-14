@@ -866,7 +866,7 @@ nav {
 } */
 
 .nav-top li:nth-child(5) a {
-    background: url("../img/svg/nav-icon/nav-ico-05.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-04.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
@@ -941,7 +941,7 @@ nav {
 
 .nav-top li.on:nth-child(5) a,
 .nav-top li:hover:nth-child(5) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-05.svg") no-repeat 0 50%;
+    background: url("../img/svg/nav-icon/nav-ico-on-04.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
 
