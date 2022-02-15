@@ -2054,20 +2054,20 @@ Error
 
 .error {
     position: relative;
-    background: linear-gradient(#4341ce 63%, #2f2d90 37%);
+    background: linear-gradient(#4341ce 70%, #2f2d90 30%);
     width: 100vw;
     height: 100vh;
 }
 
 .contents {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    -o-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2081,7 +2081,7 @@ Error
 .error .textWrap h1 {
     font-size: 54px;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     line-height: 1.2;
 }
 
