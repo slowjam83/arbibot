@@ -2084,7 +2084,6 @@ Error
 
 .spaceShip {
     width: 537px;
-    height: 686px;
 }
 
 .error .textWrap h1 {
@@ -2097,6 +2096,7 @@ Error
 .error .textWrap h1 span {
     color: #90f1f5;
     display: inline-block;
+    width: 100%;
 }
 
 .error .textWrap p {
@@ -3749,6 +3749,22 @@ Media Query
     .modal-body .setting-box .input-wrap li .unit0 {
         right: 0px !important;
     }
+    .error {
+        background: linear-gradient(#4341ce 62%, #2f2d90 38%);
+    }
+    .spaceShip {
+        width: 420px;
+    }
+    .error .textWrap h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .error .textWrap p {
+        font-size: 18px;
+    }
+    .error .logo {
+        width: 300px;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -4337,6 +4353,30 @@ Media Query
     }
     .ipInput {
         margin-bottom: 40px;
+    }
+    .error {
+        background: linear-gradient(#4341ce 44%, #2f2d90 56%);
+    }
+    .contents {
+        justify-content: center;
+        flex-flow: column;
+    }
+    .error .imgWrap,
+    .error .textWrap {
+        width: 100%;
+        text-align: center;
+    }
+    .error .imgWrap {
+        margin: 60px 0 40px;
+    }
+    .spaceShip {
+        width: 320px;
+    }
+    .error .textWrap h1 {
+        margin-bottom: 30px;
+    }
+    .error .logo {
+        bottom: 40px;
     }
 }
 
