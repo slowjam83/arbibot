@@ -2054,23 +2054,32 @@ Error
 
 .error {
     position: relative;
-    background: linear-gradient(#4341ce 70%, #2f2d90 30%);
+    background: linear-gradient(#4341ce 67%, #2f2d90 33%);
     width: 100vw;
     height: 100vh;
 }
 
 .contents {
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -30%);
-    -ms-transform: translate(-50%, -30%);
-    -o-transform: translate(-50%, -30%);
-    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.error .imgWrap,
+.error .textWrap {
+    width: 50%;
+}
+
+.error .imgWrap {
+    text-align: right;
 }
 
 .spaceShip {
@@ -3656,6 +3665,21 @@ Media Query
     }
     .ipInput input {
         width: calc(100% - 80px);
+    }
+    .error {
+        background: linear-gradient(#4341ce 62%, #2f2d90 38%);
+    }
+    .spaceShip {
+        width: 490px;
+    }
+    .error .textWrap h1 {
+        font-size: 48px;
+    }
+    .error .textWrap p {
+        font-size: 22px;
+    }
+    .error .logo {
+        width: 360px;
     }
 }
 
