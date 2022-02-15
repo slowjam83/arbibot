@@ -3750,7 +3750,7 @@ Media Query
         right: 0px !important;
     }
     .error {
-        background: linear-gradient(#4341ce 62%, #2f2d90 38%);
+        background: linear-gradient(#4341ce 54%, #2f2d90 46%);
     }
     .spaceShip {
         width: 420px;
