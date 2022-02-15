@@ -3669,6 +3669,10 @@ Media Query
     .error {
         background: linear-gradient(#4341ce 62%, #2f2d90 62%);
     }
+    .contents {
+        position: inherit;
+        width: 100%;
+    }
     .spaceShip {
         width: 490px;
     }
