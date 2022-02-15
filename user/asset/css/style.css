@@ -2054,7 +2054,7 @@ Error
 
 .error {
     position: relative;
-    background: linear-gradient(#4341ce 67% 33%, #2f2d90 33%);
+    background: linear-gradient(#4341ce 67%, #2f2d90 67%);
     width: 100vw;
     height: 100vh;
 }
@@ -3667,7 +3667,7 @@ Media Query
         width: calc(100% - 80px);
     }
     .error {
-        background: linear-gradient(#4341ce 62% 38%, #2f2d90 38%);
+        background: linear-gradient(#4341ce 62%, #2f2d90 62%);
     }
     .spaceShip {
         width: 490px;
@@ -3750,7 +3750,7 @@ Media Query
         right: 0px !important;
     }
     .error {
-        background: linear-gradient(#4341ce 54% 46%, #2f2d90 46%);
+        background: linear-gradient(#4341ce 54%, #2f2d90 54%);
     }
     .spaceShip {
         width: 420px;
@@ -4355,7 +4355,7 @@ Media Query
         margin-bottom: 40px;
     }
     .error {
-        background: linear-gradient(#4341ce 44% 56%, #2f2d90 56%);
+        background: linear-gradient(#4341ce 44%, #2f2d90 44%);
     }
     .contents {
         justify-content: center;
@@ -4410,7 +4410,7 @@ Media Query
         margin-right: 0;
     }
     .error {
-        background: linear-gradient(#4341ce 41% 59%, #2f2d90 59%);
+        background: linear-gradient(#4341ce 41%, #2f2d90 41%);
     }
     .error .imgWrap {
         margin: 60px 0 40px;
