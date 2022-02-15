@@ -2055,6 +2055,8 @@ Error
 .error {
     position: relative;
     background: linear-gradient(#4341ce 63%, #2f2d90 37%);
+    width: 100vw;
+    height: 100vh;
 }
 
 .contents {
@@ -2066,6 +2068,9 @@ Error
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .spaceShip {
@@ -2077,15 +2082,18 @@ Error
     font-size: 54px;
     color: #fff;
     margin-bottom: 80px;
+    line-height: 1.2;
 }
 
 .error .textWrap h1 span {
     color: #90f1f5;
+    display: inline-block;
 }
 
 .error .textWrap p {
     font-size: 24px;
     color: #fff;
+    line-height: 1.4;
 }
 
 .error .logo {
