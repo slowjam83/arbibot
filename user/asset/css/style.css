@@ -2107,7 +2107,6 @@ Error
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 389px;
-    height: 41px;
 }
 
 .error .logo img {
@@ -3659,16 +3658,17 @@ Media Query
     .ipInput input {
         width: calc(100% - 80px);
     }
+    .error {
+        background: url('../img/error.jpg') no-repeat calc(50% + 20px) 0;
+    }
     .contents {
         width: 100%;
-        margin-left: 20px;
-        /* position: absolute;
-        top: 34%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -34%);
-        -ms-transform: translate(-50%, -34%);
-        -o-transform: translate(-50%, -34%);
-        transform: translate(-50%, -34%); */
+        margin-left: 40px;
+        top: 38%;
+        -webkit-transform: translate(-50%, -38%);
+        -ms-transform: translate(-50%, -38%);
+        -o-transform: translate(-50%, -38%);
+        transform: translate(-50%, -38%);
     }
 }
 
@@ -3737,6 +3737,22 @@ Media Query
     }
     .modal-body .setting-box .input-wrap li .unit0 {
         right: 0px !important;
+    }
+    .error {
+        background: url(../img/error.jpg) no-repeat calc(50% - 240px) -160px, #322D91;
+    }
+    .contents {
+        margin-left: 0;
+        top: 65%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+        -o-transform: translate(-50%, -65%);
+        transform: translate(-50%, -65%);
+        text-align: center;
+    }
+    .error .logo {
+        bottom: 40px;
     }
 }
 
@@ -4330,6 +4346,18 @@ Media Query
     }
     .ipInput {
         margin-bottom: 40px;
+    }
+    .error {
+        background: url(../img/error_mobile.jpg) no-repeat 50% 0, #322D91;
+    }
+    .error h1 {
+        font-size: 30px;
+    }
+    .error p {
+        font-size: 16px;
+    }
+    .error .logo {
+        width: 272px;
     }
 }
 
