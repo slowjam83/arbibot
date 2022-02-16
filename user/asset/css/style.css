@@ -4417,10 +4417,10 @@ Media Query
 
 @media (max-height: 720px) {
     .contents {
-        top: 65%;
-        -webkit-transform: translate(-50%, -65%);
-        -ms-transform: translate(-50%, -65%);
-        -o-transform: translate(-50%, -65%);
-        transform: translate(-50%, -65%);
+        top: 65% !important;
+        -webkit-transform: translate(-50%, -65%) !important;
+        -ms-transform: translate(-50%, -65%) !important;
+        -o-transform: translate(-50%, -65%) !important;
+        transform: translate(-50%, -65%) !important;
     }
 }
