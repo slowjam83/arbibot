@@ -400,6 +400,10 @@ a.disabled-font {
     margin-left: 80px;
 }
 
+.inlineBlock {
+    display: inline-block !important;
+}
+
 
 /*********** spinner *************/
 
