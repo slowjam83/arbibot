@@ -4414,3 +4414,13 @@ Media Query
         padding: 5px 10px 6px;
     }
 }
+
+@media (max-height: 720px) {
+    .contents {
+        top: 65%;
+        -webkit-transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+        -o-transform: translate(-50%, -65%);
+        transform: translate(-50%, -65%);
+    }
+}
