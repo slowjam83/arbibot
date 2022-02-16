@@ -2062,52 +2062,37 @@ Error
 
 .error {
     position: relative;
-    background: linear-gradient(#4341ce 67%, #2f2d90 67%);
+    background: url('../img/error.jpg') no-repeat 0 0;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
 
 .contents {
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -10%);
-    -ms-transform: translate(-50%, -10%);
-    -o-transform: translate(-50%, -10%);
-    transform: translate(-50%, -10%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    -o-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
 }
 
-.error .imgWrap,
-.error .textWrap {
-    width: 50%;
-}
-
-.error .imgWrap {
-    text-align: right;
-}
-
-.spaceShip {
-    width: 537px;
-}
-
-.error .textWrap h1 {
-    font-size: 54px;
+.error h1 {
+    font-size: 44px;
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     line-height: 1.2;
 }
 
-.error .textWrap h1 span {
+.error h1 span {
     color: #90f1f5;
     display: inline-block;
     width: 100%;
 }
 
-.error .textWrap p {
+.error p {
     font-size: 24px;
     color: #fff;
     line-height: 1.4;
@@ -3674,25 +3659,6 @@ Media Query
     .ipInput input {
         width: calc(100% - 80px);
     }
-    .error {
-        background: linear-gradient(#4341ce 62%, #2f2d90 62%);
-    }
-    .contents {
-        position: inherit;
-        width: 100%;
-    }
-    .spaceShip {
-        width: 490px;
-    }
-    .error .textWrap h1 {
-        font-size: 48px;
-    }
-    .error .textWrap p {
-        font-size: 22px;
-    }
-    .error .logo {
-        width: 360px;
-    }
 }
 
 @media (max-width: 1120px) {
@@ -3760,22 +3726,6 @@ Media Query
     }
     .modal-body .setting-box .input-wrap li .unit0 {
         right: 0px !important;
-    }
-    .error {
-        background: linear-gradient(#4341ce 54%, #2f2d90 54%);
-    }
-    .spaceShip {
-        width: 420px;
-    }
-    .error .textWrap h1 {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-    .error .textWrap p {
-        font-size: 18px;
-    }
-    .error .logo {
-        width: 300px;
     }
 }
 
@@ -4370,30 +4320,6 @@ Media Query
     .ipInput {
         margin-bottom: 40px;
     }
-    .error {
-        background: linear-gradient(#4341ce 44%, #2f2d90 44%);
-    }
-    .contents {
-        justify-content: center;
-        flex-flow: column;
-    }
-    .error .imgWrap,
-    .error .textWrap {
-        width: 100%;
-        text-align: center;
-    }
-    .error .imgWrap {
-        margin: 60px 0 40px;
-    }
-    .spaceShip {
-        width: 320px;
-    }
-    .error .textWrap h1 {
-        margin-bottom: 30px;
-    }
-    .error .logo {
-        bottom: 40px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -4424,24 +4350,6 @@ Media Query
     .login-input-wrap .large-btn {
         width: 100%;
         margin-right: 0;
-    }
-    .error {
-        background: linear-gradient(#4341ce 41%, #2f2d90 41%);
-    }
-    .error .imgWrap {
-        margin: 60px 0 40px;
-    }
-    .spaceShip {
-        width: 180px;
-    }
-    .error .textWrap h1 {
-        font-size: 26px;
-    }
-    .error .textWrap p {
-        font-size: 12px;
-    }
-    .error .logo {
-        width: 240px;
     }
 }
 
