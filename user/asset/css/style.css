@@ -276,6 +276,10 @@ input[type="radio"]:checked~.radio {
     margin-top: 20px;
 }
 
+.mt40 {
+    margin-top: 40px;
+}
+
 .mb0 {
     margin-bottom: 0 !important;
 }
