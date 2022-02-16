@@ -4349,6 +4349,14 @@ Media Query
     }
     .error {
         background: url(../img/error_mobile.jpg) no-repeat 50% 0, #322D91;
+        background-size: contain;
+    }
+    .contents {
+        top: 55%;
+        -webkit-transform: translate(-50%, -55%);
+        -ms-transform: translate(-50%, -55%);
+        -o-transform: translate(-50%, -55%);
+        transform: translate(-50%, -55%);
     }
     .error h1 {
         font-size: 30px;
