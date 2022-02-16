@@ -3784,6 +3784,10 @@ Media Query
     .api-setting .tit-head li a {
         padding: 5px 20px 6px;
     }
+    .wallet .table-wrap table th:last-child,
+    .wallet .table-wrap table td:last-child {
+        display: none;
+    }
 }
 
 @media (max-width: 996px) {
