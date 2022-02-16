@@ -2070,13 +2070,13 @@ Error
 
 .contents {
     position: absolute;
-    top: 30%;
+    top: 34%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -30%);
-    -ms-transform: translate(-50%, -30%);
-    -o-transform: translate(-50%, -30%);
-    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -34%);
+    -ms-transform: translate(-50%, -34%);
+    -o-transform: translate(-50%, -34%);
+    transform: translate(-50%, -34%);
 }
 
 .error h1 {
@@ -3726,6 +3726,17 @@ Media Query
     }
     .modal-body .setting-box .input-wrap li .unit0 {
         right: 0px !important;
+    }
+    .contents {
+        width: 100%;
+        margin-left: 20px;
+        /* position: absolute;
+        top: 34%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -34%);
+        -ms-transform: translate(-50%, -34%);
+        -o-transform: translate(-50%, -34%);
+        transform: translate(-50%, -34%); */
     }
 }
 
