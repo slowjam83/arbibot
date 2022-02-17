@@ -2996,6 +2996,11 @@ mypage
     text-align: center;
 }
 
+#pointCharge td:nth-child(1),
+#pointCharge td:nth-child(2) {
+    text-align: left;
+}
+
 
 /*============================================================
 modal
