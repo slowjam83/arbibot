@@ -2070,13 +2070,13 @@ Error
 
 .contents {
     position: absolute;
-    top: 38%;
+    top: 34%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -38%);
-    -ms-transform: translate(-50%, -38%);
-    -o-transform: translate(-50%, -38%);
-    transform: translate(-50%, -38%);
+    -webkit-transform: translate(-50%, -34%);
+    -ms-transform: translate(-50%, -34%);
+    -o-transform: translate(-50%, -34%);
+    transform: translate(-50%, -34%);
 }
 
 .error h1 {
@@ -2101,7 +2101,7 @@ Error
 .error .logo {
     position: absolute;
     left: 50%;
-    bottom: 100px;
+    bottom: 40px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -4369,7 +4369,6 @@ Media Query
     }
     .error .logo {
         width: 272px;
-        bottom: 40px;
     }
 }
 
