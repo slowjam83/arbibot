@@ -3255,6 +3255,10 @@ modal
     margin: 0 5px 0 0;
 }
 
+.modal-body .input_wrap .unit {
+    top: 7px;
+}
+
 .modal-body .agreement h3 {
     margin-bottom: 20px;
     font-size: 18px;
