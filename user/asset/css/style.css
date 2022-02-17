@@ -2070,13 +2070,13 @@ Error
 
 .contents {
     position: absolute;
-    top: 44%;
+    top: 38%;
     left: 50%;
     width: 1200px;
-    -webkit-transform: translate(-50%, -44%);
-    -ms-transform: translate(-50%, -44%);
-    -o-transform: translate(-50%, -44%);
-    transform: translate(-50%, -44%);
+    -webkit-transform: translate(-50%, -38%);
+    -ms-transform: translate(-50%, -38%);
+    -o-transform: translate(-50%, -38%);
+    transform: translate(-50%, -38%);
 }
 
 .error h1 {
@@ -4352,6 +4352,7 @@ Media Query
         background-size: contain;
     }
     .contents {
+        margin-left: 0;
         top: 55%;
         -webkit-transform: translate(-50%, -55%);
         -ms-transform: translate(-50%, -55%);
