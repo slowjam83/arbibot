@@ -2996,8 +2996,10 @@ mypage
     text-align: center;
 }
 
-#pointCharge th,
-#pointCharge td {
+#pointCharge th:nth-child(1),
+#pointCharge th:nth-child(2),
+#pointCharge td:nth-child(1),
+#pointCharge td:nth-child(2) {
     text-align: right;
 }
 
