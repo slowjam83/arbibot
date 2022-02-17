@@ -4353,11 +4353,11 @@ Media Query
     }
     .contents {
         margin-left: 0;
-        top: 55%;
-        -webkit-transform: translate(-50%, -55%);
-        -ms-transform: translate(-50%, -55%);
-        -o-transform: translate(-50%, -55%);
-        transform: translate(-50%, -55%);
+        top: 65%;
+        -webkit-transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+        -o-transform: translate(-50%, -65%);
+        transform: translate(-50%, -65%);
         text-align: center;
     }
     .error h1 {
