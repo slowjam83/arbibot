@@ -4369,6 +4369,7 @@ Media Query
     }
     .error .logo {
         width: 272px;
+        bottom: 40px;
     }
 }
 
