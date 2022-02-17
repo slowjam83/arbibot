@@ -4348,7 +4348,7 @@ Media Query
         margin-bottom: 40px;
     }
     .error {
-        background: url(../img/error_mobile.jpg) no-repeat 50% 0, linear-gradient(#4341ce 40%, #fff 40% 40.5%, #322D90 40.5%);
+        background: url(../img/error_mobile.jpg) no-repeat 50% 0, linear-gradient(#4341ce 40%, #fff 40% 40.4%, #322D90 40.4%);
         background-size: contain;
     }
     .contents {
