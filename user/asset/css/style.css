@@ -2999,7 +2999,11 @@ mypage
 #pointCharge th:nth-child(1),
 #pointCharge th:nth-child(2),
 #pointCharge td:nth-child(1),
-#pointCharge td:nth-child(2) {
+#pointCharge td:nth-child(2),
+#pointUsed th:nth-child(2),
+#pointUsed th:nth-child(3),
+#pointUsed td:nth-child(2),
+#pointUsed td:nth-child(3) {
     text-align: right;
 }
 
