@@ -4423,10 +4423,6 @@ Media Query
 }
 
 @media (max-height: 720px) {
-    .error {
-        background: url(../img/error_mobile.jpg) no-repeat 50% -20px, #322D91;
-        background-size: contain;
-    }
     .contents {
         top: 65% !important;
         -webkit-transform: translate(-50%, -65%) !important;
