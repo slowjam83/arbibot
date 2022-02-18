@@ -83,7 +83,7 @@
     <script>
         w3.includeHTML(function() {
             //nav-top 링크
-            $(".nav-top li:nth-child(n)").click(function(e) {
+            $(".nav-top li:nth-child(n)", ".mo-nav-mid li:nth-child(n)").click(function(e) {
                 var arrLink = [
                     "./autotrading.html",
                     "./tradingbot01.html",
@@ -108,14 +108,8 @@
             });
 
             //nav-bottom 링크
-            $(".nav-bottom li:nth-child(3)").click(function(e) {
+            $(".nav-bottom li:nth-child(3)", ".mo-nav-bottom li:nth-child(3)").click(function(e) {
                 $(".section").load("./recruit.html");
-            });
-
-            // mobile nav
-            $('.ham').click(function(e) {
-                $(this).toggleClass("active");
-                $('.mo-nav').toggleClass("active");
             });
 
             //모바일 아이콘 메뉴 버튼
@@ -138,6 +132,15 @@
                 for (var i2 = 0; i2 < arrLink.length; i2++) {
                     $(".section").load(arrLink[i]);
                 }
+            });
+
+            // mobile nav
+            $('.ham').click(function(e) {
+                $(this).toggleClass("active");
+                $('.mo-nav').toggleClass("active");
+            });
+            $('.mo-nav a').click(function(e) {
+                $('.ham').removeClass("active");
             });
 
             //마이페이지 버튼
