@@ -83,7 +83,10 @@
 
     <script>
         w3.includeHTML(function() {
-            $("html, body").scrollTop(0);
+            $(window).on('beforeunload', function() {
+                $('body').hide();
+                $(window).scrollTop(0);
+            });
 
             //nav-top 링크
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
