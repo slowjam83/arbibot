@@ -83,6 +83,9 @@
 
     <script>
         w3.includeHTML(function() {
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            document.body.scrollTop = 0; // For Safari
+
             //nav-top 링크
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
                 var arrLink = [

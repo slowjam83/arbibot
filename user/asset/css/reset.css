@@ -28,6 +28,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
 }
 
 html,
@@ -64,13 +68,6 @@ button {
     color: #333;
     font-family: 'Noto Sans KR', 'AppleSDGothicNeo', sans-serif;
     border: 0;
-}
-
-body {
-    color: #333;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1;
 }
 
 ul,
