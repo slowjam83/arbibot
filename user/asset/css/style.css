@@ -2966,9 +2966,13 @@ mypage
     margin-bottom: 0;
 }
 
+.mypage .setting-box li {
+    margin-bottom: 20px;
+}
+
 .mypage .setting-box h3 {
     display: inline-block;
-    width: 200px;
+    width: 80px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -3463,8 +3467,7 @@ Media Query
     .rightSection {
         width: 340px;
     }
-    .setting-box li label,
-    .mypage .setting-box h3 {
+    .setting-box li label {
         width: 162px;
     }
     .setting-box li .tip-modal {
