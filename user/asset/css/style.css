@@ -3776,12 +3776,6 @@ Media Query
     .error .logo {
         bottom: 40px;
     } */
-    #pointCharge th:nth-child(1),
-    #pointCharge th:nth-child(2),
-    #pointCharge td:nth-child(1),
-    #pointCharge td:nth-child(2) {
-        width: 33.33%;
-    }
     #pointCharge th:nth-child(3),
     #pointCharge td:nth-child(3),
     #pointUsed th:nth-child(3),
@@ -3798,6 +3792,12 @@ Media Query
     .wallet .table-wrap table th:last-child,
     .wallet .table-wrap table td:last-child {
         display: none;
+    }
+    #pointCharge th:nth-child(1),
+    #pointCharge th:nth-child(2),
+    #pointCharge td:nth-child(1),
+    #pointCharge td:nth-child(2) {
+        width: 33.33%;
     }
     #pointUsed th:nth-child(1),
     #pointUsed td:nth-child(1) {
