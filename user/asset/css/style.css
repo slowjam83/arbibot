@@ -2970,6 +2970,10 @@ mypage
     margin-bottom: 20px;
 }
 
+.mypage .setting-box li:last-child {
+    margin-bottom: 0;
+}
+
 .mypage .setting-box h3 {
     display: inline-block;
     width: 80px;
