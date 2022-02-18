@@ -1,5 +1,9 @@
 /* reset */
-*, html, *:before, *:after {
+
+*,
+html,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,11 +17,52 @@
     outline: none;
 }
 
-html, body, div, span, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input, select, textarea, table, col, colgroup, thead, tfoot, tbody, th, td, button {
+html {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+html,
+body,
+div,
+span,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+table,
+col,
+colgroup,
+thead,
+tfoot,
+tbody,
+th,
+td,
+button {
     margin: 0;
     padding: 0;
     color: #333;
-    font-family: 'Noto Sans KR','AppleSDGothicNeo', sans-serif;
+    font-family: 'Noto Sans KR', 'AppleSDGothicNeo', sans-serif;
     border: 0;
 }
 
@@ -28,13 +73,16 @@ body {
     line-height: 1;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-em, address {
+em,
+address {
     font-style: normal;
 }
 
@@ -57,7 +105,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     vertical-align: middle;
     padding: 10px 20px;
@@ -70,7 +119,9 @@ a {
     line-height: 1;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
 }
 
@@ -84,27 +135,43 @@ button {
     cursor: pointer
 }
 
+
 /* IE - input close button delete */
+
 input::-ms-clear {
     display: none;
 }
 
+
 /* RESET - chrome input background sky set */
+
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 0;
     -webkit-text-fill-color: #848484;
 }
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
-p, span, h1, h2, h3, h4, h5, h6 {
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     word-break: keep-all;
 }
 
 b {
     font-weight: 700 !important
 }
+
 textarea {
     resize: none
 }
