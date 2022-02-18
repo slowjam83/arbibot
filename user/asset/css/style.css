@@ -3507,8 +3507,7 @@ Media Query
         grid-gap: 10px;
         gap: 10px;
     }
-    .setting-box li label,
-    .mypage .setting-box h3 {
+    .setting-box li label {
         width: 100%;
         margin-bottom: 12px;
     }
