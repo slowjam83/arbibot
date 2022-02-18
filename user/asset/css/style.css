@@ -3793,6 +3793,10 @@ Media Query
     .wallet .table-wrap table td:last-child {
         display: none;
     }
+    #pointUsed th:nth-child(1),
+    #pointUsed td:nth-child(1) {
+        width: 120px;
+    }
 }
 
 @media (max-width: 996px) {
