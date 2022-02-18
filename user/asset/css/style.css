@@ -2995,10 +2995,6 @@ mypage
     height: auto;
 }
 
-.point-list .table-wrap table {
-    width: 100%;
-}
-
 .point-list .table-wrap table th,
 .point-list .table-wrap table td {
     text-align: center;
@@ -4337,9 +4333,6 @@ Media Query
     }
     .sec-pw-box p span {
         width: calc(100% - 50px);
-    }
-    .point-list .table-wrap table {
-        width: 520px;
     }
     .modal-close {
         width: 16px;
