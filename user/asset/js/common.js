@@ -1,15 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // loading script
     $.fakeLoader({
         timeToHide: 700,
         bgColor: '#2d2d2f',
         spinner: "spinner5"
-    });
-    
-    // mobile nav
-    $('.ham').click(function () {
-        $(this).toggleClass("active");
-        $('.mo-nav').toggleClass("active");
     });
 
     $('.carousel').carousel({
@@ -19,11 +13,11 @@ $(document).ready(function () {
     // go top button
     btnTop();
 
-    $(document).on('scroll', function () {
+    $(document).on('scroll', function() {
         btnTop();
     });
 
-    $(document).on("click", "#goTop", function () {
+    $(document).on("click", "#goTop", function() {
         $("html,body").animate({
             "scrollTop": "0"
         });
@@ -32,7 +26,7 @@ $(document).ready(function () {
 
     function btnTop() {
         var scrollTop = $(window).scrollTop();
-        
+
         if (scrollTop > 320) {
             $("#goTop").stop().show().animate({
                 "opacity": "1"
@@ -40,9 +34,9 @@ $(document).ready(function () {
         } else {
             $("#goTop").stop().animate({
                 "opacity": "0"
-            }, 300, function () {
+            }, 300, function() {
                 $("#goTop").hide();
             });
         }
-    };    
+    };
 });
