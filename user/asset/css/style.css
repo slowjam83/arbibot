@@ -3780,6 +3780,12 @@ Media Query
     .error .logo {
         bottom: 40px;
     } */
+    #pointCharge th:nth-child(3),
+    #pointCharge td:nth-child(3),
+    #pointUsed th:nth-child(3),
+    #pointUsed td:nth-child(3) {
+        display: none;
+    }
 }
 
 @media (max-width: 1040px) {
