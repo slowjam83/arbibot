@@ -83,8 +83,8 @@
 
     <script>
         w3.includeHTML(function() {
-            $('html, body').animate({
-                scrollTop: $(".section-wrap").offset().top
+            window.scrollTop(function() {
+                $(".section-wrap").offset().top
             });
 
             //nav-top 링크
