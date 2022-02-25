@@ -3223,13 +3223,17 @@ modal
 .modal-body ul.gridBotStatus li {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .modal-body ul.gridBotStatus li h4,
 .modal-body ul.gridBotStatus li p {
     margin-bottom: 0;
+    color: #a8a8a8;
+}
+.modal-body ul.gridBotStatus li h4 {
+    width: 220px;
 }
 
 .modal-body ol li {
