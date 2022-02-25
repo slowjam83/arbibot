@@ -3230,10 +3230,12 @@ modal
 .modal-body ul.gridBotStatus li h4,
 .modal-body ul.gridBotStatus li p {
     margin-bottom: 0;
-    color: #a8a8a8;
 }
 .modal-body ul.gridBotStatus li h4 {
     width: 220px;
+}
+.modal-body ul.gridBotStatus li p {
+    color: #a8a8a8;
 }
 
 .modal-body ol li {
