@@ -3456,7 +3456,39 @@ modal
 수익률 계산기
 =============================================================*/
 
-.calcWrap {}
+.calcWrap {
+    background: #fff;
+}
+
+.calcWrap .contentsArea {
+    padding: 0 20px;
+    margin-top: 0;
+}
+
+.calcWrap .tit-head {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.calcWrap .tit-head h2 {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.calcWrap .setting-box {
+    border: 0;
+    background: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+.calcWrap .setting-box li {
+    justify-content: space-between;
+}
+
+.calcWrap .setting-box li label {
+    width: auto !important;
+}
 
 
 /*============================================================
@@ -3810,6 +3842,11 @@ Media Query
     #pointUsed th:nth-child(3),
     #pointUsed td:nth-child(3) {
         display: none;
+    }
+    .setting-box .input-wrap li,
+    .input-wrap,
+    .input-wrap li input[type="text"] {
+        width: inherit;
     }
 }
 
@@ -4433,6 +4470,10 @@ Media Query
     }
     .error .logo {
         width: 272px;
+    }
+    .calcWrap .setting-box {
+        padding: 0;
+        margin-top: 0;
     }
 }
 
