@@ -379,6 +379,10 @@ a.disabled-font {
     top: 2px;
 }
 
+.flex-start {
+    justify-content: flex-start !important;
+}
+
 .flex-column {
     display: flex;
     flex-flow: column wrap;
@@ -517,14 +521,19 @@ a.small-btn.disabled,
 a.xs-btn,
 .xs-btn {
     display: inline-block;
-    font-size: 12px;
-    color: #fff;
+    font-size: 12px !important;
+    color: #fff !important;
     height: 20px;
     line-height: 18px;
     padding: 0 6px 0 7px;
     background: #4341ce;
     border-radius: 3px;
     font-weight: 300;
+}
+
+a.xs-btn::after,
+.xs-btn::after {
+    content: none;
 }
 
 .line-btn {
@@ -3231,9 +3240,11 @@ modal
 .modal-body ul.gridBotStatus li p {
     margin-bottom: 0;
 }
+
 .modal-body ul.gridBotStatus li h4 {
     width: 220px;
 }
+
 .modal-body ul.gridBotStatus li p {
     color: #a8a8a8;
 }
