@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:title" content="arbibot - virtual assets multi trading system" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/thumbnail.jpg" />
+    <meta property="og:description" content="arbibot - virtual assets multi trading system" />
+
+    <title>arbibot - virtual assets multi trading system</title>
+
+    <link href="./asset/css/reset.css" rel="stylesheet" />
+    <link href="./asset/css/style.css?after" rel="stylesheet" />
+    <link href="./asset/css/fakeLoader.min.css" rel="stylesheet" />
+    <link href="./asset/css/icomoon.css" rel="stylesheet" />
+</head>
+
+<body class="calcWrap">
+    <div class="modal-close pc-hidden"></div>
+    <div class="sub-container-head">
+        <h1 class="subpage-title">교차거래 봇 수익률 계산기</h1>
+    </div>
+    <div class="contentsArea">
+        <div class="calc-setting">
+            <div class="tit-head">
+                <h2>교차거래 조건 입력</h2>
+            </div>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="hidden">교차거래 조건 입력</legend>
+                    <ul class="setting-box">
+                        <li>
+                            <label for="">1회 거래 수량</label>
+                            <ol class="input-wrap">
+                                <li class="pl0">
+                                    <input type="text" value="0" name="" id="qpt" class="ml0"><span class="unit">원 &nbsp;</span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="">수수료</label>
+                            <ol class="input-wrap">
+                                <li class="pl0">
+                                    <input type="text" value="0" name="" id="" class="ml0"><span class="unit">% &nbsp;</span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="">최고가</label>
+                            <ol class="input-wrap">
+                                <li class="num-spinner pd0">
+                                    <input type="number" value="0" min="0" max="100000000" step="1000" />
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="">최저가</label>
+                            <ol class="input-wrap">
+                                <li class="num-spinner pd0">
+                                    <input type="number" value="0" min="0" max="100000000" step="1000" />
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="">주문수</label>
+                            <ol class="input-wrap">
+                                <li class="num-spinner pd0">
+                                    <input type="number" value="0" min="0" max="10000" step="1" />
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="btn-wrap">
+                            <button type="button" class="large-btn">수익률 계산하기</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="calc-result">
+            <div class="tit-head">
+                <h2>수익률 계산 결과</h2>
+            </div>
+            <div class="result-wrap">
+                <ul>
+                    <li>
+                        <label for="">호가 간격</label>
+                        <p>약<span>0</span>KRW</p>
+                    </li>
+                    <li>
+                        <label for="">매수/매도 쌍거래 예상 수익</label>
+                        <p>약<span>0</span>KRW</p>
+                    </li>
+                    <li>
+                        <label for="">100회 쌍거래 예상 수익</label>
+                        <p><span>0</span>KRW</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 화면로딩바 -->
+    <div class="fakeLoader"></div>
+
+    <button id="goTop" class="btn-top pc-hidden">
+      <i class="icon-arrow-up"></i>
+    </button>
+
+    <!-- script -->
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+    <script src="./asset/js/jquery-ui.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/fakeLoader.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/mousewheel.min.js"></script>
+    <script src="./asset/js/num-spinner.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //키를 누르거나 떼었을때 이벤트 발생
+            $("#qpt").bind('keyup keydown', function() {
+                inputNumberFormat(this);
+            });
+
+            //입력한 문자열 전달
+            function inputNumberFormat(obj) {
+                obj.value = comma(uncomma(obj.value));
+            }
+
+            //콤마찍기
+            function comma(str) {
+                str = String(str);
+                return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+            }
+
+            //콤마풀기
+            function uncomma(str) {
+                str = String(str);
+                return str.replace(/[^\d]+/g, '');
+            }
+
+            //숫자만 리턴(저장할때)
+            //alert(cf_getNumberOnly('1,2./3g')); -> 123 return
+            function cf_getNumberOnly(str) {
+                var len = str.length;
+                var sReturn = "";
+
+                for (var i = 0; i < len; i++) {
+                    if ((str.charAt(i) >= "0") && (str.charAt(i) <= "9")) {
+                        sReturn += str.charAt(i);
+                    }
+                }
+                return sReturn;
+            }
+
+            //input number spinner
+            $(".num-spinner > input[type='number']").inputSpinner();
+
+            $('.modal-close').click(function() {
+                window.close();
+            });
+        });
+    </script>
+</body>
