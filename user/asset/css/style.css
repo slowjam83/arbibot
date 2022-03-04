@@ -1312,6 +1312,11 @@ main
     background: url('../img/banner/event_bg_left.png') no-repeat 0 0, url('../img/banner/event_bg_right.png') no-repeat 100% 0, #f5f5f5;
 }
 
+.point-banner * {
+    -webkit-text-stroke: 5px #f5f5f5;
+    text-shadow: -1px -1px 0 #f5f5f5, 1px -1px 0 #f5f5f5, -1px 1px 0 #f5f5f5, 1px 1px 0 #f5f5f5;
+}
+
 .point-banner p {
     font-size: 24px;
 }
