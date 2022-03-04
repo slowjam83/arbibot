@@ -3476,10 +3476,12 @@ modal
     font-weight: 500;
 }
 
-.calcWrap .setting-box {
+.calcWrap .setting-box,
+.calcWrap .result-wrap {
     border: 0;
     background: #f8f8f8;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .calcWrap .setting-box li {
@@ -3846,7 +3848,7 @@ Media Query
     .setting-box .input-wrap li,
     .input-wrap,
     .input-wrap li input[type="text"] {
-        width: inherit;
+        width: 300px;
     }
 }
 
@@ -4472,7 +4474,6 @@ Media Query
         width: 272px;
     }
     .calcWrap .setting-box {
-        padding: 0;
         margin-top: 0;
     }
 }
