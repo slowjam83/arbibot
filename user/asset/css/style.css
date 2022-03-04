@@ -533,7 +533,8 @@ a.xs-btn,
 
 a.xs-btn::after,
 .xs-btn::after {
-    content: none;
+    content: none !important;
+    margin-left: 0 !important;
 }
 
 .line-btn {
@@ -651,6 +652,10 @@ a.write-btn,
 
 .refresh-btn img {
     width: 100%;
+}
+
+.calc-btn {
+    margin: 0 0 8px 10px;
 }
 
 
