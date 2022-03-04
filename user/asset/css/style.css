@@ -1313,7 +1313,7 @@ main
 }
 
 .point-banner * {
-    -webkit-text-stroke: 5px #f5f5f5;
+    /* -webkit-text-stroke: 5px #f5f5f5; */
     text-shadow: -1px -1px 0 #f5f5f5, 1px -1px 0 #f5f5f5, -1px 1px 0 #f5f5f5, 1px 1px 0 #f5f5f5;
 }
 
