@@ -4156,9 +4156,6 @@ Media Query
         padding: 0;
         background: transparent;
     }
-    .point-banner p {
-        background: #fff;
-    }
     .partners li {
         background: #fff;
     }
@@ -4520,6 +4517,15 @@ Media Query
     }
     .error h1 {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 420px) {
+    .point-banner p {
+        font-size: 18px;
+    }
+    .point-banner h1 {
+        font-size: 30px;
     }
 }
 
