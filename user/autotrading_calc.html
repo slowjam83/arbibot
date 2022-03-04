@@ -120,14 +120,6 @@
     <script src="./asset/js/num-spinner.js"></script>
 
     <script>
-        $(window).on('load', function() {
-            var strWidth = $('.calcWrap').outerWidth() + (window.outerWidth - window.innerWidth);
-            var strHeight = $('.calcWrap').outerHeight() + (window.outerHeight - window.innerHeight);
-
-            //resize 
-            window.resizeTo(strWidth, strHeight);
-        });
-
         $(document).ready(function() {
             //키를 누르거나 떼었을때 이벤트 발생
             $("#qpt").bind('keyup keydown', function() {
