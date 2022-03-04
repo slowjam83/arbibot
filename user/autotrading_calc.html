@@ -19,7 +19,7 @@
     <link href="./asset/css/icomoon.css" rel="stylesheet" />
 </head>
 
-<body class="calcWrap">
+<body class="calcWrap scroll">
     <div class="modal-close pc-hidden"></div>
     <div class="sub-container-head">
         <h1 class="subpage-title">교차거래 봇 수익률 계산기</h1>
@@ -120,6 +120,32 @@
     <script src="./asset/js/num-spinner.js"></script>
 
     <script>
+        $(window).load(function() {
+            // 팝업 창 크기를 HTML 크기에 맞추어 자동으로 크기를 조정하는 함수
+            var strWidth;
+            var strHeight;
+
+            //innerWidth / innerHeight / outerWidth / outerHeight 지원 브라우저
+            if (window.innerWidth && window.innerHeight && window.outerWidth && window.outerHeight) {
+                strWidth = $('.calcWrap').outerWidth() + (window.outerWidth - window.innerWidth);
+                strHeight = $('.calcWrap').outerHeight() + (window.outerHeight - window.innerHeight);
+            } else {
+                var strDocumentWidth = $(document).outerWidth();
+                var strDocumentHeight = $(document).outerHeight();
+
+                window.resizeTo(strDocumentWidth, strDocumentHeight);
+
+                var strMenuWidth = strDocumentWidth - $(window).width();
+                var strMenuHeight = strDocumentHeight - $(window).height();
+
+                strWidth = $('.calcWrap').outerWidth() + strMenuWidth;
+                strHeight = $('.calcWrap').outerHeight() + strMenuHeight;
+            }
+
+            //resize
+            window.resizeTo(strWidth, strHeight);
+
+        });
         $(document).ready(function() {
             //키를 누르거나 떼었을때 이벤트 발생
             $("#qpt").bind('keyup keydown', function() {
