@@ -4545,6 +4545,13 @@ Media Query
     .api-setting .tit-head li a {
         padding: 5px 10px 6px;
     }
+    .point-banner p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .point-banner h1 {
+        font-size: 26px;
+    }
 }
 
 @media (max-height: 720px) {
