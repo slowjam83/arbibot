@@ -3466,6 +3466,11 @@ modal
     padding: 0;
 }
 
+#modalEvent .eventGo {
+    width: 100%;
+    height: 100%;
+}
+
 #modalEvent .modal-footer {
     text-align: left;
     height: 60px;
