@@ -2798,7 +2798,7 @@ footer
     justify-content: flex-end;
     gap: 10px;
     width: 100%;
-    left: 20px;
+    right: 20px;
     bottom: 0;
 }
 
