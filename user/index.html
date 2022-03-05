@@ -111,6 +111,10 @@
                 $("#modalEvent").hide();
             }
 
+            $(".eventGo").click(function(e) {
+                $(".section").load("./board_list.html");
+            });
+
             $(document).ready(function() {
                 var cookiedata = document.cookie;
                 if (cookiedata.indexOf("close=Y") < 0) {
