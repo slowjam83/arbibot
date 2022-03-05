@@ -3473,7 +3473,6 @@ modal
 
 #modalEvent .modal-footer {
     text-align: left;
-    height: 60px;
 }
 
 #modalEvent .modal-footer .btn-group {
@@ -4523,6 +4522,12 @@ Media Query
     }
     .calcWrap .setting-box {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    #modalEvent .modal-footer .btn-group {
+        height: 40px;
     }
 }
 
