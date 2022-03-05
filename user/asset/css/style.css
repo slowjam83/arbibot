@@ -2811,7 +2811,7 @@ footer
 
 .snsUtil a.facebook {
     background: url('../img/svg/social/facebook.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 9px 17px;
+    background-size: 16px 24px;
 }
 
 .snsUtil a.instagram {
@@ -2821,12 +2821,12 @@ footer
 
 .snsUtil a.blog {
     background: url('../img/svg/social/blog.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 20px 9px;
+    background-size: 32px 21px;
 }
 
 .snsUtil a.twitter {
     background: url('../img/svg/social/twitter.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 18px 14px;
+    background-size: 20px 16px;
 }
 
 .right-side {
