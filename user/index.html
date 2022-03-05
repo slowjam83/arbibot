@@ -105,7 +105,7 @@
             }
 
             var couponClose = function() {
-                if ($("input[name='chkbox']").is(":checked") == true) {
+                if ($(".todayClose").is(":checked") == true) {
                     setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
                 }
                 $("#modalEvent").hide();
