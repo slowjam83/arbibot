@@ -2798,12 +2798,15 @@ footer
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    width: 100%;
+    bottom: 0;
 }
 
 .snsUtil a {
     display: block;
     width: 30px;
     height: 30px;
+    border-radius: 15px;
 }
 
 .snsUtil a.facebook {
