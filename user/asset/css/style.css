@@ -4428,6 +4428,7 @@ Media Query
     }
     .left-side,
     .right-side {
+        display: block;
         width: 100%;
         padding: 0;
     }
