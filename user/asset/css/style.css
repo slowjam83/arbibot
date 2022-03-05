@@ -2760,6 +2760,7 @@ footer
 =============================================================*/
 
 .footer {
+    position: relative;
     width: 100%;
     padding: 28px 0;
     margin: 0 auto;
@@ -2790,6 +2791,35 @@ footer
 .kakaotalk p span {
     color: #888;
     font-weight: 400;
+}
+
+.snsUtil {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.snsUtil a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.snsUtil a.facebook {
+    background: url('../img/svg/social/facebook.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+}
+
+.snsUtil a.instagram {
+    background: url('../img/svg/social/instagram.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+}
+
+.snsUtil a.blog {
+    background: url('../img/svg/social/blog.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+}
+
+.snsUtil a.twitter {
+    background: url('../img/svg/social/twitter.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
 }
 
 .right-side {
