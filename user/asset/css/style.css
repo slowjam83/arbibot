@@ -2760,16 +2760,15 @@ footer
 =============================================================*/
 
 .footer {
-    position: relative;
     width: 100%;
     padding: 28px 0;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: table;
 }
 
 .left-side {
+    position: relative;
+    display: table-cell;
     text-align: right;
     width: 240px;
     padding: 0 20px;
@@ -2811,21 +2810,26 @@ footer
 
 .snsUtil a.facebook {
     background: url('../img/svg/social/facebook.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 9px 17px;
 }
 
 .snsUtil a.instagram {
     background: url('../img/svg/social/instagram.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 18px 18px;
 }
 
 .snsUtil a.blog {
     background: url('../img/svg/social/blog.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 20px 9px;
 }
 
 .snsUtil a.twitter {
     background: url('../img/svg/social/twitter.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 18px 14px;
 }
 
 .right-side {
+    display: table-cell;
     width: calc(100% - 240px);
     padding: 0 20px;
 }
