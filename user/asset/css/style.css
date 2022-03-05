@@ -4432,6 +4432,9 @@ Media Query
         width: 100%;
         padding: 0;
     }
+    .snsUtil {
+        position: inherit;
+    }
     .notice {
         border-radius: 5px;
         margin-bottom: 10px;
@@ -4451,7 +4454,7 @@ Media Query
         background: #fbe902;
         border-top: 0;
         border-radius: 5px;
-        margin: 0 0 20px;
+        margin: 0 0 30px;
     }
     .kakaotalk img {
         margin-bottom: 0;
@@ -4469,7 +4472,7 @@ Media Query
         margin-bottom: 15px;
     }
     .footer-logo {
-        width: 90px;
+        height: 30px;
     }
     .terms-btn-wrap a {
         color: #fff;
