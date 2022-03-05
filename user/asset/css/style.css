@@ -3462,6 +3462,37 @@ modal
     border: 1px solid #d9d9d9;
 }
 
+#modalEvent .modal-dialog {
+    padding: 0;
+}
+
+#modalEvent .modal-footer {
+    text-align: left;
+    height: 60px;
+}
+
+#modalEvent .modal-footer .btn-group {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#modalEvent input[type="checkbox"].hidden-checkbox {
+    left: 20px;
+}
+
+#modalEvent .check-mark {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+#modalEvent .modal-close {
+    position: inherit;
+}
+
 
 /*============================================================
 수익률 계산기
