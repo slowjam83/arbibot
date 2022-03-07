@@ -1561,7 +1561,7 @@ sub page
 
 .input-wrap li .unit {
     position: absolute;
-    z-index: 100;
+    z-index: 99;
     right: 0;
     top: 10px;
     font-size: 12px;
