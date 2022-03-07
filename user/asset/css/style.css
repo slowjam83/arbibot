@@ -2086,6 +2086,22 @@ p.time-info {
 Error
 =============================================================*/
 
+.userGuide p,
+.userGuide li {
+    line-height: 1.4;
+}
+
+.userGuide img {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/*============================================================
+Error
+=============================================================*/
+
 .error {
     position: relative;
     background: url('../img/error.jpg') no-repeat 50% 50%;
