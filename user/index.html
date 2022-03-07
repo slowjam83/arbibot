@@ -24,7 +24,7 @@
     <link href="./asset/css/reset.css" rel="stylesheet" />
     <link href="./asset/css/style.css?after" rel="stylesheet" />
     <link href="./asset/css/select2.css" rel="stylesheet" />
-    <link href="./asset/css/fakeLoader.min.css" rel="stylesheet" />
+    <link href="./asset/css/fakeLoader.css" rel="stylesheet" />
     <link href="./asset/css/icomoon.css" rel="stylesheet" />
 
     <!-- 에디터(Summernote) source -->
@@ -75,7 +75,7 @@
     <script src="./asset/js/jquery-ui.js"></script>
     <script src="./asset/js/w3.js"></script>
     <script src="./asset/js/common.js"></script>
-    <script src="./asset/js/fakeLoader.min.js"></script>
+    <script src="./asset/js/fakeLoader.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
     <script src="./asset/js/mousewheel.min.js"></script>
     <script src="./asset/js/num-spinner.js"></script>
@@ -224,6 +224,15 @@
             $('.slippage-list-open').click(function() {
                 $(this).toggleClass("on");
                 $(".slippage-list").toggleClass("on");
+            });
+
+            //딤처리 로딩 이미지
+            $.fakeLoader({
+                timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
+                zIndex: 999, // 순서 
+                spinner: "spinner2", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+                bgColor: "rgba(0,0,0,.5)", //Hex, RGB or RGBA colors 배경색깔 
+                // imagePath:"yourPath/customizedImage.gif" // 원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
             });
 
             //댓글 입력 textarea 글자수 체크
