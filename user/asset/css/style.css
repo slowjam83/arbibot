@@ -2088,13 +2088,13 @@ Error
 
 .userGuide p,
 .userGuide li {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .userGuide img {
     border: 1px solid #d9d9d9;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
