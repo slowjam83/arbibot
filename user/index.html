@@ -226,15 +226,23 @@
                 $(".slippage-list").toggleClass("on");
             });
 
+            $("#fakeLoader").fakeLoader({
+                timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
+                zIndex: 999, // 순서 
+                spinner: "spinner2", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+                bgColor: "rgba(0,0,0,.5)", //Hex, RGB or RGBA colors 배경색깔 
+                // imagePath: "yourPath/customizedImage.gif" //원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
+            });
+
             //댓글 입력 textarea 글자수 체크
-            $("#comment-textarea").on("keyup", function() {
+            /* $("#comment-textarea").on("keyup", function() {
                 $("#text-counter").html($(this).val().length + " / 300");
 
                 if ($(this).val().length > 300) {
                     $(this).val($(this).val().substring(0, 300));
                     $("#text-counter").html("(300 / 300)");
                 }
-            });
+            }); */
 
             // 에디터(Summernote)
             /* $("#summernote").summernote({
