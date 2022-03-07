@@ -2097,6 +2097,11 @@ Error
     margin-top: 20px;
 }
 
+.userGuide a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
 
 /*============================================================
 Error
