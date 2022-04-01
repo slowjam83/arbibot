@@ -3904,6 +3904,11 @@ Media Query
     .point-banner {
         background: url('../img/banner/event_bg_m_left.png') no-repeat 0 0, url('../img/banner/event_bg_m_right.png') no-repeat 100% 0, #f5f5f5;
     }
+    .chargePay,
+    .payType,
+    .totalPay {
+        grid-template-columns: repeat(3, 1fr)
+    }
 }
 
 @media (max-width: 1280px) {
