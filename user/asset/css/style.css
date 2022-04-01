@@ -1983,6 +1983,8 @@ p.time-info {
 
 .pointTerms fieldset {
     display: table;
+    border-collapse: separate;
+    border-spacing: 0 10px;
 }
 
 .pointTerms label {
