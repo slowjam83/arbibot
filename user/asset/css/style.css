@@ -1992,6 +1992,7 @@ p.time-info {
     font-size: 14px;
     position: relative;
     text-indent: 25px;
+    position: relative;
 }
 
 .pointTerms label input[type="checkbox"],
@@ -2003,6 +2004,9 @@ p.time-info {
     font-size: 12px;
     text-decoration: underline;
     color: #888;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
 }
 
 .recruit-banner {
