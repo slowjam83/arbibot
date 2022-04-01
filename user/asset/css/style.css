@@ -1955,6 +1955,10 @@ p.time-info {
     justify-content: space-between;
 }
 
+.pointTerms label {
+    width: 100%;
+}
+
 .recruit-banner {
     width: 100%;
     height: 300px;
