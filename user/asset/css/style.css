@@ -1964,12 +1964,28 @@ p.time-info {
     text-align: center;
 }
 
-.totalPay * {
-    display: table-cell;
+.totalPay {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.totalPay p {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.totalPay p span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pointTerms fieldset {
+    display: table;
 }
 
 .pointTerms label {
-    width: 100%;
+    display: table-row;
 }
 
 .recruit-banner {
