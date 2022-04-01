@@ -1925,16 +1925,16 @@ p.time-info {
 
 .chargePay,
 .payType {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: table;
 }
 
 .chargePay li,
 .payType li {
+    display: table-cell;
     height: 40px;
     padding: 0 20px;
     border: 1px solid #ebebeb;
-    margin: 0 -1px -1px 0;
+    border-collapse: collapse;
     transition: all .2s ease;
 }
 
@@ -1945,7 +1945,6 @@ p.time-info {
     border: 1px solid #4341ce;
     background-color: #f6f6fd;
     transition: all .2s ease;
-    margin: 0;
 }
 
 .chargePay li button,
