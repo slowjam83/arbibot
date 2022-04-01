@@ -1933,9 +1933,10 @@ p.time-info {
 .payType li {
     height: 40px;
     padding: 0 20px;
-    border: 1px solid #ebebeb;
-    border-right: 2px;
-    border-bottom: 2px;
+    border-left: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-right: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
     margin: 0 -1px -1px 0;
     transition: all .2s ease;
 }
@@ -1944,7 +1945,10 @@ p.time-info {
 .chargePay li.on,
 .payType li:hover,
 .payType li.on {
-    border: 1px solid #4341ce;
+    border-left: 1px solid #4341ce;
+    border-top: 1px solid #4341ce;
+    border-right: 2px solid #4341ce;
+    border-bottom: 2px solid #4341ce;
     background-color: #f6f6fd;
     transition: all .2s ease;
 }
