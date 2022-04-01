@@ -1985,7 +1985,6 @@ p.time-info {
     display: table;
     border-collapse: separate;
     border-spacing: 0 5px;
-    width: 50%;
 }
 
 .pointTerms label {
@@ -1993,12 +1992,6 @@ p.time-info {
     font-size: 14px;
     position: relative;
     text-indent: 25px;
-    position: relative;
-}
-
-.pointTerms label div {
-    display: table-cell;
-    width: 100%;
 }
 
 .pointTerms label input[type="checkbox"],
@@ -3987,6 +3980,11 @@ Media Query
         -ms-transform: translate(-50%, -38%);
         -o-transform: translate(-50%, -38%);
         transform: translate(-50%, -38%);
+    }
+    .chargePay,
+    .payType,
+    .totalPay {
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
