@@ -1926,14 +1926,13 @@ p.time-info {
 .chargePay,
 .payType,
 .totalPay {
-    display: table;
+    display: grid;
     border-collapse: collapse;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .chargePay li,
 .payType li {
-    display: table-cell;
-    width: 20%;
     height: 40px;
     padding: 0 20px;
     border: 1px solid #ebebeb;
