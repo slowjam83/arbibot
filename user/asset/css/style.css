@@ -4715,6 +4715,9 @@ Media Query
         padding: 0 20px;
         margin-top: 40px;
     }
+    .pointCharge {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -4754,6 +4757,11 @@ Media Query
     }
     .error h1 {
         font-size: 28px;
+    }
+    .chargePay,
+    .payType,
+    .totalPay {
+        grid-template-columns: repeat(1, 1fr)
     }
 }
 
