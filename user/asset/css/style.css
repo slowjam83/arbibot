@@ -1941,10 +1941,10 @@ p.time-info {
     background-color: #f6f6fd;
 }
 
-
-/* .chargePay li button p {
-    color: #;
-} */
+.chargePay li button {
+    display: inline-flex;
+    justify-content: space-between;
+}
 
 .recruit-banner {
     width: 100%;
