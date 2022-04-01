@@ -1967,6 +1967,7 @@ p.time-info {
 .totalPay {
     padding-bottom: 40px;
     border-bottom: 1px solid #ebebeb;
+    align-items: flex-end;
 }
 
 .totalPay p {
