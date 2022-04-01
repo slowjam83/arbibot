@@ -1996,6 +1996,11 @@ p.time-info {
     position: relative;
 }
 
+.pointTerms label div {
+    display: table-cell;
+    width: 100%;
+}
+
 .pointTerms label input[type="checkbox"],
 .pointTerms label .check-mark {
     top: 5px;
