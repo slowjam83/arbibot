@@ -1989,6 +1989,7 @@ p.time-info {
     font-size: 14px;
     position: relative;
     text-indent: 25px;
+    margin-bottom: 5px;
 }
 
 .pointTerms label input[type="checkbox"],
