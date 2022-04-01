@@ -1924,7 +1924,8 @@ p.time-info {
 }
 
 .chargePay,
-.payType {
+.payType,
+.totalPay {
     display: table;
     table-layout: calc(100% / 5);
 }
@@ -1962,6 +1963,10 @@ p.time-info {
 
 .payType li button {
     text-align: center;
+}
+
+.totalPay * {
+    display: table-cell;
 }
 
 .pointTerms label {
