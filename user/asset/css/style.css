@@ -1923,12 +1923,14 @@ p.time-info {
     font-weight: 400;
 }
 
-.chargePay {
+.chargePay,
+.payType {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.chargePay li {
+.chargePay li,
+.payType li {
     height: 40px;
     line-height: 38px;
     padding: 0 20px;
@@ -1937,13 +1939,16 @@ p.time-info {
 }
 
 .chargePay li:hover,
-.chargePay li.on {
+.chargePay li.on,
+.payType li:hover,
+.payType li.on {
     border: 1px solid #4341ce;
     background-color: #f6f6fd;
     transition: all .2s ease;
 }
 
-.chargePay li button {
+.chargePay li button,
+.payType li button {
     width: 100%;
     height: 100%;
     display: inline-flex;
