@@ -1926,6 +1926,7 @@ p.time-info {
 .chargePay,
 .payType {
     display: table;
+    table-layout: calc(100% / 5);
 }
 
 .chargePay li,
