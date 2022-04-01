@@ -1935,6 +1935,7 @@ p.time-info {
     line-height: 38px;
     padding: 0 20px;
     border: 1px solid #ebebeb;
+    border-collapse: collapse;
     transition: all .2s ease;
 }
 
