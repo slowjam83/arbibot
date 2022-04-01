@@ -1933,15 +1933,19 @@ p.time-info {
     line-height: 38px;
     padding: 0 20px;
     border: 1px solid #ebebeb;
+    transition: all .2s ease;
 }
 
 .chargePay li:hover,
 .chargePay li.on {
     border: 1px solid #4341ce;
     background-color: #f6f6fd;
+    transition: all .2s ease;
 }
 
 .chargePay li button {
+    width: 100%;
+    height: 100%;
     display: inline-flex;
     justify-content: space-between;
 }
