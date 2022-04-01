@@ -284,6 +284,10 @@ input[type="radio"]:checked~.radio {
     margin-top: 40px;
 }
 
+.mt60 {
+    margin-top: 60px;
+}
+
 .mb0 {
     margin-bottom: 0 !important;
 }
@@ -1905,6 +1909,10 @@ p.time-info {
 .pointCharge .tit-head p {
     color: #888;
     font-size: 14px;
+}
+
+.pointCharge .large-btn {
+    width: 468px;
 }
 
 .recruit-banner {
