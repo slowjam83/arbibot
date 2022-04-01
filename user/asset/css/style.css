@@ -1986,6 +1986,14 @@ p.time-info {
 
 .pointTerms label {
     display: table-row;
+    font-size: 14px;
+    position: relative;
+    text-indent: 25px;
+}
+
+.pointTerms label input[type="checkbox"],
+.pointTerms label .check-mark {
+    top: 5px;
 }
 
 .recruit-banner {
