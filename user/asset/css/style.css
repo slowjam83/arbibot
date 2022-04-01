@@ -1984,7 +1984,7 @@ p.time-info {
 .pointTerms fieldset {
     display: table;
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0 5px;
 }
 
 .pointTerms label {
@@ -1992,7 +1992,6 @@ p.time-info {
     font-size: 14px;
     position: relative;
     text-indent: 25px;
-    margin-bottom: 5px;
 }
 
 .pointTerms label input[type="checkbox"],
