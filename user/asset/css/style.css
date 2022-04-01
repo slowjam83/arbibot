@@ -1985,6 +1985,7 @@ p.time-info {
     display: table;
     border-collapse: separate;
     border-spacing: 0 5px;
+    width: 50%;
 }
 
 .pointTerms label {
