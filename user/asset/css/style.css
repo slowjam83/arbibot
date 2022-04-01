@@ -1958,6 +1958,10 @@ p.time-info {
     justify-content: space-between;
 }
 
+.payType li button {
+    text-align: center;
+}
+
 .pointTerms label {
     width: 100%;
 }
