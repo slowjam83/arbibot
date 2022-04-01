@@ -1906,6 +1906,10 @@ p.time-info {
     display: block;
 }
 
+.pointCharge .tit-head h2 {
+    font-weight: 500;
+}
+
 .pointCharge .tit-head p {
     color: #888;
     font-size: 14px;
@@ -1913,6 +1917,14 @@ p.time-info {
 
 .pointCharge .large-btn {
     width: 468px;
+}
+
+.pointCharge h3 {
+    font-weight: 400;
+}
+
+.chargePay {
+    display: grid;
 }
 
 .recruit-banner {
