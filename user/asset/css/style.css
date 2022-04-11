@@ -1311,31 +1311,33 @@ main
     background-size: 15px;
 } */
 
-.point-banner {
+.event-banner {
+    width: 100%;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.event-banner li {
+    height: 165px;
+}
+
+.event-banner li a {
     display: block;
     width: 100%;
-    height: 165px;
-    text-align: center;
-    margin: 40px 0;
-    background: url('../img/banner/event_bg_left.png') no-repeat 0 0, url('../img/banner/event_bg_right.png') no-repeat 100% 0, #f5f5f5;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
-.point-banner * {
-    /* -webkit-text-stroke: 5px #f5f5f5; */
-    text-shadow: -1px -1px 0 #f5f5f5, 1px -1px 0 #f5f5f5, -1px 1px 0 #f5f5f5, 1px 1px 0 #f5f5f5;
+.event-banner li:nth-child(1) a {
+    background: url('../img/banner/event_banner_01.jpg') no-repeat 50% 100%, #dde1e6;
+    background-size: contain;
 }
 
-.point-banner p {
-    font-size: 24px;
-    margin-bottom: 18px;
-}
-
-.point-banner h1 {
-    font-size: 36px;
+.event-banner li:nth-child(2) a {
+    background: url('../img/banner/event_banner_02.jpg') no-repeat 50% 100%, #f7ebeb;
+    background-size: contain;
 }
 
 .revenue {
@@ -3894,9 +3896,6 @@ Media Query
     .flexible-ml {
         margin-left: 0;
     }
-    .point-banner {
-        background: url('../img/banner/event_bg_m_left.png') no-repeat 0 0, url('../img/banner/event_bg_m_right.png') no-repeat 100% 0, #f5f5f5;
-    }
     .chargePay,
     .payType,
     .totalPay {
@@ -4765,15 +4764,6 @@ Media Query
     }
 }
 
-@media (max-width: 420px) {
-    .point-banner p {
-        font-size: 18px;
-    }
-    .point-banner h1 {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 390px) {
     .subpage-text {
         line-height: 1.4;
@@ -4786,13 +4776,6 @@ Media Query
     .ranking .tit-head li a,
     .api-setting .tit-head li a {
         padding: 5px 10px 6px;
-    }
-    .point-banner p {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    .point-banner h1 {
-        font-size: 26px;
     }
 }
 
