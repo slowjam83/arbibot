@@ -4750,10 +4750,14 @@ Media Query
 
 @media (max-width: 620px) {
     .event-banner li:nth-child(1) {
-        background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
+        background: url('../img/banner/event_banner_01.jpg') no-repeat 65% 100%, #dde1e6;
     }
     .event-banner li:nth-child(2) {
-        background: url('../img/banner/event_banner_02.jpg') no-repeat 100% 100%, #f7ebeb;
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 55% 100%, #f7ebeb;
+    }
+    .event-banner li a {
+        font-size: 18px;
+        padding: 0 20px;
     }
     #modalEvent .modal-footer .btn-group {
         height: 40px;
