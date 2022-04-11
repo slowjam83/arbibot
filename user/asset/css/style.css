@@ -4011,6 +4011,12 @@ Media Query
     .header .util .user-info {
         display: none;
     }
+    .event-banner li:nth-child(1) {
+        background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
+    }
+    .event-banner li:nth-child(2) {
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 100% 100%, #f7ebeb;
+    }
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -4203,6 +4209,12 @@ Media Query
     .container {
         height: auto;
         overflow-y: hidden;
+    }
+    .event-banner li:nth-child(1) {
+        background: url('../img/banner/event_banner_01.jpg') no-repeat 0 100%, #dde1e6;
+    }
+    .event-banner li:nth-child(2) {
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 0 100%, #f7ebeb;
     }
     .simulationWrap {
         background: #fff;
@@ -4737,6 +4749,12 @@ Media Query
 }
 
 @media (max-width: 620px) {
+    .event-banner li:nth-child(1) {
+        background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
+    }
+    .event-banner li:nth-child(2) {
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 100% 100%, #f7ebeb;
+    }
     #modalEvent .modal-footer .btn-group {
         height: 40px;
     }
