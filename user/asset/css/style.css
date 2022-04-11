@@ -1322,10 +1322,6 @@ main
 
 .event-banner li {
     height: 165px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 40px;
 }
 
 .event-banner li a {
@@ -1333,6 +1329,10 @@ main
     width: 100%;
     height: 100%;
     font-size: 24px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .event-banner li:nth-child(1) a {
