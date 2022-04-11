@@ -1326,11 +1326,11 @@ main
 }
 
 .event-banner li:nth-child(1) {
-    background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
+    background: url('../img/banner/event_banner_01.jpg') no-repeat 90% 100%, #dde1e6;
 }
 
 .event-banner li:nth-child(2) {
-    background: url('../img/banner/event_banner_02.jpg') no-repeat 100% 100%, #f7ebeb;
+    background: url('../img/banner/event_banner_02.jpg') no-repeat 80% 100%, #f7ebeb;
 }
 
 .event-banner li a {
@@ -3886,6 +3886,15 @@ Media Query
 }
 
 @media (max-width: 1354px) {
+    .event-banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .event-banner li:nth-child(1) {
+        background: url('../img/banner/event_banner_01.jpg') no-repeat 0 100%, #dde1e6;
+    }
+    .event-banner li:nth-child(2) {
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 0 100%, #f7ebeb;
+    }
     .input-wrap li input.price-input:first {
         margin-right: 0;
     }
