@@ -1331,13 +1331,13 @@ main
 }
 
 .event-banner li:nth-child(1) a {
-    background: url('../img/banner/event_banner_01.jpg') no-repeat 50% 100%, #dde1e6;
-    background-size: contain;
+    background: url('../img/banner/event_banner_01.jpg') no-repeat 85% 100%, #dde1e6;
+    background-size: cover;
 }
 
 .event-banner li:nth-child(2) a {
-    background: url('../img/banner/event_banner_02.jpg') no-repeat 50% 100%, #f7ebeb;
-    background-size: contain;
+    background: url('../img/banner/event_banner_02.jpg') no-repeat 85% 100%, #f7ebeb;
+    background-size: cover;
 }
 
 .revenue {
