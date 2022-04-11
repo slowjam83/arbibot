@@ -11,6 +11,11 @@ font
 common
 =============================================================*/
 
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     background: #f5f5f5;
 }
