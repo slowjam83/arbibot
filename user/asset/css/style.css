@@ -4020,7 +4020,7 @@ Media Query
         background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
     }
     .event-banner li:nth-child(2) {
-        background: url('../img/banner/event_banner_02.jpg') no-repeat 100% 100%, #f7ebeb;
+        background: url('../img/banner/event_banner_02.jpg') no-repeat 70% 100%, #f7ebeb;
     }
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
