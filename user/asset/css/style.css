@@ -11,6 +11,10 @@ font
 common
 =============================================================*/
 
+:root {
+    mainColor: #4341ce
+}
+
 html {
     width: 100vw;
     overflow-x: hidden;
@@ -336,13 +340,13 @@ input[type="radio"]:checked~.radio {
 
 a.pointUnderLine,
 .pointUnderLine {
-    color: #4341ce;
+    color: var(mainColor);
     text-decoration: underline;
 }
 
 .point-font,
 a.point-font {
-    color: #4341ce;
+    color: var(mainColor);
 }
 
 .point-font2,
@@ -493,7 +497,7 @@ button
     font-size: 16px;
     text-align: center;
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 5px;
 }
 
@@ -509,18 +513,18 @@ button
     font-size: 16px;
     text-align: center;
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 5px;
 }
 
 a.small-btn,
 .small-btn {
     font-size: 14px;
-    color: #4341ce;
+    color: var(mainColor);
     height: 24px;
     line-height: 24px;
     padding: 0 10px 2px;
-    border: 1px solid #4341ce;
+    border: 1px solid var(mainColor);
     border-radius: 3px;
 }
 
@@ -539,7 +543,7 @@ a.xs-btn,
     height: 20px;
     line-height: 18px;
     padding: 0 6px 0 7px;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 3px;
     font-weight: 300;
 }
@@ -552,8 +556,8 @@ a.xs-btn::after,
 
 .line-btn {
     background: #fff !important;
-    border: 1px solid #4341ce;
-    color: #4341ce !important;
+    border: 1px solid var(mainColor);
+    color: var(mainColor) !important;
 }
 
 .guide-btn {
@@ -579,7 +583,7 @@ a.write-btn,
     font-size: 16px;
     text-align: center;
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 5px;
     padding: 0 20px;
 }
@@ -640,7 +644,7 @@ a.write-btn,
     border-radius: 30px;
     cursor: pointer;
     opacity: 0;
-    color: #4341ce;
+    color: var(mainColor);
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
@@ -750,7 +754,7 @@ header
 }
 
 .user-info .point {
-    color: #4341ce;
+    color: var(mainColor);
 }
 
 .user-bot .xs-btn {
@@ -772,8 +776,8 @@ header
     height: 28px;
     line-height: 26px;
     font-size: 13px;
-    color: #4341ce;
-    border: 1px solid #4341ce;
+    color: var(mainColor);
+    border: 1px solid var(mainColor);
     border-radius: 5px;
     text-align: center;
 }
@@ -785,7 +789,7 @@ header
 
 .util-btn .btn-color {
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
     border: 0;
 }
 
@@ -1047,7 +1051,7 @@ mobile nav
     height: 134px;
     margin-left: 40px;
     padding: 58px 20px 20px;
-    background: #4341ce;
+    background: var(mainColor);
 }
 
 a.login-sync-text {
@@ -1168,7 +1172,7 @@ main
 .arbibot-status li p {
     font-size: 20px;
     font-weight: 700;
-    color: #4341ce;
+    color: var(mainColor);
     margin-top: 10px;
     font-family: "AppleSDGothicNeo", sans-serif;
 }
@@ -1390,7 +1394,7 @@ main
     font-size: 14px;
     font-weight: 400;
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
 }
 
 .revenue-card.mining h3 {
@@ -1408,7 +1412,7 @@ main
     font-weight: 700;
     text-align: right;
     margin: 15px 20px 0 0;
-    color: #4341ce;
+    color: var(mainColor);
 }
 
 .revenue-card.mining .amount {
@@ -1602,7 +1606,7 @@ sub page
 
 .operation-status .tit-head p {
     font-size: 11px;
-    color: #4341ce;
+    color: var(mainColor);
 }
 
 .operation-status .table-wrap table th,
@@ -1686,7 +1690,7 @@ sub page
 .tabNav li a.active:hover,
 .tabNav li a.active:focus {
     color: #fff;
-    background: #4341ce;
+    background: var(mainColor);
     transition: all 0.3s ease;
 }
 
@@ -1867,7 +1871,7 @@ p.time-info {
     width: 16px;
     height: 16px;
     line-height: 14px;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 8px;
     font-size: 12px;
     color: #fff;
@@ -1958,7 +1962,7 @@ p.time-info {
 .chargePay li.on,
 .payType li:hover,
 .payType li.on {
-    border: 1px solid #4341ce;
+    border: 1px solid var(mainColor);
     background-color: #f6f6fd;
     transition: all .2s ease;
 }
@@ -2510,7 +2514,7 @@ board
 }
 
 .comment-info .nickname {
-    color: #4341ce;
+    color: var(mainColor);
 }
 
 .post-time {
@@ -2659,7 +2663,7 @@ right section
     height: 40px;
     line-height: 40px;
     padding: 0 20px;
-    background: #4341ce;
+    background: var(mainColor);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -2775,7 +2779,7 @@ right section
 }
 
 .chat-list-top h3 {
-    color: #4341ce;
+    color: var(mainColor);
     font-weight: 500;
 }
 
@@ -2816,7 +2820,7 @@ right section
 .chat-input-area .msg-send-btn {
     width: 36px;
     height: 36px;
-    background: url("../img/send.png") no-repeat 50% 50%, #4341ce;
+    background: url("../img/send.png") no-repeat 50% 50%, var(mainColor);
     border-radius: 5px;
 }
 
@@ -2868,7 +2872,7 @@ Pagination
 
 .pagination li.active a,
 .pagination li a:hover {
-    color: #4341ce;
+    color: var(mainColor);
     font-weight: 500;
     text-decoration: underline;
 }
@@ -3593,7 +3597,7 @@ modal
     line-height: 36px;
     text-align: center;
     padding: 0 30px;
-    background: #4341ce;
+    background: var(mainColor);
     border-radius: 5px;
     color: #fff;
     border-radius: 38px;
@@ -4241,7 +4245,7 @@ Media Query
     .mystatus {
         padding: 10px;
         margin-bottom: 30px;
-        background: #4341ce;
+        background: var(mainColor);
     }
     .mystatus h2 {
         color: #fff;
@@ -4259,7 +4263,7 @@ Media Query
         display: none;
     }
     a.before-login span {
-        color: #4341ce;
+        color: var(mainColor);
         text-decoration: underline;
     }
     .after-login {
@@ -4342,7 +4346,7 @@ Media Query
         content: "";
         width: 50px;
         height: 50px;
-        border: 1px solid #4341ce;
+        border: 1px solid var(mainColor);
         border-radius: 25px;
         margin-bottom: 10px;
     }
@@ -4719,7 +4723,7 @@ Media Query
         margin-bottom: 40px;
     }
     .error {
-        background: url(../img/error_mobile.jpg) no-repeat 50% 0, linear-gradient(#4341ce 40%, #fff 40% 40.4%, #322D90 40.4%);
+        background: url(../img/error_mobile.jpg) no-repeat 50% 0, linear-gradient(var(mainColor) 40%, #fff 40% 40.4%, #322D90 40.4%);
         background-size: contain;
     }
     .contents {
