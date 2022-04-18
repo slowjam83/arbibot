@@ -4192,6 +4192,7 @@ Media Query
         padding: 18px;
         display: block;
         text-align: left;
+        position: inherit;
     }
     .top-banner .close-btn {
         top: 18px;
@@ -4216,6 +4217,10 @@ Media Query
         margin-left: 0;
         margin-right: 10px;
     }
+    .header {
+        position: relative;
+        top: inherit;
+    }
     .header .util {
         display: none;
     }
@@ -4224,6 +4229,9 @@ Media Query
     }
     nav {
         display: none;
+    }
+    .section-wrap {
+        margin-top: 0;
     }
     .section {
         width: calc(100% - 350px);
