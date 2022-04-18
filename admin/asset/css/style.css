@@ -3,81 +3,111 @@
 /*============================================================
 font
 =============================================================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
 /*============================================================
 common
 =============================================================*/
+
 body {
     background: #f5f5f5
 }
+
 .scroll::-webkit-scrollbar {
     width: 2px;
     height: 2px;
     -webkit-overflow-scrolling: auto
 }
+
 .scroll::-webkit-scrollbar-track {
     background-color: transparent
 }
+
 .scroll::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background-color: #9C9EB2
 }
+
 .scroll::-webkit-scrollbar-button {
     width: 0;
     height: 0
 }
+
 .scroll-none {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
+
 .scroll-none::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+    display: none;
+    /* Chrome, Safari, Opera*/
 }
+
 h2 {
     font-size: 16px
 }
+
 h3 {
     font-size: 14px
 }
+
 dt {
     font-weight: 500
 }
+
 dd {
     line-height: 1.4;
     color: #888;
     font-size: 14px;
     margin-bottom: 5px
 }
+
 dd::before {
     display: inline-block;
     content: '-';
     margin-right: 5px
 }
+
 table {
     width: 100%
 }
+
 th {
     background: #f8f8f8;
     font-weight: 500
 }
+
 tr {
     transition: all .3s ease
 }
+
+
 /* tr:hover, tr:focus {
     background: #f6f6fd;
     transition: all .3s ease
 } */
+
 td {
     font-weight: 400
 }
-th, td {
+
+th,
+td {
     font-size: 14px;
     line-height: 1.4;
     border: 1px solid #ebebeb
 }
-input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='file'], select {
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+input[type='file'],
+select {
     height: 32px;
     line-height: 32px;
     border: 1px solid #d4d4d4;
@@ -85,14 +115,18 @@ input[type='text'], input[type='number'], input[type='email'], input[type='passw
     padding: 0 10px;
     font-size: 16px
 }
+
 input[type='text']:valid {
     color: #888
 }
+
 input[type='text']:disabled {
     background: #ebebeb;
     color: #888
 }
-input[type='checkbox'], input[type='radio'] {
+
+input[type='checkbox'],
+input[type='radio'] {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -101,124 +135,161 @@ input[type='checkbox'], input[type='radio'] {
     z-index: 100;
     cursor: pointer
 }
+
 input[type='radio'] {
     top: 9px;
     left: -21px
 }
+
 .check-mark {
     cursor: pointer;
     position: absolute;
-    top:1px;
+    top: 1px;
     left: 0;
     display: inline-block;
     width: 16px;
     height: 16px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
-    background: #fff    
+    background: #fff
 }
-li.slippage .check-mark, li.slippage input[type='checkbox'] {
+
+li.slippage .check-mark,
+li.slippage input[type='checkbox'] {
     left: -21px
 }
-input[type='checkbox']:checked ~ .check-mark {
+
+input[type='checkbox']:checked~.check-mark {
     background: url('../img/check-mark.png') no-repeat 50% 50%
 }
-input[type='checkbox']:disabled ~ .check-mark {
+
+input[type='checkbox']:disabled~.check-mark {
     cursor: inherit;
     background: #ebebeb
 }
+
 .radio {
     cursor: pointer;
     position: absolute;
-    top:9px;
+    top: 9px;
     left: -21px;
     display: inline-block;
     width: 16px;
     height: 16px;
     border: 1px solid #d4d4d4;
     border-radius: 8px;
-    background: #fff 
+    background: #fff
 }
-input[type='radio']:checked ~ .radio {
+
+input[type='radio']:checked~.radio {
     background: url('../img/radio.png') no-repeat 50% 50%
 }
+
 .hidden {
     font-size: 0;
     text-indent: -9999
 }
+
 .pc-hidden {
     display: none
 }
+
 .mobile-hidden {
     display: block
 }
+
 .pd0 {
     padding: 0 !important
 }
+
 .pl20 {
     padding-left: 20px
 }
+
 .mg0 {
     margin: 0 !important
 }
+
 .ml0 {
     margin-left: 0 !important
 }
+
 .ml5 {
     margin-left: 5px
 }
+
 .ml20 {
     margin-left: 20px
 }
+
 .mr10 {
     margin-right: 10px
 }
+
 .mr20 {
     margin-right: 20px
 }
+
 .mr60 {
     margin-right: 60px
 }
+
 .mt10 {
     margin-top: 10px
 }
+
 .mb5 {
     margin-bottom: 5px
 }
+
 .mb10 {
     margin-bottom: 10px
 }
+
 .mb20 {
     margin-bottom: 20px
 }
+
 .mb40 {
     margin-bottom: 40px !important
 }
+
 .mb60 {
     margin-bottom: 60px !important
 }
+
 .w100 {
     width: 100% !important
 }
+
 .w-inherit {
     width: inherit !important
 }
+
 .minWidth100 {
     min-width: 100% !important
 }
-.minWidth100 th, .minWidth100 td {
+
+.minWidth100 th,
+.minWidth100 td {
     width: auto !important
 }
 
-.point-font, a.point-font {
+.point-font,
+a.point-font {
     color: #4341ce
 }
-.point-font2, a.point-font2 {
+
+.point-font2,
+a.point-font2 {
     color: #0099cc
 }
-.disabled-font, a.disabled-font {
+
+.disabled-font,
+a.disabled-font {
     color: #888
 }
+
 .caution {
     color: #ee417e;
     font-weight: 500
@@ -234,22 +305,26 @@ input[type='radio']:checked ~ .radio {
     justify-content: flex-start;
     align-items: center
 }
+
 .flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center
 }
+
 .flex-end {
     display: flex;
     justify-content: flex-end;
     align-items: center
 }
+
 .flex-column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start !important
 }
+
 .left-minus {
     left: -21px
 }
@@ -258,27 +333,33 @@ input[type='radio']:checked ~ .radio {
     position: relative
 }
 
+
 /* datepikcer */
-.hasDatepicker{
+
+.hasDatepicker {
     cursor: pointer;
     width: 120px;
     position: relative;
     right: -10px
 }
-#shcDate2.hasDatepicker{
+
+#shcDate2.hasDatepicker {
     width: 130px;
     right: 0
 }
-.ui-datepicker-trigger{
+
+.ui-datepicker-trigger {
     cursor: pointer;
     position: relative;
     right: 15px;
     top: 1px;
     z-index: 10
 }
-.form-shcDate2 .ui-datepicker-trigger{
+
+.form-shcDate2 .ui-datepicker-trigger {
     right: 25px
 }
+
 .ui-datepicker .ui-datepicker-buttonpane {
     width: 100%
 }
@@ -287,6 +368,7 @@ input[type='radio']:checked ~ .radio {
 /*============================================================
 button
 =============================================================*/
+
 .info-btn {
     display: inline-block;
     width: 16px;
@@ -300,6 +382,7 @@ button
     text-align: center;
     cursor: pointer
 }
+
 .large-btn {
     width: 140px;
     height: 40px;
@@ -310,10 +393,12 @@ button
     background: #4341ce;
     border-radius: 5px
 }
+
 .large-btn.reset-btn {
     background: #757480;
     margin-right: 10px
 }
+
 .xl-btn {
     width: calc(50% - 5px);
     height: 40px;
@@ -324,7 +409,9 @@ button
     background: #4341ce;
     border-radius: 5px
 }
-a.small-btn, .small-btn {
+
+a.small-btn,
+.small-btn {
     font-size: 14px;
     color: #4341ce;
     height: 32px;
@@ -333,17 +420,23 @@ a.small-btn, .small-btn {
     border: 1px solid #4341ce;
     border-radius: 3px
 }
-a.small-btn.disabled, .small-btn.disabled {
+
+a.small-btn.disabled,
+.small-btn.disabled {
     color: #888;
     background: #ebebeb;
     border: 1px solid #d4d4d4
 }
-a.small-btn.fill, .small-btn.fill {
+
+a.small-btn.fill,
+.small-btn.fill {
     color: #fff;
     background: #4341ce;
     border: 0
 }
-a.xs-btn, .xs-btn {
+
+a.xs-btn,
+.xs-btn {
     display: inline-block;
     font-size: 12px;
     color: #fff;
@@ -354,17 +447,22 @@ a.xs-btn, .xs-btn {
     border-radius: 3px;
     font-weight: 300
 }
-a.xs-btn.disabled, .xs-btn.disabled {
+
+a.xs-btn.disabled,
+.xs-btn.disabled {
     background: #757480
 }
+
 .line-btn {
     background: #fff !important;
     border: 1px solid #4341ce;
     color: #4341ce !important
 }
+
 .line-btn.fill {
     background: #f4f4fd !important
 }
+
 .guide-btn {
     display: inline-block;
     font-size: 12px;
@@ -376,10 +474,13 @@ a.xs-btn.disabled, .xs-btn.disabled {
     border: 1px solid #d4d4d4;
     border-radius: 3px
 }
+
 .delet-btn {
     background: #757480 !important
 }
-a.write-btn, .write-btn {
+
+a.write-btn,
+.write-btn {
     height: 38px;
     line-height: 36px;
     font-size: 16px;
@@ -394,6 +495,38 @@ a.write-btn, .write-btn {
 /*============================================================
 header
 =============================================================*/
+
+.top-banner {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.top-banner img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.top-banner p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.top-banner p span {
+    font-size: 20px;
+}
+
+.top-banner a {
+    display: inline-block;
+    height: 28px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #fff;
+    padding: 0 15px;
+    margin-left: 15px;
+}
+
 .header {
     width: 100%;
     padding: 15px 20px;
@@ -403,13 +536,16 @@ header
     flex-wrap: wrap;
     position: relative
 }
+
 .header .logo {
     width: 389px;
     height: 41px
 }
+
 .header .logo img {
     width: 100%
 }
+
 .util-btn {
     display: flex;
     justify-content: flex-end;
@@ -417,6 +553,7 @@ header
     column-gap: 5px;
     margin-left: 20px
 }
+
 .util-btn a {
     display: inline-block;
     width: 80px;
@@ -428,10 +565,12 @@ header
     border-radius: 5px;
     text-align: center
 }
+
 .util-btn .btn-gray {
     color: #888;
     border-color: #888
 }
+
 .util-btn .btn-color {
     color: #fff;
     background: #4341ce;
@@ -442,6 +581,7 @@ header
 /*============================================================
 nav
 =============================================================*/
+
 nav {
     background: #fff;
     width: 240px;
@@ -451,6 +591,7 @@ nav {
     flex-wrap: wrap;
     align-content: space-between
 }
+
 .nav-top {
     width: 100%
 }
@@ -459,6 +600,7 @@ nav {
     padding: 0 20px;
     transition: all .2s ease
 }
+
 .nav-top li a {
     display: inline-block;
     color: #888;
@@ -467,11 +609,14 @@ nav {
     transition: all .2s ease
 }
 
-.nav-top li.on, .nav-top li:hover {
+.nav-top li.on,
+.nav-top li:hover {
     background: #f6f6fd;
     transition: all .2s ease
 }
-.nav-top li.on a, .nav-top li:hover a {
+
+.nav-top li.on a,
+.nav-top li:hover a {
     color: #333;
     font-weight: 500;
     transition: all .2s ease
@@ -481,9 +626,11 @@ nav {
 /*============================================================
 main(대시보드)
 =============================================================*/
+
 .section {
     position: relative
 }
+
 .section-wrap {
     width: 100%;
     overflow-x: hidden;
@@ -491,56 +638,75 @@ main(대시보드)
     justify-content: space-between;
     align-content: flex-start
 }
+
 .container {
     width: calc(100vw - 250px);
     height: calc(100vh - 71px);
     overflow-y: auto
 }
+
 .contentsArea {
     min-height: 100%;
     padding: 33px 40px 40px;
     background: #fff
 }
+
 .contentsArea table {
     border-bottom: 1px solid #efefef;
     margin-top: 10px
 }
-.contentsArea th, .contentsArea td {
+
+.contentsArea th,
+.contentsArea td {
     text-align: center
 }
+
 .contentsArea th {
     border-right: 0;
     border-left: 0
 }
+
 .contentsArea td {
     border: 0
 }
+
 .tit-head h2 {
     font-size: 20px;
     margin-bottom: 20px
 }
+
 .tit-head p {
     font-size: 14px;
     color: #888
 }
+
 .tit-head p span {
     display: inline-block;
     font-size: 16px
 }
+
 .tit-head a {
     font-size: 11px;
     color: #888
 }
+
 .tit-head a::before {
     content: '+';
     margin-right: 5px
 }
-.trading-vol th:first-child, .trading-vol td:first-child, .other-statistics th, .other-statistics td {
+
+.trading-vol th:first-child,
+.trading-vol td:first-child,
+.other-statistics th,
+.other-statistics td {
     text-align: center
 }
-.trading-vol th:not(:first-child), .trading-vol td {
+
+.trading-vol th:not(:first-child),
+.trading-vol td {
     text-align: right
 }
+
 .other-statistics {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(50% - 40px), auto));
@@ -550,25 +716,27 @@ main(대시보드)
 }
 
 
-
 /*============================================================
 payment(결제)
 =============================================================*/
+
 .payment td:last-child {
     text-align: right
 }
 
 
-
 /*============================================================
 point(포인트)
 =============================================================*/
+
 .pv {
     width: 120px
 }
+
 .pr {
     width: 320px
 }
+
 .file-btn {
     display: inline-block;
     height: 32px;
@@ -580,9 +748,11 @@ point(포인트)
     color: #fff;
     font-size: 14px
 }
+
 .fileUpload::file-selector-button {
     display: none
 }
+
 .checkbox-wrap {
     position: relative;
     display: block;
@@ -594,31 +764,37 @@ point(포인트)
 /*============================================================
 API 감지 현황
 =============================================================*/
+
 .apiStatus table {
     border-bottom: 1px solid #efefef;
     margin-top: 10px
 }
-.apiStatus th, .apiStatus td {
+
+.apiStatus th,
+.apiStatus td {
     text-align: center
 }
+
 .apiStatus th {
     border-right: 0;
     border-left: 0
 }
+
 .apiStatus td {
     border: 0
 }
 
 
-
 /*============================================================
 push(푸시)
 =============================================================*/
+
 .push-form {
     margin: 20px 0 60px;
     padding: 40px;
     border: 3px solid #efefef
 }
+
 .push-form ul {
     display: flex;
     flex-wrap: wrap;
@@ -626,17 +802,21 @@ push(푸시)
     justify-content: flex-start;
     align-content: flex-start
 }
+
 .push-form li {
     width: 100%;
     margin-bottom: 10px
 }
+
 .push-form label {
     display: inline-block;
     margin-right: 20px
 }
+
 .push-form input {
     width: calc(100% - 60px)
 }
+
 .push-form .btn-wrap {
     margin-top: 30px;
     text-align: center
@@ -646,24 +826,32 @@ push(푸시)
 /*============================================================
 member(회원)
 =============================================================*/
-.mbrNick, a:hover.mbrNick, a:active.mbrNick {
+
+.mbrNick,
+a:hover.mbrNick,
+a:active.mbrNick {
     color: #4341ce !important;
     text-decoration: underline !important
 }
-table.basic th, table.basic td {
+
+table.basic th,
+table.basic td {
     text-align: left;
     border-top: 1px solid #efefef;
 }
 
+
 /*============================================================
 board
 =============================================================*/
+
 .search-wrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px
 }
+
 .search-wrap label {
     height: 38px;
     line-height: 36px;
@@ -672,27 +860,36 @@ board
     margin-right: 10px;
     padding-right: 10px
 }
-.search-wrap select, .search-wrap input {
+
+.search-wrap select,
+.search-wrap input {
     border: 0
 }
+
 .search-wrap input {
     width: 320px
 }
+
 .board-list {
     border-bottom: 1px solid #efefef
 }
-.board-list th, .board-list td {
+
+.board-list th,
+.board-list td {
     text-align: center;
     line-height: 1.2;
     border-right: 0;
     border-left: 0
 }
+
 .board-list td {
     border: 0
 }
+
 .board-list tr td:nth-child(2) {
     text-align: left
 }
+
 .post-info {
     display: flex;
     justify-content: flex-start;
@@ -700,14 +897,17 @@ board
     padding-bottom: 20px;
     border-bottom: 1px solid #ebebeb
 }
+
 .post-info p {
     font-size: 14px;
     color: #888
 }
+
 .post-info p span {
     font-size: 14px;
     color: #888
 }
+
 .post-info p::after {
     display: inline-block;
     content: '';
@@ -718,14 +918,17 @@ board
     position: relative;
     top: 2px
 }
+
 .post-info p:last-child::after {
     display: none
 }
+
 .post-contents {
     padding: 20px 20px 40px;
     border-bottom: 1px solid #ebebeb;
     line-height: 1.6
 }
+
 .post-btn {
     position: relative;
     display: flex;
@@ -733,42 +936,53 @@ board
     align-items: center;
     margin-top: 20px
 }
+
 .post-btn button {
     width: 104px
 }
+
 .post-btn button.delet-btn {
     margin-left: 2px
 }
+
 .mypost-btn {
     position: absolute;
     left: 0
 }
+
 .comment-wrap {
     margin: 40px 0 60px
 }
+
 .comment-list li:first-child {
     border-top: 1px solid #ebebeb
 }
+
 .comment-list li {
     padding: 20px;
     border-bottom: 1px solid #ebebeb
 }
+
 .comment-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px
 }
+
 .comment-info .nickname {
     color: #4341ce
 }
+
 .post-time {
     color: #888;
     font-size: 14px
 }
+
 .comment-btn {
     margin-top: 20px
 }
+
 .comment-btn button {
     font-size: 14px;
     height: 26px;
@@ -776,21 +990,25 @@ board
     padding: 0 15px 2px;
     border-radius: 3px
 }
+
 .comment-write {
     position: relative;
     margin-top: 40px
 }
+
 .comment-write textarea {
     width: 100%;
     padding: 15px 200px 15px 20px;
     font-size: 16px;
     border: 1px solid #ebebeb
 }
+
 .comment-write .inside-obj {
     position: absolute;
     top: 20px;
     right: 20px
 }
+
 .comment-write p {
     margin-top: 10px;
     padding-left: 10px;
@@ -798,32 +1016,39 @@ board
     position: absolute;
     right: 0
 }
+
 .comment-write p::before {
     content: '*';
     position: absolute;
     left: 0;
     top: 2px
 }
+
 .board-list-abb li:first-child {
     border-top: 1px solid #ebebeb
 }
+
 .board-list-abb li {
     padding: 15px 20px;
     border-bottom: 1px solid #ebebeb
 }
+
 .board-list-abb li a {
     display: flex;
     justify-content: space-between;
     align-items: center
 }
+
 .board-list-abb li a div {
     display: flex;
     justify-content: flex-start;
     align-items: center
 }
+
 .board-list-abb li a div {
     width: calc(100% - 62px)
 }
+
 .board-list-abb li a div p {
     width: calc(100% - 125px);
     height: 17px;
@@ -831,13 +1056,16 @@ board
     text-overflow: ellipsis;
     white-space: nowrap
 }
+
 span.arrow-btn {
     padding-left: 30px;
     margin-right: 40px
 }
-span.arrow-btn.prev  {
+
+span.arrow-btn.prev {
     background: url('../img/prev.png') no-repeat 0 50%
 }
+
 span.arrow-btn.next {
     background: url('../img/next.png') no-repeat 0 50%
 }
@@ -846,10 +1074,12 @@ span.arrow-btn.next {
     width: 100%;
     margin-bottom: 10px
 }
+
 #editorArea iframe {
     width: 100%;
     height: 300px
 }
+
 .board-write .btn-wrap {
     display: flex;
     justify-content: center;
@@ -861,6 +1091,7 @@ span.arrow-btn.next {
 #summernote {
     margin-top: 16px
 }
+
 .note-editable {
     height: 440px !important
 }
@@ -869,58 +1100,72 @@ span.arrow-btn.next {
 /*============================================================
 Pagination
 =============================================================*/
+
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 0 20px
 }
+
 .pagination li {
     margin-right: 20px
 }
+
 .pagination li:last-child {
     margin-right: 0
 }
+
 .pagination li a {
     display: block;
     width: 20px;
     height: 20px;
     color: #a8a8a8
 }
+
 .pagination li.first a {
-    content:'';
-    background: url('../img/first.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/first.png') no-repeat 50% 50%
 }
+
 .pagination li.prev a {
-    content:'';
-    background: url('../img/prev.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/prev.png') no-repeat 50% 50%
 }
+
 .pagination li.next a {
-    background: url('../img/next.png') no-repeat 50% 50%    
+    background: url('../img/next.png') no-repeat 50% 50%
 }
+
 .pagination li.last a {
-    content:'';
-    background: url('../img/last.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/last.png') no-repeat 50% 50%
 }
-.pagination li.active a, .pagination li a:hover {
+
+.pagination li.active a,
+.pagination li a:hover {
     color: #4341ce;
     font-weight: 500;
     text-decoration: underline
 }
+
 .pagination li.first a:hover {
-    content:'';
-    background: url('../img/first_on.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/first_on.png') no-repeat 50% 50%
 }
+
 .pagination li.prev a:hover {
-    content:'';
-    background: url('../img/prev_on.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/prev_on.png') no-repeat 50% 50%
 }
+
 .pagination li.next a:hover {
-    background: url('../img/next_on.png') no-repeat 50% 50%    
+    background: url('../img/next_on.png') no-repeat 50% 50%
 }
+
 .pagination li.last a:hover {
-    content:'';
-    background: url('../img/last_on.png') no-repeat 50% 50%    
+    content: '';
+    background: url('../img/last_on.png') no-repeat 50% 50%
 }
 
 .listPagination select {
@@ -931,6 +1176,7 @@ Pagination
 /*============================================================
 footer
 =============================================================*/
+
 .footer {
     width: 100%;
     padding: 28px 0;
@@ -938,6 +1184,7 @@ footer
     text-align: center;
     background: #757480
 }
+
 .copyright {
     color: #fff;
     font-weight: 300;
@@ -946,15 +1193,16 @@ footer
 }
 
 
-
 /*============================================================
 login
 =============================================================*/
+
 .login {
     width: 100%;
     height: calc(100vh - 141px);
     background: #fff
 }
+
 .login-wrap {
     position: absolute;
     width: 100%;
@@ -963,22 +1211,26 @@ login
     left: 50%;
     transform: translate(-50%, -60%)
 }
+
 .login-head h1 {
     font-size: 38px;
     letter-spacing: -1px;
     margin-bottom: 20px;
     text-align: center
 }
+
 .login-input-wrap label {
     display: inline-block;
     font-weight: 500;
     margin-bottom: 10px
 }
+
 .login-input-wrap input {
     width: 100%;
     height: 40px;
     line-height: 40px;
 }
+
 .login-input-wrap .xl-btn {
     width: 100%;
     height: 52px;
@@ -990,9 +1242,11 @@ login
 /*============================================================
 modal
 =============================================================*/
+
 .modal-open {
     overflow: hidden
 }
+
 .modal {
     position: fixed;
     top: 0;
@@ -1006,6 +1260,7 @@ modal
     outline: 0;
     background: rgba(0, 0, 0, .6);
 }
+
 .modal-close {
     position: absolute;
     width: 20px;
@@ -1016,6 +1271,7 @@ modal
     background-size: cover;
     cursor: pointer
 }
+
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .3s ease-out;
     -o-transition: -o-transform .3s ease-out;
@@ -1044,7 +1300,7 @@ modal
     max-width: 580px;
     height: auto;
     max-height: calc(100vh - 40px);
-    top:50%;
+    top: 50%;
     left: 50%;
     padding: 60px 40px 30px;
     border-radius: 10px;
@@ -1066,10 +1322,12 @@ modal
     left: 0;
     background-color: #000
 }
+
 .modal-backdrop.fade {
     filter: alpha(opacity=0);
     opacity: 0
 }
+
 .modal-backdrop.show {
     filter: alpha(opacity=50);
     opacity: .5
@@ -1089,46 +1347,57 @@ modal
     font-weight: 500;
     margin-bottom: 12px
 }
+
 .modal-body p {
     line-height: 1.4;
     margin-bottom: 24px
 }
+
 .modal-body ul li {
     margin-bottom: 16px;
     display: flex;
     align-items: center
 }
-.modal-body ul.no-margin li h4, .modal-body ul.no-margin li p {
+
+.modal-body ul.no-margin li h4,
+.modal-body ul.no-margin li p {
     margin-bottom: 0
 }
+
 .modal-body ul.no-margin {
     border-bottom: 1px solid #efefef;
     margin-bottom: 20px
 }
+
 .modal-body ul.no-margin li h4 {
     width: 260px
 }
+
 .modal-body ul li label {
     display: inline-block;
     width: 160px
 }
-.modal-body .input_wrap{
+
+.modal-body .input_wrap {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
+
 .modal-body input {
     width: 60px;
     height: 32px;
     line-height: 32px;
     margin: 0 5px 0 10px
 }
+
 .modal-body select {
     border-radius: 5px;
     margin: 0 5px 0 10px;
     background: url(/img/admin/select_arrow.png) no-repeat 98% 50%
 }
+
 .modal-body input[type=checkbox] {
     width: 16px;
     height: 16px;
@@ -1137,10 +1406,12 @@ modal
     left: 0;
     margin: 0 5px 0 0
 }
+
 .modal-body .agreement h3 {
     margin-bottom: 20px;
     font-size: 18px
 }
+
 .modal-body .agreement p {
     padding-left: 10px;
     position: relative;
@@ -1148,6 +1419,7 @@ modal
     color: #888;
     font-size: 15px
 }
+
 .modal-body .agreement p::before {
     content: '';
     display: inline-block;
@@ -1159,6 +1431,7 @@ modal
     left: 0;
     border-radius: 3px
 }
+
 .modal-body .agreement label {
     display: flex;
     align-items: center;
@@ -1172,9 +1445,11 @@ modal
 .modal-footer {
     text-align: right
 }
+
 .modal-footer .btn-group {
     margin-top: 30px
 }
+
 .modal-footer .btn {
     display: inline-block;
     height: 38px;
@@ -1186,15 +1461,18 @@ modal
     color: #fff;
     border-radius: 38px
 }
+
 .modal-footer .btn.btn_cancel {
     background: #fff;
     color: #2d2d2f;
     margin-right: 10px;
     transition: all .2s ease
 }
+
 .modal-footer .btn.btn_cancel:hover {
     background: #f6f6f8
 }
+
 .modal-footer .btn.btn_cancel:focus {
     background: #ebecf0
 }
@@ -1214,7 +1492,8 @@ modal
     transition: opacity .15s linear
 }
 
-.fade.show, .fade.in {
+.fade.show,
+.fade.in {
     opacity: 1
 }
 
@@ -1222,6 +1501,8 @@ modal
 /*============================================================
 Media Query
 =============================================================*/
+
+
 /*
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops
@@ -1240,7 +1521,7 @@ Media Query
     }
 }
 
-@media (max-width: 1660px) {    
+@media (max-width: 1660px) {
     .section {
         width: calc(100% - 600px)
     }
@@ -1260,13 +1541,15 @@ Media Query
     .rightSection {
         width: 340px
     }
-    .setting-box li label, .mypage .setting-box h3 {
+    .setting-box li label,
+    .mypage .setting-box h3 {
         width: 162px
     }
     .setting-box li .tip-modal {
         left: 127px
     }
-    .wallet .table-wrap table th:first-child, .wallet .table-wrap table td:first-child {
+    .wallet .table-wrap table th:first-child,
+    .wallet .table-wrap table td:first-child {
         width: 150px
     }
     .result-card {
@@ -1294,7 +1577,8 @@ Media Query
     .setting-box li {
         flex-wrap: wrap
     }
-    .setting-box li label, .mypage .setting-box h3 {
+    .setting-box li label,
+    .mypage .setting-box h3 {
         width: 100%;
         margin-bottom: 12px
     }
@@ -1316,16 +1600,16 @@ Media Query
     p.api-label {
         width: 100px
     }
-    .api-input label input, .api-info label input, p.time-info {
+    .api-input label input,
+    .api-info label input,
+    p.time-info {
         width: calc(100% - 120px)
     }
-    
     .sub-container .card-wrap {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         gap: 20px
     }
-    
 }
 
 @media (max-width: 1426px) {
@@ -1336,10 +1620,12 @@ Media Query
         width: calc(50% - 5px);
         margin: 0 10px 10px 0
     }
-    .arbibot-status li:nth-child(2), .arbibot-status li:nth-child(5) {
+    .arbibot-status li:nth-child(2),
+    .arbibot-status li:nth-child(5) {
         margin-right: 0
     }
-    .arbibot-status li:nth-child(4), .arbibot-status li:nth-child(5) {
+    .arbibot-status li:nth-child(4),
+    .arbibot-status li:nth-child(5) {
         margin-bottom: 0
     }
     .result-card {
@@ -1348,7 +1634,8 @@ Media Query
     .result-card:nth-child(3) {
         margin-bottom: 0
     }
-    .api-input-wrap, .api-info-wrap {
+    .api-input-wrap,
+    .api-info-wrap {
         width: 100%
     }
     .api-head .guide-btn {
@@ -1364,13 +1651,15 @@ Media Query
     .bot-ranking {
         display: block
     }
-    .operation, .simulation {
+    .operation,
+    .simulation {
         width: 100%
     }
     .simulation {
         margin-top: 40px
     }
-    .wallet .table-wrap table th:first-child, .wallet .table-wrap table td:first-child {
+    .wallet .table-wrap table th:first-child,
+    .wallet .table-wrap table td:first-child {
         width: 120px
     }
     .search-wrap label {
@@ -1379,7 +1668,10 @@ Media Query
     .search-wrap input {
         width: calc(100% - 110px)
     }
-    .board-list tr th:nth-child(1), .board-list tr th:nth-child(3), .board-list tr td:nth-child(1), .board-list tr td:nth-child(3) {
+    .board-list tr th:nth-child(1),
+    .board-list tr th:nth-child(3),
+    .board-list tr td:nth-child(1),
+    .board-list tr td:nth-child(3) {
         display: none
     }
     .board-list tr td {
@@ -1417,7 +1709,7 @@ Media Query
     }
     .sub-container .card-wrap {
         grid-template-columns: repeat(1, 1fr)
-    }    
+    }
     .comment-write textarea {
         padding: 15px 20px 113px 20px
     }
@@ -1429,7 +1721,7 @@ Media Query
     }
     .ham {
         display: block
-    }   
+    }
     nav {
         display: none
     }
@@ -1458,7 +1750,8 @@ Media Query
     body {
         font-size: 14px
     }
-    th, td {
+    th,
+    td {
         padding: 10px 8px
     }
     .pc-hidden {
@@ -1467,7 +1760,6 @@ Media Query
     .mobile-hidden {
         display: none
     }
-    
     .header {
         padding: 12px 18px 16px
     }
@@ -1479,7 +1771,6 @@ Media Query
         top: 15px;
         right: 18px
     }
-    
     .login-page .close-btn {
         padding: 20px 18px
     }
@@ -1491,7 +1782,6 @@ Media Query
     #join .login-head {
         margin-bottom: 40px !important
     }
-    
     .section-wrap {
         display: block;
         padding: 0 18px
@@ -1501,7 +1791,7 @@ Media Query
     }
     .container {
         height: auto;
-        overflow-y:hidden
+        overflow-y: hidden
     }
     .mystatus {
         padding: 10px;
@@ -1512,7 +1802,7 @@ Media Query
         color: #fff;
         font-size: 14px;
         font-weight: 400;
-        margin-bottom: 10px        
+        margin-bottom: 10px
     }
     .mystatus-info {
         padding: 10px;
@@ -1531,12 +1821,12 @@ Media Query
         display: block
     }
     .after-login li {
-        padding-bottom: 10px;        
+        padding-bottom: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid #efefef
     }
     .after-login li:last-child {
-        padding-bottom: 0; 
+        padding-bottom: 0;
         margin-bottom: 0;
         border-bottom: 0
     }
@@ -1555,7 +1845,6 @@ Media Query
     .info-text p span {
         color: #4341ce
     }
-    
     .arbibot-status-title {
         margin-bottom: 12px
     }
@@ -1565,7 +1854,9 @@ Media Query
         background: #fff;
         margin-bottom: 10px
     }
-    .arbibot-status li, .arbibot-status li:nth-child(3), .arbibot-status li:nth-child(4) {
+    .arbibot-status li,
+    .arbibot-status li:nth-child(3),
+    .arbibot-status li:nth-child(4) {
         display: inline-block;
         width: 100%;
         padding: 0;
@@ -1583,7 +1874,6 @@ Media Query
         font-size: 16px;
         margin-top: 0
     }
-    
     .direct-menu {
         width: 100%;
         padding: 15px 10px;
@@ -1594,7 +1884,7 @@ Media Query
         gap: 20px;
         margin-bottom: 30px
     }
-    .direct-menu li {        
+    .direct-menu li {
         text-align: center
     }
     .direct-menu li a {
@@ -1643,7 +1933,6 @@ Media Query
     .direct-menu li:nth-child(8) a::before {
         background: url('../img/mo-nav-ico-08.png') no-repeat 50% 50%
     }
-    
     .transaction {
         height: auto;
         background: transparent;
@@ -1660,7 +1949,8 @@ Media Query
         color: #333;
         font-weight: 700
     }
-    .transaction .title p, .transaction .title p span {
+    .transaction .title p,
+    .transaction .title p span {
         color: #888;
         font-size: 12px
     }
@@ -1672,7 +1962,6 @@ Media Query
     .status-list li {
         padding: 15px 0 10px
     }
-    
     .contentsArea {
         margin-top: 0;
         padding: 0;
@@ -1684,7 +1973,6 @@ Media Query
     .partners li {
         background: #fff
     }
-    
     .sub-container-head {
         padding: 20px 20px 0
     }
@@ -1693,7 +1981,9 @@ Media Query
         padding-bottom: 20px;
         border-bottom: 1px solid #ebebeb
     }
-    .bot-setting, .wallet, .ranking {
+    .bot-setting,
+    .wallet,
+    .ranking {
         padding: 20px
     }
     .setting-box {
@@ -1707,7 +1997,8 @@ Media Query
     li.slippage {
         padding: 0
     }
-    li.slippage .check-mark, li.slippage input[type='checkbox'] {
+    li.slippage .check-mark,
+    li.slippage input[type='checkbox'] {
         left: 0
     }
     li.slippage .checkbox-wrap {
@@ -1729,7 +2020,8 @@ Media Query
     li.btn-wrap label {
         display: none
     }
-    .operation-status, .simulation-result {
+    .operation-status,
+    .simulation-result {
         padding: 0 20px
     }
     .simulation-result {
@@ -1744,17 +2036,22 @@ Media Query
     .api-box li:first-child {
         border-top: 0
     }
-    .api-input label, .api-info label {
+    .api-input label,
+    .api-info label {
         display: block;
         margin-bottom: 20px
     }
-    p.api-label, .api-input label input, .api-info label input, p.time-info {
+    p.api-label,
+    .api-input label input,
+    .api-info label input,
+    p.time-info {
         width: 100%
     }
     p.api-label {
         margin-bottom: 10px
     }
-    .revenue-wrap, .how-to {
+    .revenue-wrap,
+    .how-to {
         padding: 0 20px
     }
     .board-list-wrap {
@@ -1771,11 +2068,14 @@ Media Query
     a.write-btn {
         width: 100%
     }
-    .board-list tr th:nth-child(5), .board-list tr td:nth-child(5) {
+    .board-list tr th:nth-child(5),
+    .board-list tr td:nth-child(5) {
         display: none
     }
-    .board-view-wrap, .comment-wrap, .board-list-abb {
-        padding:  0 20px
+    .board-view-wrap,
+    .comment-wrap,
+    .board-list-abb {
+        padding: 0 20px
     }
     .board-view-wrap .subpage-title {
         padding: 20px 0 0
@@ -1812,23 +2112,22 @@ Media Query
         margin-bottom: 20px
     }
     .board-list-abb li {
-        padding:  15px 0
+        padding: 15px 0
     }
     .board-write-wrap {
         padding: 5px 15px 0
     }
-    
     .rightSection {
         display: none
     }
-    
     footer {
         display: block;
         padding: 15px 18px 20px;
         background: #757480;
         margin-top: 30px
     }
-    .left-side, .right-side {
+    .left-side,
+    .right-side {
         width: 100%;
         padding: 0
     }
@@ -1864,7 +2163,7 @@ Media Query
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        border-bottom: 1px solid rgba(233,233,233,.5);
+        border-bottom: 1px solid rgba(233, 233, 233, .5);
         padding-bottom: 10px;
         margin-bottom: 15px
     }
@@ -1876,25 +2175,28 @@ Media Query
         font-size: 12px
     }
     .terms-btn {
-        border-right: 1px solid rgba(233,233,233,.5)
+        border-right: 1px solid rgba(233, 233, 233, .5)
     }
-    .address p, .copyright, .caution {
+    .address p,
+    .copyright,
+    .caution {
         color: #babac0
     }
     .address p {
         display: inline
     }
-    .address p:nth-child(1)::after, .address p:nth-child(3)::after {
-        background: rgba(233,233,233,.5)
+    .address p:nth-child(1)::after,
+    .address p:nth-child(3)::after {
+        background: rgba(233, 233, 233, .5)
     }
-    
     .mypage .subpage-title {
         margin-bottom: 20px
     }
     .mypage .setting-box {
         margin-bottom: 20px
     }
-    .setting-box p span, .pw-setting-box p span {
+    .setting-box p span,
+    .pw-setting-box p span {
         margin: 10px 0 0 0;
     }
     .sec-pw-box p span {
@@ -1903,7 +2205,6 @@ Media Query
     .point-list .table-wrap table {
         width: 520px
     }
-    
     .modal-close {
         width: 16px;
         height: 16px
@@ -1914,7 +2215,8 @@ Media Query
     .modal-body ul.no-margin li {
         display: block
     }
-    .modal-body ul.no-margin li h4, .modal-body ul.no-margin li p {
+    .modal-body ul.no-margin li h4,
+    .modal-body ul.no-margin li p {
         width: 100%
     }
     .modal-body ul.no-margin li p {
@@ -1922,7 +2224,7 @@ Media Query
     }
 }
 
-@media (max-width: 360px) {    
+@media (max-width: 360px) {
     .login-head h1 {
         font-size: 32px
     }
