@@ -4183,6 +4183,18 @@ Media Query
 }
 
 @media (max-width: 996px) {
+    .top-banner {
+        padding: 18px;
+        display: block;
+    }
+    .top-banner .close-btn {
+        top: 18px;
+        right: 18px;
+    }
+    .header {
+        position: relative;
+        top: inherit;
+    }
     .header .util {
         display: none;
     }
@@ -4191,6 +4203,9 @@ Media Query
     }
     nav {
         display: none;
+    }
+    .section-wrap {
+        margin-top: 0;
     }
     .section {
         width: calc(100% - 350px);
