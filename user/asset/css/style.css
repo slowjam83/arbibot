@@ -4201,11 +4201,14 @@ Media Query
     .top-banner p {
         width: calc(100% - 167px);
         margin-right: 0;
-        position: absolute
+        position: absolute;
+        top: 18px;
+        line-height: 1.4;
     }
     .top-banner .links {
         position: absolute;
         bottom: 18px;
+        left: 79px;
     }
     .top-banner a {
         margin-left: 0;
@@ -4268,6 +4271,9 @@ Media Query
     .mobile-hidden,
     .mobile-inline-hidden {
         display: none;
+    }
+    .top-banner .links {
+        position: inherit;
     }
     .header {
         padding: 12px 18px 16px;
