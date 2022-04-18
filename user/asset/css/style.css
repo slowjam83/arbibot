@@ -4273,7 +4273,14 @@ Media Query
         display: none;
     }
     .top-banner .links {
-        position: inherit;
+        position: initial;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-banner a {
+        width: calc(50% - 5px);
+        margin: 0;
     }
     .header {
         padding: 12px 18px 16px;
