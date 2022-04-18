@@ -685,7 +685,9 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .top-banner .close-btn {
