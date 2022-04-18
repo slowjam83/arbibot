@@ -682,6 +682,9 @@ header
     line-height: 60px;
     text-align: center;
     background: #20293a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top-banner img {
@@ -707,6 +710,7 @@ header
     color: #fff;
     padding: 0 15px;
     margin-left: 15px;
+    border-radius: 5px;
 }
 
 .header {
