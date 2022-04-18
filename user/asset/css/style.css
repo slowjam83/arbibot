@@ -4199,7 +4199,13 @@ Media Query
         width: 46px;
     }
     .top-banner p {
+        width: calc(100% - 167px);
         margin-right: 0;
+        position: absolute
+    }
+    .top-banner .links {
+        position: absolute;
+        bottom: 18px;
     }
     .top-banner a {
         margin-left: 0;
