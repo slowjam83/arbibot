@@ -4192,7 +4192,7 @@ Media Query
         padding: 18px;
         display: block;
         text-align: left;
-        position: inherit;
+        position: relative;
     }
     .top-banner .close-btn {
         top: 18px;
