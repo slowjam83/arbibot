@@ -805,11 +805,11 @@ point(포인트)
 }
 
 #excel-form .cancel-btn {
-    right: 66px;
+    right: 52px;
 }
 
 .pv {
-    width: 120px
+    width: 150px
 }
 
 .pr {
@@ -853,6 +853,10 @@ a.file-btn:focus {
 
 .point td:last-child {
     text-align: center
+}
+
+.point .small-btn.fill {
+    border-radius: 0 3px 3px 0;
 }
 
 
