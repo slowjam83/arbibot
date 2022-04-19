@@ -190,12 +190,8 @@ input[type='radio']:checked~.radio {
     text-indent: -9999
 }
 
-.pc-hidden {
+.invisible {
     display: none
-}
-
-.mobile-hidden {
-    display: block
 }
 
 .pd0 {
@@ -491,6 +487,15 @@ a.write-btn,
     padding: 0 20px
 }
 
+.cancel-btn {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    z-index: 10;
+    background: url('../img/close.png') no-repeat 50% 50%;
+}
+
 
 /*============================================================
 header
@@ -697,6 +702,14 @@ payment(결제)
 /*============================================================
 point(포인트)
 =============================================================*/
+
+#excel-form {
+    position: relative;
+}
+
+#excel-form .cancel-btn {
+    right: 66px;
+}
 
 .pv {
     width: 120px
