@@ -729,6 +729,9 @@ point(포인트)
     height: 16px
 }
 
+.point th:nth-child(5),
+.point th:nth-child(6),
+.point th:nth-child(7),
 .point td:nth-child(5),
 .point td:nth-child(6),
 .point td:nth-child(7) {
