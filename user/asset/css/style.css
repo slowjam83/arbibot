@@ -1990,15 +1990,13 @@ p.time-info {
 }
 
 .chargePay,
-.payType,
 .totalPay {
     display: grid;
     border-collapse: collapse;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.chargePay li,
-.payType li {
+.chargePay li {
     height: 40px;
     padding: 0 20px;
     border: 1px solid #ebebeb;
@@ -2006,16 +2004,13 @@ p.time-info {
 }
 
 .chargePay li:hover,
-.chargePay li.on,
-.payType li:hover,
-.payType li.on {
+.chargePay li.on {
     border: 1px solid #4341ce;
     background-color: #f6f6fd;
     transition: all .2s ease;
 }
 
-.chargePay li button,
-.payType li button {
+.chargePay li button {
     width: 100%;
     height: 100%;
     line-height: 38px;
@@ -2024,10 +2019,6 @@ p.time-info {
 .chargePay li button {
     display: inline-flex;
     justify-content: space-between;
-}
-
-.payType li button {
-    text-align: center;
 }
 
 .totalPay {
@@ -3882,7 +3873,6 @@ Media Query
         gap: 20px;
     }
     .chargePay,
-    .payType,
     .totalPay {
         grid-template-columns: repeat(4, 1fr)
     }
@@ -3970,7 +3960,6 @@ Media Query
         margin-left: 0;
     }
     .chargePay,
-    .payType,
     .totalPay {
         grid-template-columns: repeat(3, 1fr)
     }
@@ -4054,7 +4043,6 @@ Media Query
         transform: translate(-50%, -38%);
     }
     .chargePay,
-    .payType,
     .totalPay {
         grid-template-columns: repeat(2, 1fr)
     }
@@ -4908,7 +4896,6 @@ Media Query
         font-size: 28px;
     }
     .chargePay,
-    .payType,
     .totalPay {
         grid-template-columns: repeat(1, 1fr)
     }
