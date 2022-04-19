@@ -5,9 +5,9 @@
                 <h2>포인트</h2>
             </div>
             <form id="excel-form" method="post" action="/">
-                <fieldset class="flex-between">
+                <fieldset>
                     <legend class="hidden">엑셀 포인트 지급 폼</legend>
-                    <div class="flex-start">
+                    <div class="flex-end">
                         <a href="" download class="file-btn">템플릿 다운로드</a>
                         <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
                         <label for="fileUpload" class="small-btn fill">지급</label>
@@ -15,7 +15,7 @@
                     </div>
                 </fieldset>
             </form>
-            <ul class="nav tabNav tit-head" id="pills-tab" role="tablist">
+            <ul class="tabNav mt20" id="pills-tab" role="tablist">
                 <li role="presentation">
                     <a class="active" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="true">전체</a>
                 </li>
@@ -153,16 +153,16 @@
             </div>
 
             <div class="tit-head">
-                <h2>포인트 정책</h2>
+                <h2 class="mb40">포인트 정책</h2>
                 <dl>
-                    <dt class="mb10">1. 포인트 안내</dt>
+                    <dt class="mb20">1. 포인트 안내</dt>
                     <dd>포인트는 구매 포인트와 광고 포인트, 이벤트 포인트로 구분한다.</dd>
                     <dd>구매 포인트는 유료로 결제한 포인트이고 광고 포인트는 광고 시청으로 획득한 포인트, 이벤트 포인트는 이벤트 참여로 지급된 포인트를 말한다.</dd>
                     <dd>회원이 획득한 포인트에는 사용 제한 기간을 두지 않는다.</dd>
                     <dd>회원이 광고 시청으로 지급 받게 되는 금액에 50%를 포인트로 지급한다.</dd>
-                    <dd class="mb20">회원은 획득한 모든 포인트 내역을 마이페이지에서 확인 가능하다.</dd>
+                    <dd class="mb40">회원은 획득한 모든 포인트 내역을 마이페이지에서 확인 가능하다.</dd>
 
-                    <dt class="mb10">2. 포인트 차감</dt>
+                    <dt class="mb20">2. 포인트 차감</dt>
                     <dd>포인트는 아비봇에서 거래가 최종 완료되는 시점에서 거래 금액의 0.015%를 수수료로 차감한다.</dd>
                     <dd>최종 완료 체크는 배치를 통해 체크하며, 슬리피지 안전 거래 시 에는 거래가 채결되면 즉시 차감한다.</dd>
                     <dd>차감은 1포인트 단위로 차감하며 계산된 금액이 0.6 이상이면 올림처리하고, 0.5이하일 경우는 버림 처리 한다.</dd>

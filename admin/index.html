@@ -82,6 +82,10 @@
                 $('body').load(arrLink[9]);
             });
 
+            //tab 메뉴
+            var li_max = 100 / $(".tabNav li").length;
+            $(".tabNav li").css("width", li_max + "%");
+
             $(document).on('click', '#payGo', function() {
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(3)').addClass('on');
