@@ -832,7 +832,7 @@ a.file-btn:focus {
 }
 
 input.fileUpload,
-.pointInput,
+input.pointInput,
 input#mbrNick {
     border-radius: 3px 0 0 3px;
     border-right: 0;
