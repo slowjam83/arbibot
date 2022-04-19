@@ -598,6 +598,59 @@ nav {
 
 
 /*============================================================
+tab menu
+=============================================================*/
+
+.tabNav {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    justify-content: flex-start;
+}
+
+.tabNav li a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #888;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.4;
+    word-break: keep-all;
+    padding: 5px 20px 6px;
+    transition: all 0.3s ease;
+}
+
+.tabNav li a::after {
+    display: none;
+}
+
+.tabNav li:hover a {
+    background: #f4f4f4;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tabNav li a.active,
+.tabNav li a.active:hover,
+.tabNav li a.active:focus {
+    color: #fff;
+    background: #4341ce;
+    transition: all 0.3s ease;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+
+/*============================================================
 main(대시보드)
 =============================================================*/
 
