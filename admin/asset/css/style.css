@@ -831,6 +831,11 @@ a.file-btn:focus {
     font-size: 14px
 }
 
+input.fileUpload,
+.pointInput {
+    border-radius: 3px 0 0 3px;
+}
+
 .fileUpload::file-selector-button {
     display: none
 }
