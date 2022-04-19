@@ -729,6 +729,16 @@ point(포인트)
     height: 16px
 }
 
+.point td:nth-child(5),
+.point td:nth-child(6),
+.point td:nth-child(7) {
+    text-align: right
+}
+
+.point td:last-child {
+    text-align: center
+}
+
 
 /*============================================================
 API 감지 현황
