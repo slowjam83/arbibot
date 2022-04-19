@@ -136,7 +136,12 @@
             $('.top-banner .close-btn').click(function(e) {
                 $('.top-banner').hide();
                 $('.header').css('top', '0');
-                $('.section-wrap').css('margin-top', '71px');
+
+                if (document.body.clientWidth < 996) {
+                    $('.section-wrap').css('margin-top', '0');
+                } else {
+                    $('.section-wrap').css('margin-top', '71px');
+                }
             });
 
             //nav-top 링크
