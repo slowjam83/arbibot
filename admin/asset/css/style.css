@@ -835,6 +835,7 @@ input.fileUpload,
 .pointInput,
 input#mbrNick {
     border-radius: 3px 0 0 3px;
+    border-right: 0;
 }
 
 .fileUpload::file-selector-button {
