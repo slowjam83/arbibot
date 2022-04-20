@@ -1998,7 +1998,12 @@ p.time-info {
     position: absolute;
     color: #888;
     font-size: 14px;
+    top: 10px;
     left: 15px;
+}
+
+.payType input#accountNum {
+    width: 391px;
 }
 
 .chargePay,
