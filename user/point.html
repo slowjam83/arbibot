@@ -54,7 +54,11 @@
             </ul>
             <h3 class="mt40">무통장입금 계좌번호</h3>
             <div class="payType mt20">
-
+                <label>
+                    <input type="text" value="1234567890" id="accountNum" name="accountNum" readonly class="hidden">
+                    <p>하나은행 1234567890 (주식회사 크롬이노베이션)</p>
+                </label>
+                <button onclick="copy_to_accountNum()" class="small-btn line-btn">계좌 복사</button>
             </div>
             <div class="totalPay mt40">
                 <h3>결제 예정금액</h3>
@@ -93,3 +97,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        function copy_to_accountNum() {
+            var copyText = document.getElementById('accountNum');
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("Copy");
+            alert('복사되었습니다.');
+        };
+    });
+</script>

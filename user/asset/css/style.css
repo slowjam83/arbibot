@@ -1989,6 +1989,17 @@ p.time-info {
     font-weight: 400;
 }
 
+.payType {
+    position: relative;
+}
+
+.payType p {
+    position: absolute;
+    color: #888;
+    font-size: 14px;
+    left: 15px;
+}
+
 .chargePay,
 .totalPay {
     display: grid;
