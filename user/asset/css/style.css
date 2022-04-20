@@ -393,7 +393,9 @@ a.disabled-font {
 }
 
 .flex-start {
+    display: flex;
     justify-content: flex-start !important;
+    align-items: center;
 }
 
 .flex-column {
@@ -1998,7 +2000,6 @@ p.time-info {
     position: absolute;
     color: #888;
     font-size: 14px;
-    top: 10px;
     left: 15px;
 }
 
