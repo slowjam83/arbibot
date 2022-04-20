@@ -838,6 +838,12 @@ input.pointInput,
 input#mbrNick {
     border-radius: 3px 0 0 3px;
     border-right: 0;
+    position: inherit;
+}
+
+.point .ui-datepicker-trigger {
+    left: -25px;
+    right: inherit;
 }
 
 .fileUpload::file-selector-button {
