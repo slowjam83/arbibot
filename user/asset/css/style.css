@@ -197,8 +197,8 @@ input[type="radio"]:checked~.radio {
 }
 
 .hidden {
-    font-size: 0;
-    text-indent: -9999;
+    font-size: 0 !important;
+    text-indent: -9999 !important;
 }
 
 .pc-hidden {
@@ -1697,7 +1697,8 @@ sub page
     width: calc(100% - 324px);
 }
 
-.ipInput button {
+.ipInput button,
+.copy-btn {
     height: 32px;
 }
 
