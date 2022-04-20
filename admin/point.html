@@ -14,7 +14,7 @@
                         <input type="text" name="shcDate" id="shcDate">
                         <button type="button" id="" class="small-btn disabled mr10">조회</button>
                         <label>
-                            <input type="text" id="mbrNick" value="회원 닉네임">
+                            <input type="text" id="mbrNick" value="회원 닉네임" class="">
                         </label>
                         <button type="button" id="" class="small-btn disabled">조회</button>
                     </div>
@@ -483,6 +483,7 @@
         // 날짜선택 input
         $("#shcDate").datepicker({
             dateFormat: 'yy-mm-dd', //달력 날짜 형태
+            changeDay: true,
             changeMonth: true,
             changeYear: true,
             showButtonPanel: true,
@@ -496,9 +497,10 @@
             showOn: "both",
             buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
             onClose: function(dateText, inst) {
+                var day = $("#ui-datepicker-div .ui-datepicker-day :selected").val();
                 var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
                 var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-                $(this).datepicker('setDate', new Date(year, month, 1));
+                $(this).datepicker('setDate', new Date(year, month, day));
                 $(".ui-datepicker-calendar").css("display", "none");
             }
         });

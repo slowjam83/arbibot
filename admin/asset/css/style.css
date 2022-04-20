@@ -379,7 +379,7 @@ a.disabled-font {
 
 .hasDatepicker {
     cursor: pointer;
-    width: 120px;
+    width: 150px;
     position: relative;
     right: -10px
 }
@@ -841,9 +841,12 @@ input#mbrNick {
     position: inherit;
 }
 
+.point .hasDatepicker {
+    position: inherit;
+}
+
 .point .ui-datepicker-trigger {
-    left: -25px;
-    right: inherit;
+    display: none;
 }
 
 .fileUpload::file-selector-button {
