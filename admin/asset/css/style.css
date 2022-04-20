@@ -950,7 +950,10 @@ member(회원)
 
 .mbrNick,
 a:hover.mbrNick,
-a:active.mbrNick {
+a:active.mbrNick,
+.mbrNick2,
+a:hover.mbrNick2,
+a:active.mbrNick2 {
     color: #4341ce !important;
     text-decoration: underline !important
 }
