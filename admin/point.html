@@ -71,13 +71,14 @@
                             <tr>
                                 <th>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="" name="selectAll" onclick="selectAll(this)">
+                                        <input type="checkbox" name="selectAll" onclick="selectAll(this)" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </th>
                                 <th>닉네임</th>
                                 <th>운영 봇</th>
                                 <th>지급 사유</th>
+                                <th>신청액</th>
                                 <th>입금액</th>
                                 <th>지급 포인트</th>
                                 <th>보유 포인트</th>
@@ -89,15 +90,16 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="" name="selectAll">
+                                        <input type="checkbox" name="selectAll" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임00</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임00</a>
                                 </td>
                                 <td>재정(2)/교차(0)</td>
                                 <td>구매 (무통장입금)</td>
+                                <td>100,000</td>
                                 <td>100,000</td>
                                 <td>100,000</td>
                                 <td>120,000</td>
@@ -107,15 +109,16 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="" name="selectAll">
+                                        <input type="checkbox" name="selectAll" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임10</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임10</a>
                                 </td>
                                 <td>재정(1)/교차(1)</td>
                                 <td>이벤트</td>
+                                <td>-</td>
                                 <td>-</td>
                                 <td>5,000</td>
                                 <td>55,000</td>
@@ -125,15 +128,16 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="" name="selectAll">
+                                        <input type="checkbox" name="selectAll" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임20</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임20</a>
                                 </td>
                                 <td>재정(2)/교차(2)</td>
                                 <td>광고</td>
+                                <td>-</td>
                                 <td>-</td>
                                 <td>50</td>
                                 <td>10,050</td>
@@ -143,15 +147,16 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="" name="selectAll">
+                                        <input type="checkbox" name="selectAll" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임30</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임30</a>
                                 </td>
                                 <td>재정(0)/교차(2)</td>
                                 <td>기타 (장애 보상)</td>
+                                <td>-</td>
                                 <td>-</td>
                                 <td>5,000</td>
                                 <td>25,350</td>
@@ -208,6 +213,7 @@
                                 <th>닉네임</th>
                                 <th>운영 봇</th>
                                 <th>지급 사유</th>
+                                <th>신청액</th>
                                 <th>입금액</th>
                                 <th>지급 포인트</th>
                                 <th>보유 포인트</th>
@@ -224,10 +230,11 @@
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임00</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임00</a>
                                 </td>
                                 <td>재정(2)/교차(0)</td>
                                 <td>구매 (무통장입금)</td>
+                                <td>100,000</td>
                                 <td>100,000</td>
                                 <td>100,000</td>
                                 <td>120,000</td>
@@ -298,7 +305,7 @@
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임00</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임00</a>
                                 </td>
                                 <td>재정(1)/교차(1)</td>
                                 <td>이벤트</td>
@@ -340,7 +347,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임00</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임00</a>
                                 </td>
                                 <td>재정(2)/교차(2)</td>
                                 <td>광고</td>
@@ -415,7 +422,7 @@
                                     </label>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0)" class="mbrNick">닉네임30</a>
+                                    <a href="javascript:void(0)" class="mbrNick" data-toggle="modal" data-target="#modalMbrstate2">닉네임30</a>
                                 </td>
                                 <td>재정(0)/교차(2)</td>
                                 <td>기타 (장애 보상)</td>
@@ -510,7 +517,7 @@
 
             checkboxes.forEach((checkbox) => {
                 checkbox.checked = selectAll.checked;
-            })
-        }
+            });
+        };
     });
 </script>
