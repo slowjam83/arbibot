@@ -71,7 +71,7 @@
                             <tr>
                                 <th>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" id="">
+                                        <input type="checkbox" id="selectAll">
                                         <span class="check-mark"></span>
                                     </label>
                                 </th>
@@ -340,12 +340,6 @@
                     <table class="mt20">
                         <thead>
                             <tr>
-                                <th>
-                                    <label class="checkbox-wrap">
-                                        <input type="checkbox" id="">
-                                        <span class="check-mark"></span>
-                                    </label>
-                                </th>
                                 <th>닉네임</th>
                                 <th>운영 봇</th>
                                 <th>지급 사유</th>
@@ -356,12 +350,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <label class="checkbox-wrap">
-                                        <input type="checkbox" id="">
-                                        <span class="check-mark"></span>
-                                    </label>
-                                </td>
                                 <td>
                                     <a href="javascript:void(0)" class="mbrNick">닉네임00</a>
                                 </td>
@@ -525,5 +513,13 @@
                 $('input#adminInput').hide();
             }
         });
+
+        function selectAll(selectAll) {
+            const checkboxes = document.getElementsByName('selectAll');
+
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAll.checked;
+            })
+        }
     });
 </script>
