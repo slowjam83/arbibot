@@ -6,7 +6,16 @@
             </div>
             <form id="excel-form" method="post" action="/">
                 <fieldset>
-                    <legend class="hidden">엑셀 포인트 지급 폼</legend>
+                    <legend class="hidden">포인트 지급 폼</legend>
+                    <div class="flex-start">
+                        <legend class="hidden">월별 조회</legend>
+                        <label for="shcDate"></label>
+                        <input type="text" name="shcDate" id="shcDate">
+                        <label>
+                            <input type="text" id="mbrNick" value="회원 닉네임">
+                        </label>
+                        <button type="button" id="" class="small-btn disabled">조회</button>
+                    </div>
                     <div class="flex-end">
                         <a href="" download class="file-btn">템플릿 다운로드</a>
                         <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
@@ -39,10 +48,6 @@
                         <fieldset>
                             <legend class="hidden">포인트 지급 폼</legend>
                             <div class="flex-end">
-                                <label>
-                                    <input type="text" id="mbrNick" value="회원 닉네임">
-                                </label>
-                                <button type="button" id="" class="small-btn disabled">조회</button>
                                 <select name="" id="reason" class="ml20">
                                     <option value="none">지급사유 선택</option>
                                     <option value="buy">구매 (무통장입금)</option>
