@@ -50,7 +50,7 @@
                                     <option value="admin">기타</option>
                                 </select>
                                 <label>
-                                    <input type="text" id="admin" value="기타 지급 사유 입력" class="invisible ml5">
+                                    <input type="text" id="adminInput" value="기타 지급 사유 입력" class="invisible ml5">
                                 </label>
                                 <label>
                                     <input type="text" id="" value="포인트" class="pointInput pv ml5">
@@ -393,7 +393,7 @@
                                 </label>
                                 <button type="button" id="" class="small-btn disabled">조회</button>
                                 <select name="" id="" class="ml20 disabled">
-                                    <option value="admin2" selected disabled>기타</option>
+                                    <option value="admin" selected disabled>기타</option>
                                 </select>
                                 <label>
                                     <input type="text" id="" value="기타 지급 사유 입력" class="ml5">
@@ -488,9 +488,9 @@
         $('#reason').change(function() {
             var result = $('#reason option:selected').val();
             if (result == 'admin') {
-                $('input#admin').show();
+                $('input#adminInput').show();
             } else {
-                $('input#admin').hide();
+                $('input#adminInput').hide();
             }
         });
     });
