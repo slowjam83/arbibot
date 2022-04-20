@@ -111,16 +111,16 @@
                 e.wrap('<form>').parent('form').trigger('reset');
                 e.unwrap();
             };
-
-            //체크박스 전체 선택
-            function selectAll(selectAll) {
-                const checkboxes = document.getElementsByName('selectAll');
-
-                checkboxes.forEach((checkbox) => {
-                    checkbox.checked = selectAll.checked;
-                });
-            };
         });
+
+        //체크박스 전체 선택
+        function selectAll(selectAll) {
+            const checkboxes = document.getElementsByName('selectAll');
+
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAll.checked;
+            });
+        };
     </script>
 </body>
 
