@@ -533,7 +533,7 @@ a.write-btn,
 }
 
 .cancel-btn {
-    display: none;
+    display: block;
     width: 14px;
     height: 14px;
     position: absolute;

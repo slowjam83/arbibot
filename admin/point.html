@@ -43,14 +43,14 @@
                                     <input type="text" id="mbrNick" value="회원 닉네임">
                                 </label>
                                 <button type="button" id="" class="small-btn disabled">조회</button>
-                                <select name="" id="" class="ml20">
+                                <select name="" id="reason" class="ml20">
                                     <option value="none">지급사유 선택</option>
                                     <option value="buy">구매 (무통장입금)</option>
                                     <option value="event">이벤트</option>
                                     <option value="admin">기타</option>
                                 </select>
                                 <label>
-                                    <input type="text" id="" value="기타 지급 사유 입력" class="invisible ml5">
+                                    <input type="text" id="admin" value="기타 지급 사유 입력" class="invisible ml5">
                                 </label>
                                 <label>
                                     <input type="text" id="" value="포인트" class="pointInput pv ml5">
@@ -485,8 +485,13 @@
         var li_max = 100 / $(".tabNav li").length;
         $(".tabNav li").css("width", li_max + "%");
 
-        /* $('').click(function(e) {
-            $(".cancel-btn").css("display", "block");
-        }); */
+        $('#reason').change(function() {
+            var result = $('#reason option:selected').val();
+            if (result == 'admin') {
+                $('input#admin').show();
+            } else {
+                $('input#admin').hide();
+            }
+        });
     });
 </script>
