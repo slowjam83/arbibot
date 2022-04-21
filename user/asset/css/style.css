@@ -3870,10 +3870,14 @@ Media Query
         grid-template-columns: repeat(3, 1fr)
     }
     .chargePay li:nth-child(3+n) {
-        border-bottom: 0;
+        border-top: 0;
     }
     .chargePay li:nth-child(3n+1) {
         border-left: 1px solid #ebebeb;
+    }
+    .chargePay li:nth-child(3n+1).on,
+    .chargePay li:nth-child(3n+1):hover {
+        border-left: 1px solid #4341ce
     }
     input[name=accountNum] {
         width: calc(100% - 83px);
