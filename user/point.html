@@ -58,52 +58,52 @@
                 <p>하나은행 1234567890 (주식회사 크롬이노베이션)</p>
                 <button onclick="copy_to_accountNum()" class="small-btn line-btn copy-btn">계좌 복사</button>
             </div>
+            <h3 class="mt40">입금자명 (가입시 등록한 닉네임으로 입금해야 결제 완료 처리됩니다.)</h3>
+            <input type="text" value="사용자닉네임" id="" name="" readonly class="disabled">
+            <h3 class="mt40">연락처</h3>
+            <input type="text" value="‘-’ 없이 입력해주세요." id="" name="">
             <div class="totalPay mt40">
                 <h3>결제 예정금액</h3>
-                <p class="point-font">1,000 <span>원</span></p>
-            </div>
-            <div class="tit-head mt40">
-                <p>* 법정대리인 동의 없는 미성년자 결제는 취소 가능.<br> * 구매 후 7일 이내 미사용 포인트는 청약철회 가능하며, 세부내용은 환불약관 참조.</p>
+                <p class="point-font">10,000 <span>원</span></p>
             </div>
             <form action="/" method="post" class="pointTerms mt40">
                 <fieldset>
+                    <h3>구매 약관</h3>
+                    <ol>
+                        <li>무통장 입금은 입금까지 완료하셔야 결제가 완료됩니다.</li>
+                        <li>입금 확인 후 포인트 충전은 영업일 10시~18시까지 처리됩니다.</li>
+                        <li>입금 날짜와 상관없이 신청하신 때의 포인트 상품 기준으로 결제가 처리됩니다.</li>
+                        <li>법정 대리인의 동의 없는 미성년자의 결제는 취소될 수 있습니다.</li>
+                        <li>잔여 포인트가 결제 포인트 이상 남아 있어야만 환불이 가능합니다.</li>
+                        <li>결제내역은 <a href="javascript:void(0)" class="pointUnderLine mypage">마이페이지</a>에서 확인 가능합니다.</li>
+                    </ol>
                     <label>
                         <input type="checkbox">
                         <span class="check-mark"></span>위 사항을 확인하였으며 구매진행에 동의합니다. <span class="point-font7">(필수)</span>
                     </label>
+                    <h3>개인정보 수집 동의</h3>
+                    <ol>
+                        <li>결제를 위해 전화번호를 수집합니다.</li>
+                        <li>수집된 개인정보는 결제 확인, 환불, 오입금 확인에 사용됩니다.</li>
+                        <li>수집된 개인정보는 3개월동안 보관되며 이후 삭제됩니다.</li>
+                    </ol>
                     <label>
                         <input type="checkbox" checked>
-                        <span class="check-mark"></span>이용 약관에 동의합니다. <span class="point-font7">(필수)</span>
-                        <a href="javascript:void(0)" class="pointTerms-btn pointTerms01">상세보기</a>
-                    </label>
-                    <label>
-                        <input type="checkbox" checked>
-                        <span class="check-mark"></span>개인 정보 수집에 동의합니다. <span class="point-font7">(필수)</span>
-                        <a href="javascript:void(0)" class="pointTerms-btn pointTerms02">상세보기</a>
-                    </label>
-                    <label>
-                        <input type="checkbox" checked>
-                        <span class="check-mark"></span>이 결제 수단으로 추후 결제 이용에 동의합니다. (선택)
+                        <span class="check-mark"></span>위 사항을 확인하였으며 개인정보 수집에 동의합니다. <span class="point-font7">(필수)</span>
                     </label>
                     <button type="button" class="large-btn mt40">결제하기</button>
                 </fieldset>
             </form>
-            <div class="tit-head mt60">
-                <h2>포인트 정책 안내</h2>
-                <p>※ 회원가입시 1,000포인트 지급<br> ※ 매일 출석하여 로그인만 하여도 50포인트 지급<br> ※ 회원의 실수로 인하여 포인트가 삭제, 감소되었을 경우에 아비봇에 책임을 물을 수 없습니다.<br> ※ 포인트 정책은 언제든지 내용이 변경될 수 있으며 이를 회원님들께 개별 통지하지 않습니다.<br> ※ 포인트는 선물하기 또는 양도, 양수가 되지 않습니다.<br> ※ 회원의 포인트는 회원 탈퇴시 모두 삭제됩니다.</p>
-            </div>
         </div>
     </div>
 </div>
 
 <script>
-    $(document).ready(function() {
-        function copy_to_accountNum() {
-            var copyText = document.getElementById('accountNum');
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("Copy");
-            alert('복사되었습니다.');
-        };
-    });
+    function copy_to_accountNum() {
+        var copyText = document.getElementById('accountNum');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("Copy");
+        alert('복사되었습니다.');
+    };
 </script>
