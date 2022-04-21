@@ -2011,6 +2011,7 @@ input[name=accountTel] {
 
 input[name=accountNum] {
     width: calc(50% - 83px);
+    margin-right: 5px;
 }
 
 .chargePay,
@@ -4965,6 +4966,19 @@ Media Query
     .chargePay,
     .totalPay {
         grid-template-columns: repeat(1, 1fr)
+    }
+    .chargePay li:not(:first-child) {
+        border-top: 0;
+    }
+    .chargePay li:nth-child(3n+1) {
+        border-left: 1px solid #ebebeb;
+    }
+    input[name=accountNum],
+    .copy-btn {
+        width: 100%;
+    }
+    input[name=accountNum] {
+        margin: 0 0 5px 0;
     }
 }
 
