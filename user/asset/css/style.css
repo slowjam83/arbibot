@@ -1988,7 +1988,9 @@ p.time-info {
     font-size: 14px;
 }
 
-.pointCharge .large-btn {
+.pointCharge .large-btn,
+input[name=accountNick],
+input[name=accountTel] {
     width: 50%;
 }
 
@@ -2009,11 +2011,6 @@ p.time-info {
 
 input[name=accountNum] {
     width: calc(50% - 83px);
-}
-
-input[name=accountNick],
-input[name=accountTel] {
-    width: 50%;
 }
 
 .chargePay,
@@ -3877,6 +3874,14 @@ Media Query
     }
     .chargePay li:nth-child(3n+1) {
         border-left: 1px solid #ebebeb;
+    }
+    input[name=accountNum] {
+        width: calc(100% - 83px);
+    }
+    .pointCharge .large-btn,
+    input[name=accountNick],
+    input[name=accountTel] {
+        width: 100%;
     }
 }
 
