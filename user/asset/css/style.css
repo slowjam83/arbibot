@@ -2000,6 +2000,9 @@ input[name=accountTel] {
 
 .payType {
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .payType p {
@@ -4974,8 +4977,12 @@ Media Query
     .chargePay li:not(:first-child):hover {
         border-top: 1px solid #4341ce;
     }
-    .chargePay li {
+    .chargePay li,
+    .chargePay li:nth-child(3n+1) {
         border-left: 1px solid #ebebeb;
+    }
+    .payType {
+        display: inherit;
     }
     input[name=accountNum],
     .copy-btn {
