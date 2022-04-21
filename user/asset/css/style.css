@@ -2011,8 +2011,8 @@ p.time-info {
     width: calc(50% - 83px);
 }
 
-.payType input[name=accountNick],
-.payType input[name=accountTel] {
+.pointCharge input[name=accountNick],
+.pointCharge input[name=accountTel] {
     width: 50%;
 }
 
