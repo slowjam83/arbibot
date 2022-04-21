@@ -4106,8 +4106,11 @@ Media Query
     .totalPay {
         grid-template-columns: repeat(2, 1fr)
     }
-    .pointCharge .large-btn {
-        width: 100%;
+    .chargePay li:nth-child(3n+1) {
+        border-left: 0
+    }
+    .chargePay li:nth-child(odd) {
+        border-left: 1px solid #ebebeb
     }
 }
 
