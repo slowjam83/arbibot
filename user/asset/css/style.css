@@ -2108,6 +2108,10 @@ input[name=accountNum] {
     bottom: 5px;
 }
 
+button[name=applyPayment] {
+    margin-bottom: 60px;
+}
+
 .recruit-banner {
     width: 100%;
     height: 300px;
@@ -4984,12 +4988,24 @@ Media Query
     .payType {
         display: inherit;
     }
+    .payType p {
+        top: 5px;
+    }
     input[name=accountNum],
     .copy-btn {
         width: 100%;
     }
     input[name=accountNum] {
         margin: 0 0 5px 0;
+    }
+    .totalPay {
+        grid-template-columns: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    button[name=applyPayment] {
+        margin-bottom: 0;
     }
 }
 
