@@ -2080,11 +2080,15 @@ input[name=accountNum] {
 .pointTerms ol li {
     font-size: 14px;
     color: #888;
+    position: relative;
+    padding-left: 15px;
 }
 
 .pointTerms ol li::before {
     content: 'ㆍ ';
     font-weight: 900;
+    position: absolute;
+    left: 0;
 }
 
 .pointTerms label {
