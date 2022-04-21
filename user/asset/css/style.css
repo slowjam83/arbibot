@@ -4970,7 +4970,11 @@ Media Query
     .chargePay li:not(:first-child) {
         border-top: 0;
     }
-    .chargePay li:nth-child(3n+1) {
+    .chargePay li:not(:first-child).on,
+    .chargePay li:not(:first-child):hover {
+        border-top: 1px solid #4341ce;
+    }
+    .chargePay li {
         border-left: 1px solid #ebebeb;
     }
     input[name=accountNum],
