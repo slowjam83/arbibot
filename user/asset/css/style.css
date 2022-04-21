@@ -3869,7 +3869,7 @@ Media Query
     .totalPay {
         grid-template-columns: repeat(3, 1fr)
     }
-    .chargePay li:nth-child(3+n) {
+    .chargePay li:nth-child(n+3) {
         border-top: 0;
     }
     .chargePay li:nth-child(3n+1) {
