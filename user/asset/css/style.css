@@ -4918,6 +4918,15 @@ Media Query
     .pointCharge {
         padding: 20px;
     }
+    .totalPay {
+        grid-template-columns: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    button[name=applyPayment] {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 620px) {
@@ -5001,15 +5010,6 @@ Media Query
     }
     input[name=accountNum] {
         margin: 0 0 5px 0;
-    }
-    .totalPay {
-        grid-template-columns: inherit;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    button[name=applyPayment] {
-        margin-bottom: 0;
     }
 }
 
