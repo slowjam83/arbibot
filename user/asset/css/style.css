@@ -2007,12 +2007,12 @@ p.time-info {
     left: 15px;
 }
 
-.input[name=accountNum] {
+input[name=accountNum] {
     width: calc(50% - 83px);
 }
 
-.input[name=accountNick],
-.input[name=accountTel] {
+input[name=accountNick],
+input[name=accountTel] {
     width: 50%;
 }
 
