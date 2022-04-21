@@ -3868,6 +3868,16 @@ Media Query
         grid-gap: 60px 80px;
         gap: 60px 80px;
     }
+    .chargePay,
+    .totalPay {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .chargePay li:nth-child(3+n) {
+        border-bottom: 0;
+    }
+    .chargePay li:nth-child(3n+1) {
+        border-left: 1px solid #ebebeb;
+    }
 }
 
 @media (max-width: 1560px) {
