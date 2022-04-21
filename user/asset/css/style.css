@@ -3869,14 +3869,17 @@ Media Query
     .totalPay {
         grid-template-columns: repeat(3, 1fr)
     }
-    .chargePay li:nth-child(n+3) {
+    .chargePay li:nth-child(n+4) {
         border-top: 0;
     }
     .chargePay li:nth-child(3n+1) {
         border-left: 1px solid #ebebeb;
     }
+    .chargePay li:nth-child(n+4).on,
+    .chargePay li:nth-child(n+4):hover,
     .chargePay li:nth-child(3n+1).on,
     .chargePay li:nth-child(3n+1):hover {
+        border-top: 1px solid #4341ce;
         border-left: 1px solid #4341ce
     }
     input[name=accountNum] {
