@@ -209,6 +209,10 @@ input[type="radio"]:checked~.radio {
     display: block;
 }
 
+table.mobile-hidden {
+    display: table;
+}
+
 .mobile-inline-hidden {
     display: inline-block;
 }
@@ -1681,6 +1685,10 @@ sub page
 
 .wallet .tit-head {
     margin: 0 0 20px;
+}
+
+.wallet .flex-end p {
+    font-size: 14px;
 }
 
 .wallet .point-font {
