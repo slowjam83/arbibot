@@ -1687,11 +1687,11 @@ sub page
     margin: 0 0 20px;
 }
 
-.wallet .flex-end p {
+.wallet .flex-end-baseline p {
     font-size: 14px;
 }
 
-.wallet .flex-end p.point-font {
+.wallet .flex-end-baseline p.point-font {
     font-size: 24px;
     font-weight: 700;
     font-family: 'AppleSDGothicNeo';
