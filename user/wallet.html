@@ -1,3 +1,26 @@
+<style>
+    .select {
+        position: relative;
+        display: inline-block;
+        --color: red;
+    }
+    
+    .select:before {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: 1px;
+        bottom: 1px;
+        left: 40px;
+        background: var(--color);
+        mix-blend-mode: lighten;
+    }
+    
+    select option {
+        color: black;
+    }
+</style>
+
 <div class="container sub-container scroll">
     <div class="sub-container-head">
         <h1 class="subpage-title">자산 현황</h1>
@@ -86,5 +109,10 @@
         //tab 메뉴
         var li_max = 100 / $(".tabNav li").length;
         $(".tabNav li").css("width", li_max + "%");
+
+        //select custom
+        $('select').change(function() {
+            $(this).parent().attr('style', '--color:' + $(this).find(':selected').data('빗썸'));
+        })
     });
 </script>
