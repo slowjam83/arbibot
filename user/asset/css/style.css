@@ -1683,14 +1683,13 @@ sub page
     margin: 0 0 20px;
 }
 
-.wallet .table-wrap table th:first-child,
-.wallet .table-wrap table td:first-child {
+.wallet th:first-child,
+.wallet td:first-child {
     text-align: center;
-    width: 200px;
 }
 
-.wallet .table-wrap table th:not(:first-child),
-.wallet .table-wrap table td:not(:first-child) {
+.wallet th:not(:first-child),
+.wallet td:not(:first-child) {
     text-align: right;
 }
 
