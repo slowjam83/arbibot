@@ -419,10 +419,10 @@ a.disabled-font {
     align-items: flex-start;
 }
 
-.flex-end {
+.flex-end-baseline {
     display: flex;
     justify-content: flex-end !important;
-    align-items: center;
+    align-items: baseline;
 }
 
 .left-minus {
