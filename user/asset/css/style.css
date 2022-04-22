@@ -1683,6 +1683,16 @@ sub page
     margin: 0 0 20px;
 }
 
+.wallet .point-font {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'AppleSDGothicNeo';
+}
+
+.wallet table {
+    border-bottom: 1px solid #ebebeb;
+}
+
 .wallet th:first-child,
 .wallet td:first-child {
     text-align: center;
@@ -3867,10 +3877,6 @@ Media Query
     .setting-box li .tip-modal {
         left: 127px;
     }
-    .wallet .table-wrap table th:first-child,
-    .wallet .table-wrap table td:first-child {
-        width: 150px;
-    }
     .result-card:last-child {
         margin-bottom: 0;
     }
@@ -4048,10 +4054,6 @@ Media Query
 }
 
 @media (max-width: 1280px) {
-    .wallet .table-wrap table th:first-child,
-    .wallet .table-wrap table td:first-child {
-        width: 120px;
-    }
     .search-wrap label {
         width: calc(100% - 94px);
     }
@@ -4245,10 +4247,6 @@ Media Query
     .ranking .tit-head li a,
     .api-setting .tit-head li a {
         padding: 5px 20px 6px;
-    }
-    .wallet .table-wrap table th:last-child,
-    .wallet .table-wrap table td:last-child {
-        display: none;
     }
     #pointCharge th:nth-child(1),
     #pointCharge th:nth-child(2),
