@@ -7,104 +7,73 @@
     </div>
     <div class="contentsArea">
         <div class="wallet">
+            <ul class="nav tabNav tit-head" id="pills-tab" role="tablist">
+                <li role="presentation">
+                    <a class="active" id="bithumb-tab" data-toggle="pill" href="#bithumb" role="tab" aria-controls="bithumb" aria-selected="true">빗썸</a>
+                </li>
+                <li role="presentation">
+                    <a id="upbit-tab" data-toggle="pill" href="#upbit" role="tab" aria-controls="upbit" aria-selected="flase">업비트</a>
+                </li>
+                <li role="presentation">
+                    <a id="coinone-tab" data-toggle="pill" href="#coinone" role="tab" aria-controls="coinone" aria-selected="flase">코인원</a>
+                </li>
+                <li role="presentation">
+                    <a id="korbit-tab" data-toggle="pill" href="#korbit" role="tab" aria-controls="korbit" aria-selected="flase">코빗</a>
+                </li>
+            </ul>
             <div class="tit-head">
                 <select name="" id="">
-                    <option value="">거래소 및 API 선택</option>
-                    <option value="">업비트(투자 A)</option>
+                    <option value="">API 선택</option>
+                    <option value=""><span>빗썸</span> API별칭1</option>
                 </select>
-            </div>
-            <div class="table-wrap scroll">
-                <!-- 로그인 전 -->
-                <table class="minWidth100">
-                    <thead>
-                        <tr>
-                            <th>자산 구분</th>
-                            <th>보유 잔고</th>
-                            <th>사용 가능</th>
-                            <th>사용 중</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="4" class="disabled-font">로그인 후 이용 가능합니다.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- //로그인 전 -->
-
-                <!-- 로그인 후 API 선택 전 -->
-                <table class="minWidth100">
-                    <thead>
-                        <tr>
-                            <th>자산 구분</th>
-                            <th>보유 잔고</th>
-                            <th>사용 가능</th>
-                            <th>사용 중</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="4" class="disabled-font">거래소 및 API를 선택해 주십시오.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- //로그인 후 API 선택 전 -->
-
-                <!-- 로그인 후 API 선택 완료 -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>자산 구분</th>
-                            <th>보유 잔고</th>
-                            <th>사용 가능</th>
-                            <th>사용 중</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>원화 (KRW)</td>
-                            <td>78,658,201</td>
-                            <td>8,658,201</td>
-                            <td>70,000,000</td>
-                        </tr>
-                        <tr>
-                            <td>BTC</td>
-                            <td>1.258416</td>
-                            <td>0.258416</td>
-                            <td>1.0000000</td>
-                        </tr>
-                        <tr>
-                            <td>ETH</td>
-                            <td>3.258416</td>
-                            <td>1,258,416</td>
-                            <td>2.0000000</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- //로그인 후 API 선택 완료 -->
+                <div>
+                    <p>총 보유자산</p>
+                    <p>1,000,000,000</p>
+                    <p>KRW</p>
+                    <a href="javascript:void(0);" class="refresh-btn"><img src="./asset/img/svg/refresh.svg" alt="운영 가능 자산 업데이트"></a>
+                </div>
             </div>
 
-            <!-- 페이징 버튼 -->
-            <ul class="pagination">
-                <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
-                <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
-                <li class="active"><a href="javascript:void(0);">1</a></li>
-                <li><a href="javascript:void(0);">2</a></li>
-                <li><a href="javascript:void(0);">3</a></li>
-                <li><a href="javascript:void(0);">4</a></li>
-                <li><a href="javascript:void(0);">5</a></li>
-                <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
-                <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
-            </ul>
-            <!-- //페이징 버튼 -->
+            <div class="tab-content" id="pills-tabContent">
+                <!-- 빗썸 API 자산현황 -->
+                <div class="tab-pane fade active show" role="tabpanel" id="bithumb" aria-labelledby="bithumb-tab">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>자산 구분</th>
+                                <th>보유 잔고</th>
+                                <th>사용 중</th>
+                                <th>사용 가능</th>
+                                <th>평가 금액 (KRW)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>원화 (KRW)</td>
+                                <td>78,658,201</td>
+                                <td>0</td>
+                                <td>8,658,201</td>
+                                <td>70,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>ETH</td>
+                                <td>3.258416</td>
+                                <td>2.0000000</td>
+                                <td>1.258416</td>
+                                <td>3,258,416</td>
+                            </tr>
+                            <tr>
+                                <td>BTC</td>
+                                <td>1.258416</td>
+                                <td>1.0000000</td>
+                                <td>0.258416</td>
+                                <td>1,258,416</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //빗썸 API 자산현황 -->
+            </div>
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        $('.table-wrap.scroll').mousewheel(function(e, delta) {
-            this.scrollLeft -= (delta * 50);
-            e.preventDefault();
-        });
-    });
-</script>
