@@ -677,6 +677,11 @@ a.write-btn,
     margin: 0 0 8px 10px;
 }
 
+.link-btn {
+    height: 32px;
+    line-height: 30px;
+}
+
 
 /*============================================================
 header
