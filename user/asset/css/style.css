@@ -4244,6 +4244,12 @@ Media Query
     .wallet .flex-end-baseline {
         margin: 10px 0;
     }
+    .wallet .flex-end-baseline p {
+        font-size: 12px;
+    }
+    .wallet .flex-end-baseline p.point-font {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1120px) {
