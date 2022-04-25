@@ -4244,12 +4244,6 @@ Media Query
     .wallet .flex-end-baseline {
         margin: 10px 0;
     }
-    .wallet .flex-end-baseline p {
-        font-size: 12px;
-    }
-    .wallet .flex-end-baseline p.point-font {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 1120px) {
@@ -5147,6 +5141,12 @@ Media Query
     .ranking .tit-head li a,
     .api-setting .tit-head li a {
         padding: 5px 10px 6px;
+    }
+    .wallet .flex-end-baseline p {
+        font-size: 12px;
+    }
+    .wallet .flex-end-baseline p.point-font {
+        font-size: 18px;
     }
 }
 
