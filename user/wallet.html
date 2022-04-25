@@ -203,11 +203,11 @@
         const opts = option.querySelectorAll('li');
 
         /* 옵션선택 */
-        function selectOpt() {
+        function selectOpt(e) {
             opts.forEach(opt => {
                 const innerValue = opt.innerHTML;
 
-                function changeValue() {
+                function changeValue(e) {
                     values.innerHTML = innerValue;
                 }
                 opt.addEventListener('click', changeValue)
@@ -235,7 +235,7 @@
         } */
 
         /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
-        function hideSelect() {
+        function hideSelect(e) {
             if (option.classList.contains('show')) {
                 option.classList.add('hide');
                 option.classList.remove('show');
