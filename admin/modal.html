@@ -72,3 +72,32 @@
     </div>
 </div>
 <!-- //회원 정보 -->
+
+<!-- 구매 지급 사유 비고 보기 -->
+<div class="modal fade" id="modalBuyReason" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog scroll">
+        <div data-dismiss="modal" class="modal-close"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>지급 사유 비고</h3>
+            </div>
+            <div class="modal-body">
+                <p id="reason">입금자명이 닉네임이 아닌 홍길동으로 입금됨.</p>
+                <textarea name="" id="" class="w100 invisible">입금자명이 닉네임이 아닌 홍길동으로 입금됨.</textarea>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" id="toEdit" class="btn btn_cancel">수정</button>
+                    <button type="submit" id="mbrState_action" class="btn btn_submit">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //구매 지급 사유 비고 보기 -->
+<script>
+    $('#toEdit').click(function() {
+        $('#reason').hide();
+        $('textarea').show();
+    });
+</script>
