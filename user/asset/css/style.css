@@ -510,8 +510,9 @@ a.disabled-font {
     padding: 0 10px;
 }
 
+.select ul li:first-child,
 .select ul li:last-child {
-    padding: 0 10px 10px;
+    padding: 5px 10px;
 }
 
 .select ul li:hover {
