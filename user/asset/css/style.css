@@ -518,7 +518,6 @@ a.disabled-font {
 .select ul li:hover {
     background: #1e90ff;
     color: #fff;
-    font-weight: 700;
 }
 
 .apiNick {
