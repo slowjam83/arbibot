@@ -490,6 +490,7 @@ a.disabled-font {
     padding: 0 40px 0 10px;
     background: url("../img/expand-arrow.png") no-repeat 100% center;
     cursor: pointer;
+    width: 200px;
 }
 
 
@@ -4224,9 +4225,24 @@ Media Query
     .chargePay li:nth-child(odd):hover {
         border-left: 1px solid #4341ce
     }
+    table.mobile-hidden {
+        display: none;
+    }
+    .wallet .pc-hidden {
+        display: block;
+    }
+    .wallet .tit-head {
+        display: inherit;
+    }
+    .select {
+        width: calc(100% - 84px);
+    }
+    .wallet .flex-end-baseline {
+        margin-top: 10px;
+    }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1120px) {
     .header .util .user-info {
         display: none;
     }
@@ -4324,12 +4340,6 @@ Media Query
     .input-wrap,
     .input-wrap li input[type="text"] {
         width: 300px;
-    }
-    table.mobile-hidden {
-        display: none;
-    }
-    .wallet .pc-hidden {
-        display: block;
     }
 }
 
