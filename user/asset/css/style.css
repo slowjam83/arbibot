@@ -1711,6 +1711,28 @@ sub page
     text-align: right;
 }
 
+.wallet .pc-hidden li {
+    padding: 20px 10px;
+    border-top: 1px solid #ebebeb;
+}
+
+.wallet .pc-hidden li:last-child {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.wallet .pc-hidden h2 {
+    margin-bottom: 5px;
+}
+
+.wallet .pc-hidden p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+}
+
 .ipInput {
     width: 100%;
     margin-top: 20px;
