@@ -4238,7 +4238,7 @@ Media Query
         width: calc(100% - 84px);
     }
     .wallet .flex-end-baseline {
-        margin-top: 10px;
+        margin: 10px 0;
     }
 }
 
