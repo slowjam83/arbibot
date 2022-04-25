@@ -4226,7 +4226,7 @@ Media Query
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
     .header .util .user-info {
         display: none;
     }
@@ -4324,6 +4324,12 @@ Media Query
     .input-wrap,
     .input-wrap li input[type="text"] {
         width: 300px;
+    }
+    table.mobile-hidden {
+        display: none;
+    }
+    .wallet .pc-hidden {
+        display: block;
     }
 }
 
