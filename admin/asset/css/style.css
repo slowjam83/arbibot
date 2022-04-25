@@ -1128,11 +1128,16 @@ board
     margin-top: 40px
 }
 
-.comment-write textarea {
+.comment-write textarea,
+.modal-body textarea {
     width: 100%;
     padding: 15px 200px 15px 20px;
     font-size: 16px;
     border: 1px solid #ebebeb
+}
+
+.modal-body textarea {
+    padding: 15px 20px;
 }
 
 .comment-write .inside-obj {
