@@ -215,7 +215,7 @@
         }
 
         /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
-        function selects() {
+        function selects(e) {
             e.stopPropagation();
             option.setAttribute('style', `top:${select.offsetHeight}px`)
             if (option.classList.contains('hide')) {
