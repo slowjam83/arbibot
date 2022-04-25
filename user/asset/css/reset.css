@@ -162,3 +162,11 @@ b {
 textarea {
     resize: none
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

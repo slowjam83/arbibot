@@ -108,7 +108,8 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"],
-select {
+select,
+.select {
     height: 32px;
     line-height: 32px;
     border: 1px solid #d4d4d4;
@@ -479,6 +480,40 @@ a.disabled-font {
     margin-left: 0 !important;
     border-radius: 0;
     text-align: center;
+}
+
+
+/* 셀렉트 영역 스타일 */
+
+.select {
+    position: relative;
+    padding: 5px 10px;
+    background: url("https://img.icons8.com/material-rounded/24/000000/expand-arrow.png") no-repeat 96% center;
+    cursor: pointer;
+}
+
+
+/* 옵션 영역 스타일 */
+
+.select ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.select ul li {
+    padding: 10px;
+}
+
+.select ul li:hover {
+    background: #1e90ff;
+    color: #fff;
+    font-weight: 700;
 }
 
 
