@@ -4231,7 +4231,7 @@ Media Query
     .wallet .pc-hidden {
         display: block;
     }
-    .wallet .tit-head {
+    .wallet .flex-between {
         display: inherit;
     }
     .select {
