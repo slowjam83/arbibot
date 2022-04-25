@@ -196,16 +196,15 @@
         $(".tabNav li").css("width", li_max + "%");
 
         //selectBox
-        let body = document.querySelector('body');
-        let select = document.querySelector(`[data-role="selectBox"]`);
-        let values = select.querySelector(`[date-value="optValue"]`);
-        let option = select.querySelector('ul');
-        let opts = option.querySelectorAll('li');
+        const select = document.querySelector(`[data-role="selectBox"]`);
+        const values = select.querySelector(`[date-value="optValue"]`);
+        const option = select.querySelector('ul');
+        const opts = option.querySelectorAll('li');
 
         /* 옵션선택 */
         function selectOpt(e) {
             opts.forEach(opt => {
-                let innerValue = opt.innerHTML;
+                const innerValue = opt.innerHTML;
 
                 function changeValue(e) {
                     values.innerHTML = innerValue;
@@ -230,7 +229,7 @@
 
         /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
         /* function selectFirst() {
-            let firstValue = opts[0].innerHTML;
+            const firstValue = opts[0].innerHTML;
             values.innerHTML = `${firstValue}`
         } */
 
@@ -244,6 +243,6 @@
 
         // selectFirst();
         select.addEventListener('click', selects);
-        body.addEventListener('click', hideSelect);
+        document.querySelector('body').addEventListener('click', hideSelect);
     });
 </script>
