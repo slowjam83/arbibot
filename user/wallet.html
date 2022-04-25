@@ -121,6 +121,18 @@
         const option = select.querySelector('ul');
         const opts = option.querySelectorAll('li');
 
+        /* 옵션선택 */
+        function selectOpt() {
+            opts.forEach(opt => {
+                const innerValue = opt.innerHTML;
+
+                function changeValue() {
+                    values.innerHTML = innerValue;
+                }
+                opt.addEventListener('click', changeValue)
+            });
+        }
+
         /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
         function selects(e) {
             e.stopPropagation();
@@ -135,23 +147,11 @@
             selectOpt();
         }
 
-        /* 옵션선택 */
-        function selectOpt() {
-            opts.forEach(opt => {
-                const innerValue = opt.innerHTML;
-
-                function changeValue() {
-                    values.innerHTML = innerValue;
-                }
-                opt.addEventListener('click', changeValue)
-            });
-        }
-
         /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
-        function selectFirst() {
+        /* function selectFirst() {
             const firstValue = opts[0].innerHTML;
             values.innerHTML = `${firstValue}`
-        }
+        } */
 
         /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
         function hideSelect() {
@@ -161,7 +161,7 @@
             }
         }
 
-        selectFirst();
+        // selectFirst();
         select.addEventListener('click', selects);
         body.addEventListener('click', hideSelect);
     });
