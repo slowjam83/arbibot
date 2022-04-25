@@ -860,20 +860,24 @@ input#mbrNick2 {
     height: 16px
 }
 
-.point th:nth-child(5),
-.point th:nth-child(6),
-.point th:nth-child(7),
-.point td:nth-child(5),
-.point td:nth-child(6),
-.point td:nth-child(7),
-.pointAdTable th:nth-child(4),
-.pointAdTable td:nth-child(4) {
+.pointAll th:nth-child(6),
+.pointAll th:nth-child(7),
+.pointAll th:nth-child(8),
+.pointAll th:nth-child(9),
+.pointAll td:nth-child(6),
+.pointAll td:nth-child(7),
+.pointAll td:nth-child(8),
+.pointAll td:nth-child(9),
+.pointAd th:nth-child(4),
+.pointAd th:nth-child(5),
+.pointAd td:nth-child(4),
+.pointAd td:nth-child(5) {
     text-align: right
 }
 
 .point td:last-child,
-.pointAdTable th:nth-child(6),
-.pointAdTable td:nth-child(6) {
+.pointAd th:nth-child(6),
+.pointAd td:nth-child(6) {
     text-align: center
 }
 
