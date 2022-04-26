@@ -46,47 +46,43 @@
             <div class="tab-content" id="pills-tabContent">
                 <!-- 전체 -->
                 <div class="tab-pane fade active show" role="tabpanel" id="all" aria-labelledby="all-tab">
-                    <form id="excel-form" method="post" action="/">
-                        <fieldset class="flex-strat">
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-strat">
-                                <legend class="hidden">월별 조회</legend>
-                                <label for="shcDate"></label>
-                                <input type="text" name="shcDate" id="shcDate">
-                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
-                                <label>
-                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
-                                </label>
-                                <button type="button" id="" class="small-btn disabled">조회</button>
-                            </div>
-                            <!-- <div class="flex-end">
-                                <a href="" download class="file-btn">템플릿 다운로드</a>
-                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-                                <label for="fileUpload" class="small-btn fill">지급</label>
-                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                            </div> -->
-                        </fieldset>
-                    </form>
-                    <form id="search-form" method="post" action="/">
-                        <fieldset>
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-end">
-                                <select name="" id="reason" class="ml20">
-                                    <option value="none">지급사유 선택</option>
-                                    <option value="buy">구매 (무통장입금)</option>
-                                    <option value="event">이벤트</option>
-                                    <option value="admin">기타</option>
-                                </select>
-                                <label>
-                                    <input type="text" id="adminInput" value="기타 지급 사유 입력" class="invisible ml5">
-                                </label>
-                                <label>
-                                    <input type="text" id="" value="포인트" class="pointInput pv ml5">
-                                </label>
-                                <button type="button" id="" class="small-btn fill">지급</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div class="flex-btween">
+                        <form id="excel-form" method="post" action="/">
+                            <fieldset class="flex-strat">
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-strat">
+                                    <legend class="hidden">월별 조회</legend>
+                                    <label for="shcDate"></label>
+                                    <input type="text" name="shcDate" id="shcDate">
+                                    <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                    <label>
+                                        <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                    </label>
+                                    <button type="button" id="" class="small-btn disabled">조회</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form id="search-form" method="post" action="/">
+                            <fieldset>
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-end">
+                                    <select name="" id="reason" class="ml20">
+                                        <option value="none">지급사유 선택</option>
+                                        <option value="buy">구매 (무통장입금)</option>
+                                        <option value="event">이벤트</option>
+                                        <option value="admin">기타</option>
+                                    </select>
+                                    <label>
+                                        <input type="text" id="adminInput" value="기타 지급 사유 입력" class="invisible ml5">
+                                    </label>
+                                    <label>
+                                        <input type="text" id="" value="포인트" class="pointInput pv ml5">
+                                    </label>
+                                    <button type="button" id="" class="small-btn fill">지급</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                     <table class="pointAll mt20">
                         <thead>
                             <tr>
@@ -241,44 +237,40 @@
 
                 <!-- 구매 -->
                 <div class="tab-pane fade" role="tabpanel" id="buy" aria-labelledby="buy-tab">
-                    <form id="excel-form" method="post" action="/">
-                        <fieldset class="flex-strat">
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-strat">
-                                <legend class="hidden">월별 조회</legend>
-                                <label for="shcDate"></label>
-                                <input type="text" name="shcDate" id="shcDate">
-                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
-                                <label>
-                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
-                                </label>
-                                <button type="button" id="" class="small-btn disabled">조회</button>
-                            </div>
-                            <!-- <div class="flex-end">
-                                <a href="" download class="file-btn">템플릿 다운로드</a>
-                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-                                <label for="fileUpload" class="small-btn fill">지급</label>
-                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                            </div> -->
-                        </fieldset>
-                    </form>
-                    <form id="search-form" method="post" action="/">
-                        <fieldset>
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-end">
-                                <select name="" id="" class="disabled ml20">
-                                    <option value="buy" selected disabled>구매 (무통장입금)</option>
-                                </select>
-                                <label>
-                                    <input type="text" id="" value="기타 지급 사유 입력" class="ml5">
-                                </label>
-                                <label>
-                                    <input type="text" id="" value="포인트" class="pointInput pv ml5">
-                                </label>
-                                <button type="button" id="" class="small-btn fill">지급</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div class="flex-between">
+                        <form id="excel-form" method="post" action="/">
+                            <fieldset class="flex-strat">
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-strat">
+                                    <legend class="hidden">월별 조회</legend>
+                                    <label for="shcDate"></label>
+                                    <input type="text" name="shcDate" id="shcDate">
+                                    <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                    <label>
+                                        <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                    </label>
+                                    <button type="button" id="" class="small-btn disabled">조회</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form id="search-form" method="post" action="/">
+                            <fieldset>
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-end">
+                                    <select name="" id="" class="disabled ml20">
+                                        <option value="buy" selected disabled>구매 (무통장입금)</option>
+                                    </select>
+                                    <label>
+                                        <input type="text" id="" value="기타 지급 사유 입력" class="ml5">
+                                    </label>
+                                    <label>
+                                        <input type="text" id="" value="포인트" class="pointInput pv ml5">
+                                    </label>
+                                    <button type="button" id="" class="small-btn fill">지급</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                     <table class="pointAll mt20">
                         <thead>
                             <tr>
@@ -367,41 +359,37 @@
 
                 <!-- 이벤트 -->
                 <div class="tab-pane fade" role="tabpanel" id="event" aria-labelledby="event-tab">
-                    <form id="excel-form" method="post" action="/">
-                        <fieldset class="flex-strat">
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-strat">
-                                <legend class="hidden">월별 조회</legend>
-                                <label for="shcDate"></label>
-                                <input type="text" name="shcDate" id="shcDate">
-                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
-                                <label>
-                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
-                                </label>
-                                <button type="button" id="" class="small-btn disabled">조회</button>
-                            </div>
-                            <!-- <div class="flex-end">
-                                <a href="" download class="file-btn">템플릿 다운로드</a>
-                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-                                <label for="fileUpload" class="small-btn fill">지급</label>
-                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                            </div> -->
-                        </fieldset>
-                    </form>
-                    <form id="search-form" method="post" action="/">
-                        <fieldset>
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-end">
-                                <select name="" id="" class="disabled ml20">
-                                    <option value="event" selected disabled>이벤트</option>
-                                </select>
-                                <label>
-                                    <input type="text" id="" value="포인트" class="pointInput pv ml5">
-                                </label>
-                                <button type="button" id="" class="small-btn fill">지급</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div class="flex-between">
+                        <form id="excel-form" method="post" action="/">
+                            <fieldset class="flex-strat">
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-strat">
+                                    <legend class="hidden">월별 조회</legend>
+                                    <label for="shcDate"></label>
+                                    <input type="text" name="shcDate" id="shcDate">
+                                    <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                    <label>
+                                        <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                    </label>
+                                    <button type="button" id="" class="small-btn disabled">조회</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form id="search-form" method="post" action="/">
+                            <fieldset>
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-end">
+                                    <select name="" id="" class="disabled ml20">
+                                        <option value="event" selected disabled>이벤트</option>
+                                    </select>
+                                    <label>
+                                        <input type="text" id="" value="포인트" class="pointInput pv ml5">
+                                    </label>
+                                    <button type="button" id="" class="small-btn fill">지급</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                     <table class="pointOther mt20">
                         <thead>
                             <tr>
@@ -469,12 +457,6 @@
                                 </label>
                                 <button type="button" id="" class="small-btn disabled">조회</button>
                             </div>
-                            <!-- <div class="flex-end">
-                                <a href="" download class="file-btn">템플릿 다운로드</a>
-                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-                                <label for="fileUpload" class="small-btn fill">지급</label>
-                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                            </div> -->
                         </fieldset>
                     </form>
                     <table class="pointAd mt20">
@@ -519,44 +501,40 @@
 
                 <!-- 기타 -->
                 <div class="tab-pane fade" role="tabpanel" id="admin" aria-labelledby="admin-tab">
-                    <form id="excel-form" method="post" action="/">
-                        <fieldset class="flex-strat">
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-strat">
-                                <legend class="hidden">월별 조회</legend>
-                                <label for="shcDate"></label>
-                                <input type="text" name="shcDate" id="shcDate">
-                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
-                                <label>
-                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
-                                </label>
-                                <button type="button" id="" class="small-btn disabled">조회</button>
-                            </div>
-                            <!-- <div class="flex-end">
-                                <a href="" download class="file-btn">템플릿 다운로드</a>
-                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-                                <label for="fileUpload" class="small-btn fill">지급</label>
-                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                            </div> -->
-                        </fieldset>
-                    </form>
-                    <form id="search-form" method="post" action="/">
-                        <fieldset>
-                            <legend class="hidden">포인트 지급 폼</legend>
-                            <div class="flex-end">
-                                <select name="" id="" class="ml20 disabled">
-                                    <option value="admin" selected disabled>기타</option>
-                                </select>
-                                <label>
-                                    <input type="text" id="" value="기타 지급 사유 입력" class="ml5">
-                                </label>
-                                <label>
-                                    <input type="text" id="" value="포인트" class="pointInput pv ml5">
-                                </label>
-                                <button type="button" id="" class="small-btn fill">지급</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div class="flex-between">
+                        <form id="excel-form" method="post" action="/">
+                            <fieldset class="flex-strat">
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-strat">
+                                    <legend class="hidden">월별 조회</legend>
+                                    <label for="shcDate"></label>
+                                    <input type="text" name="shcDate" id="shcDate">
+                                    <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                    <label>
+                                        <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                    </label>
+                                    <button type="button" id="" class="small-btn disabled">조회</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form id="search-form" method="post" action="/">
+                            <fieldset>
+                                <legend class="hidden">포인트 지급 폼</legend>
+                                <div class="flex-end">
+                                    <select name="" id="" class="ml20 disabled">
+                                        <option value="admin" selected disabled>기타</option>
+                                    </select>
+                                    <label>
+                                        <input type="text" id="" value="기타 지급 사유 입력" class="ml5">
+                                    </label>
+                                    <label>
+                                        <input type="text" id="" value="포인트" class="pointInput pv ml5">
+                                    </label>
+                                    <button type="button" id="" class="small-btn fill">지급</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                     <table class="pointOther mt20">
                         <thead>
                             <tr>
