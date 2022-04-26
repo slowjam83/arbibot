@@ -2000,13 +2000,14 @@ p.api-label {
 }
 
 .api-input label input,
+.api-input label div input,
 .api-info label input {
     width: calc(100% - 160px);
     font-size: 14px;
 }
 
 .api-info label input.api-nick {
-    width: calc(100% - 233px);
+    width: calc(100% - 74px);
 }
 
 .api-input-wrap .btn-wrap,
