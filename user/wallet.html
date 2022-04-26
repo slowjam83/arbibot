@@ -196,6 +196,7 @@
         $(".tabNav li").css("width", li_max + "%");
 
         //selectBox
+        const body = document.querySelector('body');
         const select = document.querySelector(`[data-role="selectBox"]`);
         const values = select.querySelector(`[date-value="optValue"]`);
         const option = select.querySelector('ul');
@@ -243,6 +244,6 @@
 
         // selectFirst();
         select.addEventListener('click', selects);
-        document.querySelector('body').addEventListener('click', hideSelect);
+        body.addEventListener('click', hideSelect);
     });
 </script>
