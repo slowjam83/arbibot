@@ -832,7 +832,7 @@ a.file-btn:focus {
     font-size: 14px
 }
 
-.point input#shcDate,
+.point input[id^='shcDate'],
 input.fileUpload,
 input.pointInput,
 input#mbrNick2 {
