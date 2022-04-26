@@ -4067,7 +4067,8 @@ Media Query
     }
     .api-input label input,
     .api-info label input,
-    p.time-info {
+    p.time-info,
+    .api-info label div {
         width: calc(100% - 120px);
     }
     .sub-container .card-wrap {
@@ -4784,7 +4785,8 @@ Media Query
     p.api-label,
     .api-input label input,
     .api-info label input,
-    p.time-info {
+    p.time-info,
+    .api-info label div {
         width: 100%;
     }
     p.api-label {
