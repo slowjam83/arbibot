@@ -619,7 +619,7 @@
         $("input[id^='shcDate']").each(function() {
             var _this = this.id;
 
-            $('#' + _this).datepicker('setDate', '+0', {
+            $('#' + _this).datepicker({
                 dateFormat: 'yy-mm-dd', //달력 날짜 형태
                 changeDay: true,
                 changeMonth: true,
@@ -637,7 +637,7 @@
                     var day = $("#ui-datepicker-div .ui-datepicker-day :selected").val();
                     var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
                     var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-                    $(this).datepicker('setDate', new Date(year, month, day));
+                    //$(this).datepicker('setDate', new Date(year, month, day));
                     $(".ui-datepicker-calendar").css("display", "none");
                 }
             });
