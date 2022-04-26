@@ -205,7 +205,9 @@
         $(".select-ul li").on("click", function() {
             var text = $(this).html();
             $(".selected-option").html(text);
-            $(".select-ul").toggle();
+            if ($(".select-ul").css("display") == "block") {
+                $(".select-ul").hide()
+            }
         })
 
         /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
