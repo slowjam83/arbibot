@@ -2011,7 +2011,7 @@ p.api-label {
 }
 
 .api-info label input.api-nick {
-    width: calc(100% - 78px);
+    width: calc(100% - 73px);
 }
 
 .api-input-wrap .btn-wrap,
