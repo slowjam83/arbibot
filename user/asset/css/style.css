@@ -671,7 +671,7 @@ a.write-btn,
 a.edit-btn,
 .edit-btn {
     height: 32px;
-    line-height: 30px;
+    line-height: 31px;
 }
 
 .login-btn {
@@ -2007,7 +2007,7 @@ p.api-label {
 }
 
 .api-info label input.api-nick {
-    width: calc(100% - 74px);
+    width: calc(100% - 78px);
 }
 
 .api-input-wrap .btn-wrap,
@@ -2032,6 +2032,8 @@ p.time-info span::after {
     display: inline-block;
     margin: 0 10px;
     color: #d4d4d4;
+    position: relative;
+    top: -1px;
 }
 
 .sub-container .revenue-wrap {
