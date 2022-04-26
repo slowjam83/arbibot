@@ -496,7 +496,7 @@ a.disabled-font {
 
 /* 옵션 영역 스타일 */
 
-.select ul {
+.select-ul {
     display: none;
     position: absolute;
     top: 30px;
@@ -508,7 +508,7 @@ a.disabled-font {
     cursor: pointer;
 }
 
-.select.active ul {
+.select-ul.active {
     display: initial;
 }
 
