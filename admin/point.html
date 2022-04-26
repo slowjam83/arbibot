@@ -5,10 +5,10 @@
                 <h2>포인트</h2>
                 <button onClick="window.location.reload()" class="xs-btn line-btn ml10 mb20">새로고침</button>
             </div>
-            <form id="excel-form" method="post" action="/">
-                <fieldset class="flex-end">
+            <!-- <form id="excel-form" method="post" action="/">
+                <fieldset class="flex-strat">
                     <legend class="hidden">포인트 지급 폼</legend>
-                    <div class="flex-end">
+                    <div class="flex-strat">
                         <legend class="hidden">월별 조회</legend>
                         <label for="shcDate"></label>
                         <input type="text" name="shcDate" id="shcDate">
@@ -18,14 +18,14 @@
                         </label>
                         <button type="button" id="" class="small-btn disabled">조회</button>
                     </div>
-                    <!-- <div class="flex-end">
+                    <div class="flex-end">
                         <a href="" download class="file-btn">템플릿 다운로드</a>
                         <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
                         <label for="fileUpload" class="small-btn fill">지급</label>
                         <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                    </div> -->
+                    </div>
                 </fieldset>
-            </form>
+            </form> -->
             <ul class="nav tabNav flex-between mt20" id="pills-tab" role="tablist">
                 <li role="presentation">
                     <a class="active" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="true">전체</a>
@@ -46,6 +46,27 @@
             <div class="tab-content" id="pills-tabContent">
                 <!-- 전체 -->
                 <div class="tab-pane fade active show" role="tabpanel" id="all" aria-labelledby="all-tab">
+                    <form id="excel-form" method="post" action="/">
+                        <fieldset class="flex-strat">
+                            <legend class="hidden">포인트 지급 폼</legend>
+                            <div class="flex-strat">
+                                <legend class="hidden">월별 조회</legend>
+                                <label for="shcDate"></label>
+                                <input type="text" name="shcDate" id="shcDate">
+                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                <label>
+                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                </label>
+                                <button type="button" id="" class="small-btn disabled">조회</button>
+                            </div>
+                            <!-- <div class="flex-end">
+                                <a href="" download class="file-btn">템플릿 다운로드</a>
+                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                <label for="fileUpload" class="small-btn fill">지급</label>
+                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                            </div> -->
+                        </fieldset>
+                    </form>
                     <form id="search-form" method="post" action="/">
                         <fieldset>
                             <legend class="hidden">포인트 지급 폼</legend>
@@ -220,6 +241,27 @@
 
                 <!-- 구매 -->
                 <div class="tab-pane fade" role="tabpanel" id="buy" aria-labelledby="buy-tab">
+                    <form id="excel-form" method="post" action="/">
+                        <fieldset class="flex-strat">
+                            <legend class="hidden">포인트 지급 폼</legend>
+                            <div class="flex-strat">
+                                <legend class="hidden">월별 조회</legend>
+                                <label for="shcDate"></label>
+                                <input type="text" name="shcDate" id="shcDate">
+                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                <label>
+                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                </label>
+                                <button type="button" id="" class="small-btn disabled">조회</button>
+                            </div>
+                            <!-- <div class="flex-end">
+                                <a href="" download class="file-btn">템플릿 다운로드</a>
+                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                <label for="fileUpload" class="small-btn fill">지급</label>
+                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                            </div> -->
+                        </fieldset>
+                    </form>
                     <form id="search-form" method="post" action="/">
                         <fieldset>
                             <legend class="hidden">포인트 지급 폼</legend>
@@ -325,6 +367,27 @@
 
                 <!-- 이벤트 -->
                 <div class="tab-pane fade" role="tabpanel" id="event" aria-labelledby="event-tab">
+                    <form id="excel-form" method="post" action="/">
+                        <fieldset class="flex-strat">
+                            <legend class="hidden">포인트 지급 폼</legend>
+                            <div class="flex-strat">
+                                <legend class="hidden">월별 조회</legend>
+                                <label for="shcDate"></label>
+                                <input type="text" name="shcDate" id="shcDate">
+                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                <label>
+                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                </label>
+                                <button type="button" id="" class="small-btn disabled">조회</button>
+                            </div>
+                            <!-- <div class="flex-end">
+                                <a href="" download class="file-btn">템플릿 다운로드</a>
+                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                <label for="fileUpload" class="small-btn fill">지급</label>
+                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                            </div> -->
+                        </fieldset>
+                    </form>
                     <form id="search-form" method="post" action="/">
                         <fieldset>
                             <legend class="hidden">포인트 지급 폼</legend>
@@ -393,6 +456,27 @@
 
                 <!-- 광고 -->
                 <div class="tab-pane fade" role="tabpanel" id="ad" aria-labelledby="ad-tab">
+                    <form id="excel-form" method="post" action="/">
+                        <fieldset class="flex-strat">
+                            <legend class="hidden">포인트 지급 폼</legend>
+                            <div class="flex-strat">
+                                <legend class="hidden">월별 조회</legend>
+                                <label for="shcDate"></label>
+                                <input type="text" name="shcDate" id="shcDate">
+                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                <label>
+                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                </label>
+                                <button type="button" id="" class="small-btn disabled">조회</button>
+                            </div>
+                            <!-- <div class="flex-end">
+                                <a href="" download class="file-btn">템플릿 다운로드</a>
+                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                <label for="fileUpload" class="small-btn fill">지급</label>
+                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                            </div> -->
+                        </fieldset>
+                    </form>
                     <table class="pointAd mt20">
                         <thead>
                             <tr>
@@ -435,6 +519,27 @@
 
                 <!-- 기타 -->
                 <div class="tab-pane fade" role="tabpanel" id="admin" aria-labelledby="admin-tab">
+                    <form id="excel-form" method="post" action="/">
+                        <fieldset class="flex-strat">
+                            <legend class="hidden">포인트 지급 폼</legend>
+                            <div class="flex-strat">
+                                <legend class="hidden">월별 조회</legend>
+                                <label for="shcDate"></label>
+                                <input type="text" name="shcDate" id="shcDate">
+                                <button type="button" id="" class="small-btn disabled mr10">조회</button>
+                                <label>
+                                    <input type="text" id="mbrNick2" value="회원 닉네임" class="">
+                                </label>
+                                <button type="button" id="" class="small-btn disabled">조회</button>
+                            </div>
+                            <!-- <div class="flex-end">
+                                <a href="" download class="file-btn">템플릿 다운로드</a>
+                                <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                <label for="fileUpload" class="small-btn fill">지급</label>
+                                <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                            </div> -->
+                        </fieldset>
+                    </form>
                     <form id="search-form" method="post" action="/">
                         <fieldset>
                             <legend class="hidden">포인트 지급 폼</legend>
