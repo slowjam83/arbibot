@@ -497,6 +497,7 @@ a.disabled-font {
 /* 옵션 영역 스타일 */
 
 .select ul {
+    display: none;
     position: absolute;
     top: 30px;
     left: 0;
@@ -505,6 +506,10 @@ a.disabled-font {
     border-radius: 3px;
     background-color: #fff;
     cursor: pointer;
+}
+
+.select.active ul {
+    display: initial;
 }
 
 .select ul li {
