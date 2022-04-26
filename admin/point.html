@@ -6,9 +6,9 @@
                 <button onClick="window.location.reload()" class="xs-btn line-btn ml10 mb20">새로고침</button>
             </div>
             <form id="excel-form" method="post" action="/">
-                <fieldset class="flex-between">
+                <fieldset class="flex-end">
                     <legend class="hidden">포인트 지급 폼</legend>
-                    <div class="flex-start">
+                    <div class="flex-end">
                         <legend class="hidden">월별 조회</legend>
                         <label for="shcDate"></label>
                         <input type="text" name="shcDate" id="shcDate">
@@ -18,12 +18,12 @@
                         </label>
                         <button type="button" id="" class="small-btn disabled">조회</button>
                     </div>
-                    <div class="flex-end">
+                    <!-- <div class="flex-end">
                         <a href="" download class="file-btn">템플릿 다운로드</a>
                         <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
                         <label for="fileUpload" class="small-btn fill">지급</label>
                         <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
-                    </div>
+                    </div> -->
                 </fieldset>
             </form>
             <ul class="nav tabNav flex-between mt20" id="pills-tab" role="tablist">
