@@ -53,7 +53,7 @@
                                 <div class="flex-start">
                                     <legend class="hidden">월별 조회</legend>
                                     <label for="shcDate"></label>
-                                    <input type="text" name="shcDate" id="shcDate">
+                                    <input type="text" name="shcDate" id="shcDate1">
                                     <button type="button" id="" class="small-btn disabled mr10">조회</button>
                                     <label>
                                         <input type="text" id="mbrNick2" value="회원 닉네임" class="">
@@ -244,7 +244,7 @@
                                 <div class="flex-start">
                                     <legend class="hidden">월별 조회</legend>
                                     <label for="shcDate"></label>
-                                    <input type="text" name="shcDate" id="shcDate">
+                                    <input type="text" name="shcDate" id="shcDate2">
                                     <button type="button" id="" class="small-btn disabled mr10">조회</button>
                                     <label>
                                         <input type="text" id="mbrNick2" value="회원 닉네임" class="">
@@ -366,7 +366,7 @@
                                 <div class="flex-start">
                                     <legend class="hidden">월별 조회</legend>
                                     <label for="shcDate"></label>
-                                    <input type="text" name="shcDate" id="shcDate">
+                                    <input type="text" name="shcDate" id="shcDate3">
                                     <button type="button" id="" class="small-btn disabled mr10">조회</button>
                                     <label>
                                         <input type="text" id="mbrNick2" value="회원 닉네임" class="">
@@ -450,7 +450,7 @@
                             <div class="flex-start">
                                 <legend class="hidden">월별 조회</legend>
                                 <label for="shcDate"></label>
-                                <input type="text" name="shcDate" id="shcDate">
+                                <input type="text" name="shcDate" id="shcDate4">
                                 <button type="button" id="" class="small-btn disabled mr10">조회</button>
                                 <label>
                                     <input type="text" id="mbrNick2" value="회원 닉네임" class="">
@@ -508,7 +508,7 @@
                                 <div class="flex-start">
                                     <legend class="hidden">월별 조회</legend>
                                     <label for="shcDate"></label>
-                                    <input type="text" name="shcDate" id="shcDate">
+                                    <input type="text" name="shcDate" id="shcDate5">
                                     <button type="button" id="" class="small-btn disabled mr10">조회</button>
                                     <label>
                                         <input type="text" id="mbrNick2" value="회원 닉네임" class="">
@@ -616,31 +616,32 @@
         $(".tabNav li").css("width", li_max + "%");
 
         // 날짜선택 input
-        $("#shcDate").datepicker({
-            dateFormat: 'yy-mm-dd', //달력 날짜 형태
-            changeDay: true,
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            showMonthAfterYear: true,
-            closeText: "선택",
-            prevText: "이전달",
-            nextText: "다음달",
-            currentText: "오늘",
-            monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-            monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-            showOn: "both",
-            buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
-            onClose: function(dateText, inst) {
-                var day = $("#ui-datepicker-div .ui-datepicker-day :selected").val();
-                var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-                var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-                $(this).datepicker('setDate', new Date(year, month, day));
-                $(".ui-datepicker-calendar").css("display", "none");
-            }
-        });
+        $("input[id^='shcDate']").each(function() {
+            var _this = this.id;
 
-        $('#shcDate').datepicker('setDate', '+0');
+            $('#' + _this).datepicker('setDate', '+0', {
+                dateFormat: 'yy-mm-dd', //달력 날짜 형태
+                changeDay: true,
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                showMonthAfterYear: true,
+                closeText: "선택",
+                prevText: "이전달",
+                nextText: "다음달",
+                currentText: "오늘",
+                monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                showOn: "both",
+                onClose: function(dateText, inst) {
+                    var day = $("#ui-datepicker-div .ui-datepicker-day :selected").val();
+                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                    $(this).datepicker('setDate', new Date(year, month, day));
+                    $(".ui-datepicker-calendar").css("display", "none");
+                }
+            });
+        });
 
         $('#reason').change(function() {
             var result = $('#reason option:selected').val();
