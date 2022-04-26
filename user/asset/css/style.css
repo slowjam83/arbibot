@@ -508,10 +508,6 @@ a.disabled-font {
     cursor: pointer;
 }
 
-.select-ul.active {
-    display: initial;
-}
-
 .select ul li {
     padding: 0 10px;
 }

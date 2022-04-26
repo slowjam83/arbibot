@@ -198,14 +198,14 @@
         //Custom Selectbox
         /* 셀렉트박스 보이게 하기 */
         $(".select").on("click", function() {
-            $(".select-ul").toggleClass('active');
+            $(".select-ul").toggle();
         })
 
         /* 셀렉트 박스 옵션 선택 */
         $(".select-ul li").on("click", function() {
             var text = $(this).html();
             $(".selected-option").html(text);
-            $(".select-ul").toggleClass('active');
+            $(".select-ul").toggle();
         })
 
         /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
