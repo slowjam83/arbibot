@@ -18,9 +18,15 @@
                     <ul class="setting-box">
                         <li>
                             <label for="">API 선택 <span class="info-btn info-01" data-toggle="modal" data-target="#modalApiSelect">i</span></label>
-                            <select name="" id="">
-                                <option value="none" selected>선택</option>
-                            </select>
+                            <div class="select">
+                                <span class="selected-option flex-start">API 선택</span>
+                                <ul class="select-ul">
+                                    <li class="flex-start"><span class="apiNick api-bithumb">빗썸</span> API별칭1</li>
+                                    <li class="flex-start"><span class="apiNick api-upbit">업비트</span> API별칭2</li>
+                                    <li class="flex-start"><span class="apiNick api-coinone">코인원</span> API별칭3</li>
+                                    <li class="flex-start"><span class="apiNick api-korbit">코빗</span> API별칭4</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <label for="">가상자산 <span class="info-btn info-01" data-toggle="modal" data-target="#modalCoinSelect">i</span></label>
@@ -170,6 +176,28 @@
 
 
 <script>
+    //Custom Selectbox
+    /* 셀렉트박스 보이게 하기 */
+    $(".select").on("click", function() {
+        $(".select-ul").toggle();
+    });
+
+    /* 셀렉트 박스 옵션 선택 */
+    $(".select-ul li").on("click", function() {
+        var text = $(this).html();
+        $(".selected-option").html(text);
+    });
+
+    /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
+    $("body").on("click", function(e) {
+        if ($(".select-ul").css("display") == "block") {
+            if ($(".select").has(e.target).length == 0) {
+                $(".select-ul").hide()
+            }
+        }
+
+    });
+
     //가상자산 검색
     $('#coinTypeSelect').select2();
     $('.select2-input').attr('placeholder', '가상자산 검색');
