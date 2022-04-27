@@ -448,14 +448,6 @@
     </div>
 </div>
 <script>
-    $(window).resize(function() {
-        if ($(this).width() < 761) {
-            $('.section-wrap').addClass('scroll')
-        } else {
-            $('.section-wrap').removeClass('scroll')
-        }
-    });
-
     $(document).ready(function() {
         $('.revenue-wrap.scroll').mousewheel(function(e, delta) {
             this.scrollLeft -= (delta * 50);

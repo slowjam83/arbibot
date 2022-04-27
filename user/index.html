@@ -126,6 +126,14 @@
                 $(".section").load("./board_list.html");
             });
 
+            $(window).resize(function() {
+                if ($(this).width() < 761) {
+                    $('.section-wrap').addClass('scroll')
+                } else {
+                    $('.section-wrap').removeClass('scroll')
+                }
+            });
+
             $(document).ready(function() {
                 var cookiedata = document.cookie;
                 if (cookiedata.indexOf("close=Y") < 0) {
