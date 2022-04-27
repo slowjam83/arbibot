@@ -4453,6 +4453,9 @@ Media Query
     .ham {
         display: block;
     }
+    .ham.active {
+        top: -80px;
+    }
     nav {
         display: none;
     }
