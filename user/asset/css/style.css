@@ -4734,9 +4734,11 @@ Media Query
         padding: 15px 0 10px;
     }
     .contentsArea {
+        height: auto;
         margin-top: 0;
         padding: 0;
         background: transparent;
+        overflow: hidden;
     }
     .partners li {
         background: #fff;
