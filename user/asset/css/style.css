@@ -1752,7 +1752,7 @@ sub page
     position: absolute;
     z-index: 99;
     right: 0;
-    top: 10px;
+    top: 8px;
     font-size: 12px;
 }
 
@@ -4384,9 +4384,10 @@ Media Query
         display: none;
     }
     .setting-box .input-wrap li,
+    .setting-box .select,
     .input-wrap,
     .input-wrap li input[type="text"] {
-        width: 300px;
+        width: 100%;
     }
 }
 
