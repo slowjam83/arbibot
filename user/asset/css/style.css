@@ -1304,7 +1304,7 @@ main
 .container {
     width: calc(78vw - 240px);
     height: 100%;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .arbibot-status {
@@ -1341,10 +1341,12 @@ main
 }
 
 .contentsArea {
+    height: calc(100% - 90px);
     margin-top: 10px;
     padding: 20px;
     background: #fff;
     line-height: 1.6;
+    overflow-y: auto;
 }
 
 .bot-ranking {
