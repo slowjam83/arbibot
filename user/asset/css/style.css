@@ -4526,6 +4526,9 @@ Media Query
         top: 20px;
         right: 18px;
     }
+    .ham.active {
+        top: -130px;
+    }
     .login-btn {
         font-size: 16px;
     }
