@@ -519,7 +519,18 @@ a.disabled-font {
 
 .select ul li {
     padding: 5px 10px;
-    margin: 0 !important;
+}
+
+.select ul li:first-child {
+    margin-top: 3px;
+}
+
+.select ul li:last-child {
+    margin-bottom: 3px;
+}
+
+.setting-box .select li {
+    margin: 0;
 }
 
 .select ul li:hover {
