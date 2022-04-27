@@ -497,6 +497,10 @@ a.disabled-font {
     width: 200px;
 }
 
+.setting-box .select {
+    width: 290px;
+}
+
 
 /* 옵션 영역 스타일 */
 
@@ -505,6 +509,7 @@ a.disabled-font {
     position: absolute;
     top: 30px;
     left: 0;
+    z-index: 10;
     width: 100%;
     border: 1px solid #ebebeb;
     border-radius: 3px;
@@ -514,6 +519,7 @@ a.disabled-font {
 
 .select ul li {
     padding: 0 10px;
+    margin: 0 !important;
 }
 
 .select ul li:first-child,
