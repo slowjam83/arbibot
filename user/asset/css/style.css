@@ -491,7 +491,7 @@ a.disabled-font {
 
 .select {
     position: relative;
-    padding: 0 40px 0 10px;
+    padding: 0 20px 0 10px;
     background: url("../img/expand-arrow.png") no-repeat 100% center;
     cursor: pointer;
     width: 200px;
@@ -571,7 +571,7 @@ a.disabled-font {
 
 .apiNick {
     display: inline-block;
-    width: calc(100% - 32px);
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
