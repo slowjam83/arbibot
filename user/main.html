@@ -349,20 +349,3 @@
         </div>
     </div>
 </div>
-<script>
-    function checkHeight() {
-        var totalHeight = $('.container').height() - 10;
-        var height = totalHeight - $('.arbibot-status').height();
-        var windowWidth = $(window).width();
-
-        if (windowWidth < 760) {
-            $('.contentsArea').css('height', 'auto');
-        } else {
-            $('.contentsArea').css('height', height);
-        }
-
-    }
-
-    checkHeight();
-    $(window).resize(checkHeight);
-</script>

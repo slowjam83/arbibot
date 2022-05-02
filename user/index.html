@@ -265,6 +265,23 @@
                 // imagePath:"yourPath/customizedImage.gif" // 원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
             });
 
+            //Main Contents 영역 Height 계산
+            function checkHeight() {
+                var totalHeight = $('.container').height() - 10;
+                var height = totalHeight - $('.arbibot-status').height();
+                var windowWidth = $(window).width();
+
+                if (windowWidth < 760) {
+                    $('.contentsArea').css('height', 'auto');
+                } else {
+                    $('.contentsArea').css('height', height);
+                }
+
+            }
+
+            checkHeight();
+            $(window).resize(checkHeight);
+
             //댓글 입력 textarea 글자수 체크
             /* $("#comment-textarea").on("keyup", function() {
                 $("#text-counter").html($(this).val().length + " / 300");
