@@ -351,7 +351,8 @@
 </div>
 <script>
     $(document).ready(function() {
-        var height = $('.contentsArea').height() - $('.arbibot-status').height();
+        var totalHeight = $('.container').height();
+        var height = totalHeight - $('.arbibot-status').height();
         $('.contentsArea').css('height', height);
     });
 </script>
