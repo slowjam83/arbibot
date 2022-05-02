@@ -351,12 +351,19 @@
 </div>
 <script>
     $(document).ready(function() {
-        var totalHeight = $('.container').height();
-        var height = totalHeight - $('.arbibot-status').height();
-
         function checkHeight() {
-            $('.contentsArea').css('height', height);
+            var totalHeight = $('.container').height();
+            var height = totalHeight - $('.arbibot-status').height();
+            var windowWidth = $(window).width();
+
+            if (windowWidth > 760) {
+                $('.contentsArea').css('height', 'auto');
+            } else {
+                $('.contentsArea').css('height', height);
+            }
+
         }
+
         checkHeight();
         $(window).resize(checkHeight);
     });
