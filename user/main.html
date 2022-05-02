@@ -353,6 +353,11 @@
     $(document).ready(function() {
         var totalHeight = $('.container').height();
         var height = totalHeight - $('.arbibot-status').height();
-        $('.contentsArea').css('height', height);
+
+        function checkHeight() {
+            $('.contentsArea').css('height', height);
+        }
+        checkHeight();
+        $(window).resize(checkHeight);
     });
 </script>
