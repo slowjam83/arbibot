@@ -303,104 +303,6 @@
                 </a>
             </li>
         </ul>
-        <!--<div class="revenue">
-            <div class="tit-head">
-                <h2>수익 인증 <span class="info-btn info-02">i</span></h2>
-                <a href="" target="_self">바로가기</a>
-            </div>
-            <div class="revenue-wrap scroll">
-                <div class="card-wrap">
-                    <div class="revenue-card general">
-                        <h3><span>사용자닉네임</span>님의 수익 인증</h3>
-                        <p class="amount">8,658,201<span class="unit">KRW</span></p>
-                        <ul>
-                            <li>
-                                <h4>운영 코인</h4>
-                                <p>BTC</p>
-                            </li>
-                            <li>
-                                <h4>운영 기간</h4>
-                                <p>82일 14시간</p>
-                            </li>
-                            <li>
-                                <h4>거래 횟수</h4>
-                                <p>2,003회</p>
-                            </li>
-                            <li>
-                                <h4>인증일</h4>
-                                <p>2021.12.05 18:43</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="revenue-card general">
-                        <h3><span>사용자닉네임</span>님의 수익 인증</h3>
-                        <p class="amount">8,658,201<span class="unit">KRW</span></p>
-                        <ul>
-                            <li>
-                                <h4>운영 코인</h4>
-                                <p>BTC</p>
-                            </li>
-                            <li>
-                                <h4>운영 기간</h4>
-                                <p>82일 14시간</p>
-                            </li>
-                            <li>
-                                <h4>거래 횟수</h4>
-                                <p>2,003회</p>
-                            </li>
-                            <li>
-                                <h4>인증일</h4>
-                                <p>2021.12.05 18:43</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="revenue-card mining">
-                        <h3><span>사용자닉네임</span>님의 수익 인증</h3>
-                        <p class="amount">0.00235<span class="unit">BTC</span></p>
-                        <ul>
-                            <li>
-                                <h4>운영 코인</h4>
-                                <p>BTC</p>
-                            </li>
-                            <li>
-                                <h4>운영 기간</h4>
-                                <p>82일 14시간</p>
-                            </li>
-                            <li>
-                                <h4>거래 횟수</h4>
-                                <p>2,003회</p>
-                            </li>
-                            <li>
-                                <h4>인증일</h4>
-                                <p>2021.12.05 18:43</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="revenue-card general">
-                        <h3><span>사용자닉네임</span>님의 수익 인증</h3>
-                        <p class="amount">8,658,201<span class="unit">KRW</span></p>
-                        <ul>
-                            <li>
-                                <h4>운영 코인</h4>
-                                <p>BTC</p>
-                            </li>
-                            <li>
-                                <h4>운영 기간</h4>
-                                <p>82일 14시간</p>
-                            </li>
-                            <li>
-                                <h4>거래 횟수</h4>
-                                <p>2,003회</p>
-                            </li>
-                            <li>
-                                <h4>인증일</h4>
-                                <p>2021.12.05 18:43</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>-->
         <div class="partners">
             <div class="tit-head">
                 <h2>이용 가능 거래소</h2>
@@ -449,9 +351,7 @@
 </div>
 <script>
     $(document).ready(function() {
-        $('.revenue-wrap.scroll').mousewheel(function(e, delta) {
-            this.scrollLeft -= (delta * 50);
-            e.preventDefault();
-        });
+        var height = $('.contentsArea').height() - $('.arbibot-status').height();
+        $('.contentsArea').css('height', height);
     });
 </script>

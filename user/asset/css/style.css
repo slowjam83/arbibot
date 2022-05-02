@@ -1319,6 +1319,7 @@ main
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 10px;
 }
 
 .arbibot-status li {
@@ -1348,8 +1349,7 @@ main
 }
 
 .contentsArea {
-    height: calc(100% - 90px);
-    margin-top: 10px;
+    height: calc(100% - 84px);
     padding: 20px;
     background: #fff;
     line-height: 1.6;
