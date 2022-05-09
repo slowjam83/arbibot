@@ -83,7 +83,7 @@
 		c0,0,0.1,0,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0c0.1,0.1,0.1,0.1,0.1,0.2c0,0,0,0,0,0
 		c0.3,0.4,0.4,0.8,0.5,1.2c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0C90.2,21.4,90.2,24.6,90.2,24.6z"/>
 </g>
-<image style="overflow:visible;" width="171" height="172" xlink:href="user\asset\img\svg\logo\40F723AD.png"  transform="matrix(0.24 0 0 0.24 0 -4.000000e-02)">
+<image style="overflow:visible;" width="171" height="172" xlink:href="\40F723AD.png"  transform="matrix(0.24 0 0 0.24 0 -4.000000e-02)">
 </image>
 <g>
 	<path class="st1" d="M158.4,31.8l-2.9-8h1.5l2.1,6.2h0.1l2.2-6.2h1.3l-2.9,8H158.4z"/>
