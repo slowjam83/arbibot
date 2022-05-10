@@ -127,6 +127,12 @@
                 $(".section").load("./board_list.html");
             });
 
+            //header 로그인 전/후
+            $('#consent-btn').click(function(e) {
+                $(".beforeLogin").hide();
+                $(".afterLogin").show();
+            });
+
             //알림
             $('.noti-link').notify("알림");
 
