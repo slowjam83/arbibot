@@ -2159,7 +2159,7 @@ input[name=accountTel] {
 }
 
 .pointCharge h3 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .payType {
@@ -5206,6 +5206,9 @@ Media Query
     }
     .wallet .flex-end-baseline p.point-font {
         font-size: 18px;
+    }
+    .payType p {
+        font-size: 12px;
     }
 }
 
