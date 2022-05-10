@@ -902,17 +902,9 @@ header
     height: 18px;
     background: url('../img/svg/notification.svg') no-repeat 0 0;
     background-size: 18px;
-}
-
-.user-info .noti-link::after {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    border-right: 1px solid #d4d4d4;
+    margin: 0 10px;
     position: relative;
-    top: 3px;
+    top: 2px;
 }
 
 .user-info .point::before {
