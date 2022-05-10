@@ -886,6 +886,10 @@ header
     align-items: center;
 }
 
+.user-info {
+    position: relative;
+}
+
 .user-info,
 .user-bot {
     display: flex;
@@ -917,6 +921,16 @@ header
 
 .user-info .noti-link.on {
     background: url('../img/svg/notification-on.svg') no-repeat 0 0;
+}
+
+.noti-box {
+    position: absolute;
+    left: 0;
+    top: 36px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
 }
 
 .user-info .point::before {
