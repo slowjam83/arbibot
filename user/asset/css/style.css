@@ -4485,7 +4485,7 @@ Media Query
         top: 0;
     }
     .pc-hidden .noti-box {
-        left: inherit;
+        left: initial;
         right: 18px;
         top: 81px;
     }
