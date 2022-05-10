@@ -88,6 +88,7 @@
     <script src="./asset/js/fakeLoader.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
     <script src="./asset/js/mousewheel.min.js"></script>
+    <script src="./asset/js/notify.min.js"></script>
     <script src="./asset/js/num-spinner.js"></script>
     <script src="./asset/js/select2.js"></script>
 
@@ -125,6 +126,9 @@
                 $("#modalEvent").hide();
                 $(".section").load("./board_list.html");
             });
+
+            //알림
+            $('.noti-link').notify("알림");
 
             $(window).resize(function() {
                 if ($(this).width() < 761) {

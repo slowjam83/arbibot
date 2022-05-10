@@ -907,6 +907,10 @@ header
     top: 2px;
 }
 
+.user-info .noti-link.on {
+    background: url('../img/svg/notification-on.svg') no-repeat 0 0;
+}
+
 .user-info .point::before {
     content: "";
     display: inline-block;
@@ -914,7 +918,7 @@ header
     height: 16px;
     background: url("../img/point-ico.png") no-repeat 0 0;
     position: relative;
-    top: 2px;
+    top: 3px;
     margin: 0 5px 0 20px;
 }
 
