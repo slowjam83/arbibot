@@ -4483,12 +4483,8 @@ Media Query
         background-size: 20px 22px;
     }
     .pc-hidden .noti-box {
-        position: inherit;
-        padding: 15px 18px;
-        border-radius: 0;
-        background: #fff;
-        box-shadow: none;
-        z-index: inherit;
+        left: inherit;
+        right: 0;
     }
     .ham {
         display: block;
