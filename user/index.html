@@ -132,6 +132,11 @@
                 $(".afterLogin").show();
             });
 
+            //알림 링크
+            $(".noti-link").click(function(e) {
+                $(".section").load("./notification.html");
+            });
+
             $(window).resize(function() {
                 if ($(this).width() < 761) {
                     $('.section-wrap').addClass('scroll')

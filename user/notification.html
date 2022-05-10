@@ -1,0 +1,381 @@
+<div class="container sub-container scroll">
+    <div class="sub-container-head">
+        <h1 class="subpage-title">알림</h1>
+        <p class="subpage-text">※ 알림 보관 기간은 1개월로 만료된 데이터는 오래된 순부터 삭제됩니다.</p>
+        <div class="pointTerms">
+            <h3 class="mt40 mb20">공통</h3>
+            <ol class="mb20">
+                <li>사용자 종료 : 사용자가 운영중인 봇을 종료한 경우</li>
+                <li>포인트 부족 종료 : 포인트 부족으로 정지 후 72시간 이후까지 포인트 충전이 안 된 경우</li>
+            </ol>
+            <h3 class="mt40 mb20">교차거래</h3>
+            <ol class="mb20">
+                <li>밸런스 주문 오류 종료 : 밸런스 주문 오류가 발생 했을 경우</li>
+                <li>주문 취소 종료 : 사용자가 거래소에서 주문을 취소한 경우</li>
+                <li>로스컷 종료 : 사용자가 설정한 로스컷보다 코인 현재 가격이 더 낮은 경우</li>
+                <li>주문 오류 종료 : 주문 오류가 발생한 경우</li>
+                <li>수수료 초과 종료 : 1회 페어 거래당 수수료가 수익금보다 더 큰 경우</li>
+            </ol>
+            <h3 class="mt40 mb20">재정거래</h3>
+            <ol class="mb20">
+                <li>사용자 정지 : 사용자가 재정거래 봇을 정지한 경우</li>
+                <li>포인트 부족 정지 : 보유 포인트가 2,000 포인트 이하인 경우</li>
+                <li>미거래 종료 : 봇의 마지막 거래 후 120시간 이후까지 거래가 없는 경우</li>
+            </ol>
+        </div>
+    </div>
+    <div class="contentsArea">
+        <div class="wallet">
+            <ul class="nav tabNav tit-head" id="pills-tab" role="tablist">
+                <li role="presentation">
+                    <a class="active" id="gridBot-tab" data-toggle="pill" href="#gridBot" role="tab" aria-controls="gridBot" aria-selected="true">교차거래</a>
+                </li>
+                <li role="presentation">
+                    <a id="arbiBot-tab" data-toggle="pill" href="#arbiBot" role="tab" aria-controls="arbiBot" aria-selected="flase">재정거래</a>
+                </li>
+                <li role="presentation">
+                    <a id="event-tab" data-toggle="pill" href="#event" role="tab" aria-controls="event" aria-selected="flase">이벤트</a>
+                </li>
+                <li role="presentation">
+                    <a id="notice-tab" data-toggle="pill" href="#notice" role="tab" aria-controls="notice" aria-selected="flase">공지사항</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- 교차거래 알림 -->
+                <div class="tab-pane fade active show" role="tabpanel" id="gridBot" aria-labelledby="gridBot-tab">
+                    <div class="flex-end mb10">
+                        <select>
+                            <option value="all" selected="">전체</option>
+                            <option value="operation" selected="">운영</option>
+                            <option value="closed" selected="">종료</option>
+                        </select>
+                    </div>
+                    <table class="mobile-hidden">
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>내용</th>
+                                <th>날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>교차거래</td>
+                                <td><span class="platform api-bithumb">빗썸</span> <span class="apiNick">API별칭</span> - 가산자산명(2,920 KRW) 매수</td>
+                                <td>2022-08-21 12:22</td>
+                            </tr>
+                            <tr>
+                                <td>교차거래</td>
+                                <td><span class="platform api-bithumb">빗썸</span> <span class="apiNick">API별칭</span> - 가산자산명(2,920 KRW) 매도</td>
+                                <td>2022-08-21 12:22</td>
+                            </tr>
+                            <tr>
+                                <td>교차거래</td>
+                                <td><span class="platform api-bithumb">빗썸</span> <span class="apiNick">API별칭</span> - 가산자산명 밸런스 주문 오류 종료</td>
+                                <td>2022-08-21 12:22</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pc-hidden">
+                        <li>
+                            <h2>원화 (KRW)</h2>
+                            <p>보유 잔고<span>8,658,201</span></p>
+                            <p>사용 중<span>0</span></p>
+                            <p>사용 가능<span>8,658,201</span></p>
+                            <p>평가 금액 (KRW)<span>8,658,201</span></p>
+                        </li>
+                        <li>
+                            <h2>ETH</h2>
+                            <p>보유 잔고<span>3.258416</span></p>
+                            <p>사용 중<span>2.0000000</span></p>
+                            <p>사용 가능<span>1.258416</span></p>
+                            <p>평가 금액 (KRW)<span>3,258,416</span></p>
+                        </li>
+                        <li>
+                            <h2>BTC</h2>
+                            <p>보유 잔고<span>1.258416</span></p>
+                            <p>사용 중<span>1.0000000</span></p>
+                            <p>사용 가능<span>0.258416</span></p>
+                            <p>평가 금액 (KRW)<span>1,258,416</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //교차거래 알림 -->
+
+                <!-- 재정거래 알림 -->
+                <div class="tab-pane fade" role="tabpanel" id="arbiBot" aria-labelledby="arbiBot-tab">
+                    <div class="flex-between mb10">
+                        <div class="flex-start">
+                            <div class="select">
+                                <span class="selected-option flex-start">전체</span>
+                                <ul class="select-ul">
+                                    <li class="flex-start"><span class="platform api-arbiBot">재정거래</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-arbiBot">재정거래</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-arbiBot">재정거래</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                </ul>
+                            </div>
+                            <button class="small-btn line-btn link-btn ml10">API 등록</button>
+                        </div>
+                        <div class="flex-end-baseline">
+                            <p class="mr20">총 보유자산</p>
+                            <p class="point-font mr10">500,000,000</p>
+                            <p class="mr10">KRW</p>
+                            <button class="refresh-btn"><img src="./asset/img/svg/refresh.svg" alt="운영 가능 자산 업데이트"></button>
+                        </div>
+                    </div>
+                    <table class="mobile-hidden">
+                        <thead>
+                            <tr>
+                                <th>자산 구분</th>
+                                <th>보유 잔고</th>
+                                <th>사용 중</th>
+                                <th>사용 가능</th>
+                                <th>평가 금액 (KRW)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>원화 (KRW)</td>
+                                <td>78,658,201</td>
+                                <td>0</td>
+                                <td>8,658,201</td>
+                                <td>70,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>ETH</td>
+                                <td>3.258416</td>
+                                <td>2.0000000</td>
+                                <td>1.258416</td>
+                                <td>3,258,416</td>
+                            </tr>
+                            <tr>
+                                <td>BTC</td>
+                                <td>1.258416</td>
+                                <td>1.0000000</td>
+                                <td>0.258416</td>
+                                <td>1,258,416</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pc-hidden">
+                        <li>
+                            <h2>원화 (KRW)</h2>
+                            <p>보유 잔고<span>8,658,201</span></p>
+                            <p>사용 중<span>0</span></p>
+                            <p>사용 가능<span>8,658,201</span></p>
+                            <p>평가 금액 (KRW)<span>8,658,201</span></p>
+                        </li>
+                        <li>
+                            <h2>ETH</h2>
+                            <p>보유 잔고<span>3.258416</span></p>
+                            <p>사용 중<span>2.0000000</span></p>
+                            <p>사용 가능<span>1.258416</span></p>
+                            <p>평가 금액 (KRW)<span>3,258,416</span></p>
+                        </li>
+                        <li>
+                            <h2>BTC</h2>
+                            <p>보유 잔고<span>1.258416</span></p>
+                            <p>사용 중<span>1.0000000</span></p>
+                            <p>사용 가능<span>0.258416</span></p>
+                            <p>평가 금액 (KRW)<span>1,258,416</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //재정거래 알림 -->
+
+                <!-- 이벤트 알림 -->
+                <div class="tab-pane fade" role="tabpanel" id="event" aria-labelledby="event-tab">
+                    <div class="flex-between mb10">
+                        <div class="flex-start">
+                            <div class="select">
+                                <span class="selected-option flex-start">전체</span>
+                                <ul class="select-ul">
+                                    <li class="flex-start"><span class="platform api-event">이벤트</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-event">이벤트</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-event">이벤트</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                </ul>
+                            </div>
+                            <button class="small-btn line-btn link-btn ml10">API 등록</button>
+                        </div>
+                        <div class="flex-end-baseline">
+                            <p class="mr20">총 보유자산</p>
+                            <p class="point-font mr10">3,000,000</p>
+                            <p class="mr10">KRW</p>
+                            <button class="refresh-btn"><img src="./asset/img/svg/refresh.svg" alt="운영 가능 자산 업데이트"></button>
+                        </div>
+                    </div>
+                    <table class="mobile-hidden">
+                        <thead>
+                            <tr>
+                                <th>자산 구분</th>
+                                <th>보유 잔고</th>
+                                <th>사용 중</th>
+                                <th>사용 가능</th>
+                                <th>평가 금액 (KRW)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>원화 (KRW)</td>
+                                <td>78,658,201</td>
+                                <td>0</td>
+                                <td>8,658,201</td>
+                                <td>70,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>ETH</td>
+                                <td>3.258416</td>
+                                <td>2.0000000</td>
+                                <td>1.258416</td>
+                                <td>3,258,416</td>
+                            </tr>
+                            <tr>
+                                <td>BTC</td>
+                                <td>1.258416</td>
+                                <td>1.0000000</td>
+                                <td>0.258416</td>
+                                <td>1,258,416</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pc-hidden">
+                        <li>
+                            <h2>원화 (KRW)</h2>
+                            <p>보유 잔고<span>8,658,201</span></p>
+                            <p>사용 중<span>0</span></p>
+                            <p>사용 가능<span>8,658,201</span></p>
+                            <p>평가 금액 (KRW)<span>8,658,201</span></p>
+                        </li>
+                        <li>
+                            <h2>ETH</h2>
+                            <p>보유 잔고<span>3.258416</span></p>
+                            <p>사용 중<span>2.0000000</span></p>
+                            <p>사용 가능<span>1.258416</span></p>
+                            <p>평가 금액 (KRW)<span>3,258,416</span></p>
+                        </li>
+                        <li>
+                            <h2>BTC</h2>
+                            <p>보유 잔고<span>1.258416</span></p>
+                            <p>사용 중<span>1.0000000</span></p>
+                            <p>사용 가능<span>0.258416</span></p>
+                            <p>평가 금액 (KRW)<span>1,258,416</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //이벤트 알림 -->
+
+                <!-- 공지사항 알림 -->
+                <div class="tab-pane fade" role="tabpanel" id="notice" aria-labelledby="notice-tab">
+                    <div class="flex-between mb10">
+                        <div class="flex-start">
+                            <div class="select">
+                                <span class="selected-option flex-start">전체</span>
+                                <ul class="select-ul">
+                                    <li class="flex-start"><span class="platform api-notice">공지사항</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-notice">공지사항</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                    <li class="flex-start"><span class="platform api-notice">공지사항</span> <span class="apiNick">API별칭이10자이상</span></li>
+                                </ul>
+                            </div>
+                            <button class="small-btn line-btn link-btn ml10">API 등록</button>
+                        </div>
+                        <div class="flex-end-baseline">
+                            <p class="mr20">총 보유자산</p>
+                            <p class="point-font mr10">1,500,000</p>
+                            <p class="mr10">KRW</p>
+                            <button class="refresh-btn"><img src="./asset/img/svg/refresh.svg" alt="운영 가능 자산 업데이트"></button>
+                        </div>
+                    </div>
+                    <table class="mobile-hidden">
+                        <thead>
+                            <tr>
+                                <th>자산 구분</th>
+                                <th>보유 잔고</th>
+                                <th>사용 중</th>
+                                <th>사용 가능</th>
+                                <th>평가 금액 (KRW)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>원화 (KRW)</td>
+                                <td>78,658,201</td>
+                                <td>0</td>
+                                <td>8,658,201</td>
+                                <td>70,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>ETH</td>
+                                <td>3.258416</td>
+                                <td>2.0000000</td>
+                                <td>1.258416</td>
+                                <td>3,258,416</td>
+                            </tr>
+                            <tr>
+                                <td>BTC</td>
+                                <td>1.258416</td>
+                                <td>1.0000000</td>
+                                <td>0.258416</td>
+                                <td>1,258,416</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pc-hidden">
+                        <li>
+                            <h2>원화 (KRW)</h2>
+                            <p>보유 잔고<span>8,658,201</span></p>
+                            <p>사용 중<span>0</span></p>
+                            <p>사용 가능<span>8,658,201</span></p>
+                            <p>평가 금액 (KRW)<span>8,658,201</span></p>
+                        </li>
+                        <li>
+                            <h2>ETH</h2>
+                            <p>보유 잔고<span>3.258416</span></p>
+                            <p>사용 중<span>2.0000000</span></p>
+                            <p>사용 가능<span>1.258416</span></p>
+                            <p>평가 금액 (KRW)<span>3,258,416</span></p>
+                        </li>
+                        <li>
+                            <h2>BTC</h2>
+                            <p>보유 잔고<span>1.258416</span></p>
+                            <p>사용 중<span>1.0000000</span></p>
+                            <p>사용 가능<span>0.258416</span></p>
+                            <p>평가 금액 (KRW)<span>1,258,416</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //공지사항 알림 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //tab 메뉴
+        var li_max = 100 / $(".tabNav li").length;
+        $(".tabNav li").css("width", li_max + "%");
+
+        //Custom Selectbox
+        /* 셀렉트박스 보이게 하기 */
+        $(".select").on("click", function() {
+            $(".select-ul").toggle();
+        })
+
+        /* 셀렉트 박스 옵션 선택 */
+        $(".select-ul li").on("click", function() {
+            var text = $(this).html();
+            $(".selected-option").html(text);
+        })
+
+        /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
+        $("body").on("click", function(e) {
+            if ($(".select-ul").css("display") == "block") {
+                if ($(".select").has(e.target).length == 0) {
+                    $(".select-ul").hide()
+                }
+            }
+
+        })
+    });
+</script>
