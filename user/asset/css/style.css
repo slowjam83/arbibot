@@ -4484,7 +4484,8 @@ Media Query
     }
     .pc-hidden .noti-box {
         left: inherit;
-        right: 0;
+        right: 18px;
+        top: 81px;
     }
     .ham {
         display: block;
