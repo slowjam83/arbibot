@@ -4481,6 +4481,8 @@ Media Query
         width: 20px;
         height: 22px;
         background-size: 20px 22px;
+        right: 44px;
+        top: 0;
     }
     .pc-hidden .noti-box {
         left: inherit;
