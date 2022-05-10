@@ -2246,6 +2246,7 @@ input[name=accountNum] {
     color: #888;
     position: relative;
     padding-left: 15px;
+    line-height: 1.6;
 }
 
 .pointTerms ol li::before {
