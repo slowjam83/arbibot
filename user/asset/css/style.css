@@ -911,6 +911,14 @@ header
     top: 3px;
 }
 
+.user-info .noti-link {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../img/svg/notification.svg') no-repeat 0 0;
+    background-size: 18px;
+}
+
 .user-info .point::before {
     content: "";
     display: inline-block;
