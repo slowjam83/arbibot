@@ -908,7 +908,7 @@ header
     top: 4px;
 }
 
-.user-info .noti-link {
+.noti-link {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -919,7 +919,7 @@ header
     top: 2px;
 }
 
-.user-info .noti-link.on {
+.noti-link.on {
     background: url('../img/svg/notification-on.svg') no-repeat 0 0;
 }
 
@@ -986,11 +986,11 @@ header
 }
 
 .ham {
+    display: none;
     position: absolute;
     z-index: 300;
     top: 26px;
     right: 30px;
-    display: none;
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -4476,6 +4476,19 @@ Media Query
     }
     .header .util {
         display: none;
+    }
+    .pc-hidden .noti-link {
+        width: 20px;
+        height: 22px;
+        background-size: 20px 22px;
+    }
+    .pc-hidden .noti-box {
+        position: inherit;
+        padding: 15px 18px;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: none;
+        z-index: inherit;
     }
     .ham {
         display: block;
