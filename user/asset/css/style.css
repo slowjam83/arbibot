@@ -896,11 +896,15 @@ header
     top: 4px;
 }
 
-.user-info .nickname {
+.user-info .noti-link {
     display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../img/svg/notification.svg') no-repeat 0 0;
+    background-size: 18px;
 }
 
-.user-info .nickname::after {
+.user-info .noti-link::after {
     content: "";
     display: inline-block;
     width: 10px;
@@ -909,14 +913,6 @@ header
     border-right: 1px solid #d4d4d4;
     position: relative;
     top: 3px;
-}
-
-.user-info .noti-link {
-    display: block;
-    width: 18px;
-    height: 18px;
-    background: url('../img/svg/notification.svg') no-repeat 0 0;
-    background-size: 18px;
 }
 
 .user-info .point::before {
