@@ -88,7 +88,6 @@
     <script src="./asset/js/fakeLoader.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
     <script src="./asset/js/mousewheel.min.js"></script>
-    <script src="./asset/js/notify.min.js"></script>
     <script src="./asset/js/num-spinner.js"></script>
     <script src="./asset/js/select2.js"></script>
 
@@ -131,34 +130,6 @@
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
                 $(".afterLogin").show();
-            });
-
-            //알림
-            $('.noti-link').notify('재정거래 [빗썸] XRP(2,830 KRW) 매수 2022-08-21 13:01', {
-                // whether to hide the notification on click
-                clickToHide: true,
-                // whether to auto-hide the notification
-                autoHide: true,
-                // if autoHide, hide after milliseconds
-                autoHideDelay: 10000,
-                // show the arrow pointing at the element
-                arrowShow: false,
-                // position defines the notification position though uses the defaults below
-                position: 'bottom left',
-                // default style
-                style: 'metro',
-                // default class (string or [string])
-                className: 'notification',
-                // show animation
-                showAnimation: 'slideDown',
-                // show animation duration
-                showDuration: 400,
-                // hide animation
-                hideAnimation: 'slideUp',
-                // hide animation duration
-                hideDuration: 200,
-                // padding between element and notification
-                gap: 10
             });
 
             $(window).resize(function() {
