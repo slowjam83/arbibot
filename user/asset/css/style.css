@@ -902,7 +902,7 @@ header
     height: 18px;
     background: url('../img/svg/notification.svg') no-repeat 0 0;
     background-size: 18px;
-    margin: 0 10px;
+    margin: 0 20px 0 10px;
     position: relative;
     top: 2px;
 }
