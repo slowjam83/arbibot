@@ -1655,6 +1655,7 @@ sub page
 
 .sub-container {
     background: #fff;
+    overflow-y: auto;
 }
 
 .sub-container-head {
@@ -2149,11 +2150,6 @@ p.time-info span::after {
 
 .pointCharge .tit-head h2 {
     font-weight: 500;
-}
-
-.pointCharge .tit-head p {
-    color: #888;
-    font-size: 14px;
 }
 
 .pointCharge .large-btn,
