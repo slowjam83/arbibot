@@ -343,6 +343,10 @@ table.mobile-hidden {
     width: auto !important;
 }
 
+.font12 {
+    font-size: 12px;
+}
+
 .font14 {
     font-size: 14px;
 }
@@ -567,6 +571,10 @@ a.disabled-font {
 
 .api-korbit {
     background: #2563EB;
+}
+
+.girdTrading {
+    background: #0099cc;
 }
 
 .apiNick {
