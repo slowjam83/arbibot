@@ -131,6 +131,10 @@
                 $(".beforeLogin").hide();
                 $(".afterLogin").show();
             });
+            $('.logout').click(function(e) {
+                $(".afterLogin").hide();
+                $(".beforeLogin").show();
+            });
 
             //알림 링크
             $(".noti-link").click(function(e) {
