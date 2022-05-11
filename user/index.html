@@ -148,21 +148,14 @@
 
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
-                loginFunc();
-
-                $(window).resize(function() {
-                    loginFunc();
-                });
-            });
+                $(window).resize(loginFunc());
+            }).loginFunc();
 
             $('.logout').click(function(e) {
                 $(".afterLogin").hide();
                 $(".beforeLogin").show();
-                logoutFunc();
-                $(window).resize(function() {
-                    logoutFunc();
-                });
-            });
+                $(window).resize(logoutFunc());
+            }).logoutFunc();
 
             //알림 링크
             $(".noti-link").click(function(e) {
