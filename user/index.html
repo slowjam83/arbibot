@@ -127,36 +127,40 @@
             });
 
             //header 로그인 전/후
+            var webLogin = $(".mobile-hidden.afterLogin");
+            var mobileLogin = $(".pc-hidden.afterLogin");
+
+            function loginFunc {
+                if ($(window).width() < 997) {
+                    webLogin.hide();
+                    mobileLogin.show();
+                } else {
+                    webLogin.show();
+                    mobileLogin.hide();
+                }
+            };
+
+            function logoutFunc {
+                if ($(window).width() < 997) {
+                    $(".mobile-hidden.beforeLogin").hide();
+                }
+            };
+
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
-                if ($(window).width() < 997) {
-                    $(".mobile-hidden.afterLogin").hide();
-                    $(".pc-hidden.afterLogin").show();
-                } else {
-                    $(".mobile-hidden.afterLogin").show();
-                    $(".pc-hidden.afterLogin").hide();
-                };
+                loginFunc();
+
                 $(window).resize(function() {
-                    if ($(this).width() < 997) {
-                        $(".mobile-hidden.afterLogin").hide();
-                        $(".pc-hidden.afterLogin").show();
-                    } else {
-                        $(".mobile-hidden.afterLogin").show();
-                        $(".pc-hidden.afterLogin").hide();
-                    }
+                    loginFunc();
                 });
             });
 
             $('.logout').click(function(e) {
                 $(".afterLogin").hide();
                 $(".beforeLogin").show();
-                if ($(window).width() < 997) {
-                    $(".mobile-hidden.beforeLogin").hide();
-                }
+                logoutFunc();
                 $(window).resize(function() {
-                    if ($(this).width() < 997) {
-                        $(".mobile-hidden.beforeLogin").hide();
-                    }
+                    logoutFunc();
                 });
             });
 
