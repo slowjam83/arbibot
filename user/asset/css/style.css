@@ -4477,14 +4477,16 @@ Media Query
     .header .util {
         display: none;
     }
-    .pc-hidden .noti-link {
+    .pc-hidden.noti-link {
+        display: block;
         width: 20px;
         height: 22px;
         background-size: 20px 22px;
         right: 44px;
         top: 0;
     }
-    .pc-hidden .noti-box {
+    .pc-hidden.noti-box {
+        display: block;
         left: initial;
         right: 18px;
         top: 61px;
