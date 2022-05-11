@@ -908,6 +908,10 @@ header
     top: 4px;
 }
 
+.notification.pc-hidden {
+    display: none;
+}
+
 .noti-link {
     display: inline-block;
     width: 18px;
@@ -4477,16 +4481,17 @@ Media Query
     .header .util {
         display: none;
     }
-    .pc-hidden.noti-link {
+    .notification.pc-hidden {
         display: block;
+    }
+    .pc-hidden .noti-link {
         width: 20px;
         height: 22px;
         background-size: 20px 22px;
         right: 44px;
         top: 0;
     }
-    .pc-hidden.noti-box {
-        display: block;
+    .pc-hidden .noti-box {
         left: initial;
         right: 18px;
         top: 61px;
