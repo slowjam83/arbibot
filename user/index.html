@@ -152,10 +152,14 @@
                 $(".beforeLogin").show();
                 if ($(window).width() < 997) {
                     $(".mobile-hidden.beforeLogin").hide();
-                }
+                } else {
+                    $(".mobile-hidden.afterLogin").hide();
+                };
                 $(window).resize(function() {
                     if ($(this).width() < 997) {
                         $(".mobile-hidden.beforeLogin").hide();
+                    } else {
+                        $(".mobile-hidden.afterLogin").hide();
                     }
                 });
             });
