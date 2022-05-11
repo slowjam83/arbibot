@@ -127,35 +127,38 @@
             });
 
             //header 로그인 전/후
-            var webLogin = $(".mobile-hidden.afterLogin");
-            var mobileLogin = $(".pc-hidden.afterLogin");
-
-            $.fn.loginFunc = function() {
-                if ($(window).width() < 997) {
-                    webLogin.hide();
-                    mobileLogin.show();
-                } else {
-                    webLogin.show();
-                    mobileLogin.hide();
-                }
-            }
-
-            $.fn.logoutFunc = function() {
-                if ($(window).width() < 997) {
-                    $(".mobile-hidden.beforeLogin").hide();
-                }
-            }
-
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
-                $(window).resize(loginFunc());
-            }).loginFunc();
+                if ($(window).width() < 997) {
+                    $(".mobile-hidden.afterLogin").hide();
+                    $(".pc-hidden.afterLogin").show();
+                } else {
+                    $(".mobile-hidden.afterLogin").show();
+                    $(".pc-hidden.afterLogin").hide();
+                };
+                $(window).resize(function() {
+                    if ($(this).width() < 997) {
+                        $(".mobile-hidden.afterLogin").hide();
+                        $(".pc-hidden.afterLogin").show();
+                    } else {
+                        $(".mobile-hidden.afterLogin").show();
+                        $(".pc-hidden.afterLogin").hide();
+                    }
+                });
+            });
 
             $('.logout').click(function(e) {
                 $(".afterLogin").hide();
                 $(".beforeLogin").show();
-                $(window).resize(logoutFunc());
-            }).logoutFunc();
+                if ($(window).width() < 997) {
+                    $(".mobile-hidden.beforeLogin").hide();
+                }
+                $(window).resize(function() {
+                    if ($(this).width() < 997) {
+                        $(".mobile-hidden.beforeLogin").hide();
+                    }
+                });
+            });
 
             //알림 링크
             $(".noti-link").click(function(e) {
