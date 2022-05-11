@@ -130,7 +130,7 @@
             var webLogin = $(".mobile-hidden.afterLogin");
             var mobileLogin = $(".pc-hidden.afterLogin");
 
-            function loginFunc {
+            $.fn.loginFunc = function() {
                 if ($(window).width() < 997) {
                     webLogin.hide();
                     mobileLogin.show();
@@ -138,13 +138,13 @@
                     webLogin.show();
                     mobileLogin.hide();
                 }
-            };
+            }
 
-            function logoutFunc {
+            $.fn.logoutFunc = function() {
                 if ($(window).width() < 997) {
                     $(".mobile-hidden.beforeLogin").hide();
                 }
-            };
+            }
 
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
