@@ -139,11 +139,10 @@
             });
 
             $('.logout').click(function(e) {
+                $(".beforeLogin").show();
                 $(".afterLogin").hide();
                 if ($(this).width() < 997) {
                     $(".mobile-hidden.beforeLogin").hide();
-                } else {
-                    $(".beforeLogin").show();
                 }
             });
 
