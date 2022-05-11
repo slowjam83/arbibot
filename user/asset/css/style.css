@@ -2492,6 +2492,8 @@ button[name=applyPayment] {
     width: 120px;
 }
 
+.notification-list td:nth-child(2) {}
+
 
 /*============================================================
 Error
