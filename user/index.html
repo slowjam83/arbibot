@@ -128,23 +128,23 @@
 
             //header 로그인 전/후
             $('.consent-btn').click(function(e) {
-                $(".beforeLogin").hide();
-                $(".afterLogin").show();
+                $(".before-login").hide();
+                $(".after-login").show();
             });
 
             $('.logout').click(function(e) {
-                $(".beforeLogin").show();
-                $(".afterLogin").hide();
+                $(".before-login").show();
+                $(".after-login").hide();
             });
 
-            if ($(".mobile-hidden.afterLogin").show()) {
+            if ($(".web-after-login").show()) {
                 $(window).resize(function() {
                     if ($(this).width < 971) {
-                        $(".pc-hidden.beforeLogin").hide();
-                        $(".pc-hidden.afterLogin").show();
+                        $(".mo-before-login").hide();
+                        $(".mo-after-login").show();
                     } else {
-                        $(".pc-hidden.beforeLogin").hide();
-                        $(".pc-hidden.afterLogin").hide();
+                        $(".mo-before-login").hide();
+                        $(".mo-after-login").hide();
                     }
                 });
             };
