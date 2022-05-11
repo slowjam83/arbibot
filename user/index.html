@@ -153,6 +153,11 @@
                 if ($(window).width() < 997) {
                     $(".mobile-hidden.beforeLogin").hide();
                 }
+                $(window).resize(function() {
+                    if ($(this).width() < 997) {
+                        $(".mobile-hidden.beforeLogin").hide();
+                    }
+                });
             });
 
             //알림 링크
