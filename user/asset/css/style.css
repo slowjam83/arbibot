@@ -908,10 +908,6 @@ header
     top: 4px;
 }
 
-.notification.pc-hidden {
-    display: none;
-}
-
 .noti-link {
     display: inline-block;
     width: 18px;
@@ -4480,9 +4476,6 @@ Media Query
     }
     .header .util {
         display: none;
-    }
-    .notification.pc-hidden {
-        display: block;
     }
     .pc-hidden .noti-link {
         width: 20px;

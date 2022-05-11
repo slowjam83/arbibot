@@ -126,11 +126,20 @@
                 $(".section").load("./board_list.html");
             });
 
-            //header 로그인 전/후
+            //header 로그인 전/후            
             $('.consent-btn').click(function(e) {
-                $(".beforeLogin").hide();
-                $(".afterLogin").show();
+                $(".beforeLogin").css('display', 'none');
+                $(".afterLogin").css('display', 'block');
+
+                $(window).resize(function() {
+                    if ($(this).width() < 997) {
+                        $(".afterLogin.pc-hidden").css('display', 'block');
+                    } else {
+                        $(".afterLogin.pc-hidden").css('display', 'none');
+                    }
+                });
             });
+
             $('.logout').click(function(e) {
                 $(".afterLogin").hide();
                 $(".beforeLogin").show();
