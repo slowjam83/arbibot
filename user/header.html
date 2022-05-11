@@ -63,18 +63,22 @@
     <div class="mo-nav">
         <div class="mo-nav-util">
             <!-- 로그인 전 -->
-            <!--<a href="" class="login-sync-text">로그인 해주세요</a>
-            <div class="login-sync-btn">
-                <a href="javascript:void(0);" id="" class="login-btn">로그인</a>
-                <a href="javascript:void(0);" id="" class="join-btn">회원가입</a>
-            </div>-->
+            <div class="beforeLogin">
+                <a href="javascript:void(0)" class="login-sync-text">로그인 해주세요</a>
+                <div class="login-sync-btn">
+                    <a href="javascript:void(0);" data-dismiss="modal" data-toggle="modal" data-target="#login" class="login-btn">로그인</a>
+                    <a href="javascript:void(0);" data-dismiss="modal" data-toggle="modal" data-target="#login" class="join-btn">회원가입</a>
+                </div>
+            </div>
             <!-- //로그인 전 -->
 
             <!-- 로그인 후 -->
-            <a href="" class="user-sync-text">재정거래고수 <span class="point">12,841<span></a>
-            <div class="login-sync-btn">
-                <a href="javascript:void(0);" class="mypage">마이페이지</a>
-                <a href="javascript:void(0);" class="join-btn">로그아웃</a>
+            <div class="afterLogin" style="display:none">
+                <a href="javascript:void(0)" class="user-sync-text">재정거래고수 <span class="point">12,841<span></a>
+                <div class="login-sync-btn">
+                    <a href="javascript:void(0);" class="mypage">마이페이지</a>
+                    <a href="javascript:void(0);" class="join-btn">로그아웃</a>
+                </div>
             </div>
             <!-- //로그인 후 -->
         </div>
