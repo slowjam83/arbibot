@@ -4348,6 +4348,9 @@ Media Query
     nav {
         display: none;
     }
+    .section-wrap {
+        margin-top: 0;
+    }
     .event-banner li:nth-child(1) {
         background: url('../img/banner/event_banner_01.jpg') no-repeat 100% 100%, #dde1e6;
     }
@@ -4494,9 +4497,6 @@ Media Query
     .top-banner a {
         margin-left: 0;
         margin-right: 10px;
-    }
-    .section-wrap {
-        margin-top: 0;
     }
     .section {
         width: calc(100% - 350px);
