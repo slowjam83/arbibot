@@ -133,9 +133,22 @@
             });
 
             $('.logout').click(function(e) {
-                $(".afterLogin").hide();
                 $(".beforeLogin").show();
+                $(".afterLogin").hide();
             });
+
+            if ($(".mobile-hidden.afterLogin").show()) {
+                $(window).resize(function() {
+                    if ($(this).width < 971) {
+                        $(".pc-hidden.beforeLogin").hide();
+                        $(".pc-hidden.afterLogin").show();
+                    } else {
+                        $(".pc-hidden.beforeLogin").hide();
+                        $(".pc-hidden.afterLogin").hide();
+                    }
+                });
+            };
+
 
             //알림 링크
             $(".noti-link").click(function(e) {
