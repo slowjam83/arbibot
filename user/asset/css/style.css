@@ -4320,7 +4320,32 @@ Media Query
 }
 
 @media (max-width: 1120px) {
-    .header .util .user-info {
+    .header {
+        position: relative;
+        top: inherit;
+    }
+    .header .util {
+        display: none;
+    }
+    .pc-hidden .noti-link {
+        width: 20px;
+        height: 23px;
+        background-size: 20px 23px;
+        right: 44px;
+        top: 0;
+    }
+    .pc-hidden .noti-box {
+        left: initial;
+        right: 18px;
+        top: 61px;
+    }
+    .ham {
+        display: block;
+    }
+    .ham.active {
+        top: -80px;
+    }
+    nav {
         display: none;
     }
     .event-banner li:nth-child(1) {
@@ -4469,34 +4494,6 @@ Media Query
     .top-banner a {
         margin-left: 0;
         margin-right: 10px;
-    }
-    .header {
-        position: relative;
-        top: inherit;
-    }
-    .header .util {
-        display: none;
-    }
-    .pc-hidden .noti-link {
-        width: 20px;
-        height: 23px;
-        background-size: 20px 23px;
-        right: 44px;
-        top: 0;
-    }
-    .pc-hidden .noti-box {
-        left: initial;
-        right: 18px;
-        top: 61px;
-    }
-    .ham {
-        display: block;
-    }
-    .ham.active {
-        top: -80px;
-    }
-    nav {
-        display: none;
     }
     .section-wrap {
         margin-top: 0;
