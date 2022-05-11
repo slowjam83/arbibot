@@ -129,42 +129,12 @@
             //header 로그인 전/후
             $('.consent-btn').click(function(e) {
                 $(".beforeLogin").hide();
-                if ($(window).width() < 997) {
-                    $(".mobile-hidden.afterLogin").hide();
-                    $(".pc-hidden.afterLogin").show();
-                } else {
-                    $(".mobile-hidden.afterLogin").show();
-                    $(".pc-hidden.afterLogin").hide();
-                };
-                $(window).resize(function() {
-                    if ($(this).width() < 997) {
-                        $(".mobile-hidden.afterLogin").hide();
-                        $(".pc-hidden.afterLogin").show();
-                    } else {
-                        $(".mobile-hidden.afterLogin").show();
-                        $(".pc-hidden.afterLogin").hide();
-                    }
-                });
+                $(".afterLogin").show();
             });
 
             $('.logout').click(function(e) {
                 $(".afterLogin").hide();
                 $(".beforeLogin").show();
-                if ($(window).width() < 997) {
-                    $(".mobile-hidden.beforeLogin").hide();
-                } else {
-                    $(".mobile-hidden.afterLogin").hide();
-                };
-                $(window).resize(function() {
-                    if ($(this).width() < 997) {
-                        $(".mobile-hidden.beforeLogin").hide();
-                    } else {
-                        $(".mobile-hidden.afterLogin").hide();
-                    }
-                });
-                if ($(".beforeLogin").show()) {
-                    $(".afterLogin").hide();
-                }
             });
 
             //알림 링크
