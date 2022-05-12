@@ -130,14 +130,7 @@
             $('.consent-btn').click(function(e) {
                 $(".before-login").removeClass('show').addClass('hide');
                 $(".after-login").removeClass('hide').addClass('show');
-            });
 
-            $('.logout').click(function(e) {
-                $(".before-login").removeClass('hide').addClass('show');
-                $(".after-login").removeClass('show').addClass('hide');
-            });
-
-            if ($(".web-after-login").hasClass('show')) {
                 if ($(window).width < 971) {
                     $(".web-after-login").removeClass('show').addClass('hide');
                     $(".mo-before-login").removeClass('show').addClass('hide');
@@ -147,7 +140,14 @@
                     $(".mo-before-login").removeClass('show').addClass('hide');
                     $(".mo-after-login").removeClass('show').addClass('hide');
                 };
+            });
 
+            $('.logout').click(function(e) {
+                $(".before-login").removeClass('hide').addClass('show');
+                $(".after-login").removeClass('show').addClass('hide');
+            });
+
+            if ($(".web-after-login").hasClass('show')) {
                 $(window).resize(function() {
                     if ($(this).width < 971) {
                         $(".web-after-login").removeClass('show').addClass('hide');
