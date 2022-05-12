@@ -187,11 +187,19 @@
                 });
             });
 
-
             //알림 링크
             $(".noti-link").click(function(e) {
                 $(".section").load("./notification.html");
             });
+
+            //알림 박스 10초 간격으로 실행
+            setInterval(function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
+                    $('.noti-box.mo-after-login').slideToggle();
+                } else if ($(".web-after-login").hasClass('show') === true) {
+                    $('.web-after-login .noti-box').slideToggle();
+                };
+            }, 10000);
 
             $(window).resize(function() {
                 if ($(this).width() < 761) {
