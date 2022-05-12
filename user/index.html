@@ -207,13 +207,19 @@
 
             setInterval(function() {
                 if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
-                    $('.noti-box.mo-after-login').slideToggle(function() {
+                    $('.noti-box.mo-after-login').slideDown(function() {
                         toggleClassOn();
                     });
+                    setTimeout(function() {
+                        $('.noti-box.mo-after-login').slideUp();
+                    }, 10000);
                 } else if ($(".web-after-login").hasClass('show') === true) {
-                    $('.web-after-login .noti-box').slideToggle(function() {
+                    $('.web-after-login .noti-box').slideDown(function() {
                         toggleClassOn();
                     });
+                    setTimeout(function() {
+                        $('.web-after-login .noti-box').slideUp();
+                    }, 10000);
                 };
             }, 10000);
 
