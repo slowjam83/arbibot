@@ -4834,7 +4834,8 @@ Media Query
     }
     .bot-setting,
     .wallet,
-    .ranking {
+    .ranking,
+    .notification-list {
         padding: 20px;
     }
     .setting-box {
