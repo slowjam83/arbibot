@@ -190,6 +190,9 @@
             //알림 링크
             $(".noti-link").click(function(e) {
                 $(".section").load("./notification.html");
+                if ($(".noti-link").hasClass('on')) {
+                    $(".noti-link").removeClass('on');
+                }
             });
 
             //알림 박스 10초 간격으로 실행
