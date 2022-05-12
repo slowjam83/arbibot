@@ -1844,12 +1844,14 @@ sub page
     text-align: right;
 }
 
-.wallet .pc-hidden li {
+.wallet .pc-hidden li,
+.notification-list .pc-hidden li {
     padding: 20px 10px;
     border-top: 1px solid #ebebeb;
 }
 
-.wallet .pc-hidden li:last-child {
+.wallet .pc-hidden li:last-child,
+.notification-list .pc-hidden li:last-child {
     border-bottom: 1px solid #ebebeb;
 }
 
