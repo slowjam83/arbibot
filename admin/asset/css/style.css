@@ -939,11 +939,12 @@ push(푸시)
 
 .push-form label {
     display: inline-block;
-    margin-right: 20px
+    position: relative;
+    width: 100px;
 }
 
 .push-form input {
-    width: calc(100% - 60px)
+    width: calc(100% - 120px)
 }
 
 .push-form .btn-wrap {
