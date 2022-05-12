@@ -132,13 +132,13 @@
                 $(".after-login").removeClass('hide').addClass('show');
 
                 if ($(window).width < 971) {
-                    $(".web-after-login").removeClass('show').addClass('hide');
-                    $(".mo-before-login").removeClass('show').addClass('hide');
-                    $(".mo-after-login").removeClass('hide').addClass('show');
+                    $(".after-login.web-after-login").removeClass('show').addClass('hide');
+                    $(".before-login.mo-before-login").removeClass('show').addClass('hide');
+                    $(".after-login.mo-after-login").removeClass('hide').addClass('show');
                 } else {
-                    $(".web-after-login").removeClass('hide').addClass('show');
-                    $(".mo-before-login").removeClass('show').addClass('hide');
-                    $(".mo-after-login").removeClass('show').addClass('hide');
+                    $(".after-login.web-after-login").removeClass('hide').addClass('show');
+                    $(".before-login.mo-before-login").removeClass('show').addClass('hide');
+                    $(".after-login.mo-after-login").removeClass('show').addClass('hide');
                 };
             });
 
