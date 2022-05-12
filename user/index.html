@@ -192,17 +192,27 @@
                 $(".section").load("./notification.html");
                 if ($(".noti-link").hasClass('on')) {
                     $(".noti-link").removeClass('on');
-                } else if ($(".noti-box.mo-after-login").slideDown() || $(".web-after-login .noti-box").slideDown()) {
-                    $(".noti-link").addClass('on');
                 }
             });
 
             //알림 박스 10초 간격으로 실행
+            var toggleClassOn = function() {
+                if ($(".noti-link").hasClass('on')) {
+                    $(".noti-link").removeClass('on');
+                } else {
+                    $(".noti-link").addClass('on');
+                }
+            };
+
             setInterval(function() {
                 if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
-                    $('.noti-box.mo-after-login').slideToggle();
+                    $('.noti-box.mo-after-login').slideToggle(function() {
+                        toggleClassOn();
+                    });
                 } else if ($(".web-after-login").hasClass('show') === true) {
-                    $('.web-after-login .noti-box').slideToggle();
+                    $('.web-after-login .noti-box').slideToggle(function() {
+                        toggleClassOn();
+                    });
                 };
             }, 10000);
 
