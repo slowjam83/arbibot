@@ -935,7 +935,8 @@ header
 }
 
 .noti-box li {
-    border: 0;
+    border: 0 !important;
+    padding: 0 !important;
 }
 
 .user-info .point::before {
@@ -4581,7 +4582,7 @@ Media Query
     .header .logo {
         width: 147px;
         height: 41px;
-        margin-left: 18px;
+        margin: 0 0 12px 18px;
         top: 12px;
     }
     .noti-link {
@@ -4595,7 +4596,7 @@ Media Query
         border-radius: 0;
         box-shadow: none;
         padding: 20px 18px;
-        margin-bottom: 18px;
+        margin-bottom: 6px;
     }
     .ham {
         top: 24px;
