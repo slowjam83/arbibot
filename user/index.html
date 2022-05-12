@@ -128,25 +128,25 @@
 
             //header 로그인 전/후
             $('.consent-btn').click(function(e) {
-                $(".before-login").removeClass(show).addClass(hide);
-                $(".after-login").removeClass(hide).addClass(show);
+                $(".before-login").removeClass('show').addClass('hide');
+                $(".after-login").removeClass('hide').addClass('show');
             });
 
             $('.logout').click(function(e) {
-                $(".before-login").removeClass(hide).addClass(show);
-                $(".after-login").removeClass(show).addClass(hide);
+                $(".before-login").removeClass('hide').addClass('show');
+                $(".after-login").removeClass('show').addClass('hide');
             });
 
-            if ($(".web-after-login").hasClass(show)) {
+            if ($(".web-after-login").hasClass('show')) {
                 $(window).resize(function() {
                     if ($(this).width < 971) {
-                        $(".web-after-login").removeClass(show).addClass(hide);
-                        $(".mo-before-login").removeClass(show).addClass(hide);
-                        $(".mo-after-login").removeClass(hide).addClass(show);
+                        $(".web-after-login").removeClass('show').addClass('hide');
+                        $(".mo-before-login").removeClass('show').addClass('hide');
+                        $(".mo-after-login").removeClass('hide').addClass('show');
                     } else {
-                        $(".web-after-login").removeClass(hide).addClass(show);
-                        $(".mo-before-login").removeClass(show).addClass(hide);
-                        $(".mo-after-login").removeClass(show).addClass(hide);
+                        $(".web-after-login").removeClass('hide').addClass('show');
+                        $(".mo-before-login").removeClass('show').addClass('hide');
+                        $(".mo-after-login").removeClass('show').addClass('hide');
                     }
                 });
             };
