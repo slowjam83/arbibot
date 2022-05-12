@@ -935,8 +935,7 @@ header
 }
 
 .noti-box li {
-    border: 0 !important;
-    padding: 0 !important;
+    border: 0;
 }
 
 .user-info .point::before {
@@ -4598,7 +4597,7 @@ Media Query
         padding: 20px 18px;
     }
     .ham {
-        top: 12px;
+        top: 20px;
         right: 18px;
     }
     .ham.active {
@@ -4613,6 +4612,7 @@ Media Query
     }
     .section-wrap {
         display: block;
+        padding: 0 18px;
     }
     .section {
         width: 100%;
@@ -4620,7 +4620,6 @@ Media Query
     .container {
         height: auto;
         overflow-y: hidden;
-        padding: 0 18px;
     }
     .event-banner li:nth-child(1) {
         background: url('../img/banner/event_banner_01.jpg') no-repeat 0 100%, #dde1e6;
@@ -4646,7 +4645,7 @@ Media Query
         flex: 1 1 auto;
     }
     .mystatus {
-        padding: 20px 18px;
+        padding: 10px;
         margin-bottom: 30px;
         background: #4341ce;
     }
