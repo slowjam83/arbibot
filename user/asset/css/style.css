@@ -554,7 +554,7 @@ a.disabled-font {
     line-height: 16px;
     padding: 0 5px;
     border-radius: 3px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .api-bithumb {
@@ -1866,6 +1866,10 @@ sub page
     font-size: 14px;
     color: #888;
     margin-top: 15px;
+}
+
+.notification-list .pc-hidden p {
+    line-height: 1.4;
 }
 
 .ipInput {
