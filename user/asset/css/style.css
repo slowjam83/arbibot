@@ -1830,7 +1830,8 @@ sub page
     font-family: 'AppleSDGothicNeo';
 }
 
-.wallet table {
+.wallet table,
+.notification-list table {
     border-bottom: 1px solid #ebebeb;
 }
 
