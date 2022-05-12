@@ -934,6 +934,10 @@ header
     z-index: 10;
 }
 
+.noti-box li {
+    border: 0;
+}
+
 .user-info .point::before {
     content: "";
     display: inline-block;
@@ -4494,10 +4498,11 @@ Media Query
     }
     .noti-link {
         width: 20px;
-        height: 23px;
-        background-size: 20px 23px;
-        right: 44px;
+        height: 20px;
+        background-size: 20px 20px;
+        right: 64px;
         top: 0;
+        margin: 0;
     }
     .noti-box {
         left: initial;
@@ -4573,8 +4578,14 @@ Media Query
         padding: 12px 18px 16px;
     }
     .header .logo {
-        width: 272px;
-        height: 25px;
+        width: 147px;
+        height: 41px;
+    }
+    .noti-link {
+        width: 22px;
+        height: 22px;
+        right: 52px;
+        top: -2px;
     }
     .ham {
         top: 20px;
