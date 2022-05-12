@@ -2492,7 +2492,9 @@ button[name=applyPayment] {
     width: 120px;
 }
 
-.notification-list th {
+.notification-list th,
+.notification-list td:last-child,
+.bot-noti-list td:last-child {
     text-align: center;
 }
 
