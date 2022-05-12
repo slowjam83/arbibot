@@ -189,6 +189,7 @@
 
             //알림 링크
             $(".noti-link").click(function(e) {
+                $('.noti-box').slideUp();
                 $(".section").load("./notification.html");
                 if ($(".noti-link").hasClass('on')) {
                     $(".noti-link").removeClass('on');
