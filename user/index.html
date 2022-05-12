@@ -143,7 +143,7 @@
             });
 
             //header 로그인 전/후
-            var responsive = function() {
+            var resLogin = function() {
                 if ($(window).width() < 971 && $(".web-after-login").hasClass('show') === true) {
                     $(".web-after-login").removeClass('show').addClass('hide');
                     $(".mo-before-login").removeClass('show').addClass('hide');
@@ -155,19 +155,36 @@
                 };
             }
 
+            var resLoout = function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('hide') === true) {
+                    $(".mo-before-login").removeClass('hide').addClass('show');
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                } else {
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                };
+            }
+
             $('.consent-btn').click(function(e) {
                 $(".before-login").removeClass('show').addClass('hide');
                 $(".after-login").removeClass('hide').addClass('show');
-                responsive();
-            });
+                resLogin();
 
-            $(window).resize(function() {
-                responsive();
+                $(window).resize(function() {
+                    resLogin();
+                });
             });
 
             $('.logout').click(function(e) {
                 $(".before-login").removeClass('hide').addClass('show');
                 $(".after-login").removeClass('show').addClass('hide');
+                resLoout();
+
+                $(window).resize(function() {
+                    resLoout();
+                });
             });
 
 
