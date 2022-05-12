@@ -138,7 +138,7 @@
             });
 
             if ($(".web-after-login").hasClass('show')) {
-                if ($(this).width < 971) {
+                if ($(window).width < 971) {
                     $(".web-after-login").removeClass('show').addClass('hide');
                     $(".mo-before-login").removeClass('show').addClass('hide');
                     $(".mo-after-login").removeClass('hide').addClass('show');
