@@ -106,7 +106,7 @@
 
 <script>
     //datetime-local 타입에 현재 날짜, 시간 세팅하기
-    et dateElement = document.getElementById('reserveSend');
+    let dateElement = document.getElementById('reserveSend');
     let date = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, -5);
     dateElement.value = date;
     dateElement.setAttribute("min", date);
