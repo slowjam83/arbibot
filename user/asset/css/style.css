@@ -4575,13 +4575,13 @@ Media Query
         text-align: center;
     }
     .header {
-        padding: 0;
+        padding: 12px 0;
         display: block;
     }
     .header .logo {
         width: 147px;
         height: 41px;
-        margin: 12px 0 12px 18px;
+        margin: 0 0 12px 18px;
         top: 12px;
     }
     .noti-link {
@@ -4597,7 +4597,7 @@ Media Query
         padding: 20px 18px;
     }
     .ham {
-        top: 20px;
+        top: 12px;
         right: 18px;
     }
     .ham.active {
