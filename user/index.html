@@ -128,35 +128,25 @@
 
             //header 로그인 전/후
             $('.consent-btn').click(function(e) {
-                $(".before-login").hide();
-                $(".after-login").show();
+                $(".before-login").removeClass(show).addClass(hide);
+                $(".after-login").removeClass(hide).addClass(show);
             });
 
             $('.logout').click(function(e) {
-                $(".before-login").show();
-                $(".after-login").hide();
+                $(".before-login").removeClass(hide).addClass(show);
+                $(".after-login").removeClass(show).addClass(hide);
             });
 
-            if ($(".web-after-login").show()) {
-                if ($(this).width < 971) {
-                    $(".web-after-login").hide();
-                    $(".mo-before-login").hide();
-                    $(".mo-after-login").show();
-                } else {
-                    $(".web-after-login").show();
-                    $(".mo-before-login").hide();
-                    $(".mo-after-login").hide();
-                }
-
+            if ($(".web-after-login").hasClass(show)) {
                 $(window).resize(function() {
                     if ($(this).width < 971) {
-                        $(".web-after-login").hide();
-                        $(".mo-before-login").hide();
-                        $(".mo-after-login").show();
+                        $(".web-after-login").removeClass(show).addClass(hide);
+                        $(".mo-before-login").removeClass(show).addClass(hide);
+                        $(".mo-after-login").removeClass(hide).addClass(show);
                     } else {
-                        $(".web-after-login").show();
-                        $(".mo-before-login").hide();
-                        $(".mo-after-login").hide();
+                        $(".web-after-login").removeClass(hide).addClass(show);
+                        $(".mo-before-login").removeClass(show).addClass(hide);
+                        $(".mo-after-login").removeClass(show).addClass(hide);
                     }
                 });
             };
