@@ -121,39 +121,30 @@
                 $("#modalEvent").hide();
             }
 
+            $(document).ready(function() {
+                var cookiedata = document.cookie;
+                if (cookiedata.indexOf("close=Y") < 0) {
+                    $("#modalEvent").show();
+                } else {
+                    $("#modalEvent").hide();
+                }
+                $(".modal-close").click(function() {
+                    couponClose();
+                });
+            });
+
+            $('html, body').scrollTop(function() {
+                $(".section-wrap").offset().top
+            });
+
             $(".eventGo").click(function(e) {
                 $("#modalEvent").hide();
                 $(".section").load("./board_list.html");
             });
 
             //header 로그인 전/후
-            $('.consent-btn').click(function(e) {
-                $(".before-login").removeClass('show').addClass('hide');
-                $(".after-login").removeClass('hide').addClass('show');
-
-                if ($(window).width < 971) {
-                    $(".after-login.web-after-login").removeClass('show').addClass('hide');
-                    $(".before-login.mo-before-login").removeClass('show').addClass('hide');
-                    $(".after-login.mo-after-login").removeClass('hide').addClass('show');
-                } else {
-                    $(".after-login.web-after-login").removeClass('hide').addClass('show');
-                    $(".before-login.mo-before-login").removeClass('show').addClass('hide');
-                    $(".after-login.mo-after-login").removeClass('show').addClass('hide');
-                };
-            });
-
-            if ($(window).width < 971 && $(".web-after-login").hasClass('show') === true) {
-                $(".web-after-login").removeClass('show').addClass('hide');
-                $(".mo-before-login").removeClass('show').addClass('hide');
-                $(".mo-after-login").removeClass('hide').addClass('show');
-            } else {
-                $(".web-after-login").removeClass('hide').addClass('show');
-                $(".mo-before-login").removeClass('show').addClass('hide');
-                $(".mo-after-login").removeClass('show').addClass('hide');
-            };
-
-            $(window).resize(function() {
-                if ($(this).width < 971 && $(".web-after-login").hasClass('show') === true) {
+            var responsive = function() {
+                if ($(window).width < 971 && $(".web-after-login").hasClass('show') === true) {
                     $(".web-after-login").removeClass('show').addClass('hide');
                     $(".mo-before-login").removeClass('show').addClass('hide');
                     $(".mo-after-login").removeClass('hide').addClass('show');
@@ -161,7 +152,18 @@
                     $(".web-after-login").removeClass('hide').addClass('show');
                     $(".mo-before-login").removeClass('show').addClass('hide');
                     $(".mo-after-login").removeClass('show').addClass('hide');
-                }
+                };
+            }
+
+            $('.consent-btn').click(function(e) {
+                $(".before-login").removeClass('show').addClass('hide');
+                $(".after-login").removeClass('hide').addClass('show');
+            });
+
+            responsive();
+
+            $(window).resize(function() {
+                responsive();
             });
 
             $('.logout').click(function(e) {
@@ -181,22 +183,6 @@
                 } else {
                     $('.section-wrap').removeClass('scroll')
                 }
-            });
-
-            $(document).ready(function() {
-                var cookiedata = document.cookie;
-                if (cookiedata.indexOf("close=Y") < 0) {
-                    $("#modalEvent").show();
-                } else {
-                    $("#modalEvent").hide();
-                }
-                $(".modal-close").click(function() {
-                    couponClose();
-                });
-            });
-
-            $('html, body').scrollTop(function() {
-                $(".section-wrap").offset().top
             });
 
             //Top banner
