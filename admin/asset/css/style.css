@@ -954,7 +954,7 @@ push(푸시)
 
 .push-form select,
 .push-form input[type='datetime-local'] {
-    width: 180px;
+    width: 240px;
 }
 
 .push-form .btn-wrap {
