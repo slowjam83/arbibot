@@ -144,7 +144,7 @@
 
             //header 로그인 전/후
             var responsive = function() {
-                if ($(window).width < 971 && $(".web-after-login").hasClass('show') === true) {
+                if ($(window).width() < 971 && $(".web-after-login").hasClass('show') === true) {
                     $(".web-after-login").removeClass('show').addClass('hide');
                     $(".mo-before-login").removeClass('show').addClass('hide');
                     $(".mo-after-login").removeClass('hide').addClass('show');
@@ -158,7 +158,6 @@
             $('.consent-btn').click(function(e) {
                 $(".before-login").removeClass('show').addClass('hide');
                 $(".after-login").removeClass('hide').addClass('show');
-
                 responsive();
             });
 
