@@ -4597,7 +4597,7 @@ Media Query
         padding: 20px 18px;
     }
     .ham {
-        top: 20px;
+        top: 10px;
         right: 18px;
     }
     .ham.active {
