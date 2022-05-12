@@ -192,6 +192,8 @@
                 $(".section").load("./notification.html");
                 if ($(".noti-link").hasClass('on')) {
                     $(".noti-link").removeClass('on');
+                } else if ($(".noti-box.mo-after-login").slideDown() || $(".web-after-login .noti-box").slideDown()) {
+                    $(".noti-link").addClass('on');
                 }
             });
 
