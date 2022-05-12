@@ -2506,6 +2506,7 @@ button[name=applyPayment] {
 
 .notification-list th,
 .notification-list td:last-child,
+.bot-noti-list td:first-child,
 .bot-noti-list td:last-child {
     text-align: center;
 }
