@@ -922,7 +922,7 @@ push(푸시)
 .push-form {
     margin: 20px 0 60px;
     padding: 40px;
-    border: 3px solid #efefef
+    background: #f6f6f6;
 }
 
 .push-form ul {
@@ -953,7 +953,7 @@ push(푸시)
 }
 
 .push-form select,
-.push-form input[type='datetime-localdate'] {
+.push-form input[type='datetime-local'] {
     width: 180px;
 }
 
