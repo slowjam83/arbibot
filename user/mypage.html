@@ -218,20 +218,24 @@
         $(".tabNav li").css("width", li_max + "%");
 
         //switch on/off
-        function switchOn(e) {
-
-        };
-
         $('.noti-all').click(function() {
             if ($(this).hasClass('on')) {
                 $('.switch-btn').removeClass('on');
+            } else if () {
+                $('.switch-btn').addClass('on');
             } else {
                 $('.switch-btn').addClass('on');
             }
         });
 
-        $('.noti-auto, .noti-grid, .noti-event, .noti-notice').click(function() {
-            $(this).toggleClass('on');
+        let switchBtn = $('.noti-auto, .noti-grid, .noti-event, .noti-notice');
+
+        switchBtn.click(function(e) {
+            if ($('.noti-all').hasClass('on')) {
+                switchBtn.removeClass('on');
+            } else {
+                switchBtn.addClass('on');
+            }
         });
     });
 </script>
