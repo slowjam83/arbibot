@@ -218,16 +218,18 @@
         $(".tabNav li").css("width", li_max + "%");
 
         //switch on/off
-        /* var switchOn = function(e) {
+        var switchOn = function(e) {
             $(this).toggleClass('on');
-        }; */
+        };
 
         $('.noti-all').click(function() {
             if ($(this).hasClass('on')) {
-                $('.swicth-btn').removeClass('on');
+                $('.switch-btn').removeClass('on');
             } else {
-                $('.swicth-btn').toggleClass('on');
+                $('.switch-btn').toggleClass('on');
             }
         });
+
+        switchOn();
     });
 </script>
