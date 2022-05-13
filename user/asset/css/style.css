@@ -680,6 +680,7 @@ a.xs-btn::after,
     width: 64px;
     height: 18px;
     background: url('../img/switch-off.png') no-repeat 0 0;
+    background-size: 64px 18px;
 }
 
 .switch-btn.on {
