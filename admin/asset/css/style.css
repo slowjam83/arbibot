@@ -113,8 +113,8 @@ select {
     line-height: 30px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
-    padding: 0 10px;
-    font-size: 16px
+    padding: 0 7px;
+    font-size: 14px
 }
 
 input[type='text']:valid {
