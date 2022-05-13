@@ -86,19 +86,19 @@
                 </li>
                 <li>
                     <h3>교차거래 알림</h3>
-                    <button class="switch-btn switch-btn2 hidden noti-auto">미동의</button>
+                    <button class="switch-btn hidden noti-auto">미동의</button>
                 </li>
                 <li>
                     <h3>재정거래 알림</h3>
-                    <button class="switch-btn switch-btn2 hidden noti-grid">미동의</button>
+                    <button class="switch-btn hidden noti-grid">미동의</button>
                 </li>
                 <li>
                     <h3>이벤트 알림</h3>
-                    <button class="switch-btn switch-btn2 hidden noti-event">미동의</button>
+                    <button class="switch-btn hidden noti-event">미동의</button>
                 </li>
                 <li>
                     <h3>공지사항 알림</h3>
-                    <button class="switch-btn switch-btn2 hidden noti-notice">미동의</button>
+                    <button class="switch-btn hidden noti-notice">미동의</button>
                 </li>
             </ul>
         </div>
@@ -222,16 +222,17 @@
             if ($(this).hasClass('on')) {
                 $('.switch-btn').removeClass('on');
             } else {
-                $('.switch-btn').addClass('on');
+                $('.switch-btn').toggleClass('on');
             }
         });
 
-        $('.switch-btn2').click(function(e) {
-            var switchBtn = ['.noti-auto', '.noti-grid', '.noti-event', '.noti-notice'];
-            var i = $(this).index();
+        let switchBtn = $('.noti-auto, .noti-grid, .noti-event, .noti-notice');
 
-            for (var i2 = 0; i2 < switchBtn.length; i2++) {
-                $(this).toggleClass('on');
+        switchBtn.click(function(e) {
+            if ($('.noti-all').hasClass('on')) {
+                switchBtn.removeClass('on');
+            } else {
+                switchBtn.addClass('on');
             }
         });
     });
