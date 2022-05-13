@@ -675,6 +675,17 @@ a.xs-btn::after,
     color: #4341ce !important;
 }
 
+.switch-btn {
+    display: block;
+    width: 64px;
+    height: 18px;
+    background: url('../img/switch-off.png') no-repeat 0 0;
+}
+
+.switch-btn.on {
+    background: url('../img/switch-on.png') no-repeat 0 0;
+}
+
 .guide-btn {
     display: inline-block;
     font-size: 12px;

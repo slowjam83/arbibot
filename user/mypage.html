@@ -74,6 +74,35 @@
                 </li>
             </ul>
         </div>-->
+
+        <div class="bot-setting">
+            <div class="tit-head">
+                <h2>알림 설정</h2>
+            </div>
+            <ul class="setting-box">
+                <li>
+                    <h3>마케팅 수신 동의</h3>
+                    <button class="switch-btn hidden noti-all">미동의</button>
+                </li>
+                <li>
+                    <h3>교차거래 알림</h3>
+                    <button class="switch-btn hidden noti-auto" onclick="switchOn()">미동의</button>
+                </li>
+                <li>
+                    <h3>재정거래 알림</h3>
+                    <button class="switch-btn hidden noti-grid" onclick="switchOn()">미동의</button>
+                </li>
+                <li>
+                    <h3>이벤트 알림</h3>
+                    <button class="switch-btn hidden noti-event" onclick="switchOn()">미동의</button>
+                </li>
+                <li>
+                    <h3>공지사항 알림</h3>
+                    <button class="switch-btn hidden noti-notice" onclick="switchOn()">미동의</button>
+                </li>
+            </ul>
+        </div>
+
         <div class="bot-setting point-list">
             <div class="tit-head inlineBlock">
                 <h2>포인트 내역</h2>
@@ -187,5 +216,18 @@
         //tab 메뉴
         var li_max = 100 / $(".tabNav li").length;
         $(".tabNav li").css("width", li_max + "%");
+
+        //switch on/off
+        var switchOn = function(e) {
+            $(this).toggleClass('on');
+        };
+
+        $('.noti-all').click(function() {
+            if ($(this).hasClass('on')) {
+                $('.swicth-btn').removeClass('on');
+            } else {
+                $('.swicth-btn').toggleClass('on');
+            }
+        });
     });
 </script>
