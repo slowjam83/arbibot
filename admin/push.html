@@ -106,16 +106,16 @@
 
 <script>
     //datetime-local 타입에 현재 날짜, 시간 세팅하기
-    let dateSeting = document.getElementById('reserveSend');
-    let dateNow = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, -5);
+    var dateSet = document.getElementById('reserveSend');
+    var date = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, -5);
 
-    dateSeting.value = dateNow;
-    dateSeting.setAttribute("min", dateNow);
+    dateSet.value = date;
+    dateSet.setAttribute("min", date);
 
     function setMinValue() {
-        if (dateSeting.value < dateNow) {
+        if (dateSet.value < date) {
             alert('현재 시간보다 이전의 날짜는 설정할 수 없습니다.');
-            dateSeting.value = dateNow;
+            dateSet.value = date;
         }
     }
 </script>
