@@ -86,19 +86,19 @@
                 </li>
                 <li>
                     <h3>교차거래 알림</h3>
-                    <button class="switch-btn hidden noti-auto">미동의</button>
+                    <button class="switch-btn hidden noti-sub">미동의</button>
                 </li>
                 <li>
                     <h3>재정거래 알림</h3>
-                    <button class="switch-btn hidden noti-grid">미동의</button>
+                    <button class="switch-btn hidden noti-sub">미동의</button>
                 </li>
                 <li>
                     <h3>이벤트 알림</h3>
-                    <button class="switch-btn hidden noti-event">미동의</button>
+                    <button class="switch-btn hidden noti-sub">미동의</button>
                 </li>
                 <li>
                     <h3>공지사항 알림</h3>
-                    <button class="switch-btn hidden noti-notice">미동의</button>
+                    <button class="switch-btn hidden noti-sub">미동의</button>
                 </li>
             </ul>
         </div>
@@ -226,13 +226,11 @@
             }
         });
 
-        let switchBtn = $('li:not(:first-child).switch-btn');
-
-        switchBtn.click(function(e) {
+        $('.noti-sub').click(function(e) {
             if ($('.noti-all').hasClass('on')) {
-                switchBtn.removeClass('on');
+                $(this).removeClass('on');
             } else {
-                switchBtn.addClass('on');
+                $(this).addClass('on');
             }
         });
     });
