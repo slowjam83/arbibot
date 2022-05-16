@@ -226,7 +226,7 @@
             }
         });
 
-        let switchBtn = $('.noti-auto, .noti-grid, .noti-event, .noti-notice');
+        let switchBtn = $('li:not(:first-child).switch-btn');
 
         switchBtn.click(function(e) {
             if ($('.noti-all').hasClass('on')) {
