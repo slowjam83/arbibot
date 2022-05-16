@@ -327,6 +327,12 @@ a.point-font2 {
     color: #0099cc
 }
 
+a.pointUnderLine,
+.pointUnderLine {
+    color: #4341ce;
+    text-decoration: underline;
+}
+
 .disabled-font,
 a.disabled-font {
     color: #888
