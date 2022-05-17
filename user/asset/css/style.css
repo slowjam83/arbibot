@@ -4548,6 +4548,12 @@ Media Query
         right: 18px;
         top: 61px;
     }
+    .noti-box .close-btn {
+        width: 16px;
+        height: 16px;
+        background-size: 16px;
+        right: 18px;
+    }
     .ham {
         display: block;
     }
