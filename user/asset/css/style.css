@@ -428,6 +428,13 @@ a.disabled-font {
     align-items: flex-start;
 }
 
+.flex-between-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .flex-end-baseline {
     display: flex;
     justify-content: flex-end !important;
@@ -944,6 +951,15 @@ header
     background: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, .15);
     z-index: 10;
+}
+
+.noti-box .close-btn {
+    position: inherit;
+    display: block;
+    width: 14px;
+    height: 14px;
+    top: 15px;
+    right: 15px;
 }
 
 .noti-box li {
