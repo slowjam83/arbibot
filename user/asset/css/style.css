@@ -4543,19 +4543,6 @@ Media Query
         top: 0;
         margin: 0;
     }
-    .noti-box {
-        position: relative;
-        left: initial;
-        right: initial;
-        top: initial;
-    }
-    .noti-box .close-btn {
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background-size: 16px;
-        right: 18px;
-    }
     .ham {
         display: block;
     }
@@ -4638,11 +4625,21 @@ Media Query
         top: 22px;
     }
     .noti-box {
-        position: initial;
+        position: relative;
+        left: initial;
+        right: initial;
+        top: initial;
         border-radius: 0;
         box-shadow: none;
         padding: 20px 18px;
         margin: 12px 0 6px;
+    }
+    .noti-box .close-btn {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-size: 16px;
+        right: 18px;
     }
     .ham {
         top: 24px;
