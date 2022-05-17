@@ -155,7 +155,7 @@
                 };
             }
 
-            var resLoout = function() {
+            var resLogout = function() {
                 if ($(window).width() < 971 && $(".mo-after-login").hasClass('hide') === true) {
                     $(".mo-before-login").removeClass('hide').addClass('show');
                     $(".web-after-login").removeClass('show').addClass('hide');
@@ -180,10 +180,10 @@
             $('.logout').click(function(e) {
                 $(".before-login").removeClass('hide').addClass('show');
                 $(".after-login").removeClass('show').addClass('hide');
-                resLoout();
+                resLogout();
 
                 $(window).resize(function() {
-                    resLoout();
+                    resLogout();
                 });
             });
 
