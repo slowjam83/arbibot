@@ -204,7 +204,7 @@
                     });
                     setTimeout(function() {
                         $('.noti-box.mo-after-login').slideUp();
-                    }, 5000);
+                    }, 10000);
                 } else if ($(".web-after-login").hasClass('show') === true) {
                     $('.web-after-login .noti-box').slideDown(function() {
                         $(".noti-link").addClass('on');
@@ -213,7 +213,7 @@
                         $('.web-after-login .noti-box').slideUp();
                     }, 10000);
                 };
-            }, 10000);
+            }, 20000);
 
             $(window).resize(function() {
                 if ($(this).width() < 761) {
