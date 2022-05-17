@@ -960,6 +960,8 @@ header
     height: 14px;
     top: 15px;
     right: 15px;
+    background: url('../img/svg/close.svg') no-repeat 0 0;
+    background-size: 14px;
 }
 
 .noti-box li {
