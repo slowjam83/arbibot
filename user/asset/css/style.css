@@ -4535,6 +4535,11 @@ Media Query
     .header .util {
         display: none;
     }
+    .noti-box {
+        top: 61px;
+        left: initial;
+        right: 18px;
+    }
     .noti-link {
         width: 20px;
         height: 20px;
