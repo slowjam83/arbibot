@@ -4538,6 +4538,7 @@ Media Query
     .noti-box {
         top: 61px;
         left: initial;
+        top: 18px;
         right: 18px;
     }
     .noti-link {
