@@ -956,12 +956,12 @@ header
 .noti-box .close-btn {
     position: inherit;
     display: block;
-    width: 14px;
-    height: 14px;
-    top: 15px;
-    right: 15px;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    right: 10px;
     background: url('../img/svg/close.svg') no-repeat 0 0;
-    background-size: 14px;
+    background-size: 100%;
 }
 
 .noti-box li {
@@ -4544,11 +4544,13 @@ Media Query
         margin: 0;
     }
     .noti-box {
+        position: relative;
         left: initial;
-        right: 18px;
-        top: 61px;
+        right: initial;
+        top: initial;
     }
     .noti-box .close-btn {
+        position: absolute;
         width: 16px;
         height: 16px;
         background-size: 16px;
