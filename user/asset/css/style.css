@@ -3237,16 +3237,17 @@ footer
     width: 100%;
     padding: 28px 0;
     margin: 0 auto;
-    display: table;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .left-side {
     position: relative;
-    display: table-cell;
     text-align: right;
     width: 240px;
     padding: 0 20px;
-    margin-right: 10px;
 }
 
 .kakaotalk {
@@ -3310,7 +3311,6 @@ footer
 }
 
 .right-side {
-    display: table-cell;
     width: calc(100% - 240px);
     padding: 0 20px;
 }
@@ -4276,6 +4276,16 @@ Media Query
     .chargePay,
     .totalPay {
         grid-template-columns: repeat(3, 1fr)
+    }
+    .right-side-top {
+        display: block;
+    }
+    .notice {
+        width: 100%;
+    }
+    .snsUtil {
+        justify-content: flex-start;
+        margin-top: 20px;
     }
 }
 
