@@ -3303,6 +3303,16 @@ footer
     background-size: 20px 16px;
 }
 
+.snsUtil a.youtube {
+    background: url('../img/svg/social/youtube.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 17px 11px;
+}
+
+.snsUtil a.linkedin {
+    background: url('../img/svg/social/linkedin.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
+    background-size: 13px 13px;
+}
+
 .right-side {
     display: table-cell;
     width: calc(100% - 240px);
@@ -5077,6 +5087,7 @@ Media Query
     }
     .snsUtil {
         position: inherit;
+        gap: 5px;
     }
     .notice {
         border-radius: 5px;
