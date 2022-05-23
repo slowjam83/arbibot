@@ -3267,13 +3267,9 @@ footer
 }
 
 .snsUtil {
-    position: absolute;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    width: 100%;
-    right: 20px;
-    bottom: 0;
 }
 
 .snsUtil a {
