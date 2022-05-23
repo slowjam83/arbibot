@@ -3281,12 +3281,12 @@ footer
 
 .snsUtil a.facebook {
     background: url('../img/svg/social/facebook.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 16px 24px;
+    background-size: auto 16px;
 }
 
 .snsUtil a.instagram {
     background: url('../img/svg/social/instagram.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 18px 18px;
+    background-size: auto 16px;
 }
 
 .snsUtil a.blog {
@@ -3301,12 +3301,12 @@ footer
 
 .snsUtil a.youtube {
     background: url('../img/svg/social/youtube.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 17px 11px;
+    background-size: auto 18px;
 }
 
 .snsUtil a.linkedin {
     background: url('../img/svg/social/linkedin.svg') no-repeat 50% 50%, rgba(0, 0, 0, .1);
-    background-size: 13px 13px;
+    background-size: auto 18px;
 }
 
 .right-side {
