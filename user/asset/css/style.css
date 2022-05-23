@@ -3400,8 +3400,7 @@ footer
     display: inline-block;
 }
 
-.address p:nth-child(1)::after,
-.address p:nth-child(3)::after {
+.address p:not(:last-child)::after {
     display: inline-block;
     content: "";
     width: 1px;
@@ -5152,8 +5151,7 @@ Media Query
     .address p {
         display: inline;
     }
-    .address p:nth-child(1)::after,
-    .address p:nth-child(3)::after {
+    .address p:not(:last-child)::after {
         background: rgba(233, 233, 233, 0.5);
     }
     .mypage .subpage-title {
