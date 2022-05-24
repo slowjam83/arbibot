@@ -842,7 +842,8 @@ a.file-btn:focus {
 .point input[id^='shcDate'],
 input.fileUpload,
 input.pointInput,
-input#mbrNick2 {
+input#mbrNick2,
+select[name='search_open_yn'] {
     border-radius: 3px 0 0 3px;
     border-right: 0;
     position: inherit;
