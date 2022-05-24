@@ -524,7 +524,8 @@ a.xs-btn.disabled,
 }
 
 .delet-btn {
-    background: #757480 !important
+    background: #757480 !important;
+    color: #fff;
 }
 
 a.write-btn,
