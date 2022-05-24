@@ -187,6 +187,10 @@ input[type='radio']:checked~.radio {
     background: url('../img/radio.png') no-repeat 50% 50%
 }
 
+input[name='search-input'] {
+    width: 320px;
+}
+
 .hidden {
     font-size: 0;
     text-indent: -9999
@@ -561,7 +565,7 @@ a.write-btn,
     background: url('../img/search-ico.png') no-repeat 0 0;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 6px;
     transform: translate(0, -50%);
 }
 

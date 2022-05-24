@@ -23,26 +23,26 @@
                         </div>
                     </fieldset>
                 </form>
-                <form id="search-form" method="post" action="/">
-                    <fieldset>
-                        <legend class="hidden">게시글 검색</legend>
-                        <div class="flex-end">
-                            <select name="search_type" id="search_type" class="ml20">
-                                <option value="all">전체</option>
-                                <option value="writer">작성자</option>
-                                <option value="title">제목</option>
-                                <option value="detail">내용</option>
-                                <option value="total">제목+내용</option>
-                            </select>
-                            <label class="position-relative">
-                                <input type="text" id="search-input" value="검색어를 입력해 주세요." class="ml5">
-                                <button type="submit" id="search-btn" class="search-btn hidden">검색</button>
-                            </label>
-                        </div>
-                    </fieldset>
-                </form>
                 <div class="flex-end">
-                    <button class="small-btn border-radius-btn fill mr10">신규 작성</button>
+                    <form id="search-form" method="post" action="/">
+                        <fieldset>
+                            <legend class="hidden">게시글 검색</legend>
+                            <div class="flex-end">
+                                <select name="search_type" id="search_type" class="ml20">
+                                    <option value="all">전체</option>
+                                    <option value="writer">작성자</option>
+                                    <option value="title">제목</option>
+                                    <option value="detail">내용</option>
+                                    <option value="total">제목+내용</option>
+                                </select>
+                                <label class="position-relative">
+                                    <input type="text" name="search-input" id="search-input" value="검색어를 입력해 주세요." class="ml5">
+                                    <button type="submit" id="search-btn" class="search-btn hidden">검색</button>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button class="small-btn border-radius-btn fill mr10 ml20">신규 작성</button>
                     <button class="small-btn border-radius-btn mr10">블라인드</button>
                     <button class="small-btn border-radius-btn delet-btn">선택 삭제</button>
                 </div>
