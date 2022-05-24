@@ -570,7 +570,7 @@ a.write-btn,
 }
 
 .border-radius-btn {
-    border-radius: 3px;
+    border-radius: 3px !important;
 }
 
 
