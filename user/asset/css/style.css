@@ -757,6 +757,17 @@ a.edit-btn,
     text-align: center;
 }
 
+.search-btn {
+    display: block;
+    width: 17px;
+    height: 16px;
+    background: url('../img/search-ico.png') no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translate(0, -50%);
+}
+
 .chat-btn {
     width: 60px;
     height: 60px;

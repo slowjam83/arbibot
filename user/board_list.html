@@ -3,17 +3,16 @@
         <h1 class="subpage-title mb0">공지사항</h1>
     </div>
     <div class="contentsArea mt0">
-        <div class="accordion" id="accordion1">
-            <!-- 1 -->
+        <!-- <div class="accordion" id="accordion1">
             <div class="card">
                 <div class="card-header" id="heading1-">
                     <h5>
                         <button class="btn-link" type="button" data-toggle="collapse" data-target="#collapse1-1" aria-expanded="true" aria-controls="collapse1-1">
-              <p>
-                <span class="question-text">아비봇 신규가입 이벤트 안내</span>
-                <span class="date">2022-03-07</span>
-              </p>
-            </button>
+                            <p>
+                                <span class="question-text">아비봇 신규가입 이벤트 안내</span>
+                                <span class="date">2022-03-07</span>
+                            </p>
+                        </button>
                     </h5>
                 </div>
                 <div id="collapse1-1" class="collapse show" aria-labelledby="heading1-1" data-parent="#accordion1">
@@ -28,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <!-- 2 -->
+            
             <div class="card">
                 <div class="card-header" id="heading1-2">
                     <h5>
@@ -48,137 +47,46 @@
                     </div>
                 </div>
             </div>
-            <!-- 3 -->
-            <!-- <div class="card">
-                <div class="card-header" id="heading1-3">
-                    <h5>
-                        <button class="btn-link  collapsed" type="button" data-toggle="collapse" data-target="#collapse1-3" aria-expanded="true" aria-controls="collapse1-3">
-              <p>
-                <span class="question-text">아비봇 서비스 리뉴얼 오픈</span>
-                <span class="date">2022-02-24</span>
-              </p>
-            </button>
-                    </h5>
-                </div>
-                <div id="collapse1-3" class="collapse" aria-labelledby="heading1-3" data-parent="#accordion1">
-                    <div class="card-body">
-                        <div class="textBody">
-                            2022년 2월, 아비봇 서비스 홈페이지를 리뉴얼 하였습니다.<br /><br /> 우리는 누구나 쉽게 시스템 트레이딩을 이용할 수 있도록<br />향상된 서비스를 제공하겠습니다.
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- 4 -->
-            <!-- <div class="card">
-                <div class="card-header" id="heading1-4">
-                    <h5>
-                        <button class="btn-link  collapsed" type="button" data-toggle="collapse" data-target="#collapse1-4" aria-expanded="false" aria-controls="collapse1-4">
-              <p>
-                <span class="question-text">아비봇 서비스 리뉴얼 오픈</span>
-                <span class="date">2022-02-24</span>
-              </p>
-            </button>
-                    </h5>
-                </div>
-                <div id="collapse1-4" class="collapse" aria-labelledby="heading1-4" data-parent="#accordion1">
-                    <div class="card-body">
-                        <div class="textBody">
-                            2022년 2월, 아비봇 서비스 홈페이지를 리뉴얼 하였습니다.<br /><br /> 우리는 누구나 쉽게 시스템 트레이딩을 이용할 수 있도록<br />향상된 서비스를 제공하겠습니다.
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- 5 -->
-            <!-- <div class="card">
-                <div class="card-header" id="heading1-5">
-                    <h5>
-                        <button class="btn-link  collapsed" type="button" data-toggle="collapse" data-target="#collapse1-5" aria-expanded="false" aria-controls="collapse1-5">
-              <p>
-                <span class="question-text">아비봇 서비스 리뉴얼 오픈</span>
-                <span class="date">2022-02-24</span>
-              </p>
-            </button>
-                    </h5>
-                </div>
-                <div id="collapse1-5" class="collapse" aria-labelledby="heading1-5" data-parent="#accordion1">
-                    <div class="card-body">
-                        <div class="textBody">
-                            2022년 2월, 아비봇 서비스 홈페이지를 리뉴얼 하였습니다.<br /><br /> 우리는 누구나 쉽게 시스템 트레이딩을 이용할 수 있도록<br />향상된 서비스를 제공하겠습니다.
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-        <!--<div class="board-list-wrap">
-             <div class="search-wrap">
+        </div> -->
+        <div class="board-list-wrap">
+            <div class="search-wrap">
                 <label>
-                    <select name="" id="">
-                        <option value="title">제목</option>
-                        <option value="contents">내용</option>
-                        <option value="writer">작성자</option>
-                    </select>
-                    <input type="text" name="" id="">
-                    <button type="button"><img src="./asset/img/search-ico.png" alt="검색하기"></button>
-                </label>
-                <a href="javascript:void(0);" class="write-btn" id="postWrite">글쓰기</a>
+                   <input type="text" name="" id="">
+                   <button type="button" class="search-btn hidden">검색</button>
+               </label>
+                <!-- <a href="javascript:void(0);" class="write-btn" id="postWrite">글쓰기</a> -->
             </div>
-            
-            <table class="board-list">
-                <caption class="hidden">게시글 리스트</caption>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>조회</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <a href="javascript:void(0);" target="_self" id="postTitle">새로운 트레이딩 기법 공개~ㅎ [<span id="commentNum">10</span>]</a>
-                        </td>
-                        <td>884</td>
-                        <td>닉네임121212</td>
-                        <td>18:36</td> //당일 작성은 시간만 표기
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <a href="javascript:void(0);" target="_self" id="postTitle">조만간 좋은 소식이 들리길 기다려봅니다</a>
-                        </td>
-                        <td>72</td>
-                        <td>닉네임121212</td>
-                        <td>12-21</td> //당일 작성이 아닌 경우 날짜로 표기
-                    </tr>
-                </tbody>
-            </table>
 
-            //검색 결과 없음//
+            <ul class="board-list">
+                <li>
+                    <a href="./board_view.html" target="_self" class="question-text">게시글 제목이 엄~~~~~~~~~~~~~~~~~~~~~청~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~길 때 입니다.</a>
+                    <span class="date">2022-03-07</span>
+                </li>
+                <li>
+                    <a href="./board_view.html" target="_self" class="question-text">아비봇 신규가입 이벤트 안내</a>
+                    <span class="date">2022-03-07</span>
+                </li>
+                <li>
+                    <a href="./board_view.html" target="_self" class="question-text">아비봇 신규가입 이벤트 안내</a>
+                    <span class="date">2022-03-07</span>
+                </li>
+                <li>
+                    <a href="./board_view.html" target="_self" class="question-text">아비봇 신규가입 이벤트 안내</a>
+                    <span class="date">2022-03-07</span>
+                </li>
+                <li>
+                    <a href="./board_view.html" target="_self" class="question-text">아비봇 신규가입 이벤트 안내</a>
+                    <span class="date">2022-03-07</span>
+                </li>
+            </ul>
+
+            <!-- 검색 결과 없음 -->
             <table class="board-list">
-                <colgroup>
-                    <col width="120">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>조회</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="5">검색 결과가 없습니다.</td>
-                    </tr>
-                </tbody>
+                <p>검색 결과가 없습니다.</p>
             </table>
-            //검색 결과 없음//
-            
-            //페이징 버튼//
+            <!-- //검색 결과 없음 -->
+
+            <!-- 페이징 버튼 -->
             <ul class="pagination">
                 <li class="first"><a href="javascript:void(0);" class="hidden">first</a></li>
                 <li class="prev"><a href="javascript:void(0);" class="hidden">prev</a></li>
@@ -190,8 +98,8 @@
                 <li class="page-item next"><a href="javascript:void(0);" class="hidden">next</a></li>
                 <li class="page-item last"><a href="javascript:void(0);" class="hidden">last</a></li>
             </ul>
-            //페이징 버튼//
-        </div> -->
+            <!-- //페이징 버튼 -->
+        </div>
     </div>
 </div>
 
