@@ -65,8 +65,7 @@
                 './push.html',
                 './member.html',
                 './memberDetail.html',
-                './login.html',
-                './board_view.html'
+                './login.html'
             ];
 
             $('.nav-top li:nth-child(n)').click(function(e) {
@@ -105,10 +104,6 @@
                 $('.nav-top li').removeClass('on');
                 $('.nav-top li:nth-child(9)').addClass('on');
                 $('.section').load(arrLink[8]);
-            });
-
-            $('#boardTitle').click(function() {
-                $('body').load(arrLink[10]);
             });
 
             //파일업로드 삭제
