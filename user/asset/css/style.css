@@ -2636,6 +2636,13 @@ Error
 board
 =============================================================*/
 
+.board-list li {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .accordion .card,
 .board-list li {
     overflow: hidden;
