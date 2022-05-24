@@ -37,7 +37,7 @@
                             </fieldset>
                         </form>
                         <div class="btn-wrap">
-                            <button type="button" id="" class="large-btn delet-btn" onClick="history.back();">취소</button>
+                            <button type="button" id="postReturn" class="large-btn delet-btn">취소</button>
                             <button type="button" id="" class="large-btn">등록</button>
                         </div>
                     </div>
@@ -46,3 +46,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    //게시물 삭제 alert
+    $('#postReturn').click(function() {
+        var postReturnResult = confirm('작성한 내용이 저장되지 않습니다.\n작성을 취소 하시겠습니까?');
+        if (postReturnResult) {
+            $('.section').load('./board_view.html');
+        } else {
+
+        }
+    });
+</script>
