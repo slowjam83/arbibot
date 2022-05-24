@@ -2993,8 +2993,12 @@ span.arrow-btn.next {
     margin: 40px 0 20px;
 }
 
-#summernote {
+#editor {
+    width: 100%;
+    height: auto;
     margin-top: 16px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
 }
 
 .note-editable {

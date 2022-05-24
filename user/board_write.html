@@ -9,9 +9,26 @@
                         <input type="text" class="post-title-input" name="BBRD_TIT" id="BBRD_TIT" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
                         <div id="editorArea" class="mb60">
                             <!-- editor -->
-                            <textarea id="summernote" name="editordata"></textarea>
+                            <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요."></textarea>
                             <!-- //editor -->
                         </div>
+                        <form action="">
+                            <fieldset>
+                                <legend class="hidden">게시글 옵션</legend>
+                                <label class="checkbox-wrap mr20">
+                                    <input type="checkbox" name="" />상단 고정
+                                    <span class="check-mark"></span>
+                                </label>
+                                <label class="checkbox-wrap mr20">
+                                    <input type="checkbox" name="" />블라인드
+                                    <span class="check-mark"></span>
+                                </label>
+                                <label class="checkbox-wrap">
+                                    <input type="checkbox" name="" />푸시 발송
+                                    <span class="check-mark"></span>
+                                </label>
+                            </fieldset>
+                        </form>
                         <div class="btn-wrap">
                             <button type="button" id="" class="large-btn delet-btn" onClick="history.back();">취소</button>
                             <button type="button" id="" class="large-btn">등록</button>
