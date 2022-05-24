@@ -2677,7 +2677,8 @@ board
     border-bottom-left-radius: 0;
 }
 
-.accordion .card .card-header {
+.accordion .card .card-header,
+.board-list li {
     border-radius: 0;
     margin-bottom: -1px;
     padding: 14px 20px;
