@@ -66,8 +66,8 @@
                         <div class="flex-between mt40">
                             <button type="button" class="write-btn line-btn" id="postList">목록</button>
                             <div>
-                                <button type="button" class="write-btn">수정</button>
-                                <button type="button" class="write-btn delet-btn">삭제</button>
+                                <button type="button" id="editPost" class="write-btn">수정</button>
+                                <button type="button" id="deletPost" class="write-btn delet-btn">삭제</button>
                             </div>
                         </div>
                     </div>
@@ -433,6 +433,16 @@
             //게시판 리스트로 이동
             $('#postList').click(function() {
                 $('.section').load('./board_list.html');
+            });
+
+            //게시물 수정 페이지 로드
+            $('#editPost').click(function() {
+                $('.section').load('./board_write.html');
+            });
+
+            //게시물 삭제 alert
+            $('#deletPost').click(function() {
+                alert('삭제한 게시물은 복수할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
             });
         });
     </script>
