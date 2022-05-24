@@ -2812,15 +2812,7 @@ board
     width: 20px;
     height: 20px;
     background: url('../img/svg/social/share.svg') no-repeat 0 0;
-    background-size: 20px;
-}
-
-.post-btn {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 20px;
+    background-size: contain;
 }
 
 .post-btn button {
@@ -2829,11 +2821,6 @@ board
 
 .post-btn button.delet-btn {
     margin-left: 2px;
-}
-
-.mypost-btn {
-    position: absolute;
-    left: 0;
 }
 
 .comment-wrap {
