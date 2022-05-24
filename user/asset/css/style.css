@@ -2653,6 +2653,8 @@ board
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
