@@ -2977,11 +2977,6 @@ span.arrow-btn.next {
     margin-bottom: 10px;
 }
 
-#editorArea iframe {
-    width: 100%;
-    height: 300px;
-}
-
 .board-write .btn-wrap {
     display: flex;
     justify-content: center;
@@ -2996,6 +2991,7 @@ span.arrow-btn.next {
     margin-top: 16px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
+    padding: 6px 10px;
 }
 
 .note-editable {

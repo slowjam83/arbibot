@@ -7,23 +7,19 @@
                     <div class="board-write">
                         <label for="BBRD_TIT" class="hidden">제목</label>
                         <input type="text" class="post-title-input" name="BBRD_TIT" id="BBRD_TIT" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
-                        <div id="editorArea" class="mb60">
-                            <!-- editor -->
-                            <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요."></textarea>
-                            <!-- //editor -->
-                        </div>
-                        <form action="">
+                        <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요."></textarea>
+                        <form action="" class="mt10">
                             <fieldset>
                                 <legend class="hidden">게시글 옵션</legend>
-                                <label class="checkbox-wrap mr20">
+                                <label class="checkbox-wrap mr20 pl20">
                                     <input type="checkbox" name="" />상단 고정
                                     <span class="check-mark"></span>
                                 </label>
-                                <label class="checkbox-wrap mr20">
+                                <label class="checkbox-wrap mr20 pl20">
                                     <input type="checkbox" name="" />블라인드
                                     <span class="check-mark"></span>
                                 </label>
-                                <label class="checkbox-wrap">
+                                <label class="checkbox-wrap pl20">
                                     <input type="checkbox" name="" />푸시 발송
                                     <span class="check-mark"></span>
                                 </label>
