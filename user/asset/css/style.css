@@ -2807,6 +2807,14 @@ board
     line-height: 1.6;
 }
 
+.share-btn {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/svg/social/share.svg') no-repeat 0 0;
+    background-size: 20px;
+}
+
 .post-btn {
     position: relative;
     display: flex;

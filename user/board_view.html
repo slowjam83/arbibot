@@ -26,11 +26,6 @@
     <link href="./asset/css/select2.css" rel="stylesheet" />
     <link href="./asset/css/fakeLoader.css" rel="stylesheet" />
     <link href="./asset/css/icomoon.css" rel="stylesheet" />
-
-    <!-- 에디터(Summernote) source -->
-    <!-- <link href="./asset/css/summernote-lite.min.css" rel="stylesheet" />
-    <script src="./asset/js/summernote-lite.min.js"></script>
-    <script src="./asset/js/summernote-ko-KR.min.js"></script> -->
 </head>
 
 <body class="scroll-none">
@@ -54,31 +49,29 @@
         <!-- 본문영역 -->
         <div class="section">
             <div class="container sub-container scroll">
+                <div class="sub-container-head">
+                    <h1 class="subpage-title mb0">공지사항</h1>
+                    <button type="button" class="share-btn hidden">공유하기</button>
+                </div>
                 <div class="contentsArea">
                     <div class="board-view-wrap">
                         <h1 class="subpage-title">게시물 제목입니다.</h1>
                         <div class="post-info">
-                            <p>사용자닉네임</p>
                             <p>2021-12-23 15:33</p>
-                            <p>조회 <span>884</span></p>
-                            <p>댓글 <span>12</span></p>
                         </div>
                         <div class="post-contents">
                             <p>없으면, 끓는 열락의 싶이 그들은 위하여, 뛰노는 그리하였는가? <br> 못할 있는 이성은 못하다 청춘의 싹이 이상은 이상이 그리하였는가?<br> 대중을 얼음에 그림자는 보이는 고동을 인간이 자신과 보라.</p><br>
                             <p>불어 우리의 싸인 부패뿐이다. 행복스럽고 끓는 없는 못할 만천하의 것이다.<br> 모래뿐일 별과 무엇을 원질이 이성은 찾아 사람은 갑 새 교향악이다. 그들에게 트고, 가치를 충분히 있으며, 것이다.</p>
                         </div>
                         <div class="post-btn">
-                            <!-- 게시물 작성자가 본인인 경우 노출 -->
+                            <button type="button" class="write-btn line-btn" id="postList">목록</button>
                             <div class="mypost-btn">
                                 <button type="button" class="write-btn">수정</button>
                                 <button type="button" class="write-btn delet-btn">삭제</button>
                             </div>
-                            <!-- //게시물 작성자가 본인인 경우 노출 -->
-
-                            <button type="button" class="write-btn line-btn" id="postList">목록</button>
                         </div>
                     </div>
-                    <div class="comment-wrap">
+                    <!-- <div class="comment-wrap">
                         <ul class="comment-list">
                             <li>
                                 <p class="comment-info">
@@ -100,13 +93,10 @@
                                     <span class="post-time">2021-12-23 15:33</span>
                                 </p>
                                 <p>신기하네요~ 몰랐던 사실입니다. 귀한 정보 감사합니다~</p>
-
-                                <!-- 댓글 작성자가 본인인 경우 노출 -->
                                 <div class="comment-btn">
                                     <button type="button" class="write-btn">수정</button>
                                     <button type="button" class="write-btn delet-btn">삭제</button>
                                 </div>
-                                <!-- //댓글 작성자가 본인인 경우 노출 -->
                             </li>
                         </ul>
                         <div class="comment-write">
@@ -121,7 +111,7 @@
                             </form>
                             <p>이 댓글에 대한 법적 책임은 작성자에게 귀속됩니다.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- 이전글/다음글 리스트 -->
                     <ul class="board-list-abb">
