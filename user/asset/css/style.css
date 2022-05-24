@@ -2992,6 +2992,7 @@ span.arrow-btn.next {
     border: 1px solid #d4d4d4;
     border-radius: 3px;
     padding: 6px 10px;
+    font-size: 16px;
 }
 
 .note-editable {
