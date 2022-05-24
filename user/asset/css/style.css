@@ -151,7 +151,7 @@ input[type="radio"] {
 .check-mark {
     cursor: pointer;
     position: absolute;
-    top: 1px;
+    top: 5px;
     left: 0;
     display: inline-block;
     width: 16px;
@@ -1812,10 +1812,6 @@ sub page
     margin-bottom: 0;
 }
 
-.input-wrap li div {
-    position: relative;
-}
-
 .input-wrap li input[type="text"] {
     margin-left: 6px;
     width: 290px;
@@ -1840,6 +1836,7 @@ sub page
 .checkbox-wrap,
 .select-wrap {
     width: auto !important;
+    position: relative;
 }
 
 #slippage-time {
@@ -3884,6 +3881,7 @@ modal
     padding: 0;
     border: none;
     margin-bottom: 0;
+    grid-gap: 0 40px;
 }
 
 .modal-body .setting-box select {
@@ -3907,10 +3905,6 @@ modal
     margin-bottom: 12px;
 }
 
-.modal-body .setting-box {
-    grid-gap: 0 40px;
-}
-
 .modal-body .setting-box .input-wrap li {
     padding-left: 0;
 }
@@ -3924,6 +3918,10 @@ modal
 .modal-body .setting-box li.slippage .check-mark,
 .modal-body .setting-box li.slippage input[type="checkbox"] {
     left: 0;
+}
+
+.modal-body .setting-box li .check-mark {
+    top: 4px;
 }
 
 .modal-body .api-input-wrap {
