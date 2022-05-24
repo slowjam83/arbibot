@@ -2708,12 +2708,16 @@ board
 .board-list h5 {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .card-header .date,
 .board-list .date {
     color: #888;
     font-size: 14px;
+    display: inline-block;
+    width: 110px;
+    text-align: right;
 }
 
 .card-body {
