@@ -196,6 +196,10 @@ input[type='radio']:checked~.radio {
     display: none !important
 }
 
+.position-relative {
+    position: relative;
+}
+
 .pd0 {
     padding: 0 !important;
 }
@@ -548,6 +552,17 @@ a.write-btn,
     position: absolute;
     z-index: 10;
     background: url('../img/close.png') no-repeat 50% 50%;
+}
+
+.search-btn {
+    display: block;
+    width: 17px;
+    height: 16px;
+    background: url('../img/search-ico.png') no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0 -50%);
 }
 
 
