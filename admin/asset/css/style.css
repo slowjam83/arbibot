@@ -565,6 +565,10 @@ a.write-btn,
     transform: translate(0, -50%);
 }
 
+.border-radius-btn {
+    border-radius: 3px;
+}
+
 
 /*============================================================
 header
