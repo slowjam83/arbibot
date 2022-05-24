@@ -1,60 +1,405 @@
-<div class="container sub-container scroll">
-    <div class="sub-container-head">
-        <h1 class="subpage-title mb0">글쓰기</h1>
-    </div>
-    <div class="contentsArea">
-        <div class="board-write-wrap">
-            <form name="frm_write" id="frm_write" method="post" action="/">
-                <fieldset>
-                    <legend class="hidden">게시물 작성</legend>
-                    <div class="board-write">
-                        <div class="post-title-wrap flex-between">
-                            <select name="" id="" class="mr10">
-                                <option value="none">게시판 선택</option>
-                                <option value="notice">공지사항</option>
-                                <option value="event">이벤트</option>
-                                <option value="faq">FAQ</option>
-                            </select>
-                            <label for="postTitle_input" class="hidden">제목</label>
-                            <input type="text" class="post-title-input mb10" name="postTitle_input" id="postTitle_input" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
-                        </div>
-                        <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요. editor 영역"></textarea>
-                        <form action="" class="mt10">
-                            <fieldset>
-                                <legend class="hidden">게시글 옵션</legend>
-                                <label class="checkbox-wrap mr20 pl20">
-                                    <input type="checkbox" name="" />상단 고정
-                                    <span class="check-mark"></span>
-                                </label>
-                                <label class="checkbox-wrap mr20 pl20">
-                                    <input type="checkbox" name="" />블라인드
-                                    <span class="check-mark"></span>
-                                </label>
-                                <label class="checkbox-wrap pl20">
-                                    <input type="checkbox" name="" />푸시 발송
-                                    <span class="check-mark"></span>
-                                </label>
-                            </fieldset>
-                        </form>
-                        <div class="btn-wrap">
-                            <button type="button" id="postReturn" class="large-btn delet-btn">취소</button>
-                            <button type="button" id="" class="large-btn">등록</button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="description" content="대한민국 최초 가상자산 멀티 트레이딩 플랫폼, 가상자산 트레이딩의 최고의 솔루션 아비봇" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="arbibot - virtual assets multi trading system" />
+    <meta property="og:description" content="대한민국 최초 가상자산 멀티 트레이딩 플랫폼, 가상자산 트레이딩의 최고의 솔루션 아비봇" />
+    <meta property="og:image" content="./asset/img/thumbnail.png" />
+    <meta property="og:url" content="https://slowjam83.github.io/arbibot/user/index.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/img/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/img/favicon_96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/img/favicon_16x16.png">
+
+    <title>arbibot - virtual assets multi trading system</title>
+
+    <link href="./asset/css/reset.css" rel="stylesheet" />
+    <link href="./asset/css/style.css?after" rel="stylesheet" />
+    <link href="./asset/css/select2.css" rel="stylesheet" />
+    <link href="./asset/css/fakeLoader.css" rel="stylesheet" />
+    <link href="./asset/css/icomoon.css" rel="stylesheet" />
+</head>
+
+<body class="scroll-none">
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <!-- <button class="close-btn hidden">닫기</button> -->
+        <img src="./asset/img/top_banner_img.png">
+        <p>아비봇 <span style="color: #9999ff;">교차거래</span>를 이용하시면, <span style="color: #66ccff;">코빗 '메이커 인센티브' 혜택</span>을 편리하게 이용할 수 있습니다.</p>
+        <div class="links">
+            <a href="javascript:void(0)" class="autobot" style="background: #1fa2e3;">자세히보기</a>
+            <a href="https://exchange.korbit.co.kr/notice/?id=3COrolnG4bsh4PnfNhydgD" target="_blank" style="background: #6466e4;">교차거래 이용하기</a>
         </div>
     </div>
-</div>
+    <!-- 상단헤더 -->
+    <header w3-include-html="./header.html"></header>
 
-<script>
-    //게시물 삭제 alert
-    $('#postReturn').click(function() {
-        var postReturnResult = confirm('작성한 내용이 저장되지 않습니다.\n작성을 취소 하시겠습니까?');
-        if (postReturnResult) {
-            $('.section').load('./board_view.html');
-        } else {
+    <div class="section-wrap">
+        <!-- 좌측메뉴 -->
+        <nav w3-include-html="./nav.html" class="scroll"></nav>
 
-        }
-    });
-</script>
+        <!-- 본문영역 -->
+        <div class="section">
+            <div class="container sub-container scroll">
+                <div class="sub-container-head">
+                    <h1 class="subpage-title mb0">글쓰기</h1>
+                </div>
+                <div class="contentsArea">
+                    <div class="board-write-wrap">
+                        <form name="frm_write" id="frm_write" method="post" action="/">
+                            <fieldset>
+                                <legend class="hidden">게시물 작성</legend>
+                                <div class="board-write">
+                                    <div class="post-title-wrap flex-between">
+                                        <select name="" id="" class="mr10">
+                                            <option value="none">게시판 선택</option>
+                                            <option value="notice">공지사항</option>
+                                            <option value="event">이벤트</option>
+                                            <option value="faq">FAQ</option>
+                                        </select>
+                                        <label for="postTitle_input" class="hidden">제목</label>
+                                        <input type="text" class="post-title-input mb10" name="postTitle_input" id="postTitle_input" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
+                                    </div>
+                                    <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요. editor 영역"></textarea>
+                                    <form action="" class="mt10">
+                                        <fieldset>
+                                            <legend class="hidden">게시글 옵션</legend>
+                                            <label class="checkbox-wrap mr20 pl20">
+                                                <input type="checkbox" name="" />상단 고정
+                                                <span class="check-mark"></span>
+                                            </label>
+                                            <label class="checkbox-wrap mr20 pl20">
+                                                <input type="checkbox" name="" />블라인드
+                                                <span class="check-mark"></span>
+                                            </label>
+                                            <label class="checkbox-wrap pl20">
+                                                <input type="checkbox" name="" />푸시 발송
+                                                <span class="check-mark"></span>
+                                            </label>
+                                        </fieldset>
+                                    </form>
+                                    <div class="btn-wrap">
+                                        <button type="button" id="postReturn" class="large-btn delet-btn">취소</button>
+                                        <button type="button" id="" class="large-btn">등록</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 우측 컨텐츠 -->
+        <div class="rightSection" w3-include-html="./rightSection.html"></div>
+    </div>
+    <!-- 푸터 -->
+    <footer w3-include-html="./footer.html"></footer>
+
+    <!-- 로그인 -->
+    <div w3-include-html="./login.html" id="login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none"></div>
+
+    <!-- 닉네임 생성 -->
+    <div w3-include-html="./nickname.html" id="make-nickname" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none"></div>
+
+    <!-- mobile chat -->
+    <div w3-include-html="./chat.html" class="chat-open"></div>
+
+    <!-- modal(팝업) -->
+    <div w3-include-html="./modal.html"></div>
+
+    <!-- 화면로딩바 -->
+    <div class="fakeLoader"></div>
+
+    <button id="arbibot-chat" class="chat-btn pc-hidden">아비봇챗</button>
+    <button id="goTop" class="btn-top pc-hidden">
+      <i class="icon-arrow-up"></i>
+    </button>
+
+    <!-- script -->
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+    <script src="./asset/js/jquery-ui.js"></script>
+    <script src="./asset/js/w3.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/fakeLoader.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/mousewheel.min.js"></script>
+    <script src="./asset/js/num-spinner.js"></script>
+    <script src="./asset/js/select2.js"></script>
+
+    <script>
+        w3.includeHTML(function() {
+            //메인 팝업 오늘 하루 그만보기
+            // 쿠키 가져오기
+            var getCookie = function(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1);
+                    if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+
+            // 24시간 기준 쿠키 설정하기  
+            var setCookie = function(cname, cvalue, exdays) {
+                var todayDate = new Date();
+                todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
+
+            var couponClose = function() {
+                if ($(".todayClose").is(":checked") == true) {
+                    setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
+                }
+                $("#modalEvent").hide();
+            }
+
+            $(document).ready(function() {
+                var cookiedata = document.cookie;
+                if (cookiedata.indexOf("close=Y") < 0) {
+                    $("#modalEvent").show();
+                } else {
+                    $("#modalEvent").hide();
+                }
+                $(".modal-close").click(function() {
+                    couponClose();
+                });
+            });
+
+            $('html, body').scrollTop(function() {
+                $(".section-wrap").offset().top
+            });
+
+            $(".eventGo").click(function(e) {
+                $("#modalEvent").hide();
+                $(".section").load("./board_list.html");
+            });
+
+            //header 로그인 전/후
+            var resLogin = function() {
+                if ($(window).width() < 971 && $(".web-after-login").hasClass('show') === true) {
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('hide').addClass('show');
+                } else {
+                    $(".web-after-login").removeClass('hide').addClass('show');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                };
+            }
+
+            var resLogout = function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('hide') === true) {
+                    $(".mo-before-login").removeClass('hide').addClass('show');
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                } else {
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                };
+            }
+
+            $('.consent-btn').click(function(e) {
+                $(".before-login").removeClass('show').addClass('hide');
+                $(".after-login").removeClass('hide').addClass('show');
+                resLogin();
+
+                $(window).resize(function() {
+                    resLogin();
+                });
+            });
+
+            $('.logout').click(function(e) {
+                $(".before-login").removeClass('hide').addClass('show');
+                $(".after-login").removeClass('show').addClass('hide');
+                resLogout();
+
+                $(window).resize(function() {
+                    resLogout();
+                });
+            });
+
+            //알림 링크
+            $(".noti-link").click(function(e) {
+                $('.noti-box').slideUp();
+                $(".section").load("./notification.html");
+                if ($(".noti-link").hasClass('on')) {
+                    $(".noti-link").removeClass('on');
+                }
+            });
+
+            //알림 박스 10초 간격으로 실행
+            setInterval(function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
+                    $('.noti-box.mo-after-login').slideDown(function() {
+                        $(".noti-link").addClass('on');
+                    });
+                    setTimeout(function() {
+                        $('.noti-box.mo-after-login').slideUp();
+                    }, 10000);
+                } else if ($(".web-after-login").hasClass('show') === true) {
+                    $('.web-after-login .noti-box').slideDown(function() {
+                        $(".noti-link").addClass('on');
+                    });
+                    setTimeout(function() {
+                        $('.web-after-login .noti-box').slideUp();
+                    }, 10000);
+                };
+            }, 20000);
+
+            $(window).resize(function() {
+                if ($(this).width() < 761) {
+                    $('.section-wrap').addClass('scroll')
+                } else {
+                    $('.section-wrap').removeClass('scroll')
+                }
+            });
+
+            //nav-top 링크
+            $('.nav-top li:nth-child(8)').addClass('on');
+
+            $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
+                var arrLink = [
+                    "./autotrading.html",
+                    "./tradingbot01.html",
+                    "./tradingbot02.html",
+                    "./wallet.html",
+                    "./ranking01.html",
+                    //"./ranking02.html",
+                    //"./simulator.html",
+                    "./api.html",
+                    "./point.html",
+                    "./board_list.html",
+                    "./user_guide.html",
+                ];
+
+                var i = $(this).index();
+
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
+                    $(".nav-top li").removeClass("on");
+                    $(this).addClass("on");
+                    $(".section").load(arrLink[i]);
+                }
+            });
+
+            //nav-bottom 링크
+            $(".nav-bottom li:nth-child(3), .mo-nav-bottom li:nth-child(3)").click(function(e) {
+                $(".section").load("./recruit.html");
+            });
+
+            //이용약관 링크
+            $(".terms-btn").click(function(e) {
+                $(".section").load("./terms.html");
+            });
+
+            //책임의 한계와 법적 고지 링크
+            $(".legal-btn").click(function(e) {
+                $(".section").load("./legal.html");
+            });
+
+            //모바일 아이콘 메뉴 버튼
+            $(".direct-menu li:nth-child(n)").click(function(e) {
+                var arrLink = [
+                    "./autotrading.html",
+                    "./tradingbot01.html",
+                    "./tradingbot02.html",
+                    "./api.html",
+                    "./wallet.html",
+                    "./ranking01.html",
+                    //"./ranking02.html",
+                    //"./simulator.html",
+                    "./board_list.html",
+                    "./user_guide.html"
+                ];
+
+                var i = $(this).index();
+
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
+                    $(".section").load(arrLink[i]);
+                }
+            });
+
+            // mobile nav
+            $('.ham').click(function(e) {
+                $('.ham, .mo-nav').toggleClass("active");
+            });
+            $('.mo-nav a').click(function(e) {
+                $('.ham, .mo-nav').removeClass("active");
+            });
+
+            //마이페이지 버튼
+            $(".mypage").click(function(e) {
+                $(".section").load("./mypage.html");
+            });
+
+            //운영봇 링크 연결
+            $(".autobot").click(function(e) {
+                $(".section").load("./autotrading.html");
+            });
+            $(".gridbot").click(function(e) {
+                $(".section").load("./tradingbot01.html");
+            });
+
+            //모바일 아비봇챗 버튼
+            $("#arbibot-chat").click(function() {
+                $(".chat-open").addClass("on");
+            });
+
+            //재정거래(일반) 봇 운영 현황 슬리피지 리스트
+            $('.slippage-list-open').click(function() {
+                $(this).toggleClass("on");
+                $(".slippage-list").toggleClass("on");
+            });
+
+            //딤처리 로딩 이미지
+            $.fakeLoader({
+                timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
+                zIndex: 999, // 순서 
+                spinner: "spinner2", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+                bgColor: "rgba(0,0,0,.5)", //Hex, RGB or RGBA colors 배경색깔 
+                // imagePath:"yourPath/customizedImage.gif" // 원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
+            });
+
+            //Main Contents 영역 Height 계산
+            function checkHeight() {
+                var totalHeight = $('.container').height() - 10;
+                var height = totalHeight - $('.arbibot-status').height();
+                var windowWidth = $(window).width();
+
+                if (windowWidth < 760) {
+                    $('.contentsArea').css('height', 'auto');
+                } else {
+                    $('.contentsArea').css('height', height);
+                }
+
+            }
+
+            checkHeight();
+            $(window).resize(checkHeight);
+
+            //게시물 삭제 alert
+            $('#postReturn').click(function() {
+                var postReturnResult = confirm('작성한 내용이 저장되지 않습니다.\n작성을 취소 하시겠습니까?');
+                if (postReturnResult) {
+                    location.replace('./board_view.html');
+                } else {
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
