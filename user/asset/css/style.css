@@ -2972,8 +2972,12 @@ span.arrow-btn.next {
     background: url("../img/next.png") no-repeat 0 50%;
 }
 
-.board-write .post-title-input {
+.post-title-wrap {
     width: 100%;
+}
+
+.post-title-wrap .post-title-input {
+    width: calc(100% - 160px);
 }
 
 .board-write .btn-wrap {
