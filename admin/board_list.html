@@ -43,8 +43,8 @@
                         </fieldset>
                     </form>
                     <a href="https://slowjam83.github.io/arbibot/user/board_write.html" target="_blank" class="small-btn border-radius-btn fill mr10 ml20">신규 작성</a>
-                    <button class="small-btn border-radius-btn mr10">블라인드</button>
-                    <button class="small-btn border-radius-btn delet-btn">선택 삭제</button>
+                    <button id="blindPost" class="small-btn border-radius-btn mr10">블라인드</button>
+                    <button id="deletPost" class="small-btn border-radius-btn delet-btn">선택 삭제</button>
                 </div>
             </div>
             <ul class="nav tabNav flex-between mt20" id="pills-tab" role="tablist">
@@ -393,5 +393,15 @@
         });
 
         $("input[id^='shcDate']").datepicker('setDate', '+0');
+
+        //게시물 숨김 alert
+        $('#blindPost').click(function() {
+            alert('선택한 게시물을 숨김 처리 하시겠습니까?');
+        });
+
+        //게시물 삭제 alert
+        $('#deletPost').click(function() {
+            alert('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
+        });
     });
 </script>
