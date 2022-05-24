@@ -2974,7 +2974,6 @@ span.arrow-btn.next {
 
 .board-write .post-title-input {
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .board-write .btn-wrap {
@@ -2988,7 +2987,6 @@ span.arrow-btn.next {
 #editor {
     width: 100%;
     height: auto;
-    margin-top: 16px;
     border: 1px solid #d4d4d4;
     border-radius: 3px;
     padding: 6px 10px;
