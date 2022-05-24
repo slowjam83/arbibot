@@ -761,7 +761,8 @@ a.edit-btn,
     display: block;
     width: 17px;
     height: 16px;
-    background: url('../img/search-ico.png') no-repeat 0 0;
+    background: url('../img/svg/search-ico.svg') no-repeat 0 0;
+    background-size: contain;
     position: absolute;
     top: 50%;
     right: 6px;
