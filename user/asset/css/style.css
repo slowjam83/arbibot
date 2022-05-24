@@ -2637,8 +2637,8 @@ board
 =============================================================*/
 
 .board-list li {
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
 }
