@@ -2636,7 +2636,8 @@ Error
 board
 =============================================================*/
 
-.accordion .card {
+.accordion .card,
+.board-list li {
     overflow: hidden;
     position: relative;
     display: -ms-flexbox;
@@ -2652,14 +2653,16 @@ board
     border-bottom: 1px solid #ebebeb;
 }
 
-.accordion .card:not(:first-of-type) {
+.accordion .card:not(:first-of-type),
+.board-list li:not(:first-of-type) {
     border-right: 0;
     border-left: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-.accordion .card:not(:last-of-type) {
+.accordion .card:not(:last-of-type),
+.board-list li:not(:last-of-type) {
     border-right: 0;
     border-left: 0;
     border-bottom: 0;
@@ -2693,12 +2696,14 @@ board
     justify-content: space-between;
 }
 
-.card-header .question-text {
+.card-header .question-text,
+.board-list h5 {
     font-size: 16px;
     font-weight: 500;
 }
 
-.card-header .date {
+.card-header .date,
+.board-list .date {
     color: #888;
     font-size: 14px;
 }
