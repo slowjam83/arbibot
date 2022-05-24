@@ -49,7 +49,7 @@
         <!-- 본문영역 -->
         <div class="section">
             <div class="container sub-container scroll">
-                <div class="sub-container-head">
+                <div class="sub-container-head flex-between">
                     <h1 class="subpage-title mb0">공지사항</h1>
                     <button type="button" class="share-btn hidden">공유하기</button>
                 </div>
@@ -57,7 +57,7 @@
                     <div class="board-view-wrap">
                         <h1 class="subpage-title">게시물 제목입니다.</h1>
                         <div class="post-info">
-                            <p>2021-12-23 15:33</p>
+                            <p>2022-10-10</p>
                         </div>
                         <div class="post-contents">
                             <p>없으면, 끓는 열락의 싶이 그들은 위하여, 뛰노는 그리하였는가? <br> 못할 있는 이성은 못하다 청춘의 싹이 이상은 이상이 그리하였는가?<br> 대중을 얼음에 그림자는 보이는 고동을 인간이 자신과 보라.</p><br>
@@ -121,7 +121,7 @@
                                     <span class="arrow-btn prev">이전글</span>
                                     <p>새로운 트레이딩 기법 공개~ ㅎ [<span id="commentNum">10</span>]</p>
                                 </div>
-                                <span class="post-time">10-12</span>
+                                <span class="post-time">2022-10-12</span>
                             </a>
                         </li>
                         <li class="next-post">
@@ -130,7 +130,7 @@
                                     <span class="arrow-btn next">다음글</span>
                                     <p>제목이 매우매우매우매우매우 긴~~~~~~~~~~~~~~~~~~~~~~~~~~~ 게시글에 대한 테스트 입니다.</p>
                                 </div>
-                                <span class="post-time">12:12</span>
+                                <span class="post-time">2022-10-02</span>
                             </a>
                         </li>
                     </ul>
@@ -309,6 +309,8 @@
             });
 
             //nav-top 링크
+            $('.nav-top li:nth-child(8)').addClass('on');
+
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
                 var arrLink = [
                     "./autotrading.html",
