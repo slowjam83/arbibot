@@ -118,10 +118,6 @@ select,
     font-size: 16px;
 }
 
-input[type="text"]:valid {
-    color: #888;
-}
-
 input[type="text"]:disabled,
 select:disabled {
     background: #ebebeb;
