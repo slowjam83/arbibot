@@ -712,6 +712,7 @@ a.xs-btn::after,
 
 a.write-btn,
 .write-btn {
+    display: inline-block;
     height: 38px;
     line-height: 36px;
     font-size: 16px;
