@@ -417,7 +417,11 @@
                 var blindPostCheck = $('input:checked').parent('tr').children('#blindCheck');
                 if (blindPostCheck.text('N') == true) {
                     $(this).text('Y');
+                } else {
+
                 }
+            } else {
+
             }
         });
 
@@ -426,6 +430,8 @@
             var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
             if (postDeletResult) {
                 $('input:checked').parent('tr').hide();
+            } else {
+
             }
         });
     });
