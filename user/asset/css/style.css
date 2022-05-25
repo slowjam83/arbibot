@@ -144,6 +144,10 @@ input[type="radio"] {
     left: 0;
 }
 
+input[value] {
+    color: #888;
+}
+
 .check-mark {
     cursor: pointer;
     position: absolute;
@@ -2757,6 +2761,7 @@ board
 }
 
 .search-wrap label {
+    position: relative;
     height: 38px;
     line-height: 36px;
     border: 1px solid #d4d4d4;
