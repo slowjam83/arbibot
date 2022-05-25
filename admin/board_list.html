@@ -86,7 +86,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -103,7 +103,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -120,7 +120,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -137,7 +137,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -193,7 +193,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -210,7 +210,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -266,7 +266,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -322,7 +322,7 @@
                             <tr>
                                 <td>
                                     <label class="checkbox-wrap">
-                                        <input type="checkbox" name="selectAll" />
+                                        <input type="checkbox" name="selectPost" />
                                         <span class="check-mark"></span>
                                     </label>
                                 </td>
@@ -396,11 +396,19 @@
 
         //게시물 숨김 alert
         $('#blindPost').click(function() {
+            var checkedPost = $("input:checkbox[name='selectPost']:checked");
             var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
-            if (postBlindResult) {
-                /* 체크박스 선택된 게시물 display:none 처리 */
-            } else {
 
+            if (checkedPost.length === 0) {
+                alert('숨김 처리할 게시물을 선택해 주세요.');
+            } else {
+                if (postBlindResult) {
+                    checkedPost.each(function(k, kVal) {
+                        console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
+                        let a = kVal.parentElement.parentElement.parentElement;
+                        $(a).remove();
+                    });
+                }
             }
         });
 
