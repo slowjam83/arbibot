@@ -397,11 +397,12 @@
         //게시물 숨김 alert
         $('#blindPost').click(function() {
             var checkedPost = $("input:checkbox[name='selectPost']:checked");
-            var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
 
             if (checkedPost.length === 0) {
                 alert('숨김 처리할 게시물을 선택해 주세요.');
             } else {
+                var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
+
                 if (postBlindResult) {
                     checkedPost.each(function(k, kVal) {
                         console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
