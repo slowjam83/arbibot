@@ -148,6 +148,10 @@ input[value] {
     color: #888;
 }
 
+input:focus {
+    color: #333;
+}
+
 .check-mark {
     cursor: pointer;
     position: absolute;
