@@ -396,12 +396,22 @@
 
         //게시물 숨김 alert
         $('#blindPost').click(function() {
-            alert('선택한 게시물을 숨김 처리 하시겠습니까?');
+            var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
+            if (postBlindResult) {
+                /* 체크박스 선택된 게시물 display:none 처리 */
+            } else {
+
+            }
         });
 
         //게시물 삭제 alert
         $('#deletPost').click(function() {
-            alert('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
+            var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
+            if (postDeletResult) {
+                /* 체크박스 선택된 게시물 display:none 처리 */
+            } else {
+
+            }
         });
     });
 </script>
