@@ -98,9 +98,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-13 09:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                             <tr>
                                 <td>
@@ -117,9 +115,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                             <tr>
                                 <td>
@@ -136,9 +132,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                             <tr>
                                 <td>
@@ -155,9 +149,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">Y</p>
-                                </td>
+                                <td>Y</td>
                             </tr>
                         </tbody>
                     </table>
@@ -213,9 +205,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                             <tr>
                                 <td>
@@ -232,9 +222,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                         </tbody>
                     </table>
@@ -290,9 +278,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-13 09:34</td>
-                                <td>
-                                    <p id="blindCheck">N</p>
-                                </td>
+                                <td>N</td>
                             </tr>
                         </tbody>
                     </table>
@@ -348,9 +334,7 @@
                                 <td>관리자UID</td>
                                 <td>129</td>
                                 <td>2022-08-12 12:34</td>
-                                <td>
-                                    <p id="blindCheck">Y</p>
-                                </td>
+                                <td>Y</td>
                             </tr>
                         </tbody>
                     </table>
@@ -412,27 +396,12 @@
 
         //게시물 숨김 alert
         $('#blindPost').click(function() {
-            var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
-            if (postBlindResult) {
-                var blindPostCheck = $('input:checked').parent('tr').children('#blindCheck');
-                if (blindPostCheck.text('N') == true) {
-                    $(this).text('Y');
-                } else {
-
-                }
-            } else {
-
-            }
+            alert('선택한 게시물을 숨김 처리 하시겠습니까?');
         });
 
         //게시물 삭제 alert
         $('#deletPost').click(function() {
-            var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
-            if (postDeletResult) {
-                $('input:checked').parent('tr').hide();
-            } else {
-
-            }
+            alert('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
         });
     });
 </script>
