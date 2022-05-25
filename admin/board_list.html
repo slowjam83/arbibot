@@ -401,16 +401,16 @@
             if (checkedPost.length === 0) {
                 alert('숨김 처리할 게시물을 선택해 주세요.');
                 return;
-            }
+            } else {
+                var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
 
-            var postBlindResult = confirm('선택한 게시물을 숨김 처리 하시겠습니까?');
-
-            if (postBlindResult) {
-                checkedPost.each(function(k, kVal) {
-                    console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
-                    let a = kVal.parentElement.parentElement.parentElement;
-                    $(a).find('td:last-child').text('Y');
-                });
+                if (postBlindResult) {
+                    checkedPost.each(function(k, kVal) {
+                        console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
+                        let a = kVal.parentElement.parentElement.parentElement;
+                        $(a).find('td:last-child').text('Y');
+                    });
+                }
             }
         });
 
@@ -418,16 +418,16 @@
             if (checkedPost.length === 0) {
                 alert('삭제할 게시물을 선택해 주세요.');
                 return;
-            }
+            } else {
+                var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
 
-            var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n선택한 게시물을 삭제하시겠습니까?');
-
-            if (postDeletResult) {
-                checkedPost.each(function(k, kVal) {
-                    console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
-                    let b = kVal.parentElement.parentElement.parentElement;
-                    $(b).remove();
-                });
+                if (postDeletResult) {
+                    checkedPost.each(function(k, kVal) {
+                        console.log("kVal ::", kVal.parentElement.parentElement.parentElement);
+                        let b = kVal.parentElement.parentElement.parentElement;
+                        $(b).remove();
+                    });
+                }
             }
         });
     });
