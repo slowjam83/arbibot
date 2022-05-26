@@ -2802,9 +2802,22 @@ board
     text-align: left;
 }
 
+.sub-container-head {
+    position: relative;
+}
+
 .board-view-wrap .subpage-title {
     margin-bottom: 10px;
     font-weight: 500;
+}
+
+.sns-box {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
 }
 
 .post-info {
