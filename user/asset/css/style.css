@@ -2814,6 +2814,9 @@ board
 .sns-box {
     display: none;
     position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 9;
     padding: 15px;
     background: #fff;
     border-radius: 10px;
