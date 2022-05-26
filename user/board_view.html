@@ -439,7 +439,7 @@
             $('#deletPost').click(function() {
                 var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
                 if (postDeletResult) {
-                    /* 체크박스 선택된 게시물 display:none 처리 */
+                    location.replace('./board_list.html');
                 } else {
 
                 }
