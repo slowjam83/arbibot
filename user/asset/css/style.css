@@ -2814,13 +2814,17 @@ board
 .sns-box {
     display: none;
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 40px;
+    right: 20px;
     z-index: 9;
     padding: 15px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.sns-box li {
+    float: left;
 }
 
 .post-info {
