@@ -26,11 +26,6 @@
     <link href="./asset/css/select2.css" rel="stylesheet" />
     <link href="./asset/css/fakeLoader.css" rel="stylesheet" />
     <link href="./asset/css/icomoon.css" rel="stylesheet" />
-
-    <!-- 에디터(Summernote) source -->
-    <!-- <link href="./asset/css/summernote-lite.min.css" rel="stylesheet" />
-    <script src="./asset/js/summernote-lite.min.js"></script>
-    <script src="./asset/js/summernote-ko-KR.min.js"></script> -->
 </head>
 
 <body class="scroll-none">
@@ -52,7 +47,97 @@
         <nav w3-include-html="./nav.html" class="scroll"></nav>
 
         <!-- 본문영역 -->
-        <div class="section" w3-include-html="./main.html"></div>
+        <div class="section">
+            <div class="container sub-container scroll">
+                <div class="sub-container-head flex-between">
+                    <h1 class="subpage-title mb0">이벤트</h1>
+                    <button type="button" class="share-btn hidden">공유하기</button>
+                </div>
+                <div class="contentsArea">
+                    <div class="board-view-wrap">
+                        <h1 class="subpage-title">게시물 제목입니다.</h1>
+                        <div class="post-info">
+                            <p>2022-10-10</p>
+                        </div>
+                        <div class="post-contents">
+                            <p>없으면, 끓는 열락의 싶이 그들은 위하여, 뛰노는 그리하였는가? <br> 못할 있는 이성은 못하다 청춘의 싹이 이상은 이상이 그리하였는가?<br> 대중을 얼음에 그림자는 보이는 고동을 인간이 자신과 보라.</p><br>
+                            <p>불어 우리의 싸인 부패뿐이다. 행복스럽고 끓는 없는 못할 만천하의 것이다.<br> 모래뿐일 별과 무엇을 원질이 이성은 찾아 사람은 갑 새 교향악이다. 그들에게 트고, 가치를 충분히 있으며, 것이다.</p>
+                        </div>
+                        <div class="flex-between mt40">
+                            <button type="button" class="write-btn line-btn" id="postList">목록</button>
+                            <div>
+                                <a href="./board_write.html" class="write-btn">수정</a>
+                                <button type="button" id="deletPost" class="write-btn delet-btn">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="comment-wrap">
+                        <ul class="comment-list">
+                            <li>
+                                <p class="comment-info">
+                                    <span class="nickname">사용자닉네임</span>
+                                    <span class="post-time">2021-12-23 15:33</span>
+                                </p>
+                                <p>신기하네요~ 몰랐던 사실입니다. 귀한 정보 감사합니다~</p>
+                            </li>
+                            <li>
+                                <p class="comment-info">
+                                    <span class="nickname">사용자닉네임</span>
+                                    <span class="post-time">2021-12-23 15:33</span>
+                                </p>
+                                <p class="disabled-font">관리자에 의해 댓글이 삭제되었습니다.</p>
+                            </li>
+                            <li>
+                                <p class="comment-info">
+                                    <span class="nickname">사용자닉네임</span>
+                                    <span class="post-time">2021-12-23 15:33</span>
+                                </p>
+                                <p>신기하네요~ 몰랐던 사실입니다. 귀한 정보 감사합니다~</p>
+                                <div class="comment-btn">
+                                    <button type="button" class="write-btn">수정</button>
+                                    <button type="button" class="write-btn delet-btn">삭제</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="comment-write">
+                            <form action="/" method="post">
+                                <fieldset>
+                                    <textarea name="" id="comment-textarea" class="scroll" placeholder="권리침해, 욕설, 특정 대상을 비하하는 내용, 청소년에게 유해한 내용 등을 게시할 경우 운영정책과 이용약관 및 관련 법률에 의해 제재될 수 있습니다. 댓글 작성 시 상대방에 대한 배려와 책임을 담아주세요."></textarea>
+                                    <div class="inside-obj">
+                                        <span id="text-counter">0 / 300</span>
+                                        <button type="button" class="write-btn">댓글 작성</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <p>이 댓글에 대한 법적 책임은 작성자에게 귀속됩니다.</p>
+                        </div>
+                    </div> -->
+
+                    <!-- 이전글/다음글 리스트 -->
+                    <ul class="board-list-abb mt60">
+                        <li class="prev-post">
+                            <a href="/" target="_self">
+                                <div>
+                                    <span class="arrow-btn prev">이전글</span>
+                                    <p>새로운 트레이딩 기법 공개~ ㅎ [<span id="commentNum">10</span>]</p>
+                                </div>
+                                <span class="post-time">2022-10-12</span>
+                            </a>
+                        </li>
+                        <li class="next-post">
+                            <a href="/" target="_self">
+                                <div>
+                                    <span class="arrow-btn next">다음글</span>
+                                    <p>제목이 매우매우매우매우매우 긴~~~~~~~~~~~~~~~~~~~~~~~~~~~ 게시글에 대한 테스트 입니다.</p>
+                                </div>
+                                <span class="post-time">2022-10-02</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //이전글/다음글 리스트 -->
+                </div>
+            </div>
+        </div>
 
         <!-- 우측 컨텐츠 -->
         <div class="rightSection" w3-include-html="./rightSection.html"></div>
@@ -223,19 +308,9 @@
                 }
             });
 
-            //Top banner
-            /* $('.top-banner .close-btn').click(function(e) {
-                $('.top-banner').hide();
-                $('.header').css('top', '0');
-
-                if (document.body.clientWidth < 996) {
-                    $('.section-wrap').css('margin-top', '0');
-                } else {
-                    $('.section-wrap').css('margin-top', '71px');
-                }
-            }); */
-
             //nav-top 링크
+            $('.nav-top li:nth-child(8)').addClass('on');
+
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
                 var arrLink = [
                     "./autotrading.html",
@@ -247,7 +322,7 @@
                     //"./simulator.html",
                     "./api.html",
                     "./point.html",
-                    "./board_list.html",
+                    "./board_list.html", ,
                     "./board_list_event.html",
                     "./board_list_FAQ.html",
                     "./user_guide.html",
@@ -288,7 +363,7 @@
                     "./ranking01.html",
                     //"./ranking02.html",
                     //"./simulator.html",
-                    "./board_list_notice.html",
+                    "./board_list.html",
                     "./user_guide.html"
                 ];
 
@@ -356,6 +431,21 @@
 
             checkHeight();
             $(window).resize(checkHeight);
+
+            //게시판 리스트로 이동
+            $('#postList').click(function() {
+                $('.section').load('./board_list.html');
+            });
+
+            //게시물 삭제 alert
+            $('#deletPost').click(function() {
+                var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
+                if (postDeletResult) {
+                    location.replace('./board_list_event.html');
+                } else {
+
+                }
+            });
         });
     </script>
 </body>

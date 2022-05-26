@@ -322,7 +322,9 @@
                     //"./simulator.html",
                     "./api.html",
                     "./point.html",
-                    "./board_list.html",
+                    "./board_list.html", ,
+                    "./board_list_event.html",
+                    "./board_list_FAQ.html",
                     "./user_guide.html",
                 ];
 
@@ -439,7 +441,7 @@
             $('#deletPost').click(function() {
                 var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
                 if (postDeletResult) {
-                    location.replace('./board_list.html');
+                    location.replace('./board_list_notice.html');
                 } else {
 
                 }
