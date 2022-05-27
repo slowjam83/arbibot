@@ -2808,6 +2808,7 @@ board
 
 .board-view-wrap .subpage-title {
     margin-bottom: 10px;
+    padding: 0 20px;
     font-weight: 500;
 }
 
@@ -2827,11 +2828,22 @@ board
     float: left;
 }
 
+.sns-box li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.sns-box li a.facebook {
+    background: url('') no-repeat 0 0;
+    background-size: contain;
+}
+
 .post-info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 0 20px 20px;
     border-bottom: 1px solid #ebebeb;
 }
 
