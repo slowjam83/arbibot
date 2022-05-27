@@ -2812,21 +2812,7 @@ board
     font-weight: 500;
 }
 
-.sns-box {
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    z-index: 9;
-    padding: 15px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
-}
-
-.sns-box li {
-    float: left;
-}
+.sns-box {}
 
 .sns-box li a {
     display: block;
@@ -2835,7 +2821,7 @@ board
 }
 
 .sns-box li a.facebook {
-    background: url('') no-repeat 0 0;
+    background: url('') no-repeat 50% 50%;
     background-size: contain;
 }
 
@@ -2876,14 +2862,6 @@ board
     padding: 20px 20px 40px;
     border-bottom: 1px solid #ebebeb;
     line-height: 1.6;
-}
-
-.share-btn {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url('../img/svg/social/share.svg') no-repeat 0 0;
-    background-size: contain;
 }
 
 .post-btn button {
@@ -5089,6 +5067,7 @@ Media Query
     }
     .board-view-wrap .subpage-title {
         padding: 20px 0 0;
+        font-size: 18PX;
     }
     .post-info {
         flex-wrap: wrap;

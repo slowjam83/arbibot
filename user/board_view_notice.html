@@ -51,7 +51,6 @@
             <div class="container sub-container scroll">
                 <div class="sub-container-head flex-between">
                     <h1 class="subpage-title mb0">공지사항</h1>
-                    <button type="button" class="share-btn hidden">공유하기</button>
                     <ul class="sns-box">
                         <li><a href="javascript:void(0)" class="hidden facebook mr10">페이스북 공유하기</a></li>
                         <li><a href="javascript:void(0)" class="hidden kakaotalk mr10">카카오톡 공유하기</a></li>
@@ -72,7 +71,7 @@
                         <div class="flex-between pd20 mt20">
                             <button type="button" class="write-btn line-btn" id="postList">목록</button>
                             <div>
-                                <a href="./board_write.html" class="write-btn">수정</a>
+                                <button type="button" onclick="location.href='./board_write.html'" class="write-btn">수정</button>
                                 <button type="button" id="deletPost" class="write-btn delet-btn">삭제</button>
                             </div>
                         </div>
@@ -451,11 +450,6 @@
                 } else {
 
                 }
-            });
-
-            //게시물 공유하기
-            $('.share-btn').click(function() {
-                $('.sns-box').show();
             });
         });
     </script>
