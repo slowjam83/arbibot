@@ -2825,6 +2825,10 @@ board
     background-size: contain;
 }
 
+.board-view-wrap .btn-wrap {
+    padding: 20px;
+}
+
 .post-info {
     display: flex;
     justify-content: flex-start;
@@ -5143,6 +5147,9 @@ Media Query
     .snsUtil {
         position: inherit;
         gap: 5px;
+    }
+    .board-view-wrap .btn-wrap {
+        padding: 20px 0;
     }
     .notice {
         border-radius: 5px;
