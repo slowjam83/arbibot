@@ -2812,16 +2812,29 @@ board
     font-weight: 500;
 }
 
-.sns-box {}
-
 .sns-box li a {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .sns-box li a.facebook {
-    background: url('') no-repeat 50% 50%;
+    background: url('../img/svg/social/share-facebook.svg') no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.sns-box li a.kakaotalk {
+    background: url('../img/svg/social/share-kakaotalk.svg') no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.sns-box li a.twitter {
+    background: url('../img/svg/social/share-twitter.svg') no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.sns-box li a.copy-link {
+    background: url('../img/svg/social/share-link.svg') no-repeat 50% 50%;
     background-size: contain;
 }
 
@@ -4978,9 +4991,6 @@ Media Query
         padding-left: 21px;
         margin-right: 12px;
     }
-    li.slippage .check-mark {
-        top: 0;
-    }
     #slippage-time {
         margin-left: 0;
     }
@@ -5109,6 +5119,9 @@ Media Query
     }
     .board-write-wrap {
         padding: 5px 15px 0;
+    }
+    .board-write .check-mark {
+        top: 3px;
     }
     .recruit-banner {
         width: calc(100% - 40px);
