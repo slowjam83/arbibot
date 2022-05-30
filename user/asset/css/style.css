@@ -574,6 +574,10 @@ a.disabled-font {
     margin-right: 5px;
 }
 
+.main-bg-color {
+    background: #4341ce;
+}
+
 .api-bithumb {
     background: #ed7222;
 }
@@ -2656,6 +2660,10 @@ board
     align-items: center;
 }
 
+.board-list li.must-read {
+    background-color: #f6f6f8;
+}
+
 .accordion .card,
 .board-list li {
     overflow: hidden;
@@ -2725,6 +2733,28 @@ board
     font-weight: 500;
     line-height: 1.4;
     word-break: break-all;
+}
+
+.board-list li.must-read h5::before {
+    content: '필독';
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    height: 18px;
+    line-height: 16px;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    background: #4341ce;
+}
+
+.board-list li.must-read h5.new-post::after {
+    content: 'N';
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 900;
+    color: #ee417e;
+    margin-left: 5px;
 }
 
 .card-header .date,
