@@ -2724,6 +2724,7 @@ board
     font-size: 16px;
     font-weight: 500;
     line-height: 1.4;
+    word-break: break-all;
 }
 
 .card-header .date,
@@ -2731,8 +2732,9 @@ board
     color: #888;
     font-size: 14px;
     display: inline-block;
-    width: 110px;
+    width: 150px;
     text-align: right;
+    margin-left: 40px;
 }
 
 .card-body {
@@ -4364,10 +4366,22 @@ Media Query
 
 @media (max-width: 1280px) {
     .search-wrap label {
-        width: calc(100% - 94px);
+        width: 100%;
     }
     .search-wrap input {
         width: calc(100% - 110px);
+    }
+    .accordion .card,
+    .board-list li {
+        display: block;
+    }
+    .accordion .card .card-header,
+    .board-list li {
+        padding: 14px 10px;
+    }
+    .card-header .date,
+    .board-list .date {
+        text-align: left;
     }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),
@@ -5070,10 +5084,10 @@ Media Query
     .search-wrap {
         flex-wrap: wrap;
         justify-content: center;
+        margin: 20px 0;
     }
     .search-wrap label {
-        width: 100%;
-        margin: 0 0 10px 0;
+        margin: 0;
     }
     a.write-btn {
         width: 100%;
