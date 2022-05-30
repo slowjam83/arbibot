@@ -4420,6 +4420,13 @@ Media Query
     .post-title-wrap {
         display: block;
     }
+    .post-category,
+    .post-title-input {
+        width: 100%;
+    }
+    .post-title-input {
+        margin-top: 5px;
+    }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),
     .board-list tr td:nth-child(1),
