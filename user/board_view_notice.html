@@ -186,326 +186,327 @@
 
     <script>
         w3.includeHTML(function() {
-                    //메인 팝업 오늘 하루 그만보기
-                    // 쿠키 가져오기
-                    var getCookie = function(cname) {
-                        var name = cname + "=";
-                        var ca = document.cookie.split(';');
-                        for (var i = 0; i < ca.length; i++) {
-                            var c = ca[i];
-                            while (c.charAt(0) == ' ') c = c.substring(1);
-                            if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
-                        }
-                        return "";
-                    }
+            //메인 팝업 오늘 하루 그만보기
+            // 쿠키 가져오기
+            var getCookie = function(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1);
+                    if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+                }
+                return "";
+            }
 
-                    // 24시간 기준 쿠키 설정하기  
-                    var setCookie = function(cname, cvalue, exdays) {
-                        var todayDate = new Date();
-                        todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                        var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
-                        document.cookie = cname + "=" + cvalue + "; " + expires;
-                    }
+            // 24시간 기준 쿠키 설정하기  
+            var setCookie = function(cname, cvalue, exdays) {
+                var todayDate = new Date();
+                todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
 
-                    var couponClose = function() {
-                        if ($(".todayClose").is(":checked") == true) {
-                            setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
-                        }
-                        $("#modalEvent").hide();
-                    }
+            var couponClose = function() {
+                if ($(".todayClose").is(":checked") == true) {
+                    setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
+                }
+                $("#modalEvent").hide();
+            }
 
-                    $(document).ready(function() {
-                        var cookiedata = document.cookie;
-                        if (cookiedata.indexOf("close=Y") < 0) {
-                            $("#modalEvent").show();
-                        } else {
-                            $("#modalEvent").hide();
-                        }
-                        $(".modal-close").click(function() {
-                            couponClose();
-                        });
+            $(document).ready(function() {
+                var cookiedata = document.cookie;
+                if (cookiedata.indexOf("close=Y") < 0) {
+                    $("#modalEvent").show();
+                } else {
+                    $("#modalEvent").hide();
+                }
+                $(".modal-close").click(function() {
+                    couponClose();
+                });
+            });
+
+            $('html, body').scrollTop(function() {
+                $(".section-wrap").offset().top
+            });
+
+            $(".eventGo").click(function(e) {
+                $("#modalEvent").hide();
+                $(".section").load("./board_list.html");
+            });
+
+            //header 로그인 전/후
+            var resLogin = function() {
+                if ($(window).width() < 971 && $(".web-after-login").hasClass('show') === true) {
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('hide').addClass('show');
+                } else {
+                    $(".web-after-login").removeClass('hide').addClass('show');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                };
+            }
+
+            var resLogout = function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('hide') === true) {
+                    $(".mo-before-login").removeClass('hide').addClass('show');
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                } else {
+                    $(".web-after-login").removeClass('show').addClass('hide');
+                    $(".mo-before-login").removeClass('show').addClass('hide');
+                    $(".mo-after-login").removeClass('show').addClass('hide');
+                };
+            }
+
+            $('.consent-btn').click(function(e) {
+                $(".before-login").removeClass('show').addClass('hide');
+                $(".after-login").removeClass('hide').addClass('show');
+                resLogin();
+
+                $(window).resize(function() {
+                    resLogin();
+                });
+            });
+
+            $('.logout').click(function(e) {
+                $(".before-login").removeClass('hide').addClass('show');
+                $(".after-login").removeClass('show').addClass('hide');
+                resLogout();
+
+                $(window).resize(function() {
+                    resLogout();
+                });
+            });
+
+            //알림 링크
+            $(".noti-link").click(function(e) {
+                $('.noti-box').slideUp();
+                $(".section").load("./notification.html");
+                if ($(".noti-link").hasClass('on')) {
+                    $(".noti-link").removeClass('on');
+                }
+            });
+
+            //알림 박스 10초 간격으로 실행
+            setInterval(function() {
+                if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
+                    $('.noti-box.mo-after-login').slideDown(function() {
+                        $(".noti-link").addClass('on');
                     });
-
-                    $('html, body').scrollTop(function() {
-                        $(".section-wrap").offset().top
+                    setTimeout(function() {
+                        $('.noti-box.mo-after-login').slideUp();
+                    }, 10000);
+                } else if ($(".web-after-login").hasClass('show') === true) {
+                    $('.web-after-login .noti-box').slideDown(function() {
+                        $(".noti-link").addClass('on');
                     });
+                    setTimeout(function() {
+                        $('.web-after-login .noti-box').slideUp();
+                    }, 10000);
+                };
+            }, 20000);
 
-                    $(".eventGo").click(function(e) {
-                        $("#modalEvent").hide();
-                        $(".section").load("./board_list.html");
-                    });
+            $(window).resize(function() {
+                if ($(this).width() < 761) {
+                    $('.section-wrap').addClass('scroll')
+                } else {
+                    $('.section-wrap').removeClass('scroll')
+                }
+            });
 
-                    //header 로그인 전/후
-                    var resLogin = function() {
-                        if ($(window).width() < 971 && $(".web-after-login").hasClass('show') === true) {
-                            $(".web-after-login").removeClass('show').addClass('hide');
-                            $(".mo-before-login").removeClass('show').addClass('hide');
-                            $(".mo-after-login").removeClass('hide').addClass('show');
-                        } else {
-                            $(".web-after-login").removeClass('hide').addClass('show');
-                            $(".mo-before-login").removeClass('show').addClass('hide');
-                            $(".mo-after-login").removeClass('show').addClass('hide');
-                        };
-                    }
+            //nav-top 링크
+            $('.nav-top li:nth-child(8)').addClass('on');
 
-                    var resLogout = function() {
-                        if ($(window).width() < 971 && $(".mo-after-login").hasClass('hide') === true) {
-                            $(".mo-before-login").removeClass('hide').addClass('show');
-                            $(".web-after-login").removeClass('show').addClass('hide');
-                            $(".mo-after-login").removeClass('show').addClass('hide');
-                        } else {
-                            $(".web-after-login").removeClass('show').addClass('hide');
-                            $(".mo-before-login").removeClass('show').addClass('hide');
-                            $(".mo-after-login").removeClass('show').addClass('hide');
-                        };
-                    }
+            $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
+                var arrLink = [
+                    "./autotrading.html",
+                    "./tradingbot01.html",
+                    "./tradingbot02.html",
+                    "./wallet.html",
+                    "./ranking01.html",
+                    //"./ranking02.html",
+                    //"./simulator.html",
+                    "./api.html",
+                    "./point.html",
+                    "./board_list_notice.html", ,
+                    "./board_list_event.html",
+                    "./board_list_FAQ.html",
+                    "./user_guide.html",
+                ];
 
-                    $('.consent-btn').click(function(e) {
-                        $(".before-login").removeClass('show').addClass('hide');
-                        $(".after-login").removeClass('hide').addClass('show');
-                        resLogin();
+                var i = $(this).index();
 
-                        $(window).resize(function() {
-                            resLogin();
-                        });
-                    });
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
+                    $(".nav-top li").removeClass("on");
+                    $(this).addClass("on");
+                    $(".section").load(arrLink[i]);
+                }
+            });
 
-                    $('.logout').click(function(e) {
-                        $(".before-login").removeClass('hide').addClass('show');
-                        $(".after-login").removeClass('show').addClass('hide');
-                        resLogout();
+            //nav-bottom 링크
+            $(".nav-bottom li:nth-child(3), .mo-nav-bottom li:nth-child(3)").click(function(e) {
+                $(".section").load("./recruit.html");
+            });
 
-                        $(window).resize(function() {
-                            resLogout();
-                        });
-                    });
+            //이용약관 링크
+            $(".terms-btn").click(function(e) {
+                $(".section").load("./terms.html");
+            });
 
-                    //알림 링크
-                    $(".noti-link").click(function(e) {
-                        $('.noti-box').slideUp();
-                        $(".section").load("./notification.html");
-                        if ($(".noti-link").hasClass('on')) {
-                            $(".noti-link").removeClass('on');
-                        }
-                    });
+            //책임의 한계와 법적 고지 링크
+            $(".legal-btn").click(function(e) {
+                $(".section").load("./legal.html");
+            });
 
-                    //알림 박스 10초 간격으로 실행
-                    setInterval(function() {
-                        if ($(window).width() < 971 && $(".mo-after-login").hasClass('show') === true) {
-                            $('.noti-box.mo-after-login').slideDown(function() {
-                                $(".noti-link").addClass('on');
-                            });
-                            setTimeout(function() {
-                                $('.noti-box.mo-after-login').slideUp();
-                            }, 10000);
-                        } else if ($(".web-after-login").hasClass('show') === true) {
-                            $('.web-after-login .noti-box').slideDown(function() {
-                                $(".noti-link").addClass('on');
-                            });
-                            setTimeout(function() {
-                                $('.web-after-login .noti-box').slideUp();
-                            }, 10000);
-                        };
-                    }, 20000);
+            //모바일 아이콘 메뉴 버튼
+            $(".direct-menu li:nth-child(n)").click(function(e) {
+                var arrLink = [
+                    "./autotrading.html",
+                    "./tradingbot01.html",
+                    "./tradingbot02.html",
+                    "./api.html",
+                    "./wallet.html",
+                    "./ranking01.html",
+                    //"./ranking02.html",
+                    //"./simulator.html",
+                    "./board_list.html",
+                    "./user_guide.html"
+                ];
 
-                    $(window).resize(function() {
-                        if ($(this).width() < 761) {
-                            $('.section-wrap').addClass('scroll')
-                        } else {
-                            $('.section-wrap').removeClass('scroll')
-                        }
-                    });
+                var i = $(this).index();
 
-                    //nav-top 링크
-                    $('.nav-top li:nth-child(8)').addClass('on');
+                for (var i2 = 0; i2 < arrLink.length; i2++) {
+                    $(".section").load(arrLink[i]);
+                }
+            });
 
-                    $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
-                        var arrLink = [
-                            "./autotrading.html",
-                            "./tradingbot01.html",
-                            "./tradingbot02.html",
-                            "./wallet.html",
-                            "./ranking01.html",
-                            //"./ranking02.html",
-                            //"./simulator.html",
-                            "./api.html",
-                            "./point.html",
-                            "./board_list_notice.html", ,
-                            "./board_list_event.html",
-                            "./board_list_FAQ.html",
-                            "./user_guide.html",
-                        ];
+            // mobile nav
+            $('.ham').click(function(e) {
+                $('.ham, .mo-nav').toggleClass("active");
+            });
+            $('.mo-nav a').click(function(e) {
+                $('.ham, .mo-nav').removeClass("active");
+            });
 
-                        var i = $(this).index();
+            //마이페이지 버튼
+            $(".mypage").click(function(e) {
+                $(".section").load("./mypage.html");
+            });
 
-                        for (var i2 = 0; i2 < arrLink.length; i2++) {
-                            $(".nav-top li").removeClass("on");
-                            $(this).addClass("on");
-                            $(".section").load(arrLink[i]);
-                        }
-                    });
+            //운영봇 링크 연결
+            $(".autobot").click(function(e) {
+                $(".section").load("./autotrading.html");
+            });
+            $(".gridbot").click(function(e) {
+                $(".section").load("./tradingbot01.html");
+            });
 
-                    //nav-bottom 링크
-                    $(".nav-bottom li:nth-child(3), .mo-nav-bottom li:nth-child(3)").click(function(e) {
-                        $(".section").load("./recruit.html");
-                    });
+            //모바일 아비봇챗 버튼
+            $("#arbibot-chat").click(function() {
+                $(".chat-open").addClass("on");
+            });
 
-                    //이용약관 링크
-                    $(".terms-btn").click(function(e) {
-                        $(".section").load("./terms.html");
-                    });
+            //재정거래(일반) 봇 운영 현황 슬리피지 리스트
+            $('.slippage-list-open').click(function() {
+                $(this).toggleClass("on");
+                $(".slippage-list").toggleClass("on");
+            });
 
-                    //책임의 한계와 법적 고지 링크
-                    $(".legal-btn").click(function(e) {
-                        $(".section").load("./legal.html");
-                    });
+            //딤처리 로딩 이미지
+            $.fakeLoader({
+                timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
+                zIndex: 999, // 순서 
+                spinner: "spinner2", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+                bgColor: "rgba(0,0,0,.5)", //Hex, RGB or RGBA colors 배경색깔 
+                // imagePath:"yourPath/customizedImage.gif" // 원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
+            });
 
-                    //모바일 아이콘 메뉴 버튼
-                    $(".direct-menu li:nth-child(n)").click(function(e) {
-                        var arrLink = [
-                            "./autotrading.html",
-                            "./tradingbot01.html",
-                            "./tradingbot02.html",
-                            "./api.html",
-                            "./wallet.html",
-                            "./ranking01.html",
-                            //"./ranking02.html",
-                            //"./simulator.html",
-                            "./board_list.html",
-                            "./user_guide.html"
-                        ];
+            //Main Contents 영역 Height 계산
+            function checkHeight() {
+                var totalHeight = $('.container').height() - 10;
+                var height = totalHeight - $('.arbibot-status').height();
+                var windowWidth = $(window).width();
 
-                        var i = $(this).index();
+                if (windowWidth < 760) {
+                    $('.contentsArea').css('height', 'auto');
+                } else {
+                    $('.contentsArea').css('height', height);
+                }
 
-                        for (var i2 = 0; i2 < arrLink.length; i2++) {
-                            $(".section").load(arrLink[i]);
-                        }
-                    });
+            }
 
-                    // mobile nav
-                    $('.ham').click(function(e) {
-                        $('.ham, .mo-nav').toggleClass("active");
-                    });
-                    $('.mo-nav a').click(function(e) {
-                        $('.ham, .mo-nav').removeClass("active");
-                    });
+            checkHeight();
+            $(window).resize(checkHeight);
 
-                    //마이페이지 버튼
-                    $(".mypage").click(function(e) {
-                        $(".section").load("./mypage.html");
-                    });
+            //게시판 리스트로 이동
+            $('#postList').click(function() {
+                $('.section').load('./board_list.html');
+            });
 
-                    //운영봇 링크 연결
-                    $(".autobot").click(function(e) {
-                        $(".section").load("./autotrading.html");
-                    });
-                    $(".gridbot").click(function(e) {
-                        $(".section").load("./tradingbot01.html");
-                    });
+            //게시물 삭제 alert
+            $('#deletPost').click(function() {
+                var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
+                if (postDeletResult) {
+                    location.replace('./board_list_notice.html');
+                } else {
 
-                    //모바일 아비봇챗 버튼
-                    $("#arbibot-chat").click(function() {
-                        $(".chat-open").addClass("on");
-                    });
+                }
+            });
 
-                    //재정거래(일반) 봇 운영 현황 슬리피지 리스트
-                    $('.slippage-list-open').click(function() {
-                        $(this).toggleClass("on");
-                        $(".slippage-list").toggleClass("on");
-                    });
+            //sns 공유하기
+            function fn_sendFB(sns) {
+                var thisUrl = document.URL;
+                var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
+                if (sns == 'facebook') {
+                    var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(thisUrl);
+                    window.open(url, "", "width=486, height=286");
+                } else if (sns == 'twitter') {
+                    var url = "http://twitter.com/share?url=" + encodeURIComponent(thisUrl) + "&text=" + encodeURIComponent(snsTitle);
+                    window.open(url, "tweetPop", "width=486, height=286,scrollbars=yes");
+                };
 
-                    //딤처리 로딩 이미지
-                    $.fakeLoader({
-                        timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
-                        zIndex: 999, // 순서 
-                        spinner: "spinner2", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-                        bgColor: "rgba(0,0,0,.5)", //Hex, RGB or RGBA colors 배경색깔 
-                        // imagePath:"yourPath/customizedImage.gif" // 원하는 이미지, 움직이는 gif나 이미지를 불러와도 좋다. 
-                    });
+                //카카오톡 공유
+                function fn_sendFB(sns) {
+                    var thisUrl = document.URL;
+                    var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
 
-                    //Main Contents 영역 Height 계산
-                    function checkHeight() {
-                        var totalHeight = $('.container').height() - 10;
-                        var height = totalHeight - $('.arbibot-status').height();
-                        var windowWidth = $(window).width();
+                    if (sns == 'kakaotalk') {
+                        // 사용할 앱의 JavaScript 키 설정
+                        Kakao.init('본인 자바스크립트 API KEY 입력');
 
-                        if (windowWidth < 760) {
-                            $('.contentsArea').css('height', 'auto');
-                        } else {
-                            $('.contentsArea').css('height', height);
-                        }
-
-                    }
-
-                    checkHeight();
-                    $(window).resize(checkHeight);
-
-                    //게시판 리스트로 이동
-                    $('#postList').click(function() {
-                        $('.section').load('./board_list.html');
-                    });
-
-                    //게시물 삭제 alert
-                    $('#deletPost').click(function() {
-                        var postDeletResult = confirm('삭제한 게시물은 복구할 수 없습니다.\n해당 게시물을 삭제하시겠습니까?');
-                        if (postDeletResult) {
-                            location.replace('./board_list_notice.html');
-                        } else {
-
-                        }
-                    });
-
-                    //sns 공유하기
-                    function fn_sendFB(sns) {
-                        var thisUrl = document.URL;
-                        var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
-                        if (sns == 'facebook') {
-                            var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(thisUrl);
-                            window.open(url, "", "width=486, height=286");
-                        } else if (sns == 'twitter') {
-                            var url = "http://twitter.com/share?url=" + encodeURIComponent(thisUrl) + "&text=" + encodeURIComponent(snsTitle);
-                            window.open(url, "tweetPop", "width=486, height=286,scrollbars=yes");
-                        };
-
-                        //카카오톡 공유
-                        function fn_sendFB(sns) {
-                            var thisUrl = document.URL;
-                            var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
-
-                            if (sns == 'kakaotalk') {
-                                // 사용할 앱의 JavaScript 키 설정
-                                Kakao.init('본인 자바스크립트 API KEY 입력');
-
-                                // 카카오링크 버튼 생성
-                                Kakao.Link.createDefaultButton({
-                                    container: '#btnKakao',
-                                    objectType: 'feed',
-                                    content: {
-                                        title: "No.1 가상자산 트레이딩 플랫폼 아비봇",
-                                        description: "No.1 가상자산 트레이딩 플랫폼 아비봇",
-                                        imageUrl: thisUrl, // 콘텐츠 URL
-                                        link: {
-                                            mobileWebUrl: thisUrl,
-                                            webUrl: thisUrl
-                                        }
-                                    }
-                                });
+                        // 카카오링크 버튼 생성
+                        Kakao.Link.createDefaultButton({
+                            container: '#btnKakao',
+                            objectType: 'feed',
+                            content: {
+                                title: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                                description: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                                imageUrl: thisUrl, // 콘텐츠 URL
+                                link: {
+                                    mobileWebUrl: thisUrl,
+                                    webUrl: thisUrl
+                                }
                             }
-                        };
+                        });
+                    }
+                };
 
-                        //링크 복사
-                        function clip() {
-                            var url = '';
-                            var textarea = document.createElement("textarea");
-                            document.body.appendChild(textarea);
-                            url = window.document.location.href;
-                            textarea.value = url;
-                            textarea.select();
-                            document.execCommand("copy");
-                            document.body.removeChild(textarea);
-                            alert("URL이 복사되었습니다.")
-                        }
-                    });
+                //링크 복사
+                function clip() {
+                    var url = '';
+                    var textarea = document.createElement("textarea");
+                    document.body.appendChild(textarea);
+                    url = window.document.location.href;
+                    textarea.value = url;
+                    textarea.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(textarea);
+                    alert("URL이 복사되었습니다.")
+                }
+            };
+        });
     </script>
 </body>
 
