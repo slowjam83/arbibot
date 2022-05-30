@@ -52,10 +52,10 @@
                 <div class="sub-container-head flex-between">
                     <h1 class="subpage-title mb0">공지사항</h1>
                     <div class="sns-box flex-end-center">
-                        <a href="javascript:void(0)" class="hidden facebook mr20">페이스북 공유하기</a>
-                        <a href="javascript:void(0)" class="hidden kakaotalk mr20">카카오톡 공유하기</a>
-                        <a href="javascript:void(0)" class="hidden twitter mr20">트위터 공유하기</a>
-                        <a href="javascript:void(0)" class="hidden copy-link">링크 복사</a>
+                        <a href="javascript:void(0)" data-toggle="sns_share" data-service="facebook" data-title="페이스북 SNS공유" class="hidden facebook mr20">페이스북 공유하기</a>
+                        <a href="javascript:void(0)" id="btnKakao" onclick="fn_sendFB('kakaotalk');return false;" class="hidden kakaotalk mr20">카카오톡 공유하기</a>
+                        <a href="javascript:void(0)" data-toggle="sns_share" data-service="twitter" data-title="트위터 SNS공유" class="hidden twitter mr20">트위터 공유하기</a>
+                        <a href="javascript:void(0)" onclick="clip();return false;" class="hidden copy-link">링크 복사</a>
                     </div>
                 </div>
                 <div class="contentsArea">
@@ -180,6 +180,9 @@
     <script src="./asset/js/mousewheel.min.js"></script>
     <script src="./asset/js/num-spinner.js"></script>
     <script src="./asset/js/select2.js"></script>
+
+    <!-- 카카오톡 공유 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     <script>
         w3.includeHTML(function() {
@@ -451,6 +454,81 @@
 
                 }
             });
+
+            //sns 공유하기
+            $("a[data-toggle='sns_share']").click(function(e) {
+                e.preventDefault();
+
+                var _this = $(this);
+                var sns_type = _this.attr('data-service');
+                var href = current_url;
+                var title = _this.attr('data-title');
+                var loc = "";
+                var img = $("meta[name='og:image']").attr('content');
+
+                if (!sns_type || !href || !title) return;
+
+                if (sns_type == 'facebook') {
+                    loc = '//www.facebook.com/sharer/sharer.php?u=' + href + '&t=' + title;
+                } else if (sns_type == 'twitter') {
+                    loc = '//twitter.com/home?status=' + encodeURIComponent(title) + ' ' + href;
+                } else if (sns_type == 'google') {
+                    loc = '//plus.google.com/share?url=' + href;
+                } else if (sns_type == 'pinterest') {
+
+                    loc = '//www.pinterest.com/pin/create/button/?url=' + href + '&media=' + img + '&description=' + encodeURIComponent(title);
+                } else if (sns_type == 'kakaostory') {
+                    loc = 'https://story.kakao.com/share?url=' + encodeURIComponent(href);
+                } else if (sns_type == 'band') {
+                    loc = 'http://www.band.us/plugin/share?body=' + encodeURIComponent(title) + '%0A' + encodeURIComponent(href);
+                } else if (sns_type == 'naver') {
+                    loc = "http://share.naver.com/web/shareView.nhn?url=" + encodeURIComponent(href) + "&title=" + encodeURIComponent(title);
+                } else {
+                    return false;
+                }
+
+                window.open(loc);
+                return false;
+            });
+
+            //카카오톡 공유
+            function fn_sendFB(sns) {
+                var thisUrl = document.URL;
+                var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
+
+                if (sns == 'kakaotalk') {
+                    // 사용할 앱의 JavaScript 키 설정
+                    Kakao.init('본인 자바스크립트 API KEY 입력');
+
+                    // 카카오링크 버튼 생성
+                    Kakao.Link.createDefaultButton({
+                        container: '#btnKakao',
+                        objectType: 'feed',
+                        content: {
+                            title: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                            description: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                            imageUrl: thisUrl, // 콘텐츠 URL
+                            link: {
+                                mobileWebUrl: thisUrl,
+                                webUrl: thisUrl
+                            }
+                        }
+                    });
+                }
+            };
+
+            //링크 복사
+            function clip() {
+                var url = '';
+                var textarea = document.createElement("textarea");
+                document.body.appendChild(textarea);
+                url = window.document.location.href;
+                textarea.value = url;
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+                alert("URL이 복사되었습니다.")
+            }
         });
     </script>
 </body>
