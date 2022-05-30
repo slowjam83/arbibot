@@ -4425,7 +4425,7 @@ Media Query
         width: 100%;
     }
     .post-title-input {
-        margin-top: 5px;
+        margin: 5px 0 0 0;
     }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),
