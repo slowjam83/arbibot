@@ -3051,10 +3051,16 @@ span.arrow-btn.next {
 
 .post-title-wrap {
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
-.post-title-wrap .post-title-input {
+.post-title-input {
     width: calc(100% - 132px);
+    margin-left: 10px;
 }
 
 .board-write .btn-wrap {
@@ -4410,6 +4416,9 @@ Media Query
     .board-list .date {
         text-align: left;
         margin: 6px 0 0 0;
+    }
+    .post-title-wrap {
+        display: block;
     }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),

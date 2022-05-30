@@ -58,15 +58,15 @@
                             <fieldset>
                                 <legend class="hidden">게시물 작성</legend>
                                 <div class="board-write">
-                                    <div class="post-title-wrap flex-between">
-                                        <select name="" id="" class="mr10">
+                                    <div class="post-title-wrap">
+                                        <select name="" id="" class="post-category">
                                             <option value="none">게시판 선택</option>
                                             <option value="notice">공지사항</option>
                                             <option value="event">이벤트</option>
                                             <option value="faq">FAQ</option>
                                         </select>
                                         <label for="postTitle_input" class="hidden">제목</label>
-                                        <input type="text" class="post-title-input mb10" name="postTitle_input" id="postTitle_input" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
+                                        <input type="text" class="post-title-input" name="postTitle_input" id="postTitle_input" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
                                     </div>
                                     <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요. editor 영역"></textarea>
                                     <div class="mt10">
