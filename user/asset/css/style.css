@@ -4409,7 +4409,7 @@ Media Query
     .card-header .date,
     .board-list .date {
         text-align: left;
-        margin-left: 0;
+        margin: 6px 0 0 0;
     }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),
