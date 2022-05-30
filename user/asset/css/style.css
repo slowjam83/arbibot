@@ -2812,28 +2812,28 @@ board
     font-weight: 500;
 }
 
-.sns-box li a {
+.sns-box a {
     display: block;
     width: 18px;
     height: 18px;
 }
 
-.sns-box li a.facebook {
+.sns-box a.facebook {
     background: url('../img/svg/social/share-facebook.svg') no-repeat 50% 50%;
     background-size: contain;
 }
 
-.sns-box li a.kakaotalk {
+.sns-box a.kakaotalk {
     background: url('../img/svg/social/share-kakaotalk.svg') no-repeat 50% 50%;
     background-size: contain;
 }
 
-.sns-box li a.twitter {
+.sns-box a.twitter {
     background: url('../img/svg/social/share-twitter.svg') no-repeat 50% 50%;
     background-size: contain;
 }
 
-.sns-box li a.copy-link {
+.sns-box a.copy-link {
     background: url('../img/svg/social/share-link.svg') no-repeat 50% 50%;
     background-size: contain;
 }
