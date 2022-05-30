@@ -2748,7 +2748,7 @@ board
     background: #4341ce;
 }
 
-.board-list li.must-read h5.new-post::after {
+.board-list h5.new-post::after {
     content: 'N';
     display: inline-block;
     font-size: 8px;
