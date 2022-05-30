@@ -2823,7 +2823,7 @@ board
 }
 
 .search-wrap input {
-    width: 320px;
+    width: calc(100% - 10px)
 }
 
 .board-list tr {
@@ -4398,9 +4398,6 @@ Media Query
     .search-wrap label {
         width: 100%;
     }
-    .search-wrap input {
-        width: calc(100% - 110px);
-    }
     .accordion .card,
     .board-list li {
         display: block;
@@ -4412,6 +4409,7 @@ Media Query
     .card-header .date,
     .board-list .date {
         text-align: left;
+        margin-left: 0;
     }
     .board-list tr th:nth-child(1),
     .board-list tr th:nth-child(3),
