@@ -445,6 +445,12 @@ a.disabled-font {
     align-items: baseline;
 }
 
+.flex-end-center {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+}
+
 .left-minus {
     left: -21px;
 }
