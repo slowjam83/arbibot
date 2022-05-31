@@ -361,51 +361,49 @@
 
                 }
             });
-
-            //sns 공유하기
-            function fn_sendFB(sns) {
-                var thisUrl = document.URL;
-                var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
-                if (sns == 'facebook') {
-                    var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(thisUrl);
-                    window.open(url, "", "width=486, height=286");
-                } else if (sns == 'twitter') {
-                    var url = "http://twitter.com/share?url=" + encodeURIComponent(thisUrl) + "&text=" + encodeURIComponent(snsTitle);
-                    window.open(url, "tweetPop", "width=486, height=286,scrollbars=yes");
-                } else if (sns == 'kakaotalk') {
-                    // 사용할 앱의 JavaScript 키 설정
-                    Kakao.init('b81ee451448d8c434556a505b06e5705');
-
-                    // 카카오링크 버튼 생성
-                    Kakao.Link.createDefaultButton({
-                        container: '#btnKakao',
-                        objectType: 'feed',
-                        content: {
-                            title: "No.1 가상자산 트레이딩 플랫폼 아비봇",
-                            description: "No.1 가상자산 트레이딩 플랫폼 아비봇",
-                            imageUrl: thisUrl, // 콘텐츠 URL
-                            link: {
-                                mobileWebUrl: thisUrl,
-                                webUrl: thisUrl
-                            }
-                        }
-                    });
-                };
-            };
-
-            //링크 복사
-            function clip() {
-                var url = '';
-                var textarea = document.createElement("textarea");
-                document.body.appendChild(textarea);
-                url = window.document.location.href;
-                textarea.value = url;
-                textarea.select();
-                document.execCommand("copy");
-                document.body.removeChild(textarea);
-                alert("URL이 복사되었습니다.")
-            };
         });
+
+        //sns 공유하기
+        function fn_sendFB(sns) {
+            var thisUrl = document.URL;
+            var snsTitle = "No.1 가상자산 트레이딩 플랫폼 아비봇";
+            if (sns == 'facebook') {
+                var url = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(thisUrl);
+                window.open(url, "", "width=486, height=286");
+            } else if (sns == 'twitter') {
+                var url = "http://twitter.com/share?url=" + encodeURIComponent(thisUrl) + "&text=" + encodeURIComponent(snsTitle);
+                window.open(url, "tweetPop", "width=486, height=286,scrollbars=yes");
+            } else if (sns == 'kakaotalk') {
+                // 사용할 앱의 JavaScript 키 설정
+                Kakao.init('b81ee451448d8c434556a505b06e5705');
+                Kakao.Link.createDefaultButton({
+                    container: '#btnKakao',
+                    objectType: 'feed',
+                    content: {
+                        title: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                        description: "No.1 가상자산 트레이딩 플랫폼 아비봇",
+                        imageUrl: thisUrl,
+                        link: {
+                            mobileWebUrl: thisUrl,
+                            webUrl: thisUrl
+                        }
+                    }
+                });
+            };
+        };
+
+        //링크 복사
+        function clip() {
+            var url = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            url = window.document.location.href;
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("URL이 복사되었습니다.")
+        };
     </script>
 </body>
 
