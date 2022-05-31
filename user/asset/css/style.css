@@ -2755,6 +2755,8 @@ board
     font-weight: 900;
     color: #ee417e;
     margin-left: 5px;
+    position: relative;
+    bottom: 6px;
 }
 
 .card-header .date,
