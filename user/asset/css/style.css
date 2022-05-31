@@ -4418,7 +4418,7 @@ Media Query
         margin: 6px 0 0 0;
     }
     .post-title-wrap {
-        display: block;
+        flex-flow: column wrap;
     }
     .post-category,
     .post-title-input {
@@ -5156,6 +5156,9 @@ Media Query
     }
     .post-contents {
         padding: 20px 0 40px;
+    }
+    .post-title-wrap {
+        margin-top: 20px;
     }
     .post-btn button {
         width: 80px;
