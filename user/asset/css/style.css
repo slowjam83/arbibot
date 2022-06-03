@@ -2770,6 +2770,10 @@ board
     margin-left: 40px;
 }
 
+.collapse {
+    width: 100%;
+}
+
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
