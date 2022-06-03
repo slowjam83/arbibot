@@ -2706,6 +2706,7 @@ board
     margin-bottom: -1px;
     padding: 14px 20px;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .card-header .btn-link {
