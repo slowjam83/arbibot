@@ -417,6 +417,12 @@ a.disabled-font {
     top: 2px;
 }
 
+.flex-start-start {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
+
 .flex-start {
     display: flex;
     justify-content: flex-start !important;
