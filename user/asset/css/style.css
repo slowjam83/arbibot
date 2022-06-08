@@ -2653,6 +2653,30 @@ Error
 board
 =============================================================*/
 
+.faq-list {
+    padding: 0;
+}
+
+.faq-list .sub-container-head {
+    height: 540px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.faq-list .contentsArea {
+    padding: 0 20px;
+}
+
+.background-video {
+    position: absolute;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
 .board-list li {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
