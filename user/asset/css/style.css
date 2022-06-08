@@ -2699,7 +2699,7 @@ board
 
 .faq-list .search-wrap {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     justify-content: center;
     margin: 0;
 }
@@ -2735,7 +2735,7 @@ board
     line-height: 40px;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .faq-list .search-wrap .search-btn {
