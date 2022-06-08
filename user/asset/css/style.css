@@ -2747,6 +2747,20 @@ board
     transform: none;
 }
 
+.faq-list .tabNav {
+    padding: 0;
+    border: none;
+    margin: 40px 0;
+    gap: 10px;
+}
+
+.faq-list .tabNav li a {
+    height: 42px;
+    line-height: 40px;
+    padding: 0;
+    border: 1px solid #dfdfdf;
+}
+
 .faq-list .tab-pane {
     gap: 60px;
 }
