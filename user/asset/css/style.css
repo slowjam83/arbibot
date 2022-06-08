@@ -2659,8 +2659,9 @@ board
 
 .faq-list .sub-container-head {
     height: 540px;
-    padding: 20px;
+    padding: 0;
     position: relative;
+    z-index: 0;
     overflow: hidden;
     background: #000;
 }
@@ -2671,7 +2672,7 @@ board
 
 .background-video {
     position: absolute;
-    z-index: -99;
+    z-index: -1;
     width: 100%;
     height: 100%;
     opacity: .3;
