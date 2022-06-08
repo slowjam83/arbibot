@@ -2670,9 +2670,11 @@ board
     padding: 0 20px;
 }
 
-.background-video {
+.background-video #player {
     position: absolute;
     z-index: -1;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: .3;
