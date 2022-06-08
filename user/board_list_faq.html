@@ -124,7 +124,9 @@
         });
     }
 
-    //tab 메뉴
-    var li_max = 100 / $(".tabNav li").length;
-    $(".tabNav li").css("width", li_max + "%");
+    $(document).ready(function() {
+        //tab 메뉴
+        var li_max = 100 / $(".tabNav li").length;
+        $(".tabNav li").css("width", li_max + "%");
+    });
 </script>
