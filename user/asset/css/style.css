@@ -439,6 +439,13 @@ a.disabled-font {
     align-items: center;
 }
 
+.flex-between-end {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .flex-end-baseline {
     display: flex;
     justify-content: flex-end !important;
@@ -2678,6 +2685,27 @@ board
     width: 100%;
     height: 100%;
     opacity: .3;
+}
+
+.faq-list .subpage-title {
+    padding: 20px;
+    color: #fff;
+}
+
+.faq-list .search-wrap h2,
+.faq-list .search-wrap a {
+    color: #fff;
+}
+
+.faq-list .search-wrap h2 {
+    font-size: 20px;
+}
+
+.faq-list .search-wrap a {
+    font-size: 14px;
+    padding-right: 24px;
+    background: url('../img/svg/arrow/right_arrow_w.svg') no-repeat 100% 50%;
+    background-size: auto 14px;
 }
 
 .board-list li {
