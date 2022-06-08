@@ -16,6 +16,38 @@
         </div>
     </div>
     <div class="contentsArea mt0">
+        <ul class="nav tabNav tit-head" id="pills-tab" role="tablist">
+            <li role="presentation">
+                <a class="active" id="useGuide01-tab" data-toggle="pill" href="#useGuide01" role="tab" aria-controls="useGuide01" aria-selected="true">회원 가입하기</a>
+            </li>
+            <li role="presentation">
+                <a id="useGuide02-tab" data-toggle="pill" href="#useGuide02" role="tab" aria-controls="useGuide02" aria-selected="flase">거래소 API 등록하기</a>
+            </li>
+            <li role="presentation">
+                <a id="useGuide03-tab" data-toggle="pill" href="#useGuide03" role="tab" aria-controls="useGuide03" aria-selected="flase">교차거래 봇 설정하기</a>
+            </li>
+            <li role="presentation">
+                <a id="useGuide04-tab" data-toggle="pill" href="#useGuide04" role="tab" aria-controls="useGuide04" aria-selected="flase">재정거래 봇 설정하기</a>
+            </li>
+            <li role="presentation">
+                <a id="useGuide05-tab" data-toggle="pill" href="#useGuide05" role="tab" aria-controls="useGuide05" aria-selected="flase">운영 현황 확인하기</a>
+            </li>
+            <li role="presentation">
+                <a id="useGuide06-tab" data-toggle="pill" href="#useGuide06" role="tab" aria-controls="useGuide06" aria-selected="flase">자산 현황 조회하기</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <!-- 회원가입하기 -->
+            <div class="tab-pane fade active show flex-between" role="tabpanel" id="useGuide01" aria-labelledby="useGuide01-tab">
+                <iframe width="50%" height="auto" src="https://www.youtube.com/embed/CJHmA3ypNno" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="guide-text">
+                    <h3>회원 가입하기</h3>
+                    <p>- 아비봇 특징<br>- 아비봇 특장점<br>- 아비봇 가입 방법</p>
+                </div>
+            </div>
+        </div>
+        <!-- //회원가입하기 -->
+
         <div class="board-list-wrap" id="faqList">
             <div class="accordion" id="accordion1">
                 <div class="card">
@@ -91,4 +123,8 @@
             }
         });
     }
+
+    //tab 메뉴
+    var li_max = 100 / $(".tabNav li").length;
+    $(".tabNav li").css("width", li_max + "%");
 </script>
