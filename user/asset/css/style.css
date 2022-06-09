@@ -2803,6 +2803,21 @@ board
     font-weight: 500;
 }
 
+.faq-group .question-text::before {
+    display: inline-block;
+    content: 'Q';
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    background: #4341ce;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
 .board-list li {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
