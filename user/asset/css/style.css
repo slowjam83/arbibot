@@ -2690,7 +2690,7 @@ board
     position: relative;
     z-index: 0;
     overflow: hidden;
-    background: #000;
+    background: #060d20;
 }
 
 .faq-list .sub-container-head.scrolled {
@@ -2702,6 +2702,7 @@ board
     left: 0;
 }
 
+.faq-list .sub-container-head.scrolled .background-video,
 .faq-list .sub-container-head.scrolled .subpage-title {
     display: none;
 }
@@ -2715,6 +2716,7 @@ board
 }
 
 .background-video #player {
+    display: block;
     position: absolute;
     z-index: -1;
     top: 50%;
