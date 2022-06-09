@@ -2682,6 +2682,7 @@ board
 
 .faq-list {
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .faq-list .sub-container-head {
