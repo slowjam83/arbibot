@@ -1420,6 +1420,10 @@ main
     margin-top: 131px;
 }
 
+.section {
+    position: sticky;
+}
+
 .container {
     width: calc(78vw - 240px);
     height: 100%;
