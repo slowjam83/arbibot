@@ -201,8 +201,10 @@
         var scrollTop = $(".search-wrap .flex-between-base").offset();
         if (scrollTop.top < 152) {
             $(".sub-container-head").addClass("scrolled");
+            $(".nav").addClass("scrolled");
         } else {
             $(".sub-container-head").removeClass("scrolled");
+            $(".nav").removeClass("scrolled");
         }
     });
 </script>
