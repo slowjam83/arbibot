@@ -1407,10 +1407,6 @@ a.user-sync-text span {
 main
 =============================================================*/
 
-.section {
-    position: relative;
-}
-
 .section-wrap {
     width: 100%;
     height: calc(100vh - 131px);
@@ -2681,6 +2677,7 @@ board
 =============================================================*/
 
 .faq-list {
+    position: relative;
     padding: 0;
 }
 
@@ -2698,8 +2695,8 @@ board
     padding: 20px;
     transition: all 0.3s;
     position: sticky;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
 }
 
 .faq-list .sub-container-head.scrolled .background-video,
