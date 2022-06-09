@@ -2774,6 +2774,24 @@ board
 
 .faq-list .tab-pane {
     gap: 60px;
+    margin-bottom: 60px;
+}
+
+.guide-text .subpage-title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.guide-text p {
+    color: #888;
+}
+
+.faq-list .board-list-wrap {
+    margin-top: 60px;
+}
+
+.faq-group {
+    margin-bottom: 60px;
 }
 
 .board-list li {
