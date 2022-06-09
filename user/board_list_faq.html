@@ -186,4 +186,13 @@
         var li_max = 100 / $(".tabNav li").length;
         $(".tabNav li").css("width", li_max + "%");
     });
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            $(".sub-container-head").addClass("scrolled");
+        } else {
+            $(".sub-container-head").removeClass("scrolled");
+        }
+    });
 </script>
