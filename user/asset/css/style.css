@@ -2777,6 +2777,10 @@ board
     margin-bottom: 60px;
 }
 
+.guide-text {
+    width: calc(50% - 60px);
+}
+
 .guide-text .subpage-title {
     padding-bottom: 20px;
     border-bottom: 1px solid #dfdfdf;
@@ -2787,11 +2791,16 @@ board
 }
 
 .faq-list .board-list-wrap {
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
 .faq-group {
     margin-bottom: 60px;
+}
+
+.faq-group .subpage-title {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .board-list li {
