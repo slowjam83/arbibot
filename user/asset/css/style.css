@@ -1407,6 +1407,10 @@ a.user-sync-text span {
 main
 =============================================================*/
 
+.section {
+    position: relative;
+}
+
 .section-wrap {
     width: 100%;
     height: calc(100vh - 131px);
@@ -1774,6 +1778,7 @@ sub page
 }
 
 .subpage-title {
+    display: inline-block;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -2686,6 +2691,23 @@ board
     z-index: 0;
     overflow: hidden;
     background: #000;
+}
+
+.faq-list .sub-container-head.scrolled {
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.faq-list .sub-container-head.scrolled .subpage-title {
+    display: none;
+}
+
+.faq-list .sub-container-head.scrolled .search-wrap {
+    height: auto;
 }
 
 .faq-list .contentsArea {

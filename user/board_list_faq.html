@@ -185,5 +185,18 @@
         //tab 메뉴
         var li_max = 100 / $(".tabNav li").length;
         $(".tabNav li").css("width", li_max + "%");
+
+        // header scroll
+        var searchArea = $(".faq-list .sub-container-head");
+
+        scrolled();
+
+        function scrolled() {
+            if ($(window).scrollTop() > 70) {
+                searchArea.addClass("scrolled");
+            } else {
+                searchArea.removeClass("scrolled");
+            }
+        };
     });
 </script>
