@@ -189,7 +189,7 @@
 
     $(".container").scroll(function() {
         var scrollTop = $(".search-wrap .flex-between-base").offset();
-        if (scrollTop.top <= 131) {
+        if (scrollTop.top < 131) {
             $(".sub-container-head").addClass("scrolled");
         } else {
             $(".sub-container-head").removeClass("scrolled");
