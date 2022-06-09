@@ -191,7 +191,7 @@
         var scrollTop = $(".search-wrap .flex-between-base").offset();
         if (scrollTop.top <= 131) {
             $(".sub-container-head").addClass("scrolled");
-        } else {
+        } else if (scrollTop.top >= 332.5) {
             $(".sub-container-head").removeClass("scrolled");
         }
     });
