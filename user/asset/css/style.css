@@ -2707,8 +2707,8 @@ board
 .faq-list .nav.scrolled {
     transition: all 0.3s;
     position: absolute;
-    /* top: 0;
-    left: 0; */
+    top: 111px;
+    left: 0;
 }
 
 .faq-list .sub-container-head.scrolled .background-video,
@@ -2790,10 +2790,12 @@ board
 }
 
 .faq-list .tabNav {
-    padding: 0;
     border: none;
-    margin: 40px 0;
+    margin: 0;
+    padding: 40px 0;
     gap: 10px;
+    border-radius: 0;
+    background: #fff;
 }
 
 .faq-list .tabNav li a {
