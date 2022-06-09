@@ -365,6 +365,11 @@ a.pointUnderLine,
     text-decoration: underline;
 }
 
+.white-font,
+a.white-font {
+    color: #fff;
+}
+
 .point-font,
 a.point-font {
     color: #4341ce;
@@ -2696,11 +2701,6 @@ board
     width: 100%;
     height: 147%;
     opacity: .3;
-}
-
-.faq-list .subpage-title {
-    padding: 20px;
-    color: #fff;
 }
 
 .faq-list .search-wrap {
