@@ -1407,11 +1407,8 @@ a.user-sync-text span {
 main
 =============================================================*/
 
-.section {
-    position: relative;
-}
-
 .section-wrap {
+    position: relative;
     width: 100%;
     height: calc(100vh - 131px);
     overflow-x: hidden;
@@ -2687,7 +2684,9 @@ board
 .faq-list .sub-container-head {
     height: 480px;
     padding: 0;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 0;
     overflow: hidden;
     background: #060d20;
@@ -3035,10 +3034,6 @@ board
 
 .board-list tr td:nth-child(2) {
     text-align: left;
-}
-
-.sub-container-head {
-    position: relative;
 }
 
 .board-view-wrap .subpage-title {
