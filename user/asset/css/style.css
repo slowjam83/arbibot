@@ -2814,7 +2814,7 @@ board
     margin-bottom: 60px;
 }
 
-.useGuideVideo {
+.video-wrap {
     width: 50%;
     height: 342px;
 }
@@ -4581,7 +4581,7 @@ Media Query
     .faq-list .tab-content .active {
         display: block;
     }
-    .useGuideVideo,
+    .video-wrap,
     .guide-text {
         width: 100%;
         /* height: 342px; */
