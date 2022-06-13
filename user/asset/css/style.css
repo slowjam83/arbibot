@@ -5110,6 +5110,9 @@ Media Query
         height: auto;
         overflow-y: hidden;
     }
+    .container h2 {
+        padding-left: 20px;
+    }
     .event-banner li:nth-child(1) {
         background: url('../img/banner/event_banner_01.jpg') no-repeat 0 100%, #dde1e6;
     }
