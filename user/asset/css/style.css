@@ -4915,6 +4915,9 @@ Media Query
         text-align: left;
         position: relative;
     }
+    .top-banner.scrolled {
+        display: none;
+    }
     .top-banner .close-btn {
         top: 18px;
         right: 18px;
@@ -4941,6 +4944,11 @@ Media Query
     .header {
         position: relative;
         top: inherit;
+    }
+    .header.scrolled {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
     .header .util {
         display: none;

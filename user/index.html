@@ -234,6 +234,26 @@
                     $('.section-wrap').css('margin-top', '71px');
                 }
             }); */
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+            jQuery(document).ready(function($) {
+                if (!isMobile) {
+                    //PC
+
+                } else {
+                    //MOBILE
+                    $(window).scroll(function() {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 131) {
+                            $(".top-banner").addClass("scrolled");
+                            $(".header").addClass("scrolled");
+                        } else {
+                            $(".top-banner").removeClass("scrolled");
+                            $(".header").removeClass("scrolled");
+                        }
+                    });
+                }
+            });
+
 
             //nav-top 링크
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
