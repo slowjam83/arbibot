@@ -4751,6 +4751,9 @@ Media Query
     .wallet .flex-end-baseline {
         margin: 10px 0;
     }
+    .faq-list .sub-container-head {
+        height: 480px;
+    }
 }
 
 @media (max-width: 1120px) {
@@ -4852,6 +4855,9 @@ Media Query
     .input-wrap,
     .input-wrap li input[type="text"] {
         width: 100%;
+    }
+    .faq-list .sub-container-head {
+        height: 420px;
     }
 }
 
@@ -5617,6 +5623,9 @@ Media Query
     }
     button[name=applyPayment] {
         margin-bottom: 0;
+    }
+    .faq-list .sub-container-head {
+        height: 360px;
     }
 }
 
