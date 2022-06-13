@@ -4939,7 +4939,8 @@ Media Query
         margin-right: 10px;
     }
     .header {
-        top: 0;
+        position: relative;
+        top: inherit;
     }
     .header .util {
         display: none;
