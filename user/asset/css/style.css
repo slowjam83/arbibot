@@ -5664,6 +5664,10 @@ Media Query
     .faq-list .sub-container-head {
         height: 360px;
     }
+    .faq-list .board-list-wrap,
+    .faq-list .accordion {
+        padding: 0;
+    }
 }
 
 @media (max-width: 620px) {
