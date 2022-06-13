@@ -2882,7 +2882,7 @@ board
     font-weight: 500;
 }
 
-.faq-group .question-text::before {
+.faq-group .question-text-wrap::before {
     display: inline-block;
     content: 'Q';
     width: 20px;
