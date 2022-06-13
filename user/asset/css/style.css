@@ -2830,9 +2830,12 @@ board
     margin-bottom: 60px;
 }
 
+.video-area {
+    width: 50%;
+}
+
 .video-wrap {
     position: relative;
-    width: 50%;
     height: 0;
     padding: 30px 0 56.25%;
     overflow: hidden;
