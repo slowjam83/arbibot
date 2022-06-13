@@ -2960,6 +2960,7 @@ board
     padding-right: 40px;
     background: url(../img/svg/arrow/board-list-arrow.svg) no-repeat 100% 50%;
     background-size: 20px 12px;
+    text-align: left;
 }
 
 .card-header .btn-link:not(.collapsed) {
