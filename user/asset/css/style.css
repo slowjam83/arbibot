@@ -5011,6 +5011,13 @@ Media Query
     .guide-text {
         width: 100%;
     }
+    .guide-text .subpage-title {
+        margin: 20px 0 16px;
+        padding-bottom: 12px;
+    }
+    .faq-list .board-list-wrap {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 760px) {
