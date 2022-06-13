@@ -2701,8 +2701,7 @@ board
     padding: 20px;
     transition: all 0.3s;
     position: absolute;
-    /* top: 0;
-    left: 0; */
+    z-index: 10;
 }
 
 .faq-list .nav.scrolled {
@@ -2710,6 +2709,7 @@ board
     position: absolute;
     top: 111px;
     left: 0;
+    z-index: 10;
 }
 
 .faq-list .sub-container-head.scrolled .background-video,
