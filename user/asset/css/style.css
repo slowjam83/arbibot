@@ -4996,6 +4996,13 @@ Media Query
     .faq-list .search-wrap .search-btn {
         right: 30px;
     }
+    .faq-list .tab-content .active {
+        display: block;
+    }
+    .video-wrap,
+    .guide-text {
+        width: 100%;
+    }
 }
 
 @media (max-width: 760px) {
@@ -5648,13 +5655,6 @@ Media Query
     }
     .faq-list .sub-container-head {
         height: 360px;
-    }
-    .faq-list .tab-content .active {
-        display: block;
-    }
-    .video-wrap,
-    .guide-text {
-        width: 100%;
     }
 }
 
