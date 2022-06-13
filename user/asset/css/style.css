@@ -4939,8 +4939,7 @@ Media Query
         margin-right: 10px;
     }
     .header {
-        position: relative;
-        top: inherit;
+        top: 0;
     }
     .header .util {
         display: none;
@@ -5689,12 +5688,12 @@ Media Query
     }
     .faq-list .sub-container-head.scrolled {
         position: fixed;
-        top: 218px;
+        top: 65px;
         left: 0;
     }
     .faq-list .nav.scrolled {
         position: fixed;
-        top: 329px;
+        top: 176px;
         left: 0;
     }
     .faq-list .board-list-wrap,
@@ -5705,6 +5704,9 @@ Media Query
         display: flex;
         align-items: baseline;
         margin-bottom: 0;
+    }
+    .faq-list .tab-content.scrolled .active {
+        margin-top: 400px;
     }
 }
 
