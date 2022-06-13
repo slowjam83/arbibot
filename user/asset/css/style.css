@@ -5006,6 +5006,7 @@ Media Query
     .faq-list .tab-content .active {
         display: block;
     }
+    .video-area,
     .video-wrap,
     .guide-text {
         width: 100%;
