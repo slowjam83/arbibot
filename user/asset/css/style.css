@@ -5718,6 +5718,10 @@ Media Query
     .faq-list .tab-content.scrolled .active {
         margin-top: 400px;
     }
+    .faq-title {
+        padding: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 620px) {
