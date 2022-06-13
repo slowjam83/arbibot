@@ -2898,7 +2898,8 @@ board
 }
 
 .faq-group .question-text {
-    width: calc(100% - 33px);
+    display: inline-block;
+    width: calc(100% - 33px) !important;
 }
 
 .board-list li {
@@ -5679,6 +5680,12 @@ Media Query
     .faq-list .board-list-wrap,
     .faq-list .accordion {
         padding: 0;
+    }
+    .faq-group .question-text {
+        display: flex;
+        align-items: baseline;
+        width: calc(100% - 33px);
+        margin-bottom: 0;
     }
 }
 
