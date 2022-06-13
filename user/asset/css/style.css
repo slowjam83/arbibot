@@ -4910,7 +4910,7 @@ Media Query
         width: 46px;
     }
     .top-banner p {
-        width: calc(100% - 167px);
+        width: calc(100% - 100px);
         margin-right: 0;
         position: absolute;
         top: 18px;
