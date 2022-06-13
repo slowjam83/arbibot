@@ -5388,7 +5388,7 @@ Media Query
         padding: 14px 0;
     }
     .accordion .card .card-header {
-        background: url(../img/board-list-arrow.svg) no-repeat 100% 50%;
+        background: url(../img/svg/arrow/board-list-arrow.svg) no-repeat 100% 50%;
         background-size: 20px 12px;
     }
     .card-header p {
