@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 
     function btnTop() {
-        var scrollTop = $(window).scrollTop();
+        var scrollTop = $('.section-wrap').scrollTop();
 
         if (scrollTop > 320) {
             $("#goTop").stop().show().animate({

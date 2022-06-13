@@ -233,6 +233,39 @@
         return false;
     });
 
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+    jQuery(document).ready(function($) {
+        if (!isMobile) {
+            //PC
+            $(".container").scroll(function() {
+                var scrollTop = $(".container").scrollTop();
+                if (scrollTop > 131) {
+                    $(".sub-container-head").addClass("scrolled");
+                    $(".nav").addClass("scrolled");
+                    $(".tab-content").addClass("scrolled");
+                } else {
+                    $(".sub-container-head").removeClass("scrolled");
+                    $(".nav").removeClass("scrolled");
+                    $(".tab-content").removeClass("scrolled");
+                }
+            });
+        } else {
+            //MOBILE
+            $(".section-wrap").scroll(function() {
+                var scrollTop = $(".section-wrap").scrollTop();
+                if (scrollTop > 131) {
+                    $(".sub-container-head").addClass("scrolled");
+                    $(".nav").addClass("scrolled");
+                    $(".tab-content").addClass("scrolled");
+                } else {
+                    $(".sub-container-head").removeClass("scrolled");
+                    $(".nav").removeClass("scrolled");
+                    $(".tab-content").removeClass("scrolled");
+                }
+            });
+        }
+    });
+
     $(".container").scroll(function() {
         var scrollTop = $(".container").scrollTop();
         if (scrollTop > 131) {
