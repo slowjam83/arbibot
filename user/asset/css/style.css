@@ -5102,6 +5102,7 @@ Media Query
     .section-wrap {
         display: block;
         padding: 0;
+        height: calc(100vh - 218px);
     }
     .section {
         width: 100%;
