@@ -4948,6 +4948,9 @@ Media Query
         background-size: contain;
         padding: 30px;
     }
+    .faq-list .tabNav {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 760px) {
