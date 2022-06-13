@@ -2825,6 +2825,10 @@ board
     display: flex;
 }
 
+.faq-list .tab-content.scrolled .active {
+    margin-top: 460px;
+}
+
 .faq-list .tab-pane {
     gap: 60px;
     margin-bottom: 60px;
