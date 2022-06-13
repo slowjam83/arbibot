@@ -2882,6 +2882,11 @@ board
     font-weight: 500;
 }
 
+.faq-group .question-text-wrap {
+    display: inline-block;
+    width: calc(100% - 33px);
+}
+
 .faq-group .question-text-wrap::before {
     display: inline-block;
     content: 'Q';
@@ -2895,11 +2900,6 @@ board
     text-align: center;
     margin-right: 10px;
     border-radius: 20px;
-}
-
-.faq-group .question-text {
-    display: inline-block;
-    width: calc(100% - 33px) !important;
 }
 
 .board-list li {
@@ -5687,14 +5687,23 @@ Media Query
     .faq-list .sub-container-head {
         height: 360px;
     }
+    .faq-list .sub-container-head.scrolled {
+        position: fixed;
+        top: 218px;
+        left: 0;
+    }
+    .faq-list .nav.scrolled {
+        position: fixed;
+        top: 329px;
+        left: 0;
+    }
     .faq-list .board-list-wrap,
     .faq-list .accordion {
         padding: 0;
     }
-    .faq-group .question-text {
+    .faq-group .question-text-wrap {
         display: flex;
         align-items: baseline;
-        width: calc(100% - 33px);
         margin-bottom: 0;
     }
 }
