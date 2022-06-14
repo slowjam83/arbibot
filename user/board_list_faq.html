@@ -293,12 +293,11 @@
     });
 
     $('#searchInput').keyup(function() {
-        var scrollMove = $('#faqList').offset().top;
         $('#faq-title').text('검색 결과');
         $('#result-count').show();
         $('#csLink').show();
         $('.faq-list').animate({
-            scrollTop: scrollMove
+            scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
         return false;
     });
