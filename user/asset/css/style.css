@@ -428,10 +428,10 @@ a.disabled-font {
     align-items: flex-start;
 }
 
-.flex-start-end {
+.flex-start-base {
     display: flex;
     justify-content: flex-start !important;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 .flex-start {
@@ -2895,6 +2895,11 @@ board
     text-align: center;
     margin-right: 10px;
     border-radius: 20px;
+}
+
+#csLink a {
+    width: 200px;
+    font-size: 14px;
 }
 
 .board-list li {
@@ -5714,7 +5719,7 @@ Media Query
         margin-top: 400px;
     }
     .faq-title {
-        padding: 0;
+        padding: 0 !important;
         margin-bottom: 0;
     }
 }
