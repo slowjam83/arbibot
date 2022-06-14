@@ -2705,6 +2705,7 @@ board
     top: 111px;
     left: 0;
     z-index: 10;
+    padding: 20px;
 }
 
 .faq-list .sub-container-head.scrolled .background-video,
@@ -5006,9 +5007,6 @@ Media Query
     }
     .faq-list .tabNav {
         padding: 20px 0;
-    }
-    .faq-list .nav.scrolled {
-        padding: 20px;
     }
     .faq-list .search-wrap label {
         width: 100%;
