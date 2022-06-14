@@ -15,11 +15,11 @@ $(document).ready(function() {
         var scrollTop = $('.section-wrap').scrollTop();
         if (scrollTop > 320) {
             $("#goTop").stop().show().animate({
-                "opacity": "1"
+                opacity: 1
             }, 300);
         } else {
             $("#goTop").stop().animate({
-                "opacity": "0"
+                opacity: 0
             }, 300, function() {
                 $("#goTop").hide();
             });
