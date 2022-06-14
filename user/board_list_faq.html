@@ -291,23 +291,25 @@
         });
     };
 
-    $('#searchInput').keyup(function() {
-        $('#useGuide01-tab').removeClass('active');
-        $('#faq-title').text('검색 결과');
-        $('#result-count').show();
-        $('#csLink').show();
-        if (!isMobile) {
-            //PC        
-            $('.container').animate({
-                scrollTop: $('#faqList').offset().top
-            }, 300);
-            return false;
-        } else {
-            //MOBILE        
-            $('.section-wrap').animate({
-                scrollTop: $('#faqList').offset().top
-            }, 300);
-            return false;
+    $('#searchInput').keyup(function(key) {
+        if (key.keyCode == 13) {
+            $('#useGuide01-tab').removeClass('active');
+            $('#faq-title').text('검색 결과');
+            $('#result-count').show();
+            $('#csLink').show();
+            if (!isMobile) {
+                //PC        
+                $('.container').animate({
+                    scrollTop: $('#faqList').offset().top
+                }, 300);
+                return false;
+            } else {
+                //MOBILE        
+                $('.section-wrap').animate({
+                    scrollTop: $('#faqList').offset().top
+                }, 300);
+                return false;
+            };
         };
     });
 </script>
