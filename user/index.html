@@ -131,6 +131,86 @@
                 $(".modal-close").click(function() {
                     couponClose();
                 });
+
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+                if (!isMobile) {
+                    //PC
+
+                } else {
+                    //MOBILE
+                    $(window).scroll(function() {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 131) {
+                            $(".top-banner").addClass("scrolled");
+                            $(".header").addClass("scrolled");
+                        } else {
+                            $(".top-banner").removeClass("scrolled");
+                            $(".header").removeClass("scrolled");
+                        }
+                    });
+                }
+
+                // go top button
+                function btnTop() {
+                    if (!isMobile) {
+                        //PC
+                        var scrollTopWeb = $('.container').scrollTop();
+                        if (scrollTopWeb > 200) {
+                            $("#goTop").stop().show().animate({
+                                "opacity": "1"
+                            }, 300);
+                        } else {
+                            $("#goTop").stop().animate({
+                                "opacity": "0"
+                            }, 300, function() {
+                                $("#goTop").hide();
+                            });
+                        };
+                    } else {
+                        //MOBILE
+                        var scrollTopMobile = $('.section-wrap').scrollTop();
+                        if (scrollTopMobile > 320) {
+                            $("#goTop").stop().show().animate({
+                                "opacity": "1"
+                            }, 300);
+                        } else {
+                            $("#goTop").stop().animate({
+                                "opacity": "0"
+                            }, 300, function() {
+                                $("#goTop").hide();
+                            });
+                        };
+                    };
+                };
+
+                if (!isMobile) {
+                    //PC
+                    $(".container").scroll(function() {
+                        btnTop();
+                    });
+                } else {
+                    //MOBILE
+                    $(".section-wrap").scroll(function() {
+                        btnTop();
+                    });
+                };
+
+                $('#goTop').click(function() {
+                    if (!isMobile) {
+                        //PC
+                        $('.container').animate({
+                            scrollTop: 0
+                        }, 300);
+                        return false;
+                    } else {
+                        //MOBILE
+                        $('.section-wrap').animate({
+                            scrollTop: 0
+                        }, 300);
+                        return false;
+                    };
+                });
             });
 
             $('html, body').scrollTop(function() {
@@ -222,103 +302,6 @@
                     $('.section-wrap').removeClass('scroll')
                 }
             });
-
-            //Top banner
-            /* $('.top-banner .close-btn').click(function(e) {
-                $('.top-banner').hide();
-                $('.header').css('top', '0');
-
-                if (document.body.clientWidth < 996) {
-                    $('.section-wrap').css('margin-top', '0');
-                } else {
-                    $('.section-wrap').css('margin-top', '71px');
-                }
-            }); */
-
-            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-
-            $(document).ready(function() {
-                if (!isMobile) {
-                    //PC
-
-                } else {
-                    //MOBILE
-                    $(window).scroll(function() {
-                        var scrollTop = $(window).scrollTop();
-                        if (scrollTop > 131) {
-                            $(".top-banner").addClass("scrolled");
-                            $(".header").addClass("scrolled");
-                        } else {
-                            $(".top-banner").removeClass("scrolled");
-                            $(".header").removeClass("scrolled");
-                        }
-                    });
-                }
-            });
-
-
-
-            // go top button
-            function btnTop() {
-                if (!isMobile) {
-                    //PC
-                    var scrollTopWeb = $('.container').scrollTop();
-                    if (scrollTopWeb > 200) {
-                        $("#goTop").stop().show().animate({
-                            "opacity": "1"
-                        }, 300);
-                    } else {
-                        $("#goTop").stop().animate({
-                            "opacity": "0"
-                        }, 300, function() {
-                            $("#goTop").hide();
-                        });
-                    };
-                } else {
-                    //MOBILE
-                    var scrollTopMobile = $('.section-wrap').scrollTop();
-                    if (scrollTopMobile > 320) {
-                        $("#goTop").stop().show().animate({
-                            "opacity": "1"
-                        }, 300);
-                    } else {
-                        $("#goTop").stop().animate({
-                            "opacity": "0"
-                        }, 300, function() {
-                            $("#goTop").hide();
-                        });
-                    };
-                };
-            };
-
-            if (!isMobile) {
-                //PC
-                $(".container").scroll(function() {
-                    btnTop();
-                });
-            } else {
-                //MOBILE
-                $(".section-wrap").scroll(function() {
-                    btnTop();
-                });
-            };
-
-            $('#goTop').click(function() {
-                if (!isMobile) {
-                    //PC
-                    $('.container').animate({
-                        scrollTop: 0
-                    }, 300);
-                    return false;
-                } else {
-                    //MOBILE
-                    $('.section-wrap').animate({
-                        scrollTop: 0
-                    }, 300);
-                    return false;
-                };
-            });
-
 
             //nav-top 링크
             $(".nav-top li:nth-child(n), .mo-nav-mid li:nth-child(n)").click(function(e) {
