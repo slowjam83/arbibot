@@ -293,12 +293,12 @@
     });
 
     $('#searchInput').keyup(function() {
+        $('#useGuide01-tab').removeClass('active');
         $('#faq-title').text('검색 결과');
         $('#result-count').show();
         $('#csLink').show();
-        $('.faq-list').animate({
+        $('.section-wrap').animate({
             scrollTop: $('#faqList').offset().top
         }, 500);
-        return false;
     });
 </script>
