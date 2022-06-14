@@ -255,7 +255,7 @@
     $('.goFaq').click(function() {
         $('.faq-list').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        });
+        }, 300);
         return false;
     });
 
@@ -300,12 +300,12 @@
             //PC        
             $('.container').animate({
                 scrollTop: $('#faqList').offset().top
-            });
+            }, 300);
         } else {
             //MOBILE        
             $('.section-wrap').animate({
                 scrollTop: $('#faqList').offset().top
-            });
+            }, 300);
         };
     });
 </script>
