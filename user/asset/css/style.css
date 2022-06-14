@@ -1206,11 +1206,6 @@ nav {
 }
 
 .nav-top li:nth-child(10) a {
-    background: url("../img/svg/nav-icon/nav-ico-13.svg") no-repeat 0 50%;
-    background-size: 20px 20px;
-}
-
-.nav-top li:nth-child(11) a {
     background: url("../img/svg/nav-icon/nav-ico-10.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
@@ -1284,12 +1279,6 @@ nav {
 
 .nav-top li.on:nth-child(10) a,
 .nav-top li:hover:nth-child(10) a {
-    background: url("../img/svg/nav-icon/nav-ico-on-13.svg") no-repeat 0 50%;
-    background-size: 20px 20px;
-}
-
-.nav-top li.on:nth-child(11) a,
-.nav-top li:hover:nth-child(11) a {
     background: url("../img/svg/nav-icon/nav-ico-on-10.svg") no-repeat 0 50%;
     background-size: 20px 20px;
 }
