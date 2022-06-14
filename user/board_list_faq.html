@@ -301,11 +301,13 @@
             $('.container').animate({
                 scrollTop: $('#faqList').offset().top
             }, 300);
+            return false;
         } else {
             //MOBILE        
             $('.section-wrap').animate({
                 scrollTop: $('#faqList').offset().top
             }, 300);
+            return false;
         };
     });
 </script>

@@ -11,22 +11,8 @@ $(document).ready(function() {
     });
 
     // go top button
-    btnTop();
-
-    $(document).on('scroll', function() {
-        btnTop();
-    });
-
-    $(document).on("click", "#goTop", function() {
-        $("html,body").animate({
-            "scrollTop": "0"
-        });
-        return false;
-    });
-
     function btnTop() {
-        var scrollTop = $('.container').scrollTop();
-
+        var scrollTop = $('.section-wrap').scrollTop();
         if (scrollTop > 320) {
             $("#goTop").stop().show().animate({
                 "opacity": "1"
@@ -39,4 +25,15 @@ $(document).ready(function() {
             });
         }
     };
+
+    $('.section-wrap').scroll(function() {
+        btnTop();
+    });
+
+    $('#goTop').click(function() {
+        $('.section-wrap').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
 });
