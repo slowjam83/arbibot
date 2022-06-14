@@ -19,37 +19,29 @@ $(document).ready(function() {
             var scrollTopWeb = $('.container').scrollTop();
             if (scrollTopWeb > 320) {
                 $("#goTop").stop().show().animate({
-                    opacity: 1
+                    "opacity": "1"
                 }, 300);
             } else {
                 $("#goTop").stop().animate({
-                    opacity: 0
+                    "opacity": "0"
                 }, 300, function() {
                     $("#goTop").hide();
                 });
             };
-
-            $(".container").scroll(function() {
-                btnTop();
-            });
         } else {
             //MOBILE
             var scrollTopMobile = $('.section-wrap').scrollTop();
             if (scrollTopMobile > 320) {
                 $("#goTop").stop().show().animate({
-                    opacity: 1
+                    "opacity": "1"
                 }, 300);
             } else {
                 $("#goTop").stop().animate({
-                    opacity: 0
+                    "opacity": "0"
                 }, 300, function() {
                     $("#goTop").hide();
                 });
             };
-
-            $(".section-wrap").scroll(function() {
-                btnTop();
-            });
         };
     };
 
