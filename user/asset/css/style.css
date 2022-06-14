@@ -831,8 +831,8 @@ a.edit-btn,
 .btn-top {
     position: fixed;
     z-index: 110;
-    right: 18px;
-    bottom: 90px;
+    right: 20px;
+    bottom: 20px;
     display: none;
     width: 60px;
     height: 60px;
@@ -5053,6 +5053,9 @@ Media Query
         width: calc(50% - 5px);
         margin: 0;
         text-align: center;
+    }
+    .btn-top {
+        bottom: 90px;
     }
     .header {
         padding: 12px 0;
