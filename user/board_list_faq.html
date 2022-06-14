@@ -265,8 +265,8 @@
         if (!isMobile) {
             //PC
             $(".container").scroll(function() {
-                var scrollTop = $(".container").scrollTop();
-                if (scrollTop > 131) {
+                var scrollTop1 = $(".container").scrollTop();
+                if (scrollTop1 > 131) {
                     $(".sub-container-head").addClass("scrolled");
                     $(".nav").addClass("scrolled");
                     $(".tab-content").addClass("scrolled");
@@ -279,8 +279,8 @@
         } else {
             //MOBILE
             $(".section-wrap").scroll(function() {
-                var scrollTop = $(".section-wrap").scrollTop();
-                if (scrollTop > 131) {
+                var scrollTop2 = $(".section-wrap").scrollTop();
+                if (scrollTop2 > 131) {
                     $(".sub-container-head").addClass("scrolled");
                     $(".nav").addClass("scrolled");
                     $(".tab-content").addClass("scrolled");
@@ -294,8 +294,13 @@
     });
 
     $('#searchInput').keyup(function() {
+        var scrollMove = $('#faqList').offset().top;
         $('#faq-title').text('검색 결과');
         $('#result-count').show();
         $('#csLink').show();
+        $('.faq-list').animate({
+            scrollTop: scrollMove
+        }, 500, 'ease-in');
+        return false;
     });
 </script>
