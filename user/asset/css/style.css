@@ -428,6 +428,12 @@ a.disabled-font {
     align-items: flex-start;
 }
 
+.flex-start-end {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-end;
+}
+
 .flex-start {
     display: flex;
     justify-content: flex-start !important;
