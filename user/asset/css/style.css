@@ -2827,7 +2827,6 @@ board
 
 .faq-list .tab-pane {
     gap: 60px;
-    margin-bottom: 60px;
 }
 
 .video-area {
@@ -2866,11 +2865,11 @@ board
 }
 
 .faq-list .board-list-wrap {
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 .faq-group {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .faq-group .subpage-title {
@@ -5026,9 +5025,6 @@ Media Query
     .guide-text .subpage-title {
         margin: 20px 0 16px;
         padding-bottom: 12px;
-    }
-    .faq-list .board-list-wrap {
-        margin-top: 60px;
     }
 }
 
