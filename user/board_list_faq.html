@@ -260,45 +260,52 @@
     });
 
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-    jQuery(document).ready(function($) {
-        if (!isMobile) {
-            //PC
-            $(".container").scroll(function() {
-                var scrollTop1 = $(".container").scrollTop();
-                if (scrollTop1 > 131) {
-                    $(".sub-container-head").addClass("scrolled");
-                    $(".nav").addClass("scrolled");
-                    $(".tab-content").addClass("scrolled");
-                } else {
-                    $(".sub-container-head").removeClass("scrolled");
-                    $(".nav").removeClass("scrolled");
-                    $(".tab-content").removeClass("scrolled");
-                }
-            });
-        } else {
-            //MOBILE
-            $(".section-wrap").scroll(function() {
-                var scrollTop2 = $(".section-wrap").scrollTop();
-                if (scrollTop2 > 131) {
-                    $(".sub-container-head").addClass("scrolled");
-                    $(".nav").addClass("scrolled");
-                    $(".tab-content").addClass("scrolled");
-                } else {
-                    $(".sub-container-head").removeClass("scrolled");
-                    $(".nav").removeClass("scrolled");
-                    $(".tab-content").removeClass("scrolled");
-                }
-            });
-        }
-    });
+
+    if (!isMobile) {
+        //PC
+        $(".container").scroll(function() {
+            var scrollTop1 = $(".container").scrollTop();
+            if (scrollTop1 > 131) {
+                $(".sub-container-head").addClass("scrolled");
+                $(".nav").addClass("scrolled");
+                $(".tab-content").addClass("scrolled");
+            } else {
+                $(".sub-container-head").removeClass("scrolled");
+                $(".nav").removeClass("scrolled");
+                $(".tab-content").removeClass("scrolled");
+            }
+        });
+    } else {
+        //MOBILE
+        $(".section-wrap").scroll(function() {
+            var scrollTop2 = $(".section-wrap").scrollTop();
+            if (scrollTop2 > 131) {
+                $(".sub-container-head").addClass("scrolled");
+                $(".nav").addClass("scrolled");
+                $(".tab-content").addClass("scrolled");
+            } else {
+                $(".sub-container-head").removeClass("scrolled");
+                $(".nav").removeClass("scrolled");
+                $(".tab-content").removeClass("scrolled");
+            }
+        });
+    };
 
     $('#searchInput').keyup(function() {
         $('#useGuide01-tab').removeClass('active');
         $('#faq-title').text('검색 결과');
         $('#result-count').show();
         $('#csLink').show();
-        $('.section-wrap').animate({
-            scrollTop: $('#faqList').offset().top
-        }, 500);
+        if (!isMobile) {
+            //PC        
+            $('.container').animate({
+                scrollTop: $('#faqList').offset().top
+            }, 500);
+        } else {
+            //MOBILE        
+            $('.section-wrap').animate({
+                scrollTop: $('#faqList').offset().top
+            }, 500);
+        };
     });
 </script>
