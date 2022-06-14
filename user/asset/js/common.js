@@ -26,14 +26,33 @@ $(document).ready(function() {
         }
     };
 
-    $('.section-wrap').scroll(function() {
-        btnTop();
-    });
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+    if (!isMobile) {
+        //PC
+        $(".container").scroll(function() {
+            btnTop();
+        });
+    } else {
+        //MOBILE
+        $(".section-wrap").scroll(function() {
+            btnTop();
+        });
+    };
 
     $('#goTop').click(function() {
-        $('.section-wrap').animate({
-            scrollTop: 0
-        }, 300);
-        return false;
+        if (!isMobile) {
+            //PC
+            $('.container').animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        } else {
+            //MOBILE
+            $('.section-wrap').animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        };
     });
 });
