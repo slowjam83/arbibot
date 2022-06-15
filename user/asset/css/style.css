@@ -4988,6 +4988,9 @@ Media Query
     #pointUsed td:nth-child(1) {
         width: 120px;
     }
+    .event-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 996px) {
