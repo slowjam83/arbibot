@@ -2985,9 +2985,17 @@ board
     float: left;
 }
 
+.closed-post .thumb-wrap {
+    background: #000;
+}
+
+.closed-post .thumb-wrap img {
+    opacity: .5;
+}
+
 .event-list .event-title {
     background: #fff;
-    padding: 20px;
+    padding: 10px 15px 15px;
     float: left;
 }
 
