@@ -4863,6 +4863,9 @@ Media Query
     .faq-list .sub-container-head {
         height: 480px;
     }
+    .event-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 1120px) {
