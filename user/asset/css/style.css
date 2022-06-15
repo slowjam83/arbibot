@@ -2970,6 +2970,23 @@ board
     width: 100%;
 }
 
+.event-list li {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-list .event-title {
+    background: #fff;
+    padding: 20px;
+}
+
+.event-list .date {
+    width: auto;
+    text-align: left;
+    margin-left: 0;
+}
+
 .accordion .card .card-header {
     border-radius: 0;
     margin-bottom: -1px;
