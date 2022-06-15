@@ -5113,6 +5113,9 @@ Media Query
         margin: 20px 0 16px;
         padding-bottom: 12px;
     }
+    .event-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 760px) {
