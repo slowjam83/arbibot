@@ -3020,12 +3020,17 @@ board
 }
 
 .card-header .question-text,
-.board-list h5,
-.event-list h5 {
+.board-list h5 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.4;
     word-break: break-all;
+}
+
+.event-list h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 .board-list li.must-read h5::before {
@@ -3082,7 +3087,7 @@ li.closed-post h5::before {
     display: inline-block;
     width: auto;
     text-align: left;
-    margin-left: 0;
+    margin: 10px 0 0;
 }
 
 .collapse {
