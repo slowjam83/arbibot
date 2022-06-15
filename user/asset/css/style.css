@@ -5906,6 +5906,9 @@ Media Query
     .faq-list .search-wrap {
         height: calc(100% - 60px);
     }
+    .event-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 390px) {
