@@ -2907,6 +2907,11 @@ board
     flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0;
+    margin-bottom: -1px;
+    padding: 14px 20px;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .board-list li.must-read {
@@ -2920,16 +2925,19 @@ board
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
+}
+
+.accordion .card {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .accordion .card:not(:first-of-type),
@@ -2949,8 +2957,20 @@ board
     border-bottom-left-radius: 0;
 }
 
-.accordion .card .card-header,
-.board-list li {
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.event-list li,
+.event-list li a,
+.event-list li a img {
+    width: 100%;
+}
+
+.accordion .card .card-header {
     border-radius: 0;
     margin-bottom: -1px;
     padding: 14px 20px;
@@ -2979,7 +2999,8 @@ board
 }
 
 .card-header .question-text,
-.board-list h5 {
+.board-list h5,
+.event-list h5 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.4;
@@ -3023,7 +3044,8 @@ li.closed-post h5::before {
 }
 
 .card-header .date,
-.board-list .date {
+.board-list .date,
+.event-list .date {
     color: #888;
     font-size: 14px;
     display: inline-block;
