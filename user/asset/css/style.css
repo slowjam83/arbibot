@@ -3051,13 +3051,15 @@ li.new-post h5::after {
 li.closed-post h5::before {
     content: '종료';
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     color: #fff;
-    padding: 4px;
+    padding: 2px 5px;
     background: #757480;
     border-radius: 3px;
     margin-right: 5px;
+    position: relative;
+    bottom: 2px;
 }
 
 .card-header .date,
