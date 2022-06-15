@@ -2999,7 +2999,7 @@ board
     background: #4341ce;
 }
 
-.board-list h5.new-post::after {
+li.new-post h5::after {
     content: 'N';
     display: inline-block;
     font-size: 8px;
@@ -3008,6 +3008,18 @@ board
     margin-left: 5px;
     position: relative;
     bottom: 6px;
+}
+
+li.closed-post h5::before {
+    content: '종료';
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    padding: 4px;
+    background: #757480;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
 .card-header .date,
