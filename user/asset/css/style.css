@@ -2981,12 +2981,6 @@ board
     padding: 20px;
 }
 
-.event-list .date {
-    width: auto;
-    text-align: left;
-    margin-left: 0;
-}
-
 .accordion .card .card-header {
     border-radius: 0;
     margin-bottom: -1px;
@@ -3063,14 +3057,22 @@ li.closed-post h5::before {
 }
 
 .card-header .date,
-.board-list .date,
-.event-list .date {
+.board-list .date {
     color: #888;
     font-size: 14px;
     display: inline-block;
     width: 150px;
     text-align: right;
     margin-left: 40px;
+}
+
+.event-list .date {
+    color: #888;
+    font-size: 14px;
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    margin-left: 0;
 }
 
 .collapse {
