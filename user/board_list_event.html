@@ -65,10 +65,13 @@
 
 <script>
     $(window).resize(function() {
-        var height1 = $('.thumb-wrap').width();
-        $('.thumb-wrap').css('height', height1);
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            var height1 = $('.thumb-wrap').width();
+            $('.thumb-wrap').css('height', height1);
 
-        var height2 = $('.thumb-wrap').width() + $('.event-title').innerHeight();
-        $('.event-list li').css('height', height2);
+            var height2 = $('.thumb-wrap').width() + $('.event-title').innerHeight();
+            $('.event-list li').css('height', height2);
+        }, 100);
     });
 </script>
