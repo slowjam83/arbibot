@@ -64,11 +64,17 @@
 </div>
 
 <script>
-    $(window).resize(function() {
-        var height1 = $('.thumb-wrap').width();
-        $('.thumb-wrap').css('height', height1);
+    var delay = 300;
+    var timer = null;
 
-        var height2 = height1 + $('.event-title').innerHeight();
-        $('.event-list li').css('height', height2);
+    $(window).resize(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            var height1 = $('.thumb-wrap').width();
+            $('.thumb-wrap').css('height', height1);
+
+            var height2 = height1 + $('.event-title').innerHeight();
+            $('.event-list li').css('height', height2);
+        }, delay);
     });
 </script>
