@@ -74,14 +74,16 @@
     var delay = 300;
     var timer = null;
 
-    $(window).resize(function() {
-        clearTimeout(timer);
-        timer = setTimeout(function() {
-            $.cssHeight();
-        }, delay);
-    });
-
     $(function() {
-        $.cssHeight();
+        if (window.innerWidth <= 1920) {
+            $(window).resize(function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                    $.cssHeight();
+                }, delay);
+            });
+        } else {
+            $.cssHeight();
+        }
     });
 </script>
