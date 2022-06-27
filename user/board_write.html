@@ -59,7 +59,7 @@
                                 <legend class="hidden">게시물 작성</legend>
                                 <div class="board-write">
                                     <div class="post-title-wrap">
-                                        <select name="" id="" class="post-category">
+                                        <select name="postCategory" id="postCategory" class="post-category">
                                             <option value="none">게시판 선택</option>
                                             <option value="notice">공지사항</option>
                                             <option value="event">이벤트</option>
@@ -68,6 +68,29 @@
                                         <label for="postTitle_input" class="hidden">제목</label>
                                         <input type="text" class="post-title-input" name="postTitle_input" id="postTitle_input" value="" placeholder="제목을 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='제목을 입력해 주세요.'" maxlength="255" required="true" title="제목">
                                     </div>
+                                    <form id="event-option-form" method="post" action="/" class="event-option">
+                                        <fieldset>
+                                            <legend class="hidden">이벤트 글 작성 옵션</legend>
+                                            <div class="flex-start">
+                                                <label for="evevtTime">이벤트 진행 기간</label>
+                                                <input type="datetime-local" name="evevtTime" id="evevtTime"> ~ <input type="datetime-local" name="evevtTime" id="evevtTime">
+                                            </div>
+                                            <div class="flex-start">
+                                                <label for="evevtOpen">이벤트 노출 타입</label>
+                                                <input type="checkbox" name="evevtOpen" id="evevtOpenWeb"> Web
+                                                <input type="checkbox" name="evevtOpen" id="evevtOpenApp"> App
+                                            </div>
+                                            <div class="flex-start">
+                                                <label for="evevtThumb">대표 이미지 등록</label>
+                                                <div>
+                                                    <input id="fileUpload" class="fileUpload ml5" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                                                    <label for="fileUpload" class="small-btn fill">파일 선택</label>
+                                                    <button onclick="fileReset(this.form)" class="hidden cancel-btn">삭제</button>
+                                                    <p>* 최소 이미지 사이즈 : 300 X 300 픽셀, 최대 이미지 용량 : 1MB</p>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
                                     <textarea id="editor" name="editordata" placeholder="내용을 작성해 주세요. editor 영역"></textarea>
                                     <div class="mt10">
                                         <legend class="hidden">게시글 옵션</legend>
@@ -356,12 +379,6 @@
                 $(".chat-open").addClass("on");
             });
 
-            //재정거래(일반) 봇 운영 현황 슬리피지 리스트
-            $('.slippage-list-open').click(function() {
-                $(this).toggleClass("on");
-                $(".slippage-list").toggleClass("on");
-            });
-
             //딤처리 로딩 이미지
             $.fakeLoader({
                 timeToHide: 1200, //로딩중에 걸리는 시간, 1000 = 1초 
@@ -397,6 +414,30 @@
 
                 }
             });
+
+            //board write selectbox change eidt option
+            $('#postCategory').change(function() {
+                var result = $('#postCategory option:selected').val();
+                if (result == 'event') {
+                    $('.event-option').show();
+                } else {
+                    $('.event-option').hide();
+                }
+            });
+
+            //datetime-local 타입에 현재 날짜, 시간 세팅하기
+            var dateSet = document.getElementById('evevtTime');
+            var date = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, -5);
+
+            dateSet.value = date;
+            dateSet.setAttribute("min", date);
+
+            function setMinValue() {
+                if (dateSet.value < date) {
+                    alert('현재 시간보다 이전의 날짜는 설정할 수 없습니다.');
+                    dateSet.value = date;
+                }
+            }
         });
     </script>
 </body>
