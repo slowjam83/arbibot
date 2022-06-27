@@ -2984,6 +2984,10 @@ board
     float: left;
 }
 
+.closed-post a {
+    cursor: default;
+}
+
 .closed-post .thumb-wrap {
     width: 100%;
     background: #000;

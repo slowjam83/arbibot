@@ -1194,7 +1194,8 @@ board
     border: 1px solid #ebebeb
 }
 
-.modal-body textarea {
+.modal-body .reason-edit {
+    display: none;
     padding: 15px 20px;
 }
 
