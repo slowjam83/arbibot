@@ -1799,6 +1799,10 @@ main
     width: calc(100% / 3);
 }
 
+.bithumb_guide .video-area {
+    cursor: pointer;
+}
+
 .bithumb_guide .video-area,
 .bithumb_guide .guide-text {
     width: 100%;
@@ -4643,6 +4647,10 @@ Media Query
     input[name=accountNick],
     input[name=accountTel] {
         width: 100%;
+    }
+    /* bithumb 오토 트레이딩 활용 가이드 */
+    .bithumb_guide .video_guide {
+        gap: 40px;
     }
 }
 
