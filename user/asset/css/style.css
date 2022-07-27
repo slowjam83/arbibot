@@ -1846,6 +1846,11 @@ main
     max-width: 1360px;
 }
 
+#modalVideo .modal-dialog video {
+    max-width: 1280px;
+    max-height: 720px;
+}
+
 
 /*============================================================
 sub page
