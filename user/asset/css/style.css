@@ -1844,11 +1844,16 @@ main
 
 #modalVideo .modal-dialog {
     max-width: 1360px;
+    height: 800px;
 }
 
-#modalVideo .modal-dialog iframe,
-#modalVideo .modal-dialog .html5-video-player .video-click-tracking,
-#modalVideo .modal-dialog .html5-video-player .video-stream {
+#modalVideo .modal-content {
+    height: 100%;
+}
+
+#modalVideo .modal-content iframe,
+#modalVideo .modal-content .html5-video-player .video-click-tracking,
+#modalVideo .modal-content .html5-video-player .video-stream {
     width: 100%;
     height: 100%;
     max-width: 1280px;
