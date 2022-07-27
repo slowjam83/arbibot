@@ -1788,7 +1788,11 @@ main
     margin-right: 10px;
 }
 
-{}
+.bithumb_guide .video_guide {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
 
 
 /*============================================================
