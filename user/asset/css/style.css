@@ -1305,11 +1305,21 @@ nav {
 
 .nav-bottom a.autoguide_btn {
     height: 86px;
-    line-height: .5;
+    line-height: 1;
     padding: 0 20px;
     border: 0;
     background: #ffe9c3;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.nav-bottom a.autoguide_btn img {
+    width: 144px;
+    height: 36px;
+    margin-bottom: 7px;
 }
 
 

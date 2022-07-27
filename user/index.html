@@ -331,6 +331,9 @@
             });
 
             //nav-bottom 링크
+            $(".nav-bottom li:nth-child(1), .mo-nav-bottom li:nth-child(1)").click(function(e) {
+                $(".section").load("./bithumb_guide.html");
+            });
             $(".nav-bottom li:nth-child(3), .mo-nav-bottom li:nth-child(3)").click(function(e) {
                 $(".section").load("./recruit.html");
             });
@@ -425,7 +428,6 @@
             checkHeight();
             $(window).resize(checkHeight);
         });
-
     </script>
 </body>
 
