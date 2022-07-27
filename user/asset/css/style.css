@@ -1846,7 +1846,10 @@ main
     max-width: 1360px;
 }
 
-#modalVideo .modal-dialog video {
+#modalVideo .modal-dialog .html5-video-player .video-click-tracking,
+#modalVideo .modal-dialog .html5-video-player .video-stream {
+    width: 100%;
+    height: 100%;
     max-width: 1280px;
     max-height: 720px;
 }
