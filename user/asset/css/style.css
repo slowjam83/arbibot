@@ -4847,6 +4847,16 @@ Media Query
         justify-content: flex-start;
         margin-top: 20px;
     }
+    /* bithumb 오토 트레이딩 활용 가이드 */
+    .bithumb_guide .video_guide {
+        flex-flow: column;
+    }
+    .bithumb_guide .video_guide li {
+        width: 100%;
+    }
+    .bithumb_guide .video-wrap {
+        height: 372px;
+    }
 }
 
 @media (max-width: 1280px) {
