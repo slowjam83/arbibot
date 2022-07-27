@@ -1303,6 +1303,12 @@ nav {
     margin: 0 20px 10px;
 }
 
+.nav-bottom a.autoguide_btn {
+    padding: 12px 20px;
+    border: 0;
+    background: #ffe9c3;
+}
+
 
 /*============================================================
 mobile nav
