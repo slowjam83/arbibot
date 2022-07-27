@@ -1818,6 +1818,7 @@ main
     width: 60px;
     height: 60px;
     background: url('../img/svg/arrow/play.svg') no-repeat 50% 50%, rgba(0, 0, 0, .7);
+    background-size: 40px;
     border: 1px solid #fff;
     border-radius: 30px;
     position: absolute;
