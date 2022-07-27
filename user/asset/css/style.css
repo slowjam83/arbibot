@@ -1304,9 +1304,12 @@ nav {
 }
 
 .nav-bottom a.autoguide_btn {
-    padding: 12px 20px;
+    height: 86px;
+    line-height: .5;
+    padding: 0 20px;
     border: 0;
     background: #ffe9c3;
+    font-weight: 500;
 }
 
 
