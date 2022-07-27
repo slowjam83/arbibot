@@ -1794,6 +1794,11 @@ main
     gap: 80px;
 }
 
+.bithumb_guide .video-area,
+.bithumb_guide .guide-text {
+    width: 100%;
+}
+
 
 /*============================================================
 sub page
