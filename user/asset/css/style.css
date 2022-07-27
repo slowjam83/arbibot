@@ -1792,6 +1792,7 @@ main
     display: flex;
     justify-content: space-between;
     gap: 80px;
+    margin-bottom: 80px;
 }
 
 .bithumb_guide .video_guide li {
@@ -1801,6 +1802,11 @@ main
 .bithumb_guide .video-area,
 .bithumb_guide .guide-text {
     width: 100%;
+}
+
+.bithumb_guide .guide-text .subpage-title {
+    padding-bottom: 10px;
+    margin: 20px 0 14px;
 }
 
 
