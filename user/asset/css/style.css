@@ -1843,8 +1843,8 @@ main
 }
 
 #modalVideo .modal-dialog {
-    max-width: 1360px;
-    height: 800px;
+    max-width: 1280px;
+    height: 720px;
 }
 
 #modalVideo .modal-content {
