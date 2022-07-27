@@ -1799,13 +1799,24 @@ main
     width: calc(100% / 3);
 }
 
-.bithumb_guide .video-area {
-    cursor: pointer;
-}
-
 .bithumb_guide .video-area,
 .bithumb_guide .guide-text {
     width: 100%;
+}
+
+.bithumb_guide .video-wrap {
+    position: relative;
+}
+
+.bithumb_guide .video-wrap a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url('../img/svg/arrow/play.svg') no-repeat 50% 50%, rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bithumb_guide .guide-text .subpage-title {
