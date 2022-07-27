@@ -1846,6 +1846,7 @@ main
     max-width: 1360px;
 }
 
+#modalVideo .modal-dialog iframe,
 #modalVideo .modal-dialog .html5-video-player .video-click-tracking,
 #modalVideo .modal-dialog .html5-video-player .video-stream {
     width: 100%;
