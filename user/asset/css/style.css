@@ -1800,12 +1800,14 @@ main
 }
 
 .bithumb_guide .video-area,
-.bithumb_guide .guide-text {
+.bithumb_guide .guide-text,
+.bithumb_guide .video-wrap img {
     width: 100%;
 }
 
 .bithumb_guide .video-wrap {
     position: relative;
+    background: #000;
 }
 
 .bithumb_guide .video-wrap a {
@@ -1813,15 +1815,25 @@ main
     width: 60px;
     height: 60px;
     background: url('../img/svg/arrow/play.svg') no-repeat 50% 50%, rgba(0, 0, 0, .7);
+    border: 1px solid #fff;
+    border-radius: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.bithumb_guide .video-wrap img {
+    opacity: .7;
+}
+
 .bithumb_guide .guide-text .subpage-title {
     padding-bottom: 10px;
     margin: 20px 0 14px;
+}
+
+#modalVideo .modal-dialog {
+    max-width: 1360px;
 }
 
 
