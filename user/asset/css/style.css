@@ -1847,13 +1847,14 @@ main
     height: 720px;
 }
 
-#modalVideo .modal-content {
+#modalVideo .modal-content,
+#modalVideo .modal-body {
     height: 100%;
 }
 
-#modalVideo .modal-content iframe,
-#modalVideo .modal-content .html5-video-player .video-click-tracking,
-#modalVideo .modal-content .html5-video-player .video-stream {
+#modalVideo .modal-body iframe,
+#modalVideo .modal-body .html5-video-player .video-click-tracking,
+#modalVideo .modal-body .html5-video-player .video-stream {
     width: 100%;
     height: 100%;
     max-width: 1280px;
